@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Legal action if your landlord won't do repairs{% endblock %}
+{% block description %}If your landlord doesn't do repairs or does them badly, you can take them to court and claim compensation.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Legal action if your landlord won't do repairs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Legal action if your landlord won't do repairs<br>
+                <small>If your landlord doesn't do repairs or does them badly, you can take them to court and claim compensation.</small>
+            </h1>
+        </div>
+
+    <h2>How the court can help</h2>
+        <p>Your landlord is responsible for doing most repairs. You can take court action if you've asked your landlord
+            to do repairs but they don't.</p>
+        <p>You can ask the court to order your landlord to:</p>
+        <ul>
+            <li>carry out the repairs needed</li>
+            <li>pay you compensation</li>
+            <li>both do the repairs and pay compensation</li>
+        </ul>
+        <p class="inline-callout highlight">You can make a claim for compensation&nbsp;even after your tenancy has ended.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Legal aid for repairs cases</h2>
+        <p>Legal aid can help people on a low income with certain types of legal action.</p>
+        <p>You can only get legal aid for a repairs case if:</p>
+        <ul>
+            <li>there is a serious risk of harm to you or others in your household, or</li>
+            <li>your landlord has started a possession claim against you because of
+                <a href="{% url 'renters-eviction_for_rent_arrears' %}" title="See also: Eviction for rent arrears' %}">
+                    rent arrears</a> and part of your defence is that repairs weren't done</li>
+        </ul>
+        <p>You can't get legal aid if you only want to claim compensation from your landlord.</p>
+        <p class="inline-callout external">Contact the&nbsp;
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{ civil_legal_advice_url }}" target="_blank">
+                Civil Legal Advice</a> helpline to see if you qualify for legal aid.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h3>If you don't qualify for legal aid</h3>
+        <p>You can take legal action by yourself but some tenants decide to get legal help.</p>
+        <p>Ask a solicitor about a conditional fee arrangement if you can't get legal aid. This can mean you don't pay
+            a fee if you lose your case.</p>
+
+
+    <h3>Alternatives to legal action</h3>
+        <p class="inline-callout internal">
+            <a title="see also: Complain to the Ombudsman about repairs in social housing"
+               href="{% url 'renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                Complain to the Housing Ombudsman</a> if you are a council or housing association tenant.</p>
+        <p>This service is free.</p>
+
+    <h2>What legal action costs</h2>
+        <h3>Court fees</h3>
+        <p>You usually have to pay court fees to take legal action. Fees can be reduced or waived if you claim
+            benefits or have a low income.</p>
+        <p class="inline-callout external">See&nbsp;
+            <a href="{{ hmcts_fees_url }}" title="Link to HM Courts and Tribunals about court fees"
+               target="_blank">HM Courts and Tribunals for more about court fees.</a></p>
+
+    <h3>Expert's reports</h3>
+        <p>You might need to pay for:</p>
+        <ul>
+            <li>an expert's report to tell the court about the condition of your home</li>
+            <li>a medical report if your health has been affected</li>
+        </ul>
+        <p>A solicitor can arrange these for you.&nbsp;If you win your case, you can claim back these
+            costs from your landord.</p>
+
+    <h2>How to prepare for your case</h2>
+        <p>Going to court should be your last resort.</p>
+        <h3>Report repairs</h3>
+        <p>A court case won't suceed if you didn't report the repairs to your landlord.</p>
+        <p>
+            <a title="see also: reporting repairs to a private landlord"
+               href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+                Report repairs problems to a private landlord</a>.</p>
+        <p><a title="see also: reporting repairs to a council or housing association landlord"
+              href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}">
+            Report repairs problems to the council or to a housing association</a>.</p>
+
+    <h3>Gather evidence</h3>
+        <p>Your evidence could include:</p>
+        <ul>
+            <li>copies of letters that show you reported the problem to your landlord</li>
+            <li>photographs showing examples of the disrepair or damaged property</li>
+            <li>receipts proving you had to replace things damaged or destroyed by the problem</li>
+            <li>medical reports explaining how your health has been affected</li>
+            <li>report from your council's environmental health department</li>
+        </ul>
+
+   <h3>Send a letter before action</h3>
+        <p>You must send a 'letter before action' to your landlord, even if you have already
+            told them you're going to start legal action.</p>
+        <p>The letter must:</p>
+
+        <ul>
+            <li>explain what the repairs problem is</li>
+            <li>set out details of when you told the landlord about the problem</li>
+            <li>give the landlord 20 working days to put the problem right &ndash; unless the repair is urgent</li>
+            <li>state that if the landlord doesn't put the problem right within that time, you intend to take them to court</li>
+        </ul>
+        <p>After 20 working days have passed, you can start your claim in the court.</p>
+
+    <h3>Get advice before you start legal action</h3>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How to start your court claim</h2>
+        <p>You can start a claim after your tenancy has ended.</p>
+        <ul>
+            <li>Start your claim by filling in claim form N1.</li>
+            <li>Send 2 copies of your claim form to the court where you want to start court action.</li
+            <li>Keep a copy for yourself.</li>
+        </ul>
+
+
+    <h3>When the small claims court is used</h3>
+        <p>The court decides how to deal with your case.&nbsp;Many repairs cases are dealt with under
+            the 'small claims' track in the county court.</p>
+        <p>It should be dealt with as a small claim if you want to ask the court to order your landlord to either:</p>
+        <ul>
+            <li>do repairs that cost under £1000 and pay you compensation of no more than £1000</li>
+            <li>only pay you compensation of up to £10,000</li>
+        </ul>
+        <p>An advantage with smalls claims is that if you lose, you don't have to pay your landlord's costs.
+            &nbsp;The court procedure is usually simpler and quicker. It's easier to represent yourself
+            in court too.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+
+    <h3>Attend the court hearing</h3>
+        <p>Hearings usually take place in a room called chambers. This could be the judge's private room or a
+            courtroom. The public aren't allowed to sit in.</p>
+        <p>You can be represented at the hearing by a lawyer or adviser or you can represent yourself</p>
+        <p>Before making its decision, the court looks at all the evidence you and your landlord have provided.</p>
+
+    <h2>What the court can decide</h2>
+        <p>The court can order your landlord to carry out the work immediately in emergency situations,
+            for example if it's dangerous for you to live in the property.</p>
+
+        <p>The court can order your landlord to:</p>
+        <ul>
+            <li>carry out the specified work by a certain date</li>
+            <li>pay you amount in compensation and pay your costs</li>
+        </ul><p>The court could also make a declaration that you can do the repairs yourself and deduct what
+        you pay out from future rent.</p>
+        <p>If your evidence isn't strong enough, the court could dismiss your claim.</p>
+
+   <h3>If a landlord ignores the court</h3>
+        <p>If a landlord doesn't carry out works ordered by the court, they'll be in contempt of
+            court and can be fined or even sent to prison.</p>
+        <p>You might have to take further court action if your landlord
+            doesn't pay you the compensation ordered by the court.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

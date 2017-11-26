@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block head %}
+	<title>Represent Law Blog</title>
+{% endblock %}
+
+{% block body %}
+	<div class="page-header" align="center">
+		<h1>Represent Blog</h1>
+	</div>
+{% endblock %}
+
+
+{% block content %}
+	<div class="container-fluid">
+	    <div class="row row-offcanvas row-offcanvas-left">
+	        <div class="row-offcanvas row-offcanvas-right">
+	            <div class="col-sm-2 sidebar-offcanvas" id="sidebarLeft" role="navigation">
+	                <div class="well sidebar-nav">
+	                    <ul class="nav">
+	                        <li>Left Sidebar</li>
+	                        <li class="active"><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                    </ul>
+	                </div><!--/.well -->
+	            </div><!--/span-->
+
+	            <div class="col-xs-8 col-sm-6">
+	                <div class="row">
+						{% for post in object_list %}
+							<div class="col-sm-12 col-sm-offset-0">
+								<div class="thumbnail">
+									<a href="/blog/{{post.slug}}">
+										<img src="media/{{post.image|default_if_none:'#' }}" alt="Blog image"/>
+									</a>
+									<div class="caption">
+										<h3>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.slug}}"> {{post.title}}</a></h3>
+										<p>Blog post body</p>
+										<p>{{post.body|safe|linebreaks}}</p>
+
+										<p>{{post.date|timesince}} ago</p>
+										<p><a href="#" class="btn btn-default" role="button">View</a></p>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+	            </div>
+	            <!--/span-->
+	            <div class="col-xs-4 col-sm-3 sidebar-offcanvas" id="sidebarRight" role="navigation">
+	                <div class="well sidebar-nav">
+	                    <ul class="nav">
+	                        <li>Right Sidebar</li>
+	                        <li class="active"><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li>Sidebar</li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                    </ul>
+	                </div><!--/.well -->
+	            </div>
+	        </div>
+	    </div><!--/row-->
+	</div>
+	<!--/.container-->
+
+	<!--Restart-->
+		<div class = "container-fluid">
+			<div class="col-md-2">
+						<div class="well bs-sidebar" id="sidebar-right" style="background-color:#fff">
+							  <ul class="nav nav-pills nav-stacked">
+								<li><a href='/'>Home</a></li>
+								<li><a href='/blog/'>Blog</a></li>
+								<li><a href='/contact/'>Contact</a></li>
+							  </ul>
+						</div>
+				  </div> <!--well bs-sidebar affix--> <!--col-sm-2-->
+
+
+				{% for post in object_list %}
+					<div class="col-sm-7 col-sm-offset-2">
+						<div class="thumbnail">
+							<a href="/blog/{{post.slug}}">
+								<img src="media/{{post.image|default_if_none:'#' }}" alt="Blog image"/>
+							</a>
+							<div class="caption">
+								<h3>{{ post.date|date:"Y-m-d" }}<a href="/blog/{{post.slug}}"> {{post.title}}</a></h3><p>Blog post body</p>
+								<p>{{post.body|safe|linebreaks}}</p>
+								<p>{{post.date|timesince}} ago</p><p><a href="#" class="btn btn-default" role="button">View</a></p>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+		</div>
+{% endblock %}

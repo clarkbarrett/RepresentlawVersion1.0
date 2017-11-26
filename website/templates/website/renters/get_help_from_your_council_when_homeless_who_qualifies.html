@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent = Homeless: get help from your council{% endblock %}
+{% block description %}Homeless: get help from your council{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Homeless: get help from your council</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Homeless: get help from your council<br>
+            </h1>
+        </div>
+
+    <h1>Who qualifies</h1>
+
+    <p>To qualify for long-term housing from your council,&nbsp;<strong>all the following 5 conditions</strong> must apply to you.</p>
+        <p>To qualify for emergency housing, the council must think
+            <strong> conditions</strong>
+            <strong>1 to 3</strong> apply to you.</p>
+
+    <h2>1. You need to be legally homeless</h2>
+        <p>To qualify for help, you must be classed as 'legally homeless'.
+            This includes if you:</p>
+        <ul>
+        <li>have been evicted from your home</li>
+            <li>need to leave due to violence</li>
+            <li>can't stay due to a fire or flood</li>
+            <li>are sleeping on the street</li>
+            <li>will lose your home within 28 days (for example, if you're going to be evicted)</li>
+            <li>have been asked to leave&nbsp;somewhere temporary (such as a friend's house)</li>
+        </ul>
+
+        <h2>2. You need to be a priority for help</h2>
+        <p>To qualify for help, you or someone in your household must be in
+            <a title="See also: Priority need"
+               href="{% url 'renters-priority_need' %}">'priority need'.</a></p>
+        <p>You are likely to be in priority need if you're a&nbsp;</p>
+        <ul>
+        <li>young person aged 16 or 17 (social services usually have to help you)</li>
+            <li>care leaver under 21.</li>
+        </ul>
+        <p>You will be in priority need if you're:</p>
+        <ul>
+            <li>a family with children under 16&nbsp;</li>
+            <li>a family with children under 19 (if they are in full-time education)</li>
+            <li>pregnant</li>
+            <li>homeless due to a disaster such as a fire or flood</li>
+            <li>classed as 'vulnerable'</li>
+        </ul>
+        <p>You may be classed as vulnerable if, for example, you are&nbsp;</p>
+            <ul>
+                <li>disabled or have a serious health condition</li>
+                <li> at risk of domestic abuse</li>
+            </ul>
+
+
+        <p>
+            When deciding if you are vulnerable, the council should take into account anything that makes it hard
+            for you to cope with being homeless.</p>
+
+        <h2>3. You need to be allowed to live in the UK</h2>
+        <p>If you have immigration or residence restrictions
+            <strong>,</strong> it could&nbsp;mean the council can't help you.</p>
+        <p>You usually qualify for help if you:</p>
+        <ul>
+            <li>are a British or Irish citizen living in the UK</li>
+            <li>are from the EU or EEA and are living and working in the UK</li>
+            <li>have Home Office permission to stay in the UK and are allowed to claim benefits</li>
+        </ul>
+        <p>Other people from abroad may also qualify for help.</p>
+
+        <h3>If you've recently lived abroad</h3>
+        <p>If you've recently lived abroad you may need to pass the 'habitual residence test' to show you're now
+            settled in the UK, even if you are British.</p>
+
+        <h3>If you have no access to public funds</h3>
+        <p>You don't usually qualify for help if your immigration status says you have &lsquo;no recourse to
+            public funds&rsquo; (for example if you have a student visa).</p>
+
+        <h2>4. You need to be homeless through no fault of your own</h2>
+        <p>To qualify for longer-term help, you must be homeless through no fault of your own.</p>
+        <p>The council won't help you if you made yourself homeless. This is called being 'intentionally homeless' and includes if you:</p>
+        <ul>
+            <li>were evicted due to antisocial behaviour</li>
+            <li>left housing that&nbsp;you could have stayed in</li>
+            <li>didn't pay rent or mortgage payments you could afford</li>
+        </ul>
+
+        <h2>5. You need to have links to the area</h2>
+        <p>Having links is known as having a 'local connection' and includes if you:</p>
+        <ul>
+            <li>have lived or worked in the area&nbsp;</li>
+            <li>have close family who live in the area</li>
+            <li>need specialist health care in the area</li>
+        </ul>
+        <p>If you don't have links to the area where you apply, the council can sometimes refer you to an
+            area where you do have links.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

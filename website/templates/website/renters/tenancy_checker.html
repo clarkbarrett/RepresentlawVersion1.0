@@ -1,0 +1,512 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/advice.min.css' %}" media="screen" />
+
+{% endblock %}
+
+{% block title %}Represent - Tenancy Checker{% endblock %}
+{% block description %}What kind of agreement (tenancy) you have with your landlord affects your legal rights.
+These rights depend on who you rent from,
+when your agreement started and whether your landlord lives in the same building - not just what your agreement says.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+
+{% block body %}
+
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Tenancy Checker</small></h1>
+              </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+      <div id="container">
+
+      <div id="content_container" class="clearfix">
+
+      <div id="contentarea" class="clearfix">
+
+        <a name="content" id="content"></a>
+        <div id="pagecontent" class="r_elevencol finalcol">
+
+
+    <article class="advice-content tool-page l_tencol clearfix" role="main">
+
+    <div id="tools-header">
+      <h3>Tenancy checker</h3>
+    </div>
+    <div class="tools tools-intro">
+      <h2>What type of tenancy do I have?</h2>
+      <p>What kind of agreement (tenancy) you have with your landlord affects your legal rights. These rights depend on who you rent from, when your agreement started and whether your landlord lives in the same building - not just what your agreement says.</p>
+      <p style="margin-top: 10px !important;">Answer a few simple questions here to find out what kind of tenancy you have.</p>
+      <noscript>
+      <p color="red">Please note, you need javascript enabled to use this tool</p>
+      </noscript>
+    </div>
+    <div id="advicechecker" class="tools checker clearfix">
+
+      <!-- ********************************* Questions ********************************* -->
+
+      <!-- Question 1 -->
+
+      <div id="Q1" class="question">
+        <h4><strong>Question 1</strong> <span>Are you charged rent?</span></h4>
+        <input type="radio" name="q1" id="q1_q3" value="q3" />
+        <label for="q1_q3">Yes</label>
+        <br />
+        <input type="radio" name="q1" id="q1_a1" value="a1" />
+        <label for="q1_a1">I pay some rent as part of a shared ownership scheme</label>
+        <input type="radio" name="q1" id="q1_q2" value="q2" />
+        <label for="q1_q2">No</label>
+      </div>
+      <div id="q2" class="hidden2 question">
+        <h4><strong>Question 1b</strong> <span>Do you live in accommodation provided by your employer?</span></h4>
+        <input type="radio" name="q2" id="q2_a2" value="a2" />
+        <label for="q2_a2">Yes</label>
+        <br />
+        <input type="radio" name="q2" id="q2_a3" value="a3" />
+        <label for="q2_a3">No</label>
+      </div>
+      <div id="q3" class="hidden2 question">
+        <h4><strong>Question 2</strong> <span>Which of the following best describes where you live?</span></h4>
+        <input type="radio" name="q3" id="q3_a4" value="a4" />
+        <label for="q3_a4">I rent my home from the council</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a5" value="a5" />
+        <label for="q3_a5">I rent my home from a housing association</label>
+        <br />
+        <input type="radio" name="q3" id="q3_q4" value="q4" />
+        <label for="q3_q4">I rent my home from a private landlord or letting agent</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a6" value="a6" />
+        <label for="q3_a6">I live in accommodation provided by the council as a homeless person</label>
+        <br />
+        <input type="radio" name="q3" id="q3_q9" value="q9" />
+        <label for="q3_q5">I live with family or friends</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a7" value="a7" />
+        <label for="q3_a7">I live in a hostel, bed and breakfast or hotel</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a8" value="a8" />
+        <label for="q3_a8">I am an agricultural worker and live in accommodation provided by my employer</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a9" value="a9" />
+        <label for="q3_a9">I live in a mobile home</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a10" value="a10" />
+        <label for="q3_a10">I'm a student and live in accommodation owned by my university/college</label>
+        <br />
+        <input type="radio" name="q3" id="q3_a11" value="a11" />
+        <label for="q3_a11">I live in supported housing</label>
+      </div>
+      <div id="q4" class="hidden2 question">
+        <h4><strong>Question 2B</strong> <span>Are you a subtenant?</span></h4>
+        <p>A subtenant is someone who rents their home from another tenant, rather than from the owner of the property. To be a subtenant you must have exclusive use of at least one room.</p>
+        <input type="radio" name="q4" id="q4_a12" value="a12" />
+        <label for="q4">Yes</label>
+        <br />
+        <input type="radio" name="q4" id="q4_q5" value="q5" />
+        <label for="q4">No</label>
+      </div>
+      <div id="q5" class="hidden2 question">
+        <h4><strong>Question 2C</strong> <span>Do any of the following apply to you?</span></h4>
+        <input type="radio" name="q5" id="q5_a3" value="a3" />
+        <label for="q5_a3">I live in the same house and share living space with my landlord</label>
+        <br />
+        <input type="radio" name="q5" id="q5_a13" value="a13" />
+        <label for="q5_a14">I live in the same building as my landlord but we do not share any living space</label>
+        <br />
+        <input type="radio" name="q5" id="q5_a3" value="a3" />
+        <label for="q5_a3">I'm provided with services as part of my rent (cleaning, provision of meals or laundry)</label>
+        <br />
+        <input type="radio" name="q5" id="q5_q6" value="q6" />
+        <label for="q5_q6">None of these options apply to me</label>
+      </div>
+      <div id="q6" class="hidden2 question">
+        <h4><strong>Question 3</strong> <span>When did you move into your current home?</span></h4>
+        <input type="radio" name="q6" id="q6_a14" value="a14" />
+        <label for="q4_a14">I moved into my home before 15 January 1989</label>
+        <br />
+        <input type="radio" name="q6" id="q6_a14" value="a14" />
+        <label for="q4_a14">I have moved into a new home but have the same landlord as I did before 15 January 1989</label>
+        <br />
+        <input type="radio" name="q6" id="q6_q7" value="q7" />
+        <label for="q4_q7">I moved into my home between 15 January 1989 and 27 February 1997</label>
+        <br />
+        <input type="radio" name="q6" id="q6_q8" value="q8" />
+        <label for="q4_q8">I moved into my home after 27 February 1997</label>
+      </div>
+      <div id="q7" class="hidden2 question">
+        <h4><strong>Question 3B</strong> <span>Did your landlord give you a written notice saying that you have an assured shorthold tenancy (a 'section 20 notice') when you moved into your home?</span></h4>
+        <input type="radio" name="q7" id="q7_q8" value="q8" />
+        <label for="q7_q8">Yes</label>
+        <br />
+        <input type="radio" name="q7" id="q7_a15" value="a15" />
+        <label for="q7_a15">No</label>
+      </div>
+      <div id="q8" class="hidden2 question">
+        <h4><strong>Question 3C</strong> <span>Has your initial fixed-term tenancy agreement come to an end without being replaced by another one?</span></h4>
+        <input type="radio" name="q8" id="q8_a16" value="a16" />
+        <label for="q8_a16">Yes</label>
+        <br />
+        <input type="radio" name="q8" id="q8_a17" value="a17" />
+        <label for="q8_a17">No</label>
+      </div>
+      <div id="q9" class="hidden2 question">
+        <h4><strong>Question 3</strong> <span>Which of the following applies to you?</span></h4>
+        <input type="radio" name="q9" id="q9_a18" value="a18" />
+        <label for="q9_a18">I have a verbal or written agreement with my family or friends and pay rent on a room and have agreed how long I can stay there</label>
+        <br />
+        <input type="radio" name="q9" id="q9_a18" value="a18" />
+        <label for="q9_a18">I don't have any formal agreement with the people I stay with and do not pay/only pay rent occasionally</label>
+        <input type="radio" name="q9" id="q9_a19" value="a19" />
+        <label for="q9_a19">I share with friends/family but pay rent directly to the landlord</label>
+      </div>
+
+      <!-- ********************************* Results ********************************* -->
+
+      <div id="a1" class="hidden2 result">
+        <h4>Result: You live in a shared ownership property</h4>
+        <p>If you bought a share in your home through Homebuy or another shared ownership scheme, your rights will be set out in the agreement you have
+          with the housing association that owns the remaining share. You probably have rights and responsibilities as both an
+          <a target="_blank" href="{% url 'renters-assured_tenancies' %}">
+            assured tenant</a> and as a <a target="_blank" href="{% url 'leasehold-what_is_leasehold' %}">
+            leaseholder</a>.</p>
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see how we can help</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" style="color: white" role="button">Contact Represent</a></p>
+
+                </div>
+      </div>
+
+      <div id="a2" class="hidden2 result">
+        <h4>Result: You are a service occupier or a service tenant</h4>
+        <p>If your home is provided as part of your job, your rights depend on the agreement you have with your landlord/employer.
+          You may have the same rights as either an occupier with basic protection or an excluded occupier. </p>
+        <p>You are likely to be an <a target="_blank" href="{% url 'renters-excluded_occupiers' %}">excluded occupier</a> if:</p>
+        <ul>
+          <li>you share accommodation with your landlord/employer, or</li>
+          <li>your landlord/employer lives in the same building as you and you share accommodation with a member of your landlord/employer's family, or</li>
+          <li>you do not pay rent and your wages are not reduced on account of accommodation being provided.</li>
+        </ul>
+        <p>If none of the above applies, then you are likely to be an
+          <a target="_blank" href="{% url 'renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>.</p>
+        <p>Regardless of which legal status you have, you will probably have very few rights if you are asked to leave.
+          This may make it difficult for you to enforce any other tenancy rights, such as getting repairs done.
+          Contact Represent if you are having problems.</p>
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+      </div>
+
+      <div id="a3" class="hidden2 result">
+        <h4>Result: You are an excluded occupier</h4>
+        <p>You don't have many rights as an <a target="_blank" href="{% url 'renters-excluded_occupiers' %}">
+          excluded occupier</a>, which may make it difficult for you to enforce any other tenancy rights, such as getting repairs done. </p>
+        <ul>
+          <li>Your landlord does not need to prove a legal reason or get a court order in order to evict you. </li>
+          <li>You are entitled to "reasonable notice" but this does not have to be in writing. </li>
+          <li>If you cannot negotiate with your landlord to stay longer, you will need to find alternative accommodation quickly. </li>
+        </ul>
+        <p>If you cannot negotiate with your landlord, you may have to consider putting up with things as they are or
+          finding somewhere else to live.</p>
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+      </div>
+
+      <div id="a4" class="hidden2 result">
+        <h4>Result: You are a council tenant</h4>
+        <p>It is very important to remember that not all council tenants have the same rights:</p>
+        <ul>
+          <li>Many councils give new tenants an introductory tenancy for the first year to 18 months. This is effectively a trial tenancy. </li>
+          <li>Councils can also get a court order to 'demote' your tenancy for a one-year probationary period if you have been involved in anti-social behaviour. Demoted tenancies also give you very limited rights.</li>
+          <li>Most other council tenants have a secure tenancy, which give you important rights and very strong protection from eviction.</li>
+        </ul>
+        <p>If you have a secure council tenancy you have very important rights, including the Right to Buy, the right to assign your tenancy to someone else, the right to take in a lodger, and the right to apply for a transfer or exchange. You can only be evicted in certain circumstances and if the correct procedure is followed.</p>
+        <p>If you have an introductory or demoted tenancy, many of these rights will not be available until your tenancy becomes secure. Introductory tenants and demoted tenants can also be evicted very easily. If your case gets to court and the correct procedure has been followed, the court will have no choice other than to evict you. Get advice immediately if you are threatened with eviction. </p>
+      </div>
+
+      <div id="a5" class="hidden2 result">
+        <h4>Result: You are a housing association tenant</h4>
+        <p>The type of tenancy agreement you have with the housing association will affect many of your rights. Housing associations provide:</p>
+        <ul>
+          <li>starter tenancies (most housing associations use these trial tenancies for the first 12-months of your tenancy)</li>
+          <li><a target="_blank" href="{% url 'renters-assured_tenancies' %}">assured tenancies</a> (most housing association tenants have assured tenancies, but you should check your status if you are uncertain)</li>
+          <li>secure tenancies (If your home is self-contained and your tenancy started before 15 January 1989, you may have a secure tenancy)</li>
+          <li>demoted tenancies (housing associations can apply for a court order to 'demote' your tenancy for a one-year probationary period if you have behaved antisocially)</li>
+          <li><a target="_blank" href="{% url 'renters-assured-shorthold-tenancies' %}">assured shorthold tenancies</a> (these are often used in circumstances that do not fit into one of the above categories).</li>
+        </ul>
+      </div>
+
+      <div id="a6" class="hidden2 result">
+        <h4>Result: You are probably an excluded occupier but you may have a tenancy</h4>
+        <p>In most cases, if the council has not yet made a decision on your homelessness application, you will be an excluded occupier. This means that the council is not required to give you written notice or get a court order before they can evict you. However, they should give you a reasonable amount of notice, to allow you to make alternative accommodation arrangements.</p>
+        <p>If the council has already made a decision on your homelessness application and has decided that it has an ongoing duty to house you, you may have more rights. The type of tenancy you have will usually depend on who owns the accommodation you have been housed in:</p>
+        <ul>
+          <li>If it is owned by a private landlord, you will probably have an <a target="_blank" href="{% url 'renters-assured-shorthold-tenancies' %}">assured shorthold tenancy</a>.</li>
+          <li>If it is a housing association property, you will probably have an assured shorthold tenancy, unless you have been specifically told that you have an assured tenancy.</li>
+          <li>If it is owned by the council, you will not have a regular council tenancy unless you have been allocated the property on a permanent basis through the waiting list. In most cases you will be an occupier with basic protection. This means that you are entitled to written notice and a court order. The court will automatically make an order to evict you if the correct legal procedure has been followed.</li>
+        </ul>
+        </div>
+
+      <div id="a7" class="hidden2 result">
+        <h4>Result: You are probably an excluded occupier</h4>
+        <p>You are likely to be an <a target="_blank" href="{% url 'renters-excluded_occupiers' %}">excluded occupier</a> if you live in a hotel, bed and breakfast or hostel. This means that you have very limited rights. Your landlord only has to give you "reasonable notice" if they want to evict you, which could be verbal. This will make it difficult to enforce any other rights.</p>
+        <p>However, you should check your status with an adviser. You may be an
+          <a target="_blank"
+             href="{% url 'renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>
+          (which would give you a bit more protection from eviction as you'd be entitled to a court order) if:</p>
+        <ul>
+          <li>you have your own room, and</li>
+          <li>the owner doesn't live on the premises, and </li>
+          <li>services are not provided. </li>
+        </ul>
+      </div>
+
+      <div id="a8" class="hidden2 result">
+        <h4>Result: You may have an agricultural tenancy if you:</h4>
+        <ul>
+          <li>live in a self-contained home and this accommodation will be either be owned or arranged by your employer – if you share your home with your landlord this will not be a self-contained home, and
+          <li>work for 35 hours or more a week and
+          <li>spend at least some of the time maintaining crops, livestock, forestry, tractors and other equipment (this includes workers in plant nurseries), and
+          <li>have been employed in agriculture for 91 weeks of the last 104, this includes time from previous employment, as well as paid holidays or sick leave.
+        </ul>
+        <p>If you have an agricultural tenancy, you should get in touch with an adviser. Farm workers in tied accommodation can have protected, statutory or assured agricultural tenancies. </p>
+        <p>You will only have an agricultural tenancy if you are an agricultural worker. It does not matter if you are not living on agricultural land - you may well still have a tenancy.</p>
+        <p>The law in this area is very complicated.</p>
+      </div>
+
+      <div id="a9" class="hidden2 result">
+        <h4>Result: Mobile homes</h4>
+        <p>The laws governing the owning and renting of mobile homes are different to those governing the owning and renting of traditional 'bricks and mortar' properties. Your rights will depend on:</p>
+        <ul>
+          <li>whether you own or rent your mobile home</li>
+          <li>whether you rent a pitch to place it on</li>
+          <li>whether the site is protected or not.</li>
+        </ul>
+         <p>The law on mobile homes can be very complicated. </p>
+      </div>
+
+      <div id="a10" class="hidden2 result">
+        <h4>Result: You are probably an occupier with basic protection</h4>
+        <p>In most cases, if you are renting student accommodation that is owned by the college or university, you will be an
+          <a target="_blank"
+             href="{% url 'renters-occupiers_with_basic_protection' %}">
+            occupier with basic protection</a>.</p>
+        <p>However, there are different types of student accommodation available, which may give you different tenancy rights.
+          See our page on <a target="_blank" href="{% url 'renters-university_accommodation_halls_of_residence' %}">
+            student housing</a> for more information.</p>
+      </div>
+
+      <div id="a11" class="hidden2 result">
+        <h4>Result: You are probably an occupier with basic protection</h4>
+        <p>In most cases, if you live in supported housing you will be an
+          <a target="_blank" href="{% url 'renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>.
+          This means that you have few rights, but your landlord has to follow the correct procedure if they want to evict you.</p>
+        <p>Your rights may vary depending on the nature of your accommodation and the level of support provided.
+          <div class="bs-callout bs-callout-primary">
+            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <p></p>
+            <p>Get in touch with Represent to see how we can help</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+          </div>
+      </div>
+
+      <div id="a12" class="hidden2 result">
+        <h4>Result: You are a subtenant</h4>
+        <p>If you rent your house or part of a house from someone who in turn rents the property from a different landlord,
+          then you are a
+          <a target="_blank"
+             href="{% url 'renters-subtenants' %}">subtenant</a>.</p>
+        <p>It is possible for subtenants to have any type of private tenancy if the right conditions are met. You
+          should always check your status with an adviser, especially if you have been living in your home for a long time.
+          There are exceptions but as a guide:</p>
+        <ul>
+          <li>If you share any living space with your landlord you are likely to be an
+            <a target="_blank"
+               href="{% url 'renters-excluded_occupiers' %}">excluded occupier</a>, which gives you almost no protection
+            from eviction so it will be very difficult to enforce any other rights.</li>
+          <li>If you don't share living space with your landlord but s/he lives in the same building, you are likely to be an
+            <a target="_blank"
+               href="{% url 'renters-occupiers_with_basic_protection' %}">
+              occupier with basic protection</a>.</li>
+          <li>If your tenancy started after 27 February 1997, you are likely to have an
+            <a target="_blank"
+               href="{% url 'renters-assured-shorthold-tenancies' %}">assured shorthold tenancy</a>,
+            which gives limited protection from eviction.</li>
+          <li>If your tenancy started before 27 February 1997, you may have either an assured tenancy, or a
+            <a target="_blank" href="{% url 'renters-regulated_tenancies' %}">
+              regulated tenancy</a>. These tenancies give significant protection from eviction. Get advice immediately
+            so that you don't put important rights at risk. </li>
+        </ul>
+        <p>The law is complicated and protecting your rights may be difficult.
+
+          <div class="bs-callout bs-callout-primary">
+            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <p></p>
+            <p>Get in touch with Represent to see how we can help</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+          </div>
+
+        <ul>
+          <li>you are in any doubt about your status or your rights, or</li>
+          <li>your landlord is trying to evict you without following the correct procedure - this may be a criminal offence.</li>
+        </ul>
+      </div>
+
+      <div id="a13" class="hidden2 result">
+        <h4>Result: You are an occupier with basic protection</h4>
+        <p>You are likely to be an occupier with basic protection. This means that you have few rights, which may make it difficult for you to enforce any other tenancy rights, such as getting repairs done. However, your landlord has to follow the correct procedure if they want to evict you. </p>
+        <p>See the page on
+          <a target="_blank"
+             href="{% url 'renters-occupiers_with_basic_protection' %}">occupiers with basic protection</a>
+        </p>
+      </div>
+
+      <div id="a14" class="hidden2 result">
+        <h4>Result: You have a regulated tenancy</h4>
+        <p>No new regulated tenancies have been created since 15 January 1989. Regulated tenancies give you very strong tenancy rights,
+          including strict rules on how and by how much your rent can be increased. You also have far more protection from
+          eviction than most other private tenants.</p>
+        <p>See the page on <a target="_blank" href="{% url 'renters-regulated_tenancies' %}">
+          regulated tenancies</a> for more information about your rights and contact a local advice centre if you have any problems. </p>
+        <p><strong>Don't give up your home or agree to any changes to your tenancy agreement</strong> without getting advice first.
+          If you do so, you may be signing away important rights that you will not get back.</p>
+      </div>
+
+      <div id="a15" class="hidden2 result">
+        <h4>Result: You are an assured tenant</h4>
+        <p>An assured tenancy gives you important tenancy rights including a lot of protection from eviction. Your landlord
+          cannot evict you without proving a legal reason and getting a court order. This will make it easier for
+          you to enforce any other tenancy rights (such as getting repairs done) as your landlord cannot simply choose
+          to evict you rather than doing the work that's needed.</p>
+        <p>See the section on
+          <a target="_blank" href="{% url 'renters-assured_tenancies' %}">
+            assured tenants</a> for more information about your rights.</p>
+        <p><strong>Do not give up your home or agree to any changes to your tenancy</strong>
+          without speaking to a specialist housing adviser first. If you do, you may be giving up important rights
+          that you will not get back if you move elsewhere.</p>
+          <div class="bs-callout bs-callout-primary">
+            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <p></p>
+            <p>Get in touch with Represent to see how we can help</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+          </div>
+      </div>
+
+      <div id="a16" class="hidden2 result">
+        <h4>Result: You have a periodic assured shorthold tenancy</h4>
+        <p>This means that your landlord can probably evict you by giving you the correct written notice and then either:</p>
+        <ul>
+          <li>using one or more of the grounds that can be used during the fixed term, or </li>
+          <li>giving you two months' notice at any time - if they do this they do not need to prove a reason.
+            This is sometimes called the 'shorthold ground'. </li>
+        </ul>
+        <p>See the section on
+          <a target="_blank" href="{% url 'renters-assured-shorthold-tenancies' %}">
+            assured shorthold tenancies</a>
+          for more information about your rights.</p>
+      </div>
+
+      <div id="a17" class="hidden2 result">
+        <h4>Result: You are a fixed-term assured shorthold tenant</h4>
+        <p>Your tenancy will continue as long for as the fixed term lasts. This is usually 6 or 12 months. Once the
+          fixed term ends, you will become a periodic assured shorthold tenant, unless your tenancy is renewed for
+          another fixed term. See the section on
+          <a target="_blank"
+             href="{% url 'renters-assured-shorthold-tenancies' %}">
+            assured shorthold tenancies</a> for more information about your rights.</p>
+        <p>Your landlord can only evict you during the fixed term if you break a term of the tenancy agreement - eg if
+          you do not pay the rent or cause nuisance to neighbours. </p>
+
+        <div class="bs-callout bs-callout-primary">
+          <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+          <p></p>
+          <p>Get in touch with Represent to see how we can help</p>
+          <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+        </div>
+      </div>
+
+      <div id="a18" class="hidden2 result">
+        <h4>Result: You are an excluded occupier</h4>
+        <p>If you pay rent to friends or family, this means that they are your landlord. You don't have many rights
+          if they ask you to move out, which may make it difficult for you to enforce any other tenancy rights, such as getting repairs done:</p>
+        <ul>
+          <li>They do not need to prove a legal reason or get a court order in order to evict you. </li>
+          <li>You are entitled to 'reasonable notice' but this doesn't have to be in writing. </li>
+          <li>Read our page on
+            <a target="_blank"
+               href="{% url 'renters-excluded_occupiers' %}">
+              excluded occupiers</a> for more information about your rights.</li>
+        </ul>
+        <p>If you cannot negotiate with your landlord, you may have to consider putting up with things as they are or
+          finding somewhere else to live.</p>
+      </div>
+
+      <div id="a19" class="hidden2 result">
+        <h4>Result: Your rights depend on whose name is on the tenancy agreement</h4>
+        <p>If you live with family or friends but pay rent to a landlord or letting agency, your rights will depend
+          on <a target="_blank"
+                href="{% url 'renters-types-of-renting-agreement' %}">
+            whose name the agreement is in</a>.
+          If your name is not on the tenancy agreement, you will probably
+          be an excluded occupier. This means that you have very little protection from eviction, which will make
+          it difficult to enforce any other rights.</p>
+        <p>If you cannot negotiate with your landlord, you may have to consider putting up with things as they
+          are or finding somewhere else to live. Contact Represent if you are having serious problems with your landlord.</p>
+
+          <div class="bs-callout bs-callout-primary">
+            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <p></p>
+            <p>Get in touch with Represent to see how we can help</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+          </div>
+      </div>
+    </div>
+    <!-- The End - Start Again -->
+
+    <div class="clear"></div>
+    <p><a class="start-again" href="javascript:" id="adviceToolReset">Start again?</a></p>
+
+    </article>
+
+    </div>
+  </div>
+
+    </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
+
+{% block js_files %}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="{% static 'website/js/advice.min.js' %}"></script>
+{% endblock %}

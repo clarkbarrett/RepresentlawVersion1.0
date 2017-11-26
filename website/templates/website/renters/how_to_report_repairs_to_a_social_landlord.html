@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - How to report repairs to a council or housing association landlord{% endblock %}
+{% block description %}Report repairs to your council or housing association landlord as soon as possible.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to report repairs to a council or housing association landlord</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to report repairs to a council or housing association landlord<br>
+                <small>Report repairs to your council or housing association landlord as soon as possible.</small>
+            </h1>
+        </div>
+
+
+    <h2>Emergency situations</h2>
+        <p>Call the gas emergency number 0800 111 999
+            immediately if there's a gas leak or signs of carbon monoxide poisoning.</p>
+        <p>You should contact your landlord as soon as possible if you have any concerns about
+            <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+               title="See also: fire safety">fire safety</a> and
+            <a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+               title="See also: electrical safety">electrical safety</a> in your home.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+    <h2>Check who is responsible for repairs</h2>
+        <p>Your council or housing association landlord is usually
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                responsible for doing repairs in your home</a>.</p>
+        <p>If you caused damage to your home, you should still report it. Your landlord could arrange to fix the damage
+            and then charge you for the cost of the repairs.</p>
+        <p>Some small repairs to your home may be covered by the
+            <a href="{% url 'renters-right_to_repair_for_council_tenants' %}"
+               title="See also: Right to repair for council tenants">right to repair scheme</a> if you are a council tenant.</p>
+
+    <h2>Contact your landlord</h2>
+        <p>Always report repairs to your landlord as soon as you can.</p>
+        <p>Most councils and housing associations allow you to report repairs online.&nbsp;</p>
+        <p class="inline-callout highlight">Use&nbsp;
+            <a href="{{ find_council_url }}" title="Link to: GOV.UK council finder">GOV.UK to find your local council</a></p>
+        <p>You may be able to phone, email or write to your landlord with details of the repair instead.&nbsp;
+            Check your landlord's website or your tenants' handbook for further information.</p>
+        <p>If there's a dispute about repairs not being done, a letter or email helps prove you
+            told your landlord about the problem</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0011/1154189/R5_Request_council_or_housing_association_repairs.docx"
+               title="Download letter R5 request council or HA repairs">report repairs to your landlord</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h3>Reporting a repair on someone's behalf</h3>
+        <p>You can usually report a repair on behalf of a council or housing association tenant.&nbsp;</p>
+        <p>You will need provide:</p>
+        <ul>
+            <li>their name</li>
+            <li>their address</li>
+            <li>information about the repair</li>
+        </ul>
+
+    <h2>Ask how long the repair will take</h2>
+        <p>Your landlord should tell you how they are going to carry out the repair and how long it will take.</p>
+        <p>Reasonable time limits for completing repairs should be approximately:</p>
+        <ul type="disc">
+            <li>24 hours for an emergency repair (burst pipe or total loss of water supply)</li>
+            <li>7 days for an urgent repair (leaking roof or blocked pipe)</li>
+            <li>28 days for a routine repair (faulty window or broken extractor fan)</li>
+        </ul>
+        <p>Check your landlord's website or your tenants' handbook for further information about how long a repair might take.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+   <h2>Allow access</h2>
+        <p>You must allow your landlord and their contractors reasonable access to your home.
+            They will need to assess what repairs are needed and carry out the work.</p>
+        <p>Your landlord should agree a time and date with you to do the repair. They will also tell you how
+            long they will need access.</p>
+        <p>Let your landlord know if you're no longer able to be home at the agreed time. Try to arrange another convenient time.</p>
+
+   <h2>Keep records</h2>
+        <p>Keep a record of your contact with your landlord about repair problems.</p>
+        <p>This can include:</p>
+   <ul>
+        <li>copies of letters and emails you sent to your landlord</li>
+        <li>the dates your landlord visited your home to check the repairs</li>
+       <li>copies of letters and emails from your landlord</li>
+       <li>date and time and details of phone calls between you and your landlord</li>
+   </ul>
+
+    <h2>Make a complaint</h2>
+        <p>If your landlord refuses to do a repair, takes too long or does them badly, you can
+            <a href="{% url 'renters-complain_about_council_or_housing_association_repairs' %}">
+                make a complaint</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

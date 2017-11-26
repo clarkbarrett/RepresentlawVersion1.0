@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Safety standards for furniture and appliances{% endblock %}
+{% block description %}Damaged or broken furniture and appliances can be a health and safety risk. Find out what rules your landlord has to follow.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Safety standards for furniture and appliances</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Safety standards for furniture and appliances<br>
+                <small>Damaged or broken furniture and appliances can be a health and safety risk.
+                        Find out what rules your landlord has to follow.</small>
+            </h1>
+        </div>
+
+    <h2>Responsibility for furniture and appliance safety</h2>
+        <p>Your landlord has a legal duty to make sure that any appliances, furniture and furnishings they provide
+            in your rented home are safe and fit to use.</p>
+        <p>Find out more about
+            <a title="see also: housing standards in private rented homes"
+               href="{% url 'renters-housing_standards_in_private_rented_homes' %}">
+                housing standards in private rented homes</a>.</p>
+        <p>Find out more about
+            <a title="what counts as a decent home"
+               href="{% url 'renters-what_counts_as_a_decent_home' %}">
+                housing standards in council and housing association homes</a>.</p>
+
+    <h2>Furniture fire safety rules</h2>
+        <p>Furniture in your home should be fire resistant.</p>
+        <p>If your furniture was made after March 1st 1990, it must have a label to show that it meets fire
+            safety standards. This applies to both new and second-hand furniture.</p>
+        <p>This includes:</p>
+
+        <ul>
+            <li>sofas</li>
+            <li>armchairs</li>
+            <li>sofa beds</li>
+            <li>nursery furniture</li>
+            <li>mattresses</li>
+            <li>pillows and cushions</li>
+        </ul>
+        <p>Landlords can be prosecuted if the furniture they supply doesn't meet legal standards.</p>
+        <p>You are responsible for the condition of your own furniture.</p>
+
+
+    <h2>Smoke alarms and carbon monoxide detectors</h2>
+        <p>From 1st October 2015, private landlords must make sure smoke alarms are fitted on each floor in all
+            their rented properties. They must make sure that the smoke alarms provided are in working order
+            at the start of your tenancy and when the alarm is installed.</p>
+        <p>Private landlords must also instal a carbon monoxide detector in rooms that have a coal
+            fire or a wood burning stove.</p>
+        <p class="inline-callout external">Find out
+            <a href="{{ nhs_carbon_monoxide_poisoning_url }}" target="_blank" title="Link to NHS: Carbon monoxide poisoning ">
+                more from the NHS about carbon monoxide poisoning</a>.</p>
+
+    <h2>Gas and electrical appliances</h2>
+        <p>Your landlord is responsible for the
+            <a title="see also: gas safety in your home"
+               href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                safety of all gas appliances</a> they provide.</p>
+        <p>Your landlord has a legal duty to make sure that their
+            <a title="see also: electrical safety in your home"
+               href="{% url 'renters-electrical_safety_in_rented_homes' %}">
+                electrical appliances are maintained in a safe condition</a> throughout the tenancy.</p>
+        <p>You are responsible for the safety of any appliances you bring into your home.</p>
+
+    <h2>Faulty and broken appliances and furniture</h2>
+        <p>Report repair problems to your landlord if any items in your home become damaged, dangerous or unusable.
+            This can happen through ordinary wear and tear.</p>
+        <p>Don't use any furniture or appliance if you think it's unsafe.</p>
+        <p class="inline-callout internal">
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="see also: How to report repairs to a private landlord">
+                Find out more about reporting repairs to a private landlord</a>.</p>
+        <p class="inline-callout internal">
+            <a href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}"
+               title="see also: How to report repairs to a social landlord">
+                Find out more about reporting repairs to a social landlord</a>.</p>
+        <p>Your landlord should arrange to fix or replace broken or damaged items if the damage wasn't your fault.
+            Your landlord isn't allowed to charge you for this.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="responsibility for repairs"
+               href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                responsibility for repairs</a>.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="See also: Damage or wear and tear?"
+               href="{% url 'renters-damage_or_wear_and_tear' %}">
+                what happens if you damage a rented home</a>.</p>
+
+    <h2>Complaints</h2>
+
+    <h3>Complain to trading standards</h3>
+        <p>You can complain to your local trading standards office if your landlord won't fix faulty appliances
+            and furniture in your home.</p>
+        <p>You can complain about:</p>
+
+        <ul>
+            <li>faulty gas appliances</li>
+            <li>furniture that doesn't have a label saying it meets fire safety regulations</li>
+            <li>dangerous wiring on electrical equipment</li>
+        </ul>
+        <p>Trading standards can take legal action against your landlord.</p>
+        <p class="inline-callout external">To complain to trading standards, contact the
+            Citizens Advice consumer helpline.</p>
+
+    <h3>Complain to environmental health</h3>
+        <p>You can complain to the council if conditions in your home are dangerous or a risk to health.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                complaining to the environmental health department of your local council.</a></p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

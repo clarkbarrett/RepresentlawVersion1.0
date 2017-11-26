@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - What to do if your landlord won’t do repairs{% endblock %}
+{% block description %}Options to consider and steps to take to get repairs done if your private landlord won't do repairs.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">What to do if your landlord won’t do repairs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>What to do if your landlord won’t do repairs<br>
+                <small>Options to consider and steps to take to get repairs done if your private landlord won't do repairs.</small>
+            </h1>
+        </div>
+
+    <h2>Make sure you report repairs</h2>
+        <p>There are various options for action to take against a landlord who doesn't do
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: landlord and tenant responsibilities for repair">repairs they are responsible for</a>.</p>
+        <p>Before you consider further action, make sure you have reported the repair problems to your landlord and given
+            them a reasonable time to start and finish the work.</p>
+        <p>Landlords are usually only responsible for doing repairs they've been told about.</p>
+        <p class="inline-callout internal">Find out&nbsp;
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="see also; report repairs">how to report repairs to a private landlord</a>.</p>
+        <p>You can report repair problems to your landlord's letting agent if they manage repairs on behalf of your landlord.</p>
+        <p>If you don't have any contact details for your landlord,
+            <a href="{% url 'renters-how_to_find_your_landlord' %}"
+               title="See also: how to find your landlord">find out how to find your landlord</a>.</p>
+
+    <h2>Negotiate with your landlord or letting agent</h2>
+        <p>It's often easier to get things done through negotiation.</p>
+        <p>You could send a reminder letter or phone your landlord or letting agent to check if
+            they received your original request for repairs.</p>
+        <p>If a letting agent manages repairs on behalf of your landlord but isn't dealing with the repairs,
+            you can use their complaints procedure. This may prompt them to arrange the repairs.</p>
+        <p>You can complain to their letting agent redress scheme if you don't get a satisfactory response
+            or the letting agents don't reply. You can still pursue other options.</p>
+        <p class="inline-callout internal">Find out more about&nbsp;
+            <a href="{% url 'renters-letting_agent_redress_schemes' %}"
+               title="see also: letting agent redress schemes">letting agent redress schemes</a>.</p>
+
+    <h2>Complain to environmental health</h2>
+        <p>If your landlord won't do repairs and this affects your health and safety in your home, you
+            can ask your local council to visit to inspect the condition of your home.</p>
+        <p>The council should be able to offer help and advice and may tell the landlord to do repairs.</p>
+        <p>You usually need to contact the environmental health team or the private renting team at your council.</p>
+        <p>Find out more about&nbsp;
+            <a title="See also: Complain to environmental health about rented housing"
+               href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}">
+                how environmental health can help with repair problems in your home</a>.</p>
+        <p>You can tell your landlord you're going to ask the council to inspect your home. It may encourage your
+            landlord to do the work.</p>
+        <p class="inline-callout download">Use Represent's template letter to
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0009/1154187/R3_Third_request_for_repair_and_give_notice_of_council_inspection.docx"
+               title="download letter R3 Third request for repairs  and notice of council inspection">
+                write to your landlord to say you'll contact the council if they don't do repairs</a>.</p>
+
+    <h2>Consider taking legal action</h2>
+        <p>You can take legal action for a court to order your landlord to
+            <a href="{% url 'renters-legal_action_if_your_landlord_wont_do_repairs' %}"
+               title="see also: Taking legal action over disrepair">carry out the repair work needed</a>.</p
+        <p>You can also ask a court to order your landlord to pay you compensation. Compensation can cover
+            inconvenience and damage to your belongings or your health.</p>
+        <p class="inline-callout internal">Find out about
+            <a href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}"
+               title="see also: Housing disrepair: check if you can claim compensation">
+                court action for compensation for disrepair</a>.</p>
+        <p>Get advice about taking legal action.</p>
+
+
+<div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    <h2>Get advice about deducting repairs costs from rent</h2>
+        <p>You don't have the right to withhold your rent if your landlord refuses to do repairs.</p>
+        <p class="inline-callout internal">If you don't pay rent, the landlord
+            <a title="See also: Eviction of assured shorthold tenants"
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                could take steps to evict you</a>.</p>
+        <p>But if the landlord has failed to do repairs, you can arrange for the repairs to be done and then
+            deduct the cost from your rent.</p>
+        <p>Find out
+            <a href="{% url 'renters-doing_the_repairs_if_your_landlord_wont' %}"
+               title="see also: doing the repairs if your landlord won't">more about doing repairs if your landlord won't</a>.</p>
+        <p>You must follow the correct legal procedure to do this. If you don't you could be evicted and still have to repay all the rent owed.</p>
+        <p>Get advice before you decide to do this.</p>
+
+
+    <h2>Keep records about the dispute</h2>
+        <p>Keep a record of the repairs that your home needs.</p>
+        <p>This could include:</p>
+        <ul>
+            <li>photographs of what needs repairing</li>
+            <li>receipts for any items you've had to buy to replace damaged items, for example furniture or curtains</li>
+            <li>doctors' notes, if the disrepair is bad for your health or the health of someone else in your household</li>
+            <li>other professional reports or bills if you have them, for example if you've had to pay for pest control
+                or get a surveyor to check for damp</li>
+        </ul><p>Keep copies of all letters and emails you send to your landlord about repairs.</p>
+        <p class="advice-highlight normal-advice">Keeping records helps if you need to make a complaint.</p>
+
+   <h2>Get advice about eviction</h2>
+        <p>Get advice if you're worried about being
+            <a href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}"
+               title="see also: Revenge eviction if you ask for repairs">
+                evicted if you ask for repairs</a>.</p>
+
+
+<div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Repossession by a landlord's lender{% endblock %}
+{% block description %}Find out what happens if your landlord doesn't pay the mortgage and your rented home is repossessed.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Repossession by a landlord's lender</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Repossession by a landlord's lender<br>
+                <small>Find out what happens if your landlord doesn't pay the mortgage and your rented home is repossessed.</small>
+            </h1>
+        </div>
+
+    <h2>Repossession if your landlord doesn't pay the mortgage</h2>
+        <p>If your landlord hasn't paid the mortgage on a property they rent to you, their mortgage
+            lender can repossess it. You could be evicted.</p>
+        <p>In some cases, the mortgage lender becomes your landlord. This happens if your tenancy is a binding tenancy.</p>
+        <p>In most cases, the mortgage lender won't become your landlord and you'll have to leave.
+            This happens if you don't have a binding tenancy.</p>
+        <p>After the court grants a repossession order, the lender can apply to the court for bailiffs to evict you.
+            The court could delay the eviction for up to two months if asked.</p>
+        <p>It's important for you to go to the repossession hearing. You can make sure the judge knows that you live
+            in the property and applies the correct rules to you.</p>
+
+    <h2>Binding tenancies</h2>
+        <p>You might have a binding tenancy if:</p>
+
+        <ul>
+            <li>your landlord had a buy-to-let mortgage</li>
+            <li>the lender gave permission for the landlord to grant the tenancy</li>
+            <li>the landlord's lender has recognised the tenancy in some way &ndash; for example by asking you to pay
+                rent direct to them or by accepting rent from you</li>
+            <li>you were already a tenant in the property when the mortgage was granted to your landlord</li>
+            <li>the property was sold to the current landlord after your tenancy started</li>
+        </ul>
+        <p>Ask your landlord or the lender when the mortgage was granted.</p>
+        <p>Represent offers a landlord and contact checking service.
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Landlord and tenancy information check service</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent today and ask for a landlord and tenancy check</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">COntact Represent</a></p>
+
+                </div>
+
+    <h2>Eviction if a mortgage lender becomes your landlord</h2>
+        <p>After a court orders the repossession of a rented property, a&nbsp;mortgage lender becomes your landlord
+            if your tenancy is binding on them.</p>
+        <p>The order for repossession doesn't affect your rights as a tenant if you have a binding tenancy.
+            You can continue to live in the property.</p>
+        <p>If they want to evict you, the mortgage lender must follow the rules for the type of tenancy you have.
+            They must make another application to the court to do this.</p>
+        <p>Find out about eviction from:</p>
+        <ul>
+            <li>
+                <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+                   title="See also: Eviction of assured shorthold tenants">an assured shorthold tenancy</a></li>
+            <li>
+                <a href="{% url 'renters-eviction_of_assured_tenants' %}"
+                   title="See also: Eviction of assured tenants">an assured tenancy</a></li>
+            <li>
+                <a href="{% url 'renters-eviction_of_regulated_tenants' %}"
+                   title="See also: Eviction of regulated tenants">a regulated tenancy</a></li>
+        </ul>
+    <h2>If a mortgage lender doesn't become your landlord</h2>
+        <p>After a court makes a repossession order,&nbsp;your landlord's&nbsp;mortgage lender won't
+            become your landlord&nbsp;if your tenancy isn't a binding tenancy.</p>
+        <p>The mortgage lender can apply to the court for any tenants to be evicted by bailiffs. The application
+            can only be made after the court makes a repossession order.</p>
+
+    <h3>Asking for a delay</h3>
+        <p>You can apply to the court for the eviction by bailiffs to be postponed for up to two
+            months if you are a private tenant with:</p>
+        <ul>
+            <li>an assured shorthold tenancy</li>
+            <li>an assured tenancy</li>
+            <li>a pre-1989 regulated tenancy</li>
+        </ul>
+        <p>You won't be able to ask for a delay if you:</p>
+        <ul>
+            <li>
+                live in accommodation provided by your employer</li>
+            <li>are a
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also: lodgers">lodger</a> (or other type of&nbsp;
+                <a title="See also: excluded occupiers"
+                   href="{% url 'renters-excluded_occupiers' %}">
+                    excluded occupier</a>)</li>
+            <li>live in the same building as your landlord (that isn't a purpose-built block of flats)</li>
+            <li>don't pay any rent</li>
+        </ul>
+
+    <h3>Negotiating with the lender</h3>
+        <p>You could ask the lender to take over as landlord and give you more time to find another place to live.</p>
+        <p>If you have a fixed term tenancy, they may be willing to allow you to stay until the end of the fixed term.
+            They are not legally required to do this.</p>
+
+    <h2>How you'll know about a repossession hearing</h2>
+        <p>To repossess the property the mortgage lender has to apply for a court hearing and then get a court order.</p>
+        <p>Before they do this, the lender should try to find out if anyone is living there.</p>
+        <p>They must send a notice to the property before the repossession hearing telling the occupiers the date of the hearing.</p>
+        <p>They have to do this within five days of being told the date of the hearing by the court.&nbsp;The letter must be&nbsp;
+            addressed to 'the tenant or the occupier'.</p>
+        <p>Always open post addressed to 'the occupiers'. Don't assume that it's junk mail.</p>
+        <p class="inline-callout">Find out more about
+            <a href="{% url 'renters-what_happens_at_a_repossession_hearing' %}"
+               title="see also: what happens at a repossession hearing">what happens at a repossession hearing</a>.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

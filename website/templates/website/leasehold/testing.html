@@ -1,0 +1,192 @@
+{% load staticfiles %}
+
+{% block title %}About Represent{% endblock %}
+{% block description %}About{% endblock %}
+{% block author %}Represent{% endblock %}
+
+
+{% block head %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/ie10-viewport-bug-workaround.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'website/style.css' %}" />
+    <!--JS-->
+    <script type="text/javascript" src="{% static 'website/js/ie-emulation-modes-warning.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+{% endblock %}
+
+{% block body %}
+<!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-inverse" style="font-weight: bold; background-color: #000000">
+            <div class="container-fluid">
+              <div class="navbar-header">
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+
+
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+
+                    <li class="dropdown">
+                        <!--<a href="/blog" class="dropdown-toggle" data-toggle="dropdown">Blog</a>-->
+                            <a data-toggle="dropdown" href="#home">Blog</a></li>
+                    </li>
+
+
+                    <div class="pos-f-t">
+                      <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-inverse p-4">
+                          <h4 class="text-white">Collapsed content</h4>
+                          <span class="text-muted">Toggleable via the navbar brand.</span>
+                        </div>
+                      </div>
+                      <nav class="navbar navbar-inverse bg-inverse">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </nav>
+                    </div>
+
+
+
+
+
+
+<div id="NavTab1" class="container">
+<!--<ul  class="nav navbar-pills">-->
+    <ul class="nav navbar-nav">
+			<!--<li class="active">-->
+        <li>
+                <a  href="#1b" data-toggle="tab">Overview</a>
+			</li>
+			<li><a href="#2b" data-toggle="tab">Using nav-pills</a>
+			</li>
+			<li><a href="#3b" data-toggle="tab">Applying clearfix</a>
+			</li>
+  		<li><a href="#4a" data-toggle="tab">Background color</a>
+			</li>
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane" id="1b">
+          <h3>Same as example 1 but we have now styled the tab's corner</h3>
+				</div>
+				<div class="tab-pane" id="2b">
+          <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+				</div>
+        <div class="tab-pane" id="3b">
+          <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+				</div>
+          <div class="tab-pane" id="4b">
+          <h3>We use css to change the background color of the content to be equal to the tab</h3>
+				</div>
+			</div>
+  </div>
+
+
+
+
+
+
+
+
+
+                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="/contact">Contact</a></li>
+                  <li class="dropdown">
+                        <a href="/blog" class="dropdown-toggle" data-toggle="tab">Blog</a>
+                            <ul class="dropdown-menu" style="background:black; width:800px;">
+
+                                <div class="card" style="max-width: 40rem;">
+                                    <div class="card-header">
+                                    <ul class="nav nav-pills card-header-pills">
+                                    <li class="nav-item">
+                                    <a class="nav-link active" href="#">Ugg</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#">Moccasins</a>
+                                    </li>
+                                    <li class="nav-item">
+                                    <a class="nav-link disabled" href="#">Go Go</a>
+                                    </li>
+                                    </ul>
+                                    </div>
+                                    <div class="card-body">
+                                    <h4 class="card-title">Ugg Boots</h4>
+                                    <p class="card-text">Best ugg boots on the planet. Free shipping, 24/7 customer service.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                    By Uuuuggghhh.com
+                                    </div>
+                                 </div>
+                                <li><a href="/blog">Blog</a></li>
+            	                <li><a href="https://www.nationalrentersalliance.co.uk/faqs">English</a></li>
+            	                <li><a href="https://www.nationalrentersalliance.co.uk/faqs-spanish">Español</a></li>
+                                <li><a href="https://www.nationalrentersalliance.co.uk/faqs-german">Deutsch</a></li>
+                            </ul>
+                  </li>
+                </ul>
+                    </div>
+
+
+
+
+                   <!--TODO Add search functionality to form-->
+                    <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="{% url 'view_profile' %}">My Profile</a></li>
+                        <li><a href="{% url 'change_password' %}">Change Password</a></li>
+                        <li class="active"><a href="{% url 'logout' %}">logout <span class="sr-only">(current)</span></a></li>
+                    </ul>
+
+            </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+
+    <div class="container-fluid">
+        <div class="col-md-6 col-md-offset-2">
+        <h1>Welcome to Represent Law</h1>
+
+        <h2>About the National Renters Alliance</h2>
+        <p> The National Renters Alliance was established to help renters with tenancy problems caused by unscrupulous
+          landlords and letting agents. This includes help recovering money unfairly taken from deposits, negotiating
+          with landlords about housing repairs and other common renting problems.
+        </p>
+
+      <p>With the intensification of the housing crisis which is decades in the making, more and more people are
+        forced to rent rather than buy their own homes. This situation is set to get worse as new house building has
+        massively failed to keep pace with increases in the UK's population and the movement of young people to large
+        cities. The expansion of buy-to-let landlords and rampant property speculation has pushed house prices beyond
+        the reach of most people under the age of thirty-five. This situation is increasingly being exploited by bad
+        landlords and letting agents who often invent spurious reasons to take money from deposits or avoid their
+        repairing responsibilities.
+      </p>
+
+      <p> The National Renters Alliance is here to help you, whether it be getting your deposit back if it was unfairly
+        taken from you, to forcing landlords and letting agents to do repairs which they are eligible for which you pay
+        them to do through your rent. If you are renting, join us today and see how the National Renters Alliance can
+        help you to take the stress out of renting.
+      </p>
+            </div>
+    </div>
+{% endblock %}
+
+
+

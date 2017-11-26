@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Eviction of assured shorthold tenants<br>
+                    <small>Landlords can evict an assured shorthold tenant after giving two months' notice using a
+                        Section 21 notice and getting a court order. Most private rented tenants are assured shorthold
+                        tenants.</small>
+                </h1>
+            </div>
+
+        <h2>How private landlords start the eviction process</h2>
+            <p>A private landlord must follow rules for an assured shorthold tenant to be lawfully evicted.</p>
+            <p>There are two ways a landlord can start the eviction process, using a:</p>
+        <ul>
+            <li>section 21 notice &ndash; for eviction after a fixed term has ended</li>
+            <li>section 8 notice &ndash; for eviction at any time, including during any fixed term</li>
+        </ul>
+        <p>Landlords usually use the section 21 procedureto evict tenants. You get at least 2 months' notice to leave.</p>
+        <p>Landlords may use the section 8 procedure if you have rent arrears or have broken the terms of
+            your tenancy agreement (for example if you have damaged the property).</p>
+
+        <h2>If you don't leave</h2>
+        <p>Your landlord has to apply to the court for a possession order if you don't leave by the date
+            set out in the notice.</p>
+        <p>The court decides if you should be evicted. A court won't order you to leave if the notice
+            isn't valid.</p><p>For Section 21, there isn't always a hearing. The court can use the&nbsp;
+        accelerated possession procedure
+        </a>
+            to&nbsp;make a decision without a hearing.&nbsp;This speeds up the eviction process when tenants
+            don't send a defence form to the court.</p>
+        <p>If the court decides you should leave, your landlord can
+        apply to the court for bailiffs to evict you.</p>
+        <p class="inline-callout">It's against the law for your landlord to try to
+            <a title="see also: what is illegal eviction"
+               href="{% url 'renters-what_is_illegal_eviction' %}">
+                evict you themselves</a> or
+            <a title="see also: harassment by private landlords "
+               href="{% url 'renters-harassment_by_a_private_landlord' %}">
+                harass you</a>.</p>
+
+        <h2>How to defend possession proceedings</h2>
+        <p>You can defend the case at a court hearing&nbsp;if the section 21 notice wasn't given to you at the
+            right time or isn't legally valid.</p>
+        <p>You'll need to return a defence form to the court and explain
+            your reasons. You'll usually get the chance to explain your case at a court hearing.</p>
+        <p>If your landlord correctly serves you with a valid section 21 notice, you won't be able to
+            successfully challenge the eviction. But you can ask the judge to delay eviction for up to 42
+            days if you can show you would be caused exceptional hardship.</p>
+
+
+     <h2>Section 21 notices</h2>
+        <h3>Tenancies starting before 1 October 2015</h3>
+        <p>A section 21 doesn't have to be on a special form if your tenancy started before 1 October
+            2015 and you haven't signed a renewal contract after this date.</p>
+        <p>The&nbsp;notice&nbsp;must be in writing and give a minimum of two months' notice.</p>
+        <p>If you have a periodic tenancy (one that runs for example from month to month) and it never had
+            a fixed term, the notice must also:</p>
+        <ul>
+            <li>say it's being issued under section 21 of the Housing Act 1988</li>
+            <li>end on the last day of a tenancy period (this is usually the day before your rent is due)</li>
+        </ul>
+
+        <h3>Tenancies starting or renewed from 1 October 2015</h3>
+            <p>For most tenancies starting or renewed from 1 October 2015&nbsp;your landlord must use
+                a special form to give you at least two months' notice in writing.</p>
+            <p>Different rules apply for some tenancies (for example when you pay your rent quarterly).
+                In these cases, the notice period must cover at least one rental period and usually has to
+                end the day before the rent is next due.</p>
+
+        <h2>Section 21 notices: when they can be served</h2>
+
+        <h3>Tenancies starting before 1 October 2015</h3>
+            <p>If your tenancy started before 1 October 2015, your landlord can serve a section 21 notice at any
+                time during the tenancy. The notice must expire on or after the end of the fixed term.</p>
+            <p>Landlords routinely give you a section 21 notice at the start of a tenancy.</p>
+
+        <h3>Tenancies starting or renewed from 1 October 2015</h3>
+            <p>Your landlord must wait at least 4 months from the start of your original tenancy before they
+                give you a section 21 notice.</p>
+            <p>If you sign a new contract to renew your tenancy, your landlord doesn't have to wait another
+                four months, but can give you a section 21 notice at any time.</p>
+
+        <h2>Section 21 notices: when they are invalid</h2>
+
+            <p>If the section 21 notice isn't valid, the court won't make an order for you to be evicted.</p>
+            <p>When your landlord starts court proceedings, you'll need to reply to the court to let them know
+                the notice is invalid. The court should arrange a hearing where you can put your case.</p>
+
+        <h3>If you sign a new fixed-term tenancy</h3>
+
+            <p>A section 21 notice isn't valid if your landlord gives you a new fixed-term tenancy after they served
+                the notice.</p>
+
+        <h3>If your landlord breaks tenancy deposit rules</h3>
+            <p>In many cases, a section 21 notice won't be valid if you paid a
+                <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                   title="See also: Tenancy deposit protection scheme rules">tenancy deposit</a>
+                to your landlord or their letting agent and any of these apply:</p>
+            <ul>
+                <li>it wasn't protected in a&nbsp;government-approved tenancy deposit scheme</li>
+                <li>the deposit was protected more than 30 days after you paid it</li>
+                <li>your landlord hasn't given you required information about the tenancy deposit scheme used</li>
+            </ul>
+            <p>If your deposit wasn't protected or was protected late, your landlord has to&nbsp;return your deposit
+                to you in full before giving you a new section 21 notice.</p>
+
+        <p>You may also be able to claim compensation from your landlord if deposit protection rules were broken.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+
+        <h3>If you complained about repairs or conditions</h3>
+
+            <p>These extra rules apply only if your tenancy starts or you sign a new contract to renew your tenancy
+                on or after 1 October 2015.</p>
+            <p>A section 21 notice won't be valid if all these apply:</p>
+            <ul>
+                <li>the notice was served after you complained in writing to your landlord about repairs</li>
+                <li>your landlord didn't deal with the issues</li>
+                <li>you&nbsp;reported them to the council</li>
+                <li>the council served your landlord with an improvement notice or a notice that they would do emergency works</li>
+            </ul>
+            <p>A section 21 notice won't be valid if it's given to you within 6 months of the council serving your
+                landlord with either:</p>
+        <ul>
+            <li>an improvement notice</li>
+            <li>a notice saying the council will do emergency repairs</li>
+        </ul>
+        <p>Find out more about the
+            <a title="Eviction if you complain about repairs"
+               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                rules for eviction if you complain about repairs
+            </a>.</p>
+
+        <h3>If your landlord fails to give you information</h3>
+        <p>These extra rules apply only if your tenancy starts or you sign a new contract to renew your tenancy
+            on or after 1 October 2015.</p>
+        <p>The section 21 notice won't be valid if your landlord didn't
+        give you a copy of all these documents:</p>
+
+        <ul>
+            <li>an energy performance certificate</li>
+            <li>a current
+                <a title="see also: gas safety checks in rented homes"
+                   href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                    gas safety record</a></li>
+            <li>the 'How to rent'
+                guide produced by the government (a paper copy is required unless the you agree to accept
+                notices and correspondence by email)
+            </li>
+        </ul>
+        <p>From 1 October 2015, if you sign up to a replacement tenancy or stay beyond your tenancy's fixed
+            term and the guide's been updated, your landlord has to give you another copy.</p>
+
+        <h3>If you live in a shared house</h3>
+            <p>A section 21 notice won't be valid if you live in a
+                <a title="see also: tenancy agreements in shared homes"
+                   href="{% url 'tenancy_agreements_in_shared_homes' %}">
+                    house in multiple occupation
+                </a> (HMO) that should be licensed by the council but isn't.
+                Many houses with bedsits and bed and breakfasts are HMOs.</p><h2>Section 21: when a landlord can
+            apply to court</h2>
+
+        <p>Your landlord can only apply to the court after the notice period in the section 21 notice has
+            expired and after&nbsp;any fixed term has ended.</p>
+        <p>There's no time limit for making the application if your tenancy started before 1 October 2015 and
+            you haven't signed a renewal contract.&nbsp;The section 21 notice does not have an expiry date.</p>
+        <p>For a tenancy that starts or is renewed on or after 1 October 2015, in most cases, your landlord must
+            <a title="see also: possession court orders"
+               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
+                apply to court for a possession order
+            </a> within 6 months of giving you a section 21 notice.</p>
+
+
+        <h2>Section 21: when a court hearing isn't required</h2>
+            <p>Your landlord can use the accelerated possession procedure
+                for a court order to evict you without the need to hold a court hearing. This speeds up
+                the eviction process.</p>
+
+            <p>Your landlord can't use this procedure to claim for unpaid rent.</p>
+            <p>The court won't let your landlord use this procedure if&nbsp;you send in a defence form that:</p>
+
+            <ul>
+                <li>shows the section 21 notice isn't valid</li>
+                <li>asks to stay longer than 14 days after the court hearing</li>
+            </ul>
+
+            <p>The court will instead arrange a hearing so the judge can decide if you should be evicted.</p>
+
+
+        <h2>Section 8 eviction</h2>
+            <p>Your private landlord can use the section 8 process to take you to court to evict you at any
+                time during your tenancy, including during a fixed term.</p>
+            <p>It's used for example if you:</p>
+
+            <ul>
+                <li>have rent arrears</li>
+                <li>are involved in criminal or antisocial behaviour</li>
+                <li>break other terms of your tenancy agreement like damaging the property</li>
+            </ul>
+
+            <p>Landlords usually prefer to use the simpler section 21 eviction procedure if they can.</p>
+            <p>Your landlord must prove to the court that they have 'grounds for possession'. These are&nbsp;legal
+                reasons to evict you.</p>
+            <p>Grounds for possession are split into two groups:</p>
+
+            <ul>
+                <li>mandatory grounds: if proven, the court has to order you to leave</li>
+                <li>discretionary grounds: the court can decide if you have to leave</li>
+            </ul>
+
+        <h3>Section 8: mandatory grounds</h3>
+
+            <p>If your landlord proves a mandatory ground, the court must order you to leave, usually in 14 days.</p>
+            <p>Ground 8 is the most commonly used mandatory ground. It's used if you have rent arrears of at least:</p>
+
+            <ul>
+                <li>2 months if you pay rent monthly</li>
+                <li>8 weeks if you pay rent weekly</li>
+            </ul>
+
+            <p>You must have rent arrears on both the following dates:</p>
+
+            <ul>
+                <li>when your landlord gives you notice</li>
+                <li>when the case is heard in court</li>
+            </ul>
+
+        <h3>Section 8: discretionary grounds</h3>
+            <p>Discretionary grounds include if you:</p>
+            <ul>
+                <li>are regularly late paying the rent</li>
+                <li>break the terms of your tenancy &ndash; for example by being a nuisance to your neighbours</li>
+                <li>damage your home or communal areas</li>
+            </ul>
+            <p>Your landlord has to prove to the court that a discretionary ground applies and the court decides if
+                it's reasonable to order you to be evicted.</p>
+
+        <h2>Section 8 notice</h2>
+
+            <p>Your landlord must serve a written notice seeking possession. This must be in a special form and
+                give the grounds for eviction that are being used.</p>
+            <p>The notice period will be either 14 days, four weeks or two months, depending on why your
+                landlord is trying to evict you.</p>
+            <p>After the notice period ends, your landlord can
+                <a title="see also: possession court orders"
+                   href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
+                    apply to the court for a possession order
+                </a>. The notice is valid for 1 year after the date it was served on you.</p>
+
+        <h2>Section 8: defending possession proceedings</h2>
+            <p>You may be able to challenge a section 8 eviction if:</p>
+
+            <ul>
+                <li>the notice isn't valid</li>
+                <li>you can prove the amount of rent arrears is wrong</li>
+                <li>you have evidence that disproves your landlord's case</li>
+                <li>you have a counterclaim for disrepair</li>
+            </ul>
+                <p>If you go to court and your challenge is successful, the court could decide to:</p>
+            <ul>
+                <li>make a suspended possession order that allows you to stay so long as you repay the rent arrears</li>
+                <li>dismiss the landlord's case against you</li>
+            </ul>
+                <p>If you can't challenge the eviction, you can ask the court to delay it for up to 42 days if
+                    eviction would cause you exceptional hardship.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

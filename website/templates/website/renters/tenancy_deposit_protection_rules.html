@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Tenancy deposit protection rules{% endblock %}
+{% block description %}Find out what your landlord or their letting agent must do to comply with tenancy deposit protection rules{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Tenancy deposit protection rules</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Tenancy deposit protection rules<br>
+                <small>Find out what your landlord or their letting agent must do to comply with
+                        tenancy deposit protection rules</small>
+            </h1>
+        </div>
+
+    <h2>Who tenancy deposit protection rules help</h2>
+        <p>Landlords who rent a property to tenants with an
+            <a title="see also: assured shorthold tenancies"
+               href="{% url 'renters-assured-shorthold-tenancies' %}">
+                assured shorthold tenancy
+            </a>
+            have to follow tenancy deposit protection rules.&nbsp;Most private tenants have this type of tenancy.&nbsp;</p>
+        <p>If you pay your tenancy deposit to a&nbsp;
+            <a title="See also: Using a letting agent to find and rent a home"
+               href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}">
+                letting agent
+            </a>,
+            your landlord may ask them to protect it on their behalf. Letting agents have to follow the same
+            rules as landlords.&nbsp;</p>
+        <p>Your deposit does not have to be protected with a tenancy deposit protection scheme if you:</p>
+        <ul>
+            <li>are a lodger (you&nbsp;live in the same house as your landlord)</li>
+            <li>stay in student halls of residence</li>
+            <li>have an
+                <a title="see also: assured tenancies"
+                   href="{% url 'renters-assured_tenancies' %}">
+                    assured
+                </a> tenancy or&nbsp;a&nbsp;
+                <a title="see also: pre-15 January 1989 regulated tenancy"
+                   href="{% url 'renters-regulated_tenancies' %}">
+                    pre-15 January 1989 regulated tenancy</a></li>
+        </ul>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h2>How landlords must protect your tenancy deposit</h2>
+        <p>Tenancy deposit protection rules say your landlord must both:</p>
+        <ul>
+            <li>protect your deposit with a tenancy deposit protection scheme</li>
+            <li>provide you with information about the scheme used</li>
+        </ul>
+        <p>There are 3 scheme providers:</p>
+        <p>
+            <a href="https://www.depositprotection.com/is-my-deposit-protected"
+               title="Link to Deposit Protection Service (DPS)" target="_blank">
+                Deposit Protection Service (DPS)
+            </a></p>
+        <p>
+            <a href="https://www.thedisputeservice.co.uk/is-my-deposit-protected.html" title="Link to Dispute service (TDS)"
+               target="_blank">Dispute service (TDS)</a></p>
+        <p>
+            <a href="https://www.mydeposits.co.uk/tenants/deposit-checker/" title="Link to mydeposits" target="_blank">mydeposits</a></p>
+        <p>Your landlord can either pay your money into the provider's custodial tenancy deposit
+            scheme or can pay the scheme to insure your money.</p>
+        <p>Your landlord has to protect your deposit for the whole time you remain a tenant at the
+            same property.&nbsp;</p>
+        <p>If your landlord uses a tenancy deposit protection insurance scheme, they'll have to
+            renew the insurance if they renew your tenancy or if you stay on after the end of your tenancy's
+            fixed term.&nbsp;</p>
+        <p>If your landlord pays your deposit into a tenancy deposit custodial scheme,
+            the deposit continues to be protected so long as it remains there.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h2>What information must be provided</h2>
+        <p>Your landlord or agent must give you the following written information:</p>
+        <ul>
+            <li>amount of deposit paid and the property address it relates to</li>
+            <li>contact details of your landlord or agent and deposit protection scheme used</li>
+            <li>scheme leaflet explaining the rules&nbsp;&nbsp;</li>
+            <li>how to get your deposit back and when deductions can be made</li>
+            <li>what happens if you can't agree or if your landlord or agent doesn't respond</li>
+        </ul>
+        <p>This information must be signed by the landlord or agent that you paid your deposit to.</p>
+        <p class="inline-highlight">The deposit scheme provider might give you a repayment ID.&nbsp;
+            Keep this safe and do not share it with anyone. You'll need it to get your deposit back when you leave.</p>
+
+        <h2>Time limits for tenancy deposits to be protected</h2>
+        <p>Your landlord will have broken tenancy deposit protection rules if they fail to both protect your
+            deposit in a&nbsp;tenancy deposit protection scheme and provide you with prescribed information
+            within these time-limits.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h3>Deposits paid on or after 6 April 2012</h3>
+        <p>Your landlord has 30 days to protect your deposit after it's paid.&nbsp;</p>
+
+    <h3>Deposits paid from 6 April 2007 to 5 April 2012</h3>
+        <p>Your landlord had until <strong>6 May 2012</strong> to protect your deposit if you paid it on or
+            after&nbsp;6 April 2007 but before 6 April 2012.</p>
+
+    <h3>Deposits paid before 6 April 2007&nbsp;</h3>
+        <p>Your landlord had until <strong>23 June 2015</strong> to protect your deposit if all these apply:</p>
+
+     <ul>
+         <li>you paid a tenancy deposit before 6 April 2007</li>
+         <li>your tenancy had a fixed term that ended on or after 6 April 2007</li>
+         <li>you haven't signed up to a new fixed term agreement since</li>
+     </ul>
+        <p>Your landlord had until 6 May 2012 to protect your tenancy deposit if you paid it before
+            6 April 2007 and&nbsp;your tenancy was first renewed before 6 April 2012.</p>
+        <p>Your landlord had 30 days from the date your tenancy was renewed to protect your
+            tenancy deposit if&nbsp;you paid it before 6 April 2007 and&nbsp;your tenancy was first renewed on
+            or after 6 April 2012.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h2>Penalties if your landlord breaks tenancy deposit rules</h2>
+        <p>Your landlord faces penalties if they don't protect your tenancy deposit as required by tenancy
+            deposit protection rules.&nbsp;</p>
+        <p class="inline-highlight">Your landlord will
+            <a title="See also: tenancy deposit compensation rules"
+               href="{% url 'deposit-protection-claims' %}">
+                have to&nbsp;pay you compensation of&nbsp;between 1 and&nbsp;3 times the amount of your deposit</a>.</p>
+        <p>Tenancy deposit breaches can make a section 21 notice invalid.</p>
+        <p>Your landlord may:</p>
+        <ul>
+            <li>be unable to get a court order to evict you using the section 21 notice procedure</li>
+            <li>have to&nbsp;refund your deposit in full before they can use a section 21 notice</li>
+        </ul>
+        <p>Find out more about
+            <a title="See also: Eviction with a section 21 notice"
+               href="{% url 'renters-section_21_eviction_process' %}">
+                section 21 evictions</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

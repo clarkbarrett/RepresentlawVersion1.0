@@ -1,0 +1,276 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Assured tenancies{% endblock %}
+{% block description %}Private tenants with an assured tenancy have long-term tenancy rights.
+        Most assured tenants moved into their home between 1989 and 1997.
+{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Assured tenancies</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Assured tenancies<br>
+                <small>Private tenants with an assured tenancy have long-term tenancy rights.
+                        Most assured tenants moved into their home between 1989 and 1997.</small>
+            </h1>
+        </div>
+
+    <h2>Are you an assured tenant?</h2>
+        <p>You are likely to be an assured tenant if all these apply:</p>
+        <ul>
+            <li>you pay rent to a private landlord</li>
+            <li>your landlord does not live in the same building as you</li>
+            <li>you moved in between 15 January 1989 and 27 February 1997 and your landlord did not give you
+                a notice saying that you have an assured shorthold tenancy</li>
+        </ul>
+        <p>You can also be an assured tenant if you moved in after 27 February 1997. This can happen if:</p>
+        <ul>
+            <li>your landlord gave you a written notice before your tenancy started saying
+                that you have an assured tenancy</li>
+            <li>you previously had an assured tenancy in the same accommodation with the same landlord.</li>
+        </ul>
+
+    <h3>Tenancies that can't be assured</h3>
+        <p>Some types of tenancy can't be assured tenancies, for example:</p>
+        <ul>
+            <li>business tenancies</li>
+            <li>tenancies where the rent is more than £100,000 per year</li>
+            <li>tenancies of agricultural land or holdings</li>
+            <li>student halls of residence</li>
+            <li>holiday lets</li>
+        </ul>
+        <p class="inline-callout highlight">Use our
+        <a title="See also: tenancy checker"
+           href="{% url 'renters-tenancy_checker' %}">
+            tenancy checker
+        </a> to check what type of tenancy you have.</p>
+        <p>Most private tenants have an
+            <a title="See also: assured shorthold tenancy with private landlord"
+               href="{% url 'renters-assured-shorthold-tenancies' %}">
+                assured shorthold tenancy</a>.</p>
+
+    <h2>How long your tenancy lasts</h2>
+        <p>Your tenancy might:</p>
+        <ul>
+            <li>roll on a week-to-week or month-to-month basis - this is called a periodic tenancy</li>
+            <li>be for a set period such as 12 or 18 months - this is known as a fixed-term tenancy.</li>
+        </ul>
+        <p>When a fixed term tenancy expires, it continues as a periodic tenancy unless you sign up for a new fixed term.</p>
+        <p>Your tenancy will continue until you or your landlord end it.&nbsp;This can happen by:</p>
+
+        <ul>
+            <li>you and your landlord agreeing to end the tenancy (known as surrender)</li>
+            <li>you serving a valid notice to quit</li>
+            <li>your landlord lawfully evicts you by following the correct procedure</li>
+        </ul>
+
+    <h2>Notice to end an assured tenancy</h2>
+        <p>If you have a fixed-term tenancy, you can only give notice during the fixed-term if your tenancy
+            agreement says it is allowed.</p>
+        <p>If you have a periodic tenancy, you have to give written notice to your landlord of at least:</p>
+
+        <ul>
+            <li>28 days if you pay rent weekly</li>
+            <li>one month if you pay rent monthly</li>
+        </ul>
+        <p>Your tenancy agreement may say you must give more notice.</p>
+        <p>The notice must end on the first or last day of the period of a tenancy, unless your tenancy
+            agreement says something different.&nbsp;</p>
+        <p>The first day of a period of your tenancy is the anniversary date each week or month of when
+            your tenancy began. This is often the same date that your rent is due, but not always. Check
+            with a housing adviser if you're not sure about the dates.</p>
+        <p>Your right to live in the property ends once the correct notice period you give your landlord expires.</p>
+        <p>It may be possible to leave on the day a fixed term agreement expires without giving any notice.
+            But it's always best to let your landlord know what you plan to do to avoid disputes.</p>
+        <p class="inline-callout highlight">Find out more about
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: ending a fixed-term tenancy">ending a fixed-term tenancy
+            </a> and
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also: ending a periodic (month to month) tenancy">
+                ending a periodic (month to month) tenancy</a>.</p>
+
+    <h2>Surrendering a tenancy</h2>
+        <p>It is possible for a tenancy to be surrendered at any time if your landlord agrees.</p>
+        <p>Get your landlord to confirm their agreement in writing if possible to avoid any dispute
+            about whether it was given.</p>
+
+    <h2>Eviction</h2>
+        <p>Your landlord must give you notice on a special form and then get a possession order from the court.</p>
+        <p>You can only be evicted if your landlord can prove a legal reason to the court.&nbsp;In some cases
+            the court must also decide whether it is reasonable for you to be evicted.</p>
+        <p class="inline-callout highlight">For more information, see&nbsp;&nbsp;
+            <a title="See also: Eviction of assured tenants"
+               href="{% url 'renters-eviction_of_assured_tenants' %}">
+                eviction of assured tenants</a>.</p>
+
+    <h2>Illegal eviction</h2>
+        <p>It is a criminal offence if your landlord tries to evict you without getting a court order.</p>
+        <p>Contact
+            <a href="{{ find_council_url }}" title="Link to Gov.uk - find your council" target="_blank">
+                your local council</a>.
+            They may be able to help if you have been
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="See also: What is illegal eviction?">illegally evicted</a> or
+            <a href="{% url 'renters-harassment_by_a_private_landlord' %}"
+               title="See also: Harassment by a private landlord">harassed by your landlord</a>.</p>
+        <p>You can also apply for a court order requiring the landlord to allow you back into the property.</p>
+
+     <h2>Landlord harassment</h2>
+        <p>You have the right to live in your accommodation without being unreasonably disturbed by your landlord.</p>
+        <p>Your landlord is not allowed to enter the property without your permission or interfere
+            with your right to live in your home in other ways.</p>
+        <p>If your landlord tries to do this, they may be guilty of
+            <a href="{% url 'renters-harassment_by_a_private_landlord' %}"
+               title="See also: Harassment by a private landlord">harassment</a>.</p>
+
+     <h2>Rent increases</h2>
+        <p>Your landlord can increase the rent if:</p>
+
+        <ul>
+            <li>you agree to the increase</li>
+            <li>there is a rent review clause written into your tenancy agreement (if you had a fixed-term
+                tenancy that has expired your landlord may not be able to use this)</li>
+            <li>your landlord gives you at least one month's written notice of the proposed
+                rent increase on a special form (they can't do this during the fixed term of your tenancy)</li>
+        </ul>
+        <p>If your landlord gives you one month's notice of a proposed rent increase you can challenge this through
+            the tribunal for rent disputes.
+            You must do this before the notice period expires or the new rent will take effect.</p>
+        <p>Find out more about&nbsp;
+            <a title="See also: Private tenancy rent increases"
+               href="{% url 'renters-rent_increases' %}">
+                private tenancy rent increases</a>.</p>
+
+    <h2>Help to pay the rent</h2>
+        <p>You may be able to claim housing benefit or universal credit
+            to help pay your rent if you are working and have a low income or if you claim benefits.</p>
+
+        <h2>Responsibility for repairs</h2>
+        <p>The law says&nbsp;your landlord is responsible for most repairs. This includes to:</p>
+        <ul>
+            <li>the roof</li>
+            <li>guttering</li>
+            <li>walls</li>
+            <li>external doors and windows</li>
+        </ul>
+        <p>Your landlord must keep also fix problems with gas, electricity, heating, water and sanitation equipment.</p>
+        <p class="inline-callout highlight">Your landlord must have a valid
+            <a title="See also: Gas safety checks in rented homes"
+               href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                gas safety certificate</a> for any gas appliances in the property.</p>
+        <p>Any furniture provided should be fire resistant.</p>
+        <p>Find out
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="See also: Responsibility for repairs">more about responsibilities for repairs
+            </a>.</p>
+        <p>Tell your landlord or letting agent if your accommodation needs repairs.</p>
+        <p>If your landlord doesn't do repairs, there may be
+            <a title="See also: Steps to take to get repairs done"
+               href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}">
+                steps you can take
+            </a> to get your landlord to carry out the work.</p>
+        <p class="inline-callout highlight">Your landlord may have extra responsibilities if you live in a
+            <a title="See also: Living in a shared house or flat"
+               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+                house in multiple occupation (HMO)</a>.</p>
+
+                <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h3>Tenant's responsibility for repairs</h3>
+        <p>You are responsible for using your home in a responsible way and for&nbsp;certain minor repairs.</p>
+        <p>This might include:</p>
+        <ul>
+            <li>renewing sealant around the bath</li>
+            <li>changing a fuse</li>
+            <li>checking and replacing smoke alarm batteries</li>
+        </ul>
+        <p>Find out
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: Landlord and tenant responsibilities for repairs">
+                more about your responsibility for minor repairs and maintenance</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+    <h2>Inheriting an assured tenancy</h2>
+        <p>If an assured tenant dies, it is possible for a periodic tenancy to be passed on to a spouse,
+            civil partner or partner who was living in the property at the time of the tenant's death.
+            This is known as succession.</p>
+        <p>Succession is only possible if the tenancy has not previously been passed on this way.</p>
+        <p>Otherwise, you can only pass on a periodic assured tenancy to someone else if:</p>
+
+        <ul>
+            <li>your tenancy agreement says you can pass on your tenancy</li>
+            <li>your landlord agrees to it</li>
+        </ul>
+        <p class="inline-callout highlight">
+            Your landlord may be able to end your tenancy if&nbsp;you attempt to pass your tenancy to someone else
+            under any other circumstances.</p>
+
+    <h2>Getting other people to live with you</h2>
+        <p>Check your tenancy agreement to see if you are allowed to take in a lodger.&nbsp;If your tenancy
+            agreement says nothing about this you must get your landlord&rsquo;s permission first.</p>
+        <p class="inline-callout highlight">Your benefits could be reduced if someone else moves into your home.
+            This can happen even if the person is a family member and doesn't pay you any rent.</p>
+        <p>Find out
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also: lodgers">more about lodgers
+            </a>.</p>
+
+    <h2>Living away from home</h2>
+        <p>You lose your status as an assured tenant if you no longer live in your accommodation as your
+            only or main home.&nbsp;It is then straightforward for your landlord to end your tenancy.</p>
+        <p>It is possible to spend a long time away from home and keep your assured tenancy, for example
+            because you are in hospital, in prison or away caring for a relative. You may need to show
+            that you are planning to return, for example by leaving your personal belongings at home.</p>
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

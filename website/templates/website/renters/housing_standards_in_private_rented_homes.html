@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Housing standards in private rented homes{% endblock %}
+{% block description %}Conditions in a private rented home should meet minimum legal standards for health and safety as well as gas, fire and electrical safety.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Housing standards in private rented homes</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Housing standards in private rented homes<br>
+                <small>Conditions in a private rented home should meet minimum legal standards for health and safety as well as gas, fire and electrical safety.</small>
+            </h1>
+        </div>
+
+    <h2>Standards in your private rented home</h2>
+        <p>Your home should be free from hazards which could cause you harm or make you ill.</p>
+        <p>It may be unsafe if it has:</p>
+
+        <ul>
+            <li>a leaking roof&nbsp;or broken windows</li>
+            <li>damp, condensation or mould growth</li>
+            <li>no hot water or an inadequate water supply</li>
+            <li>blocked or leaking gutters, drainpipes and sewers</li>
+            <li>pests or vermin</li>
+            <li>faulty electrics</li>
+            <li>gas appliances that have not been recently serviced or maintained&nbsp;&nbsp;</li>
+        </ul><p class="inline-callout internal">Find out
+        <a title="See also: Health and safety standards for rented homes"
+           href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+            more about health and safety standards in rented homes</a>.</p>
+        <p>Extra rules apply to&nbsp;
+            <a title="See also: houses in multiple occupation"
+               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+                houses in multiple occupation</a>, a type of shared housing.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Gas safety</h2>
+        <p>Landlords have must make sure all the gas appliances they provide are safe to use.&nbsp;&nbsp;</p>
+        <p>Your landlord must:</p>
+
+        <ul>
+            <li>arrange a yearly check of all gas appliances by a qualified Gas Safe engineer</li>
+            <li>give you a copy of a gas safety record before you move in and within 28 days of each annual inspection</li>
+        </ul>
+        <p>Find out about
+            <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+               title="See also: Gas safety in rented homes">landlords' legal responsibilities for gas safety in rented homes</a>.</p>
+
+    <h2>Electrical safety</h2>
+        <p>Your landlord must make sure that the wiring and any appliances they provide are safe to use when you
+            move in and throughout the tenancy.</p>
+        <p>Find out about
+            <a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+               title="See also: Electrical safety in rented homes">landlords' legal responsibilities for electrical
+                safety in rented homes</a>.</p>
+    <h2>Fire safety</h2>
+        <p>All furniture provided by the landlord must comply with the Furniture and Furnishings (Fire)
+            (Safety) Regulations 1988.</p>
+        <p>Landlords must also provide smoke detectors, and in some homes, carbon monoxide alarms.</p>
+        <p class="advice-highlight internal-link">Landlords of
+            <a title="See also: house in multiple occupation"
+               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+                shared houses</a> have to comply with extra fire safety laws.</p>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+               title="see also: fire safety in the home">fire safety in the home</a>.</p>
+
+    <h2>Safety of furniture and appliances</h2>
+        <p>Furniture and appliances supplied by your landlord must be safe and fit to use.</p>
+        <p class="inline-callout internal">Find out more about the
+            <a title="  safety of furniture and appliances in your home"
+               href="{% url 'renters-safety_standards_for_furniture_and_appliances' %}">
+                safety of furniture and appliances in your home</a>.</p>
+
+    <h2>How to check standards</h2>
+        <p>When looking for a home to rent, visit properties in person and check their general condition.
+            Check the safety features and furniture and fittings.</p>
+        <p class="inline-callout internal">Always
+            <a href="{% url 'renters-how_to_check_and_agree_an_inventory' %}"
+               title="see also: check and agree an inventory">make an inventory</a> to record details of the home you
+            want to rent.</p>
+    <h2>Report repairs in private rented homes</h2>
+        <p>Landlords are legally responsible for carrying out repairs to rented properties. Most landlords are
+            happy to fix repairs and other defects in their tenants' homes.</p>
+        <p>Contact your landlord
+            <a title="see also: report repairs"
+               href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+                to report problems</a> if you are worried about the safety or state of repair of your rented home.</p>
+        <p>Allow your landlord a reasonable amount of time to start repairs.</p>
+        <p>Your landlord has the right to enter your home to carry out repairs as long as reasonable notice has been given.</p>
+        <p>It may be a condition of your tenancy that you&nbsp;have&nbsp;to report repair problems to your
+            landlord as quickly as possible.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="see also: Landlord and tenant responsibilities for repairs"
+               href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                who has responsibility for repairs</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How to complain about housing standards</h2>
+        <p>If your landlord refuses to deal with repairs or hazards, you can complain to your local council's
+            environmental health officer or private rented sector team.</p>
+        <p>The council can take action against landlords whose properties are unsafe or unhealthy to live in.</p>
+        <p>Environmental health can assess your home and take enforcement action against your landlord if necessary.</p>
+        <p>Find out more about&nbsp;
+            <a title="See also: Complain to environmental health about rented housing"
+               href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}">
+                complaining to your local council's environmental health officer</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Eviction if you ask for repairs</h2>
+        <p>Some landlords may prefer to
+            <a title="see also: eviction over repairs"
+               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                evict tenants rather than do repairs</a>.</p>
+        <p>Get advice if you are worried this might happen.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+        </div>
+
+
+    <h2>Rented housing standards for homeless people</h2>
+        <p>If you apply to the council as homeless and the council agrees to provide you with settled accommodation,
+            it can make you an offer of a private rented tenancy.</p>
+        <p>The private rented tenancy must:</p>
+
+        <ul>
+            <li>be in a reasonable condition</li>
+            <li>have a <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+                          title="see also: gas safety in rented homes">current gas safety record</a></li>
+            <li>meet&nbsp;
+                <a title="see also: Health and safety standards for rented homes"
+                   href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+                    health and safety standards for rented home</a></li>
+        </ul><p>The landlord must take reasonable precautions to ensure
+        <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+           title="see also: fire safety advice">fire safety</a> and avoid carbon monoxide poisoning in the property.</p>
+        <p>This tenancy must also be available for at least one year and be suitable for you and the people you
+            live with.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Can council tenants stop the bailiffs{% endblock %}
+{% block description %}You can apply to have a bailiffs warrant suspended to stop eviction from a council home.
+A county court usually has the power to stop bailiffs evicting council tenants.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Can council tenants stop the bailiffs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Can council tenants stop the bailiffs<br>
+                <small>You can apply to have a bailiffs warrant suspended to stop eviction from a council home.
+                    A county court usually has the power to stop bailiffs evicting council tenants.</small>
+            </h1>
+        </div>
+
+    <h2>When bailiffs can evict you</h2>
+        <p>Only court bailiffs&nbsp;are allowed to&nbsp;evict you from your home.</p>
+        <p>Before this can happen, the council must take you to court, get a possession order and then apply for a
+            warrant for possession. This is also called a bailiff's warrant. This allows the bailiffs to evict you.</p>
+        <p>The council can apply to the court for a warrant for possession if the court made:</p>
+        <ul>
+            <li>an outright order for possession and you stayed beyond the date the court ordered you to leave</li>
+            <li>a suspended possession order but you broke the conditions set by the court</li>
+        </ul>
+        <p>The courts can make a suspended possession order to allow you to pay off your rent arrears in weekly instalments.</p>
+    <h2>When the court can't stop the bailiffs</h2>
+
+        <h3>Subletting your home</h3>
+        <p>The court can't stop the bailiffs if the council takes you to court because you rented out all your home.</p>
+
+        <h3>Mandatory grounds</h3>
+        <p>The court can't stop the bailiffs if a court made a possession order on a mandatory ground.</p>
+        <p>Antisocial behaviour sometimes is a mandatory ground for eviction.</p>
+        <p>The council may decide to apply to the court to evict you using the mandatory ground for antisocial behaviour
+            if you or a member of your household have been convicted in the courts of an antisocial behaviour offence.</p>
+        <p>It is unusual for a council to use a mandatory ground when taking a tenant to court.</p>
+
+    <h2>When the court can stop the bailiffs</h2>
+        <p>A court&nbsp;can decide&nbsp;to&nbsp;stop the bailiffs evicting you from your council tenancy
+            if the council took you to court to evict you&nbsp;on a discretionary ground.</p>
+        <p>Most council tenants are taken to court on discretionary grounds such as&nbsp;rent arrears.</p>
+        <p>The usual way for the court to&nbsp;stop&nbsp;the bailiffs&nbsp;is by suspending the bailiffs' warrant.
+            The bailiffs can't evict you if a court decides to suspend a bailiffs' warrant.</p>
+        <p>In some cases, the court may also need to change the terms of a court&nbsp;order that&nbsp;was
+            previously&nbsp;made.&nbsp;For example, the court may change the terms of a suspended possession order to allow
+            you to pay off your rent arrears at a lower weekly rate or to give you time to sort out housing benefit problems.</p>
+        <p>The court can stop the bailiffs if it decides it is reasonable to do so in the circumstances.</p>
+
+    <h2>What the court can decide</h2>
+        <p>The court can decide to postpone the bailiffs for a short period while you try to put things right.
+            For example, the court could&nbsp;allow you a month to sort out your housing benefit problems before making a
+            final decision on whether to stop your eviction.</p>
+        <p>The court can stop the bailiffs coming as long as you comply with certain conditions.&nbsp;This
+            could include&nbsp;paying an amount each week towards your rent arrears as well as keeping up with the rent.
+            If you don't keep to these conditions, you could find yourself facing eviction by the bailiffs again.</p>
+        <p>The court can also decide to let the eviction go ahead.</p>
+        <p>If the court made a possession order for a mandatory ground, the court can't stop the eviction but may
+            delay it for a very short period.</p>
+
+    <h2>What you can ask the court to do</h2>
+        <h3>Apply to suspend the bailiffs warrant</h3>
+        <p class="inline-callout">You must
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">apply to the court using form N244</a>.</p>
+        <p>There is a fee of £50. You may not have to pay this if you claim certain benefits or have a low income.&nbsp;See
+            <a title="Link to EX160A"
+               href="{{ hmcts_form_ex160a_url }}"
+               target="_blank">court leaflet EX160A for details</a>.</p>
+        <p>Explain on the form that you want the bailiffs' warrant to be suspended and your reasons why it should be.
+            For example, explain why you weren't able to stick with the conditions set out on the original court order
+            and why you will be able to in the future.</p>
+
+        <h3>Apply for a possession order to be changed</h3>
+        <p>When you apply for the bailiff's warrant to be suspended, you may also need to ask the court to vary the possession order.
+            This means you are asking the court to:</p>
+        <ul>
+            <li>change the conditions set out in a suspended possession order such as reducing the amount you have to
+                pay each week to bring down your rent arrears</li>
+            <li>change an outright possession order to a suspended possession order (if the council took you
+                to court on a discretionary ground)</li>
+        </ul>
+        <p>Do this on the same
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">form N244</a>.</p>
+
+        <h3>Apply to delay eviction by bailiffs</h3>
+        <p>The court can sometimes delay eviction by bailiffs for a short time even if it can't stop the eviction.</p>
+        <p class="inline-callout">Apply to the court
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">using form N244</a> to ask for the bailiffs to be delayed.</p>
+        <p>The court will only do this if you would suffer exceptional hardship and you didn't tell the court about this before.</p>
+        <p>The maximum delay is 6 weeks. This runs from the date the court made the possession order telling you to leave.
+            For example, if 3 weeks have already passed by the time you apply to the court, you can only ask the court
+            to delay your eviction for a further 3 weeks.</p>
+
+    <h2>How to persuade the court to stop the bailiffs</h2>
+        <p>There will be a short court hearing to decide whether to stop the bailiffs. This could be on the same day
+            that you make your application.</p>
+        <p>At the court, you must explain to the judge why it would be reasonable to stop the eviction.</p>
+        <p>Telling the judge you will be homeless is not enough. The judge wants to hear reasons connected
+            to the reason why you are being evicted. Take any evidence you have to show why, for example, you couldn't
+            make all your rent payments before, but that you can from now on.</p>
+        <p>The judge will decide to stop the bailiffs if they think it is reasonable to do so.</p>
+
+    <h2>How to ask the council to stop the bailiffs</h2>
+        <p>Contact your housing office to see if they will let you stay.</p>
+        <p>Your housing officer might agree that you do not have to be evicted if your situation has changed.
+            For example, you can now show that you can pay off your rent arrears or a family member who was causing
+            problems with antisocial behaviour now lives somewhere else.</p>
+        <p>Get any agreement in writing if you can.</p>
+        <p>Don't assume the bailiffs won't come just because your housing officer says you can stay.
+            Check with the court that the bailiffs' visit&nbsp;is cancelled.</p>
+        <p>Sometimes your housing officer may say that they will not challenge your application to stop the bailiffs.
+            You must still apply to the court to stop the eviction.</p>
+        <p>If the bailiffs' visit isn't cancelled or your housing officer doesn't agree to tell the court to stop the bailiffs,
+            you'll have to apply to the court to suspend the bailiffs' warrant using
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">court form N244</a>.</p>
+
+    <h2>Costs and charges</h2>
+        <p>You have to pay your rent or use and occupation charges until you move out or are evicted.
+            If you claim housing benefit, payments should continue until you actually leave.</p>
+        <p>You may also have to pay the council's court fees, including the costs of applying for bailiffs to evict you.
+            This is usually added to your rent account.</p>
+        <p>Unless you claim certain benefits or have a low income, you have to pay a fee to apply to the court to stop the bailiffs coming.</p>
+        <p class="inline-callout">Find out more from
+            <a title="Link to HM Courts and Tribunals about court fees" href="{{ hmcts_fees_url }}"
+               target="_blank">HM Courts and Tribunals about court fees.</a></p>
+
+    <h2>Eviction by bailiffs</h2>
+        <p class="inline-callout">Find out
+            <a title="see also: what happens when bailiffs evict tenants"
+               href="{% url 'renters-what_happens_when_bailiffs_evict_tenants' %}">
+                what happens when bailiffs evict tenants</a>.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

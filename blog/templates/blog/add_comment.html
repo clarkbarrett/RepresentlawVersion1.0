@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block title %}Add comment to {{ category.name }}{% endblock %}
+{% block description %}{{ post.seo_title }}{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class ="col-md-8">
+            <div class="page-header">
+                <h1>Add New Comment</h1>
+            </div>
+                <form method='POST'>
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <button type='submit' class="btn btn-success">Submit</button>
+                    <p></p>
+                </form>
+        </div>
+        <div class="col-md-4">
+            <div class="page-header">
+                <h1>Posts</h1>
+            </div>
+        </div>
+    </div>
+{%  endblock %}

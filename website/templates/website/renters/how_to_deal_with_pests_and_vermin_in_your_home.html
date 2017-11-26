@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - How to deal with pests and vermin in your home{% endblock %}
+{% block description %}Nobody wants to share their home with mice, cockroaches or other pests. Find out how deal with infestations.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to deal with pests and vermin in your home</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to deal with pests and vermin in your home<br>
+                <small>Nobody wants to share their home with mice, cockroaches or other pests. Find out how deal with infestations.</small>
+            </h1>
+        </div>
+
+    <h2>Responsibility for pests and vermin</h2>
+        <p>Pests and vermin are insects and small animals in your home that can cause health and safety problems.</p>
+        <p>If you rent your home, your landlord or the council may be responsible for dealing with pests and vermin.</p>
+        <p>If your landlord or the council can't or won't help, you might be able to deal with the infestation yourself.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-pests_and_vermin_infestations_in_rented_homes' %}"
+               title="Responsibility for dealing with pests and vermin">
+                who is responsible for dealing with pests and vermin</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How to prevent infestation</h2>
+        <p>Any home can have a problem with pests or vermin, however careful you are and how often you
+            clean your home.&nbsp;Prevention is better than cure.</p>
+        <p>Follow simple rules to reduce the chances of pests and vermin coming to stay &ndash; don't let them in,
+            don't feed them and don't make them comfortable.</p>
+
+    <h3>1. Don't let them in</h3>
+        <p>Block up holes in the brickwork, roof, skirting boards and floorboards to prevent rats, mice and
+            squirrels getting into your home.</p>
+        <p>Ask your landlord to do this for you if you rent your home.</p>
+
+    <h3>2. Don't feed&nbsp;them</h3>
+        <p>Keep your home clean, especially the kitchen. Clean surfaces and floors regularly to
+            remove any traces of food.</p>
+        <p>Store food in sealed containers, as uncovered food can attract pests and vermin.</p>
+        <p>Put rubbish out in sealed bags or bins.</p>
+        <p>Always use a bird table when you feed garden birds. Putting bird food on the ground can attract rats
+            and mice, as can putting cooked food in your compost heap.</p>
+
+    <h3>3. Don't make them comfy</h3>
+        <p>Don't leave old furniture, mattresses or other rubbish in your garden. These make a great place for mice
+            and rats to nest.</p>
+        <p class="advice-highlight normal-advice">Ask your local council to collect bulky household waste or take
+            it to the tip yourself.</p>
+        <p class="advice-highlight normal-advice">Try to keep your garden tidy too. An overgrown garden provides a
+            good home for mice and rats.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Get help to deal with pests and vermin</h2>
+        <p>Your local council's environmental health department may provide a pest control or pest identification service.</p>
+        <p>You can ask them for advice on how to deal with pests and vermin.</p>
+        <p>Most councils charge for these services but fees may be reduced for people who claim benefits.</p>
+        <p class="inline-callout external">Find&nbsp;
+            <a href="{{ find_council_url }}" title="Link to Gov.uk - find my council" target="_blank">
+                your local council's environmental health department</a>.</p>
+        <p>A private pest control company can deal with your pest and vermin problem. Their fees will probably
+            be higher than the council's fees.</p>
+        <p>Find details of local pest control companies online or in the Yellow Pages or ask friends or neighbours
+            to recommend a service.</p>
+        <p >Get more advice from the&nbsp;
+            <!--<a title="Link to British Pest Control Association (BPCA) - pest advice"
+               href="./?a=777939" target="_blank">British Pest Control Association (BPCA)</a>.-->
+                    <a title="Link to British Pest Control Association (BPCA) - pest advice"
+               href="{{ pest_control_association }}">British Pest Control Association (BPCA)</a>.
+        </p>
+
+
+
+
+    <h2>How to deal with common pests</h2>
+
+        <h3>Mice and rats</h3>
+
+        <p>Mice and rats spread disease through their urine and droppings. They can also cause damage to your
+            home and furnishings and can chew through electrical wires, increasing the risk of fire and electrocution.</p>
+        <p>You may be able to keep mice under control using traps or poison, which you can buy in most DIY stores.</p>
+        <p>Always follow the manufacturer's instructions when using poisons or insecticides. Keep them away from
+            children and pets.</p>
+        <p class="advice-highlight normal-advice">Call in the council or a pest control firm as soon as possible
+            if you spot&nbsp;signs that you have rats in your home.</p>
+        <p class="inline-callout external">Find out
+            <a href="{{ rentokil_signs_of_rats }}" target="_blank" title="Link to Rentokil - signs of rats">
+                more from Rentokil about rats in the home</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+        <h3>Cockroaches</h3>
+
+        <p>Cockroaches lurk in warm, dark, humid parts of homes, in areas around pipe ducts in kitchens and
+            bathrooms or underneath cookers.</p>
+        <p>Cockroaches can cause food poisoning and other health problems, such as dermatitis and asthma.</p>
+        <p>You may need expert help to deal with cockroaches. Find out more from the&nbsp;
+            <a title="Link to British Pest Control Association (BPCA) - advice on cockroaches"
+               href="{{ pest_control_association }}" target="_blank">British Pest Control Association (BPCA)</a>.</p>
+
+    <h3>Bees and wasps</h3>
+        <p>Bees and wasps only become a problem if they build nests in the loft or eaves of your home or in your garden.</p>
+        <p>Do not go near or disturb a nest.&nbsp;Bees and wasps can swarm and can attack when&nbsp;disturbed.</p>
+        <p>
+            <a href="{{ find_council_url }}" title="Link to Gov.uk - find my council"
+               target="_blank">Contact your council </a>about bee and wasp nests. The council may charge a fee to
+            remove the nest.</p>
+        <p>Contact the&nbsp;
+        <a title="Link to British Beekeepers Association - Find a Swarm Collector"
+           href="{{ beekeepers }}" target="_blank">British Beekeepers Association</a> if you think you have honeybees in
+            your garden. They may&nbsp;send someone&nbsp;who can remove the nest without killing the bees.</p>
+
+    <h3>Bedbugs</h3>
+        <p>Bedbugs live in bedding and mattresses, feed on blood and can leave nasty bite marks.</p>
+        <p>If you have bedbugs, wash all bedding at 60&deg;C and try to find an insecticide that's safe to use&nbsp;on
+            the mattress, headboard and other affected areas.</p>
+        <p>A specialist pest control company or your council's pest control service can help if you can't get
+            rid of bedbugs.</p>
+
+    <h3>Fleas</h3>
+
+        <p>Fleas from pet cats and dogs don't spread disease but flea bites can be itchy and uncomfortable for you and
+            your pets.</p>
+        <p>To deal with fleas, treat your pets, bedding, furniture and carpets with flea sprays or powders.
+            Get advice from a vet about the best one to use.</p>
+        <p>Find out&nbsp;<a title="Link to RSPCA - Dealing with fleas" href="{{ rspca_fleas }}"
+                            target="_blank">more from the RSPCA</a> about&nbsp;how to deal with fleas from pets.</p>
+
+    <h3>Ants</h3>
+        <p>Ants don't pose a health risk. If you discover ants in your home, try vacuuming them up or tackle them
+            using an ant spray or powder, available in most DIY stores.</p>
+        <p>Treat the nest if you can find it. You may be able to locate it by following the trail of ants.
+            If you can't reach the nest, treat all entry points to your home (doors, windows, drains).
+            The ants should carry the insecticide back to the nest.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h3>Squirrels</h3>
+        <p>Squirrels can cause damage in your loft or roof spaces. They can tear away insulation and
+        damage pipes and items stored in the loft. They can chew through cables and wires, causing a risk of fire
+        and electrocution.</p>
+        <p>To prevent squirrels getting in, use wire mesh to block any holes and make sure any missing bricks
+            or roof tiles are replaced. Crushed up mothballs placed around the loft can also help keep them out.</p>
+        <p class="advice-highlight normal-advice">Remember that red squirrels are a legally protected species.
+            You can be prosecuted for killing, injuring or capturing a red squirrel or destroying its shelter.
+            Grey squirrels are not a legally protected species.</p>
+
+    <h3>Dust mites</h3>
+        <p>Dust mites live in mattresses and bedding. They can make your condition worse if you suffer from eczema,
+            asthma or other breathing problems.</p>
+        <p>Dust mites prefer warm, humid environments.&nbsp;To keep them under control, wash your bedding regularly
+            at 60&deg;C and try to keep your bedroom cool and well ventilated.</p>
+        <p class="inline-callout external">
+            <a title="Link to Allergy Uk - house dust mites"
+               href="{{ allergy_uk }}" target="_blank">Find out more from Allergy UK</a> about dealing with house mites.</p>
+
+    <h3>Moths and carpet beetles</h3>
+        <p>Carpet moths&nbsp;and carpet beetles&nbsp;damage woollen carpets&nbsp;or rugs in your home.
+            You can buy carpet moth or carpet beetle&nbsp;killer kits from pest control companies.</p>
+        <p>Tiny holes in your clothing could be&nbsp;a sign that you have an infestation of clothes moths,
+            particularly clothes made of wool and silk. It is the larvae that cause the damage.
+            Adult moths cannot feed on fabrics.</p>
+        <p>You can buy moth traps and place them in any wardrobes and cupboards where you store your clothes.
+            Wash all your clothes to kill the eggs.</p>
+
+    <h3>Hide beetles</h3>
+        <p>Hide beetles live under cookers or fridges and feed on food scraps. They aren't a health risk but can
+            cause damage by boring holes in plaster or wood.</p>
+        <p>Deal with hide beetles by cleaning infected areas thoroughly and treating with an appropriate insecticide.</p>
+
+    <h3>Silverfish</h3>
+        <p>Silverfish live in damp environments such as bathrooms. They don't pose a serious health risk,
+            but they can swarm if they're not dealt with.</p>
+        <p>Use an insecticide from a DIY store to kill silverfish. Keep kitchen and bathroom cupboards clean and
+            dry to prevent their return.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

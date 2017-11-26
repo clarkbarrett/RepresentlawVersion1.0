@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Harassment by a private landlord{% endblock %}
+{% block description %}Find out what you can do to stop landlord harassment.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Harassment by a private landlord</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Harassment by a private landlord<br>
+                <small>Find out what you can do to stop landlord harassment.</small>
+            </h1>
+        </div>
+
+    <h2>What is landlord harassment?</h2>
+        <p>Harassment is action taken by your landlord to deliberately disrupt your life at home or make
+            you leave.&nbsp;Harassment can also be committed by someone else, for example the landlord's family or
+            <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+               title="See also: Using a letting agent to find and rent a home ">letting agent</a>.</p>
+        <p>Examples of harassment include if your landlord or&nbsp;someone acting on their behalf:</p>
+        <ul>
+            <li>cuts off your gas, electricity or water supply</li>
+            <li>is violent or threatens you with violence</li>
+            <li>opens your mail or removes your belongings</li>
+            <li>harasses you because of your gender, race or sexuality</li>
+        </ul>
+        <p>Your landlord&nbsp;could also be guilty of harassment if they enter your home without your permission
+            or send builders in without notice or at unsocial hours.</p>
+        <p>Harassment is a criminal offence. Harassment could result in&nbsp;
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">illegal eviction</a> - also a criminal offence.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+        </div>
+
+    <h2>How to stop landlord harassment</h2>
+        <p>There are steps you can take to try to stop landlord harassment. These steps could also help if
+            you decide to take legal action.</p>
+
+    <h3>Keep records</h3>
+        <p>Ask your landlord to put all communications with you in writing. Do the same yourself and keep copies.
+            That way,&nbsp;you will have a record&nbsp;of all dealings with your landlord and of any disputes as
+            they happen.</p>
+        <p>If you do decide to take action against your landlord, any records you keep will be useful
+            evidence.&nbsp;This can include a diary, notes on your calendar, photos and videos.</p>
+
+    <h3>Contact your landlord</h3>
+        <p>Write to&nbsp;your landlord to ask them to stop the harassment. If this doesn't work, write to
+            them saying that if the harassment continues you will take legal action.</p>
+
+    <h3>Contact the police</h3>
+        <p>If you are being threatened&nbsp;and are&nbsp;in immediate danger, call the police on 999.</p>
+
+    <h3>Get help and advice</h3>
+        <p>Contact a tenancy relations officer at
+            <a title="Link to Gov.uk - find your local council" href="{{ find_council_url }}" target="_blank">
+                your local council</a> or someone with similar duties. They&nbsp;could speak to your landlord on
+            your behalf.</p>
+        <p>The council's homelessness department may help you with&nbsp;
+            emergency accommodation if you're forced to leave your home because of harassment.</p>
+
+    <h3>Get an injunction</h3>
+        <p>An injunction is a court order that orders someone to do something or stop doing something.
+            You'll need the help of a solicitor or adviser to get one.</p>
+        <p>Legal aid is available for injunctions against landlords who harass tenants.&nbsp;You may
+            be eligible for legal aid if you claim certain benefits or have a low income.</p>
+        <p>Contact&nbsp;<a href="{{ civil_legal_advice_url }}" title="Link to: Civil Legal Advice" target="_blank">
+            Civil Legal Advice</a> to find out if you qualify for legal aid to help you get an injunction.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

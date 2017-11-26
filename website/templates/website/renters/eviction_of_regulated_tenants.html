@@ -1,0 +1,171 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Eviction of regulated tenants{% endblock %}
+{% block description %}You could be a regulated tenant if your tenancy started before 15 January 1989. Regulated tenants have strong rights and can only be evicted in certain circumstances.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction of regulated tenants</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Eviction of regulated tenants<br>
+                <small>You could be a regulated tenant if your tenancy started before 15 January 1989.
+                        Regulated tenants have strong rights and can only be evicted in certain circumstances.</small>
+            </h1>
+        </div>
+
+     <h2>Rights of regulated tenants</h2>
+        <p>If you are a private tenant, your rights depend on the type of living arrangement you have,
+            the date you moved in and the agreement you have with your landlord.</p>
+        <p><a href="{% url 'renters-regulated_tenancies' %}"
+              title="see also: regulated tenancies ">Regulated tenants
+        </a> have stronger rights than most other private tenants.</p>
+        <p>Your landlord must get a
+            <a title="See also: what is a possession order for eviction"
+               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">possession order from the court
+            </a> to evict you.</p>
+        <p>The court only makes a possession order if your landlord proves a legal reason or 'ground'
+            for evicting you. Sometimes, the court can only make a possession order
+            if it is reasonable to do so.</p>
+        <p>Get advice as soon as possible if you are being threatened with eviction. Don't give up
+            your home without doing this.</p>
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
+    <p></p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+    <h2>Does it matter what stage your tenancy is at?</h2>
+        <p>Regulated tenancies have two stages. The first is the contractual stage which
+            lasts for the duration of your original agreement with your landlord.</p>
+        <p>In general, as no new regulated tenancies can have started since 15 January 1989,
+            it is quite unlikely that your tenancy is still in the contractual stage.</p>
+        <p>Once the contractual stage comes to an end your tenancy then enters the statutory stage.
+            The contractual stage ends:</p>
+        <ul>
+            <li>when the fixed term runs out</li>
+            <li>if your landlord serves a valid notice to quit, or a notice to increase the rent
+                which is the same length as a notice to quit</li>
+        </ul>
+        <p>It is only possible for your landlord to get a court order to evict you once your
+            tenancy is in its statutory stage.</p>
+
+    <h2>Court action to evict regulated tenants</h2>
+        <p>The landlord can
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="See also: what is a possession order for eviction">apply for a possession order
+                from the court
+            </a> if your tenancy is at the statutory stage.</p>
+        <p>The court writes to you to tell you about the landlord's eviction claim.
+            You can
+            <a href="{% url 'renters-eviction_documents_the_court_sends_you' %}"
+               title="see also: eviction documents from the court">
+                send information about your case to the court
+            </a> and you can
+            <a href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}"
+               title="see also: what happens at eviction possession hearings">
+                go to the court hearing
+            </a>.</p>
+        <p>The court only makes a possession order if your landlord can prove a ground (legal reason).
+            The grounds that landlords can use are divided into two types, mandatory and discretionary.</p>
+
+    <h2>Mandatory grounds for eviction</h2>
+        <p>If your landlord can prove a mandatory ground for possession the court must make
+            a possession order to evict you.</p>
+        <p>These grounds cannot be used unless the landlord told you, in writing, at the start of
+            your tenancy that you may be evicted for one of these reasons:</p>
+        <ul>
+            <li>your landlord (or a member of your landlord's family in some circumstances) wants to
+                return to live in the property (and lived there previously)</li>
+            <li>your landlord wants to retire to the property</li>
+            <li>a&nbsp;minister of religion normally occupies the property and needs to live there</li>
+            <li>an agricultural worker normally occupies the property and needs to live there
+                (and you are not an agricultural worker)</li>
+            <li>your landlord is a member of the armed forces and intends to live there after discharge</li>
+        </ul>
+        <p>If you are no longer living in the property, the landlord can get a possession order
+            to evict you.</p>
+
+    <h2>Discretionary grounds for eviction</h2>
+        <p>If your landlord is using a discretionary ground for possession the court has to
+            consider whether it is reasonable for possession to be granted.</p>
+        <p>It Is up to the court to decide what is reasonable. Your particular circumstances
+            should be taken into account.</p>
+        <p>Discretionary grounds include:</p>
+        <ul>
+            <li>suitable alternative accommodation is available for you (this could be another
+                private tenancy or council accommodation)</li>
+            <li>you have rent arrears</li>
+            <li>you have breached the terms of your tenancy agreement</li>
+            <li>you have caused nuisance or annoyance</li>
+            <li>the furniture or condition of the property has deteriorated</li>
+            <li>you have assigned the tenancy or sublet your whole home without the landlord's consent</li>
+            <li>you were employed by your landlord and the accommodation is needed for a new worker</li>
+            <li>your landlord or a member of your landlord's family needs the property to live
+                in more than you do</li>
+        </ul>
+        <p>Even if the court does grant possession to your landlord it can suspend possession.
+            This means that you can't be evicted as long as you keep to certain conditions set by
+            the court, for example paying a certain amount each week towards your rent arrears.</p>
+        <p class="inline-callout">Find out more about
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="see also: possession court orders">orders the court can make
+            </a> and
+                if these orders can be changed.</p>
+
+   <h2>Could the eviction be illegal?</h2>
+        <p>It is against the law for your landlord to try to evict you without getting a court order.</p>
+        <p>
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">
+                Find out more about illegal eviction</a>.</p>
+        <p>There are steps you can take to stop the landlord doing this. Your&nbsp;local council
+            or an advice centre might be able to help.</p>
+
+           <h2>Claim compensation for illegal eviction?</h2>
+        <p>If you are evicted illegally, it may be possible to claim compensation from your landlord</p>
+        <p>
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">
+                Find out more about illegal eviction</a>.</p>
+
+
+        <div class="bs-callout bs-callout-primary">
+            <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+            <p></p>
+            <p>Get in touch with Represent to see if you've been evicted illegally.</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent</a></p>
+
+</div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

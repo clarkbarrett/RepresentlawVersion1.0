@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Damage to your rented home{% endblock %}
+{% block description %}If you accidentally damage something in your rented home, you probably have to pay for repairs.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Damage to your rented home</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Damage to your rented home<br>
+                <small>If you accidentally damage something in your rented home, you probably have to pay for repairs.</small>
+            </h1>
+        </div>
+
+    <h2>Normal wear and tear</h2>
+        <p>Your landlord should not charge you or take money from your tenancy deposit because of normal wear and tear.</p>
+        <p>Wear and tear is caused by day-to-day living, for example:</p>
+        <ul>
+            <li>a brand new carpet would show signs of use</li>
+            <li>a carpet that was threadbare at the start of your tenancy might now have worn through</li>
+            <li>window frames might have peeling paint due to wind and rain</li>
+        </ul>
+        <p>There could also be cracks in plaster or faded wallpaper or paint.</p>
+        <p>You must look after a rented home, but your landlord can't expect it to be returned in exactly the same
+            state as it was when you moved in.</p>
+        <p class="inline-callout internal">Find out about
+            <a title="see also:tenancy deposits"
+               href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}">
+                deductions your landlord is allowed to make from your deposit</a>.</p>
+
+    <h2>Tenant's responsibility for accidental damage</h2>
+        <p>Contact your landlord if you accidentally damage any of the furniture or fittings in your rented home.</p>
+        <p>If the landlord agrees that you can make or arrange the repair or replacement, get receipts for
+            any work done and for any items you buy.</p>
+        <p class="inline-callout internal">Use
+            <a href="{% url 'renters-how_to_check_and_agree_an_inventory' %}"
+               title="see also: check and agree an inventory">your inventory</a> to record details of any damage you
+            repair with the landlord's agreement.</p>
+        <p>Tell your landlord if you replace or repair a damaged item to avoid problems with your tenancy deposit.</p>
+        <p>If you leave your tenancy without trying to fix the problem, your landlord could deduct money from your
+            deposit or&nbsp;take legal action against you&nbsp;to cover the cost of the damage.</p>
+        <p>Your landlord can&nbsp;take action to evict you if you or anyone else in your household deliberately
+            damages your home.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+               title="See also: Eviction of assured shorthold tenants">more about the eviction of private tenants</a>.</p>
+
+    <h2>Accidental damage caused by neighbours</h2>
+        <p>It's usually your landlord's responsibility to repair damage caused by&nbsp;an accident that wasn't your fault.</p>
+        <p>Examples include&nbsp;leaks from a neighbouring flat or damage to the roof or windows caused by a neighbour's building works.</p>
+        <p>Your landlord may have insurance cover that includes accidental damage to the building.</p>
+        <p>It is not your landlord's responsibility to replace any of your belongings that are damaged accidentally.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Damage due to crime</h2>
+        <p>It's usually the landlord's responsibility to repair damage caused by a crime.</p>
+        <p>Examples include:</p>
+        <ul>
+            <li>windows broken by a burglar</li>
+            <li>vandalism in a shared area such as a garden or hallway</li>
+        </ul>
+        <p>If your home has been damaged by crime, contact the police and ask for a crime report number.</p>
+        <p>Tell your landlord if there has been criminal damage to your home. Report any repairs you need
+            and give your landlord a reasonable time to fix the problem.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="see also: reporting repairs to your private rented landlord">how to report repairs to a private landlord</a>.</p>
+        <p>It is not your landlord's responsibility to replace any of your belongings that are stolen or damaged through crime.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+        <h2>Damage due to repair problems</h2>
+        <p>Your landlord is responsible for fixing the problem if your home is
+            <a href="{% url 'renters-rent_reductions_when_repairs_are_a_problem' %}"
+               title="See also: Rent reductions when repairs are a problem">damaged by a repair problem</a>
+            or works arranged by your landlord.</p>
+        <p>You can take your landlord to court for compensation if repair problems&nbsp;have damaged any of your personal belongings.</p>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}"
+               title="See also: Housing disrepair: check if you can claim compensation">
+                claiming compensation for disrepair</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+   <h2>Insurance for tenants</h2>
+        <p>As a tenant, you can insure yourself and your belongings against accidental or criminal damage in the home.</p>
+        <p>Your landlord should have their own insurance to cover the property and its fixtures and fittings.</p>
+
+    <h2>Get advice from Represent</h2>
+        <p>Get advice if your landlord wants to charge you for damage you think you shouldn't have to pay for or if you think
+            you may be entitled to compensation.</p>
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

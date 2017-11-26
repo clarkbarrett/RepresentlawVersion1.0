@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Tenancy deposits <br>
+                    <small>Most landlords ask you to pay a tenancy deposit when you sign up to a new tenancy.
+                    It's your money. Find out how to check it's protected and how to get it back when you leave.</small>
+                </h1>
+            </div>
+            </div>
+</div>
+
+<div class="container-fluid">
+        <div class="row">
+                <div class="col-md-4 col-md-offset-1">
+
+                    <a href="{% url 'renters-deposit-check' %}" class="btn btn-primary btn-lg" role="button">Check if your deposit is protected</a>
+                      <br>
+                    <h1>Protecting your tenancy deposit</h1>
+                      <br>
+                    <ul>
+                        <li>
+                            <a href="{% url 'renters-deposit-check' %}">
+                                Check if your tenancy deposit is protected.
+                            </a>
+                        </li>
+                          <br>
+                        <li>
+                            <a href="{% url 'renters-get-deposit-protected' %}">
+                                How to get your tenancy deposit protected
+                            </a>
+                        </li>
+                          <br>
+                        <li>
+                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/tenancy_deposit_protection_rules">
+                            Tenancy deposit protection rules
+                            </a>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 col-md-offset-1">
+
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">How to get your tenancy deposit back</a>
+
+                      <br>
+                    <h1>Getting your tenancy deposit back</h1>
+                      <br>
+
+                    <ul>
+                        <li>
+                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/tenancy_deposit_deductions_your_landlord_can_make">
+                                Tenancy deposit deductions your landlord can make
+                            </a>
+                        </li>
+                          <br>
+                        <li>
+                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/how_to_get_your_tenancy_deposit_back">
+                            How to get your tenancy deposit back
+                            </a>
+                        </li>
+                          <br>
+                        <li>
+                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/court_action_for_a_tenancy_deposit_refund">
+                                Court action for a tenancy deposit refund
+                            </a>
+                        </li>
+                          <br>
+                        <li>
+                            <a href="{% url 'deposit-protection-claims' %}">
+                            Tenancy deposit compensation claims</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    <br>
+    <br>
+</div>
+
+{% endblock %}
+
+
+
+
+

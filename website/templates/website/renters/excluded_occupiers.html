@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Excluded occupiers{% endblock %}
+{% block description %}You are probably an excluded occupier if you share accommodation with your landlord.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Excluded occupiers</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Excluded occupiers<br>
+                <small>You are probably an excluded occupier if you share accommodation with your landlord.</small>
+            </h1>
+        </div>
+
+    <h2>What is an excluded occupier?</h2>
+        <p>You are probably an excluded occupier if you:</p>
+        <ul>
+            <li>share accommodation with your landlord</li>
+            <li>live in the same building as your landlord and share accommodation with a member of your landlord's family</li>
+            <li>live in a council or housing association-run hostel</li>
+            <li>do not pay any rent</li>
+        </ul>
+            <p>Use Represent's
+                <a href="{% url 'renters-tenancy_checker' %}">
+                tenancy checker</a> if you are not sure what type of tenancy you have.</p>
+
+    <h2>Right to rent immigration checks</h2>
+        <p>If you are a lodger or have a private landlord you should be asked to prove that you have the
+            right to live in the UK and the right to rent.</p>
+        <p>This does not apply to you if&nbsp;you moved in before 1 February 2016.</p>
+        <p>Find out
+            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+               title="see also: right to rent immigration checks">more about right to rent immigration checks</a>.</p>
+
+    <h2>Agreements for excluded occupiers</h2>
+        <p>Your landlord doesn't have to give you a contract. But it's a good idea to have a written agreement in place.</p>
+        <p>A contract should set out the rights and responsibilities that you and your landlord have.</p>
+
+    <h2>Tenancy deposits</h2>
+        <p>If you pay a deposit for your accommodation it should be returned to you when you move out.</p>
+        <p>Your landlord can make reasonable deductions if you owe any rent or cause any damage.</p>
+        <p class="inline-callout">
+            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+               title="see also: Negotiating the return of lodgers deposits">
+                Find out more about getting back your deposit at the end of your tenancy</a></p>
+        <p>Your deposit doesn't have to be protected in a government-backed
+            <a href="{% url 'renters-get-deposit-protected' %}"
+               title="see also: tenancy deposit protection schemes">tenancy deposit protection scheme</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if we can help you get your deposit back
+                    if your landlord is keeping it unfairly.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Help me get my deposit back</a></p>
+
+        </div>
+
+    <h2>Rent and rent increases</h2>
+
+        <p>You pay the rent that you agreed with your landlord.</p>
+        <p>If you pay rent weekly, your landlord must give you a rent book.</p>
+        <p>The landlord cannot
+            <a title="See also: Private tenancy rent increases"
+               href="{% url 'renters-rent_increases' %}">
+                increase your rent</a> during any fixed-term rental agreement unless:</p>
+
+        <ul>
+            <li>you agree to the increase</li>
+            <li>there is a rent review clause in your agreement</li>
+        </ul>
+
+        <p>Your landlord can increase your rent after the fixed term ends or if you don&rsquo;t have a fixed term agreement.</p>
+        <p>If you don't pay your rent
+            <a href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
+               title="see also: Eviction of excluded occupiers">your landlord can evict you</a>.</p>
+
+        <h2>If you want to leave</h2>
+        <p>You can leave after you give your landlord reasonable notice.</p>
+        <p>Reasonable notice should be at least 7 days, but it can be more depending on your circumstances.</p>
+        <p>The notice usually doesn't have to be in writing.</p>
+        <p>If you have a written agreement it should say how much notice you must give your landlord and whether
+            it should be in writing.</p>
+        <p>If you have a fixed-term agreement you can&rsquo;t give notice to leave before it ends unless:</p>
+        <ul>
+            <li>there is a clause in the agreement that allows this</li>
+            <li>you agree with your landlord that it can end early</li>
+        </ul>
+
+        <h2>Eviction of excluded occupiers</h2>
+        <p>Your landlord can evict you after you have been given reasonable notice to leave. Reasonable notice
+            should be at least 7 days, but it can be more depending on your circumstances.</p>
+
+        <p>The notice usually doesn't have to be in writing. Your landlord can just tell you to leave by
+            a particular date.</p>
+        <p>If you have a written agreement it should say how much notice you should be given and whether it must
+            be given to you in writing.</p>
+        <p>If you have a fixed-term agreement your landlord cannot tell you to leave before it ends unless
+            there is a clause in the agreement that allows this.</p>
+        <p>Your landlord doesn't need a
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="see also: Eviction - court orders">court order</a> to evict you.</p>
+
+        <p class="inline-callout">
+            <a href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
+               title="see also: eviction of excluded occupiers">
+                Find out more about eviction of excluded occupiers</a></p>
+
+    <h2>Illegal eviction</h2>
+        <p>It is a
+            <a title="See also: Harassment and illegal eviction"
+               href="{% url 'renters-what_is_illegal_eviction' %}">
+                criminal offence</a> for your landlord to use or threaten violence while evicting you.</p>
+        <p>Get advice if this is happening to you.</p>
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

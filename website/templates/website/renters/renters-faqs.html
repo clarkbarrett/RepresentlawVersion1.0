@@ -1,0 +1,770 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Renters{% endblock %}
+{% block description %}Represent helping renters with deposits, deposit protection, HMOs, Rent Repayment Orders and Repairs{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Law </h1>
+                <h1 align="center"><small style="color:white">Renters Services</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container">
+        <div id="accordion" role="tablist">
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading0">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                  <h3>What services does the National Renters Alliance offer?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse0" class="collapse" role="tabpanel" aria-labelledby="heading0" data-parent="#accordion">
+              <div class="card-body">
+               <p>The NRA will assess the viability of any financial claim you may have against your landlord regarding your tenancy, this could include your landlord/letting agent:
+                	<ol><li>unfairly withholding witholding money from your security deposit</li>
+                	<li>not protecting your deposit in accordance with deposit protection legislation</li>
+                	<li>failuing to carry out repairs they are responsible for</li>
+                </ol>
+                </p>
+
+                <p>Should you have any financial claim against your landlord for the above, the NRA will, where appropriate:
+
+                <ol>
+                	<li>prepare and enter into any correspondence with your landlord or other relevant third parties matters relation to your tenancy which may include a financial Claim;</li>
+                	<li>instructing legal counsel to act on your behalf to further your Claim.</li>
+                </ol>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="card">
+            <div class="card-header" role="tab" id="heading2">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  <h3>How much does the National Renters Alliance cost?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
+              <div class="card-body">
+                <p>The NRA charges 27% of any Received Monies or Settlement Amount Payable to you as a result of a claim.  To begin this process an initialization fee of £50 is payable.
+                Therefore, if you receive £2000 as a settlement for your claim,
+                the NRA is entitled to charge £540 -£50 = £490 as its fee in addition to the initialization fee.
+                Please note if you cancel your NRA contract within the statutory 14 day cooling off period, the £50 initialization fee will be refunded to you.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header" role="tab" id="heading3">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  <h3>Do you recommend a good landlord?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
+              <div class="card-body">
+                <p>Our website has a recommended list for members.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading4">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    <h3>Do you have knowledge or history of my landlord?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
+              <div class="card-body">
+                <p>Who is your landlord? We will investigate and respond by e-mail.</p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading5">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    <h3>What is the Landlord/tenants deposit scheme?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordion">
+              <div class="card-body">
+                <p>Your landlord is required to register your deposit in a government-backed deposit guarantee scheme and supply a reference number. </p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading6">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    <h3>If deposits are required to be protected, why do so many landlords steal deposits or make deductions?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordion">
+              <div class="card-body">
+                 <p>Your landlord is in charge of returning your deposit to you at the end of your tenancy, however many landlords add charges such as professional cleaning or
+charges for damage which renters do not know how to challenge.  Further, if you invite your landlord to use the deposit guarantee scheme mediation service he/she may refuse
+and there is no compulsion for your landlord to use this service leaving court action the only option for resolution. </p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading7">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    <h3>Will I get my deposit back from my Landlord?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7" data-parent="#accordion">
+              <div class="card-body">
+               <p>Very often landlords and agents will make unwarranted deductions from your security deposit which we can challenge.
+If you owe no outstanding rent and have looked after the property in a responsible manner, the burden of proof is on the landlord to show why he or she has taken money
+from your deposit.  The National Renters Alliance will help you through this process.</p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading8">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    <h3>So I will have to go to court?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8" data-parent="#accordion">
+              <div class="card-body">
+                <p>Probably not. Most disputes between landlords and renters are settled well before it becomes necessary to start court proceedings.
+At the National Renters Alliance, we know how to put pressure on irresponsible or unreasonable landlords for them to return the money they owe you, court action is,
+nd always should be, an option of last resort.  However, if you have behaved responsibly and your landlord is refusing all mediation efforts we will help you file a dispute
+with the courts.  </p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading9">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    <h3>I’m scared of going to court, do I have to go?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9" data-parent="#accordion">
+              <div class="card-body">
+                <p>In the rare cases that court proceedings are warranted, the court will encourage both parties to mediate and offer a mediation service before a hearing date is scheduled.
+In most cases landlords who know that they are not entitled to keep money from your deposit will return it to avoid the risk of escalating costs associated with a court hearing.
+If we believe that you have genuinely been wronged we will offer advice and support during this process giving you peace of mind.</p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading10">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    <h3>What is the court hearing like? Is it scary?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10" data-parent="#accordion">
+              <div class="card-body">
+                <p>Absolutely not. Most people imagine a stern judge and a panel of jurors. However if your case does go to court it will be held in medium-sized room with only a judge,
+sometimes a secretary and your landlord if he/she turns up.  The judge will do everything to put you at ease and gently determine the facts about the case.</p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading11">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    <h3>What Evidence will I need to get my deposit back?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11" data-parent="#accordion">
+              <div class="card-body">
+                <p>When you joined the National Renters Alliance you were asked to upload copies of your tenancy agreement and inventory and photos of the property when you moved in.
+We also ask for photos of when you moved out.  If you have behaved responsibly during your tenancy there will be minor changes in the property at the beginning and end of
+the agreement and your landlord will have to prove that the deterioration of the property was more than reasonable wear-and-tear.
+If you have kept the property well and have provided us with photos before and after you will usually have a good chance of getting most, if not all of your deposit back.</p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading12">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    <h3>Do I need to use the National Renters Alliance if I have a problem with my landlord or can I handle it myself?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12" data-parent="#accordion">
+              <div class="card-body">
+                <p>If you have a problem with your landlord you can handle it yourself.  However, if you intend to take court action you must follow a pre-action protocol before issuing proceedings which includes corresponding with your landlord
+about any problems you are having. This includes informing your landlord about any money you believe he/she might owe or giving him/her reasonable time to do non-essential building repairs. Failure to comply with pre-action protocols may harm any
+court proceedings you initiate later. </p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading13">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                    <h3>What are my Landlord's repair responsibilities?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse13" class="collapse" role="tabpanel" aria-labelledby="heading13" data-parent="#accordion">
+              <div class="card-body">
+                <p>Your landlord is responsible for repairs, including to:</p>
+                    <ul>
+                    <li>the structure and exterior of the building, including the walls, stairs and bannisters, roof, external doors and windows</li>
+                    <li>sinks, baths, toilets and other sanitary fittings, including pipes and drains</li>
+                    <li>heating and hot water </li>
+                    <li>chimneys and ventilation</li>
+                    <li>electrical wiring</li>
+                    </ul>
+                    <p>Your landlord also must put right any damage to internal decorations caused by repair problems or while repairs were carried out.</p>
+                    <p>Your landlord is responsible for repairing or replacing faulty items or appliances they provided, such as a fridge or washing machine. Your landlord isn't responsible for fixing any appliances or furniture you own.</p>
+                    <p>Your landlord doesn't have to fix repair problems until they know about them. Report any problems to your landlord as soon as you can.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading14">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    <h3>What are my repair responsibilities?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse14" class="collapse" role="tabpanel" aria-labelledby="heading14" data-parent="#accordion">
+              <div class="card-body">
+                <p>You must use your home in a responsible way.</p>
+                    <p>This includes:</p>
+                    <ul>
+                    <li>keeping it clean</li>
+                    <li>not damaging the property</li>
+                    <li>minor maintenance such as replacing smoke alarm batteries or electrical fuses</li>
+                    <li>using the heating properly and not blocking flues or ventilation</li>
+                    </ul>
+                    <p>You probably have to pay for repairs if you cause damage to the property or the furniture, even if was an accident.
+                    This is quite different from fair wear and tear which you should not have to pay for.
+                    If you don't fix damage you've caused, the landlord could deduct money from your tenancy deposit to pay for it.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading15">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    <h3>What do I do if my landlord won’t do repairs?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse15" class="collapse" role="tabpanel" aria-labelledby="heading15" data-parent="#accordion">
+              <div class="card-body">
+                <p>There are various options for action to take against a landlord who doesn't do repairs he/she is responsible for.
+                    Before you consider further action, make sure you have reported the repair problems to your landlord and given them a reasonable time
+                    to start and finish the work. Landlords are usually only responsible for doing repairs they've been told about.
+                    You can report repair problems to your landlord's letting agent if they manage repairs on behalf of your landlord.
+                    If your landlord or letting agent still won’t arrange repairs please contact us and we will discuss the relevant redress procedure.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading16">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                    <h3>My landlord is charging me for wear and tear, what is this?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse16" class="collapse" role="tabpanel" aria-labelledby="heading16" data-parent="#accordion">
+              <div class="card-body">
+                <p>Your landlord should not charge you or take money from your tenancy deposit because of normal wear and tear which is caused by day-to-day living.
+                Examples of wear-and tear include</p>
+                <ul>
+                <li>A threadbare carpet at the start of a tenancy might wear through</li>
+                <li>A new carpet will show signs of use</li>
+                <li>window frames might have peeling paint due to wind and rain</li>
+                <li>Plaster might crack and wallpaper and paint fade over time.</li>
+                </ul>
+                <p>You must look after a rented home, but your landlord can't expect it to be returned in exactly the same state as it was when you moved in.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading17">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                    <h3>Can I withhold rent?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse17" class="collapse" role="tabpanel" aria-labelledby="heading17" data-parent="#accordion">
+              <div class="card-body">
+                <p>You do not have the right to stop paying the rent.  However, if your landlord/Agent is not fulfilling their repairing obligations,
+                    it may be possible to pay for the repairs using your rent, but you must follow a set procedure.
+                    The National Renters Association can assist with these types of problems. Please contact us if this becomes an issue. </p>
+              </div>
+            </div>
+          </div>
+
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading18">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                    <h3>I&rsquo;m being harassed by my landlord, what can I do?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse18" class="collapse" role="tabpanel" aria-labelledby="heading18" data-parent="#accordion">
+              <div class="card-body">
+                <p>Harassment is illegal and can be reported to the police. If you are being harassed by your landlord,
+                    insist that all communication be given in writing and record calls on your mobile.&nbsp; The police will usually require evidence of several
+                    harassment incidents before they can take action.</p>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading19">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                    <h3>What qualifies as harassment?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse19" class="collapse" role="tabpanel" aria-labelledby="heading19" data-parent="#accordion">
+              <div class="card-body">
+                <p>There are many forms of harassment. Common examples of landlord and letting agent harassment include:</p>
+                    <ul>
+                    <li>Entering your home without permission</li>
+                    <li>Making visits to your home to make you feel uncomfortable</li>
+                    <li>Threatening you or being violent</li>
+                    <li>Removing your belongings or opening your mail</li>
+                    <li>Cutting off your water, gas or electricity</li>
+                    <li>Sending builders and repairmen round without notice or at unreasonable times of the day unless an emergency repair is needed.</li>
+                    <li>Acting in a manner which denies you the peaceful enjoyment of your property</li>
+                    <li>Asking you to pay extra money to avoid eviction</li>
+                    <li>Sexual harassment</li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading20">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                    <h3>What are emergency repairs? </h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse20" class="collapse" role="tabpanel" aria-labelledby="heading20" data-parent="#accordion">
+              <div class="card-body">
+                <p>There are times when the landlord or their agents will need immediate access to your home. This is usually a safety issue and they do not need permission to access the property. Examples of such emergencies include:</p>
+                    <ul>
+                    <li>escape of gas or fumes</li>
+                    <li>electrical fittings in contact with water</li>
+                    <li>live or bare electric wiring</li>
+                    <li>sewage overflowing into the home</li>
+                    <li>outside doors that need secured</li>
+                    <li>burst storage tanks, cylinders or pipes</li>
+                    <li>failure of all lights or all power</li>
+                    <li>failure of heating systems in severe weather and where no alternative is available</li>
+                    <li>failure of all communal lighting</li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading21">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                    <h3>Can my Landlord Evict me?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse21" class="collapse" role="tabpanel" aria-labelledby="heading21" data-parent="#accordion">
+              <div class="card-body">
+                <p>You can be evicted if you have rent arrears, regardless of why the rent arrears exist.
+                    In most cases your landlord must go to court to get an order to evict you. If your landlord/agent threatens you with eviction
+                    please contact us immediately.
+                </p>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading22">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                    <h3>Will I get a more favorable outcome to a dispute if I use the Renters Alliance?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse22" class="collapse" role="tabpanel" aria-labelledby="heading22" data-parent="#accordion">
+              <div class="card-body">
+                <p>If you wish to claim compensation or damages from your landlord for a dispute which falls within the jurisdiction of the Housing Ombudsman
+                    Service, the use of the National Renters Alliance services will not have a more favorable outcome than if you do it yourself.  However the National Renters Alliance will assist
+                    with the preparation of submissions for clients.
+                </p>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading23">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                    <h3>Do I have the right to seek further advice and shop around?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse23" class="collapse" role="tabpanel" aria-labelledby="heading23" data-parent="#accordion">
+              <div class="card-body">
+                <p>Yes, clients have the right to seek further advice or to shop around subject to any time limits within which a
+                    claim must be made. However, if you withdraw from an existing contract with the National Renters Alliance, we reserve
+                    the right to levy a reasonable charge to reflect work undetaken by the Renters Alliance. </p>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading24">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                    <h3>Is there a cooling off period if I engage the National Renters Alliance?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse24" class="collapse" role="tabpanel" aria-labelledby="heading24" data-parent="#accordion">
+              <div class="card-body">
+                <p>Yes, our terms and conditions includes a 14 day cooling-off period during which you can withdraw from a contract at any time. You may inform
+                    the NRA verbally or in writing if you would like to withdraw during the cooling-off period.
+                    If you cancel the Services during the Cooling-off Period, we will refund to you all payments received from you.
+                    We will make any refunds due to you for exercising your rights to cancel during the Cooling-off Period no later than the earliest of 14 days after the day of cancellation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading25">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                    <h3>If I contract the National Renters Alliance, can I withdraw?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse25" class="collapse" role="tabpanel" aria-labelledby="heading25" data-parent="#accordion">
+              <div class="card-body">
+                <p> Yes, you can withdraw from a contract at any time. However if you should withdray you may be charged a limited sum which is
+                    reasonable in the circumstances and shall reflect work undertaken by the National Renters Alliance up to the point
+                    you withdraw from the contract
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading26">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                    <h3>What happens if I break my agreement with the NRA?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse26" class="collapse" role="tabpanel" aria-labelledby="heading26" data-parent="#accordion">
+              <div class="card-body">
+                <p>You must immediately pay the NRA any charges in respect of the canceled Services which we
+                    have provided or third party expenses or costs we may incur by way of compensation to us for
+                    ending the Service early.
+                </p>
+              </div>
+            </div>
+          </div>
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading27">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse27" aria-expanded="false" aria-controls="collapse27">
+                    <h3>What are the procedures for my claim?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse27" class="collapse" role="tabpanel" aria-labelledby="heading27" data-parent="#accordion">
+              <div class="card-body">
+                <p>When you first contact the NRA, we will make some preliminary inquiries as to the validity of
+                    any housing dispute you may have. If the NRA believes you may have a valid dispute we will send
+                    you our service contract and agent authorization form which will give us the authority to act on
+                    your behalf in your dispute.
+                    For housing disrepair, deposits and other disputes the NRA will follow accepted pre-action
+                    protocols stipulated in the civil procedure rules which will encourage both parties in the dispute
+                    to disclose information which may be relevant to the claim. If at any stage information were to
+                    arise which would prejudice your claim we will advise you immediately and discontinue the claim.
+                    However, if your landlord and/or letting agent either fail to disclose relevant information or fail to
+                    provide evidence to refute your version of events we will continue with pre-action protocol rules
+                    and/or suggest mediation. Should all attempts at resolution fail the NRA will instruct an in-house
+                    solicitor or external legal practitioner to continue your claim and issue proceedings in the relevant
+                    court.
+                    At all stage the NRA will keep you informed with this process.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading28">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse28" aria-expanded="false" aria-controls="collapse28">
+                    <h3>What documents do I need to pursue a claim?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse28" class="collapse" role="tabpanel" aria-labelledby="heading28" data-parent="#accordion">
+              <div class="card-body">
+                <p>The documents required for you to pursue a claim vary depending on the nature of your housing
+                    dispute. Typically we require evidence of your occupation of a property which may include tenancy
+                    agreement or license to occupy and email, phone and written correspondence between you and
+                    your landlord/letting agent. However, unscrupulous landlords sometimes attempt to deny you
+                    access or refuse to give you required contract information. Furthermore, as the NRA investigates
+                    your dispute further we may require more information about certain aspects of your dispute.
+                    Accordingly please speak with one of our advisers who can keep you updated with the documents
+                    we need to pursue your claim.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading29">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse29" aria-expanded="false" aria-controls="collapse29">
+                    <h3>What are the risks involved in making a claim? Can I lose money and do I have to go to court?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse29" class="collapse" role="tabpanel" aria-labelledby="heading29" data-parent="#accordion">
+              <div class="card-body">
+                <p>As with any dispute, the NRA will make all reasonable efforts to settle your dispute through
+                    negotiation and arbitration. Throughout this process the NRA will follow directions given by you
+                    in terms of settlement. Throughout this process it is important that you behave reasonably in
+                    accepting or refusing settlement offer and supplying evidence in a timely fashion to comply with
+                    civil procedure pre-action protocols. However, in the event that it be necessary to initiate formal
+                    legal proceedings, the vast majority of claims will be allocated to the small-claims track which
+                    severely limits costs to both parties. According to subsection (27.14(2)) of the Civil Procedure,
+                    the general overarching principle of costs in the Small Claims track which is that:
+                    “The court may not order a party to pay a sum to another party in respect of that other
+                    party’s costs, fees and expenses”.
+                    If you have behaved reasonably throughout this process and appear in court if a hearing is
+                    required you will very rarely be asked to pay costs in the event that you lose. However, if the
+                    Court rules that you have behaved unreasonably in the pursuit of your claim you will be liable for
+                    third party costs under rule 27.14 of the civil procedure rules. Examples of unreasonable behavior
+                    include:
+                    <ul>
+                    <li>Failing to attend a court hearing without giving the defendant or court at least 7 days’
+                    notification.</li>
+                    <li>Failing to disclose information relevant to your case within a reasonable time-period (typically
+                    7 days in advance of a hearing).</li>
+                    <li>A consistent failure to respond to correspondence and/or telephone calls</li>
+                    <li>failure to properly set out a case in respect of liability and/or quantum pre-litigation</li>
+                    <li>An unwillingness to discuss the case and narrow issues</li>
+                    <li>Dilatory conduct leading to delay</li>
+                    <li>A claim that is unreasonably made and without merit</li>
+                    <li>Exaggeration of a claim and/or dishonesty</li>
+                    <li>A failure to follow the standard Small Claims track directions</li>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+
+             <div class="card">
+            <div class="card-header" role="tab" id="heading30">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse30" aria-expanded="false" aria-controls="collapse30">
+                    <h3>Can the NRA end its service agreement?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse30" class="collapse" role="tabpanel" aria-labelledby="heading30" data-parent="#accordion">
+              <div class="card-body">
+                <p>We may end this Agreement immediately by giving you notice:
+                <ul>
+                <li>If our ability to offer Services is suspended for any reason;</li>
+                <li>If in our reasonable opinion it is necessary to do so for security, technical or operational</li>
+                reasons.
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading31">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                    <h3>What Are My Obligations?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse31" class="collapse" role="tabpanel" aria-labelledby="heading31" data-parent="#accordion">
+              <div class="card-body">
+                  <p>In order to give your claim the best chance of success you must:
+                    <ul>
+                    <li>carefully read and retain any claims documentation</li>
+                    <li>Ensure that all answers and statements are accurate and truthful.</li>
+                    <li>Provide all documents including in electronic form, in your possession that are relevant to
+                    the claim and which give evidence of a fact in the claim.</li>
+                    </ul>
+                  </p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading32">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                    <h3>If I have a complaint about the NRA service what should I do?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse32" class="collapse" role="tabpanel" aria-labelledby="heading32" data-parent="#accordion">
+              <div class="card-body">
+                <p>The NRA aims to provide you with the highest possible quality of service at all time. However
+                    in the event that our service falls short of your expectations, we operate a complaints procedure
+                    which may be found at www.nationalrentersalliance.co.uk/complaints-procedure.
+                    The NRA will send written or electronic acknowledgment of a complaint within five business
+                    days of receipt, giving the name of the individual handling the complaint , together with details
+                    of the NRA’s internal complaints handling procedures.
+                    <ol>
+                    <li>We reserve the right to decline to consider a complaint that is made more than six months
+                    after you became aware of the cause of the complaint. There may be instances where we
+                    will waive this requirement at our discretion. We will confirm to you in writing if a complaint
+                    has been made outside the time limit that we are prepared to consider.</li>
+                    <li>We will send you a written or electronic acknowledgment of a complaint within five business
+                    days of receipt.</li>
+                    <li>Within eight weeks of receiving a complaint we will send you either: A final response which
+                    adequately addresses the complaint; or A response which explains why we are still not in a
+                    position to make a final response, giving reasons for the further delay and indicating when
+                    we expect to be able to provide a final response.</li>
+                    <li>Where we decide that redress is appropriate, we will provide you with fair compensation for
+                    any acts or omissions for which we are responsible and will comply with any offer of redress
+                    which you accept. Appropriate redress will not always involve financial redress.</li>
+                    </ol>
+                    </p>
+                    <p>If you are not satisfied with the NRA’s handling of your complaint, you may refer your complaint to
+                    the legal ombudsman which may be found at www.legalombudsman.org.uk/cmc or Ombudsman,
+                    PO Box 6804, Wolverhampton,WV1 9WG.
+                 </p>
+              </div>
+            </div>
+          </div>
+
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading33">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                    <h3>Does the NRA pay referral fees to or have other financial arrangements with any other person in respect of introducing the claim?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse33" class="collapse" role="tabpanel" aria-labelledby="heading33" data-parent="#accordion">
+              <div class="card-body">
+                <p>No the NRA does not pay referral fees to or have other financial arrangements with any other person in respect of introducing a claim.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-header" role="tab" id="heading34">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapse34" aria-expanded="false" aria-controls="collapse34">
+                    <h3>Does the NRA have any relationship to a particular solicitor or panel of solicitors?</h3>
+                </a>
+              </h5>
+            </div>
+            <div id="collapse34" class="collapse" role="tabpanel" aria-labelledby="heading34" data-parent="#accordion">
+              <div class="card-body">
+                <p>The NRA employs solicitors to execute is core functions. However, from time-to-time the NRA
+                    may contract outside legal professionals for business reasons.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,286 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Get you deposit back</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>How to get your tenancy deposit back<br>
+                    <small>Steps to take if your landlord doesn't refund your tenancy deposit money when you leave</small>
+                </h1>
+            </div>
+
+        <h2>1. Ask for your deposit back</h2>
+            <p>A tenancy deposit is money you pay to a landlord in case you leave and owe rent or cause damage to
+                the property.&nbsp;</p>
+            <p>If you're an
+                <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+                   title="See also: Assured shorthold tenancies">assured shorthold tenant
+                </a>
+                your landlord must protect your deposit in a tenancy deposit scheme.&nbsp;</p>
+
+            <h3>Write to your landlord</h3>
+            <p>Your landlord should return your deposit in full at the end of your tenancy unless they are entitled
+                to keep it or make deductions due to rent arrears, damage or other financial loss caused by you.</p>
+            <p>A&nbsp;
+                <a title="See also: Using a letting agent to find and rent a home"
+                   href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}">
+                    letting agent
+                </a>
+                may be responsible for return of your deposit if they manage the property for your landlord.</p>
+            <p>Send a letter or email to&nbsp;your landlord or agent&nbsp;to ask for it back.</p>
+
+
+            <h3>Deposits protected in an insurance-based scheme</h3>
+
+            <p>You can notify the scheme if your landlord doesn't return your deposit within 10
+                days of your written request.</p>
+            <p>The scheme will order the landlord to pay the disputed amount to them and hold the deposit
+                until the dispute is resolved by:</p>
+
+            <ul>
+                <li>agreement with your landlord</li>
+                <li>the scheme's dispute resolution service</li>
+                <li>the court&nbsp;</li>
+            </ul>
+
+            <h3>Deposits protected in a custodial scheme&nbsp;</h3>
+
+            <p>You should ask a custodial scheme to refund your deposit at the end of your tenancy.</p>
+            <p>The scheme must refund your money within 10 days if you and your landlord agree.</p>
+            <p>If your landlord doesn't agree to the refund, the custodial scheme holds the money until the dispute
+                is resolved by the scheme's dispute resolution service or by the court.</p>
+            <p>A custodial scheme can return your deposit without you going to court if your tenancy has ended
+                and you have no contact details for your landlord or you have:</p>
+
+            <ul>
+                <li>written to your landlord to request return of your deposit</li>
+                <li>not received a response within 14 days</li>
+            </ul>
+
+            <div class="inline-callout external">
+
+             <h3>Check your scheme's online refund process</h3>
+
+                <p>Find out more about your scheme's online refund process on their website:&nbsp;</p>
+                <p>
+                    <a title="Link to DPS - information for tenants"
+                       href="https://www.depositprotection.com/is-my-deposit-protected" target="_blank">DPS</a>
+                </p>
+                <p>
+                    <a title="Link to My Deposits - get your deposit back"
+                       href="https://www.mydeposits.co.uk/tenants/deposit-checker/" target="_blank">mydeposits</a>
+                </p>
+                <p><a title="Link to The Dispute Service - is my deposit protected "
+                      href="https://www.thedisputeservice.co.uk/is-my-deposit-protected.html"
+                      target="_blank">TDS</a>
+                </p>
+
+                <p>If you're not sure if or how your deposit was protected, you can check online.</p>
+                <p class="inline-callout">
+                    <a title="see also: see if your tenancy deposit is protected"
+                       href="{% url 'renters-deposit-check' %}">
+                        Check if your tenancy deposit has been protected</a>
+                </p>
+
+                <h2>2. Challenge deductions from your deposit</h2>
+
+                <p>Your landlord should write to you to explain any deductions they've made from your deposit.&nbsp;
+                    You can write to ask for an explanation if they don't.</p>
+                <p>Examples of when your landlord can make reasonable&nbsp;
+                    <a title="see also: tenancy deposit deductions"
+                       href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}">
+                        deductions from your tenancy deposit</a> include if you:</p><ul><li>failed to pay your rent</li>
+                <li>caused damage to the property</li>
+                <li>didn't leave the place clean</li>
+            </ul>
+
+
+             <h3>Write to your landlord</h3>
+
+                <p>Use
+                    <a title="Download TD2 Request for return of balance of deposit"
+                       href="http://england.shelter.org.uk/__data/assets/word_doc/0015/1154112/Request_for_return_of_balance_of_my_tenancy_deposit_TD2_sample_letter.docx">Shelter's template letter to challenge deductions from your deposit</a></p><p>You can use this letter if you are a tenant or if you are a lodger living in your landlord's home.</p>
+
+                <h3>Use a tenancy deposit scheme's dispute resolution service</h3>
+                <p>Your landlord should have used a tenancy deposit protection scheme to protect your tenancy deposit
+                    if you are an&nbsp;
+                    <a title="see also: assured shorthold tenancies"
+                       href="{% url 'renters-assured-shorthold-tenancies' %}">
+                        assured shorthold tenant.</a>
+                </p>
+                <p>The scheme's alternative dispute resolution (ADR) service can help if there's a dispute about the
+                    return of your tenancy deposit.&nbsp;You can only use ADR if both you and your landlord
+                    agree.&nbsp;The service is free.</p>
+                <p>The ADR service decides how much of your deposit should be returned to you.&nbsp;&nbsp;Their
+                    decision is final.</p>
+
+                <p>Contact the tenancy deposit protection scheme to find out more about their ADR service:</p>
+                <p><a title="Link to DPS - help for tenants" href="./?a=1267323"
+                      target="_blank">DPS</a>
+                </p>
+                <p><a title="Link to My Deposits - raise a dispute" href="./?a=1267324"
+                      target="_blank">my deposits</a></p>
+                <p><a title="Link to TPDS - tenants faqs" href="./?a=1267325" target="_blank">TDS</a></p>
+                <p>A tenancy deposit protection scheme's ADR service can only deal with whether your tenancy
+                    deposit should be returned to you in full or in part. It can't award you compensation,
+                    but you can consider separate court action for this.</p>
+                <p>If you are not sure if your tenancy deposit was protected, you can check online.</p>
+
+                <a title="see also: see if your tenancy deposit is protected"
+                   href="{% url 'renters-deposit-check' %}">
+                    Check if your tenancy deposit has been protected</a>
+                </p>
+
+             <h2>3. Consider court action</h2>
+
+                <p>You may be able to take court action if your landlord refuses to return all or part of your deposit.
+                    Court action should be a last resort.</p>
+                <p>You can use a tenancy deposit protection scheme's alternative dispute resolution (ADR)&nbsp;service
+                    to resolve a dispute instead of going to court.&nbsp;You can only use this if you have an assured
+                    shorthold tenancy and your landlord used a tenancy deposit protection scheme to protect your
+                    deposit.&nbsp;There is no cost to you or your landlord. Their decision is final.</p>
+                <p>The first step in taking court action is to send your landlord a formal letter called a letter
+                    before action. This sets out the details of the case against your landlord, including any claim
+                    for compensation.&nbsp;It's worth sending a letter before action even if you don't like the idea
+                    of going to court. Your landlord may offer to settle the dispute rather than face a court hearing.</p>
+
+             <h3>Court action if your tenancy deposit was protected</h3>
+
+                <p>You can take your landlord to court for a refund of your tenancy deposit if you are an assured
+                    shorthold tenant and your landlord:</p>
+
+                <ul>
+                    <li>protected your deposit with a tenancy deposit protection scheme</li>
+                    <li>won't agree to use the scheme's ADR service</li>
+                </ul>
+
+                <p >Find out&nbsp;
+                    <a title="see also: court action for tenancy deposit refund claims"
+                       href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/court_action_for_a_tenancy_deposit_refund">
+                        how to take court action to get your tenancy deposit back</a>
+                </p>
+                <p>You can also claim compensation from your landlord&nbsp;if they:</p>
+
+                <ul>
+                    <li>protected your tenancy deposit late</li>
+                    <li>didn't provide you with the information required by the rules or provided it late</li>
+                </ul>
+                <p>Under&nbsp;<a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                                 title="see also: tenancy deposit protection rule">tenancy deposit protection rules</a>,
+                    &nbsp;your landlord usually has 30 days from when you pay your deposit to protect it and give you
+                    certain information.</p>
+                <p>Find out&nbsp;<a title="see also: make a tenancy deposit compensation claim"
+                                    href="{% url 'deposit-protection-claims' %}">
+                    how to claim tenancy deposit compensation</a>
+                </p>
+
+             <h3>Court action if&nbsp;your tenancy deposit wasn't protected</h3>
+                <p>If your landlord didn't protect your deposit in a tenancy deposit protection
+                    scheme within 30 days,&nbsp;you can take your landlord to court to claim:</p>
+                <ul><li>a refund of your tenancy deposit</li>
+                    <li>compensation of between 1 and 3 times the value of your tenancy deposit</li>
+                </ul>
+                <p>This only applies if your tenancy was an&nbsp;
+                    <a title="see also: assured shorthold tenancies"
+                       href="{% url 'renters-assured-shorthold-tenancies' %}">
+                        assured shorthold tenancy</a>.
+                </p>
+                <p>
+                    Find out&nbsp;
+                    <a title="see also: make a tenancy deposit compensation claim"
+                       href="{% url 'deposit-protection-claims' %}">
+                    how to claim tenancy deposit compensation</a></p>
+
+             <h3>Not sure if your deposit is protected?</h3>
+                <p>Your landlord should have informed you which tenancy deposit protection scheme they've
+                    used to protect your money.</p>
+                <p><a title="see also: see if your tenancy deposit is protected"
+                      href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/check_if_your_tenancy_deposit_is_protected">
+                    Check if your tenancy deposit has been protected</a>
+                </p>
+
+             <h3>Lodgers, student in halls and assured tenants</h3>
+                <p>If you&nbsp;are not an assured shorthold tenant, you can take court action to get all or part of
+                    your deposit returned.</p>
+                <p>Follow the process for the return of a lodger's deposit if you are a lodger, student in halls or
+                    an assured tenant.</p>
+                <p>Find out&nbsp;
+                    <a title="see also: make a tenancy deposit compensation claim"
+                       href="{% url 'renters-return_of_a_lodgers_deposit' %}">
+                    how to take court action for the return of a lodger's deposit
+                    </a>
+                </p>
+
+             <h2>4. Check if you are owed compensation</h2>
+
+                <p>You may be able to take court action to claim compensation if you have an
+                    <a title="see also: assured shorthold tenancies"
+                       href="{% url 'renters-assured-shorthold-tenancies' %}">
+                        assured shorthold tenancy
+                    </a>
+                    and your landlord broke tenancy deposit protection rules.
+                </p>
+                <p>You can apply to a court to claim compensation from your landlord&nbsp;if they:</p>
+
+                <ul>
+                    <li>didn't protect your tenancy deposit or protected it late</li>
+                    <li>didn't provide you with information about the scheme&nbsp;or provided it late</li>
+                </ul>
+                <p>In most cases,&nbsp;
+                    <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                       title="see also: tenancy deposit protection rules">tenancy deposit protection rules
+                    </a>
+                    allow your landlord 30 days from when you pay your deposit to protect your deposit and give you information
+                    about the scheme used. Different time limits apply for tenancy deposits paid before 6 April 2012.</p>
+                <p>You can make a claim for compensation even if your landlord has already returned all or part of your tenancy deposit.</p>
+                <p>Find out more about&nbsp;
+                    <a title="see also: make a tenancy deposit compensation claim"
+                       href="{% url 'deposit-protection-claims' %}">
+                        how to claim tenancy deposit compensation</a></p>
+
+
+</div>
+
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

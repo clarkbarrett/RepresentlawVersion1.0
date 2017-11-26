@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Complain to the Ombudsman about repairs in social housing{% endblock %}
+{% block description %}You can contact the ombudsman if you complained to your council or housing association about repair problems but aren't satisfied with the result.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Complain to the Ombudsman about repairs in social housing</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Complain to the Ombudsman about repairs in social housing<br>
+                <small>You can contact the ombudsman if you complained to your council or housing association about
+                        repair problems but aren't satisfied with the result.</small>
+            </h1>
+        </div>
+
+    <h2>How the housing ombudsman can help</h2>
+        <p>The Housing Ombudsman Service is an independent watchdog.&nbsp;They deal with complaints from council
+            tenants and housing association tenants. The service is free.</p>
+        <p>The service investigates complaints about councils or housing associations doing things the wrong
+            way or&nbsp;not doing something they should have done.&nbsp;The ombudsman does not investigate every
+            complaint made to them.</p>
+        <p>The ombudsman service can look at how your landlord dealt with your request for repairs. The service
+            decides if your landlord acted properly and followed the correct procedures.&nbsp;Their decisions
+            are not legally binding but most landlords usually follow them.</p>
+        <p>If they agree with your complaint, they can:</p>
+        <ul>
+            <li>recommend that your landlord takes steps to put things right</li>
+            <li>suggest that the landlord pays you compensation</li>
+        </ul>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How to complain</h2>
+        <p>You must use your landlord's formal complaints procedure first. You can complain to the ombudsman
+            if you are not satisfied with the outcome.</p>
+        <p>Put your complaint in writing and include any evidence that supports it.</p>
+        <p>Evidence can include:</p>
+        <ul>
+            <li>photographs showing the repairs which need doing</li>
+            <li>photographs of damaged belongings</li>
+            <li>copies of any letters you sent to your landlord</li>
+            <li>copies of any doctor's notes or hospital reports which show that your health has been
+                affected by the problem</li>
+        </ul>
+        <p>Include receipts for any money you spent because of the repair problem (for example if you
+            had to replace damaged belongings).</p>
+        <p class="inline-callout external">Find out more about&nbsp;
+            <a title="External link to Housing Ombudsman Service - make a complaint"
+               href="{{ housing_ombudsman }}" target="_blank">making a complaint to the Housing Ombudsman Service</a>.</p>
+
+    <h2>Get advice from Represent</h2>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How tenants can end a fixed-term tenancy</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>How tenants can end a fixed-term tenancy<br>
+                    <small>You can't end a fixed-term tenancy early unless your landlord agrees or there's a
+                        break clause in your agreement.</small>
+                </h1>
+            </div>
+
+    <h2>Fixed-term tenancies</h2>
+        <p>Your tenancy agreement or contract is usually set for a fixed term such as 12 or 18 months if
+            you are a private tenant.</p>
+        <p>You'll continue to be a fixed term tenant if you sign another tenancy agreement for a
+            further fixed term.</p>
+
+    <h2>Ending the tenancy before the fixed term expires</h2>
+        <p>You can end a tenancy agreement before the fixed term expires if:</p>
+        <ul>
+            <li>there's a break clause that lets you give notice early</li>
+            <li>your landlord agrees you can leave ('surrendering the tenancy')</li>
+        </ul>
+
+    <h3>Using a break clause to end your tenancy early</h3>
+        <p>Check your tenancy agreement to see if it has a break clause.&nbsp;A break clause allows you
+            to end the tenancy before the end of the fixed term.</p>
+        <p>You don't need your landlord's permission to use a break clause.</p>
+        <p>Your tenancy agreement will tell you:</p>
+        <ul>
+            <li>when the break clause applies (such as 6 months after the tenancy starts)</li>
+            <li>how much notice you have to give</li>
+        </ul>
+        <p>You must give notice in writing.</p>
+        <p>Deliver your letter by hand (ask for a receipt) or&nbsp;post it using recorded delivery.</p>
+        <p>Don't use email to give notice unless your agreement says you can.</p>
+
+    <h3>Surrendering your tenancy</h3>
+        <p>You can only surrender your tenancy if your landlord agrees.</p>
+        <p>Get your landlord to confirm this in writing.&nbsp;It will help avoid misunderstandings and problems later.</p>
+        <p>For example, your landlord can deduct money for unpaid rent from your tenancy deposit. It's important
+            you can prove when your tenancy ended.</p>
+
+        <h2>Ending the tenancy after the fixed term expires</h2>
+        <p>If your fixed term has ended and you haven't signed a new tenancy agreement, you will have a periodic
+            tenancy.</p>
+        <p>A periodic tenancy rolls from week to week or month to month, depending on what your contract
+            says.</p>
+        <p>You will need to
+            <a title="see also: Ending a month to month tenancy"
+               href="{% url 'renters-ending_a_periodic_tenancy' %}">
+                give notice to end a periodic tenancy</a>.</p>
+
+    <h2>Leaving on the last day of the fixed term</h2>
+        <p>Check your tenancy agreement to see what it says about giving your landlord notice before
+            you leave.</p>
+        <p>You must give notice if your agreement says:</p>
+
+        <ul>
+            <li>you must tell your landlord if you plan to leave on the last day</li>
+            <li>when the fixed term expires the tenancy will continue as a periodic tenancy</li>
+        </ul>
+        <p>It should also say how much notice you must give.</p>
+        <p>You don't need to give your landlord notice that you will leave on the last day of your fixed-term
+            agreement unless your contract says you have to.</p>
+
+    <h2>Leaving without giving notice</h2>
+        <p>Your tenancy doesn't end just because you leave the property.</p>
+        <p>It's called 'abandonment' or 'abandoning your tenancy' if you leave without ending your
+            tenancy properly.</p>
+        <p>Abandonment could include:</p>
+
+        <ul>
+            <li>posting the keys through the letterbox</li>
+            <li>leaving and not going back</li>
+            <li>just telling the landlord that you're leaving</li>
+        </ul>
+        <p>You will still owe rent until you end your tenancy correctly or your landlord re-lets the
+            property.</p>
+        <p>Your landlord can deduct money from your tenancy deposit or apply for a court order to make
+            you pay what you owe.</p><p>If you've abandoned a tenancy or have rent arrears it can be harder
+        to find a new home.</p>
+        <p>It's not abandonment if you get your landlord&rsquo;s agreement to end your tenancy early.</p>
+
+    <h2>Ending a joint tenancy</h2>
+        <p>You're a joint tenant if there's more than one tenant named in the tenancy agreement.</p>
+        <p>You can only end a fixed term tenancy early if all the joint tenants:</p>
+        <ul>
+            <li>decide to use a break clause and give the required notice</li>
+            <li>get the landlord's agreement to surrender the tenancy</li>
+        </ul>
+        <p>Once the fixed term has expired, any one of the joint tenants can give notice to end the
+            <a href="{% url 'renters-joint_tenancies' %}"
+               title="see also: joint tenancies">joint tenancy</a>.
+            This ends the tenancy for all the joint tenants.</p>
+
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+

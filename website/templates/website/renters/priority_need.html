@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Priority need{% endblock %}
+{% block description %}Check if you or a member of your household should be classed as in priority need of housing when homeless.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Priority need</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Priority need<br>
+                <small>Check if you or a member of your household should be classed as in priority need of housing when homeless.</small>
+            </h1>
+        </div>
+
+    <h2>Overview</h2>
+        <p>You can ask the council for help if you're homeless or at risk of losing your home.</p>
+        <p>The council must arrange emergency accommodation if it thinks you might be homeless, have a priority
+            need and meet immigration and residence conditions.</p>
+        <p>You meet one of the
+            <a title="See also: Who qualifies"
+               href="{% url 'renters-get_help_from_your_council_when_homeless_who_qualifies' %}">
+                5 conditions for longer-term housing</a> if the council decides you're in priority need.</p>
+        <p>The council decides if you are in priority need of housing after making enquiries.</p>
+        <p class="inline-highlight">The council doesn't have to offer you housing&nbsp;if it decides you're not in priority need.</p>
+
+    <h2>Children live with you</h2>
+        <p>You are in priority need if you have dependent children who normally live with you and are either:</p>
+        <ul>
+            <li>aged under 16</li>
+            <li>aged under 19 and in full-time education or training</li>
+        </ul>
+        <p>This includes your own children, step-children or other children in your household.</p>
+
+    <h3>Separated parents</h3>
+        <p>You won't usually be in priority need if your children live with their other parent even if they often stay with you.</p>
+        <p>Tell the council about any special circumstances which mean you have to share the care of your children,
+            for example if you have a severely disabled child.</p>
+
+    <h2>Pregnant</h2>
+        <p>You are in priority need if you or a member of your household is pregnant.</p>
+        <p>Take confirmation from a doctor or midwife if you can.</p>
+
+    <h2>Aged 16 or 17</h2>
+        <p>Most homeless 16 and 17 year olds are entitled to accommodation and support from social services rather than the housing
+            department of the council.</p>
+        <p>The housing department might provide you with emergency accommodation while it arranges a social services assessment.</p>
+        <p>Social services must then provide accommodation while they look into what help and support you need.</p>
+
+    <h2>Care leaver aged 18 to 20</h2>
+        <p>You are in priority need if&nbsp;you're aged 18, 19 or 20 and spent at least 24 hours in care arranged by
+            social services when you were 16 or 17 years old.</p>
+        <p>This could have been time in foster care,&nbsp;in a children's home or&nbsp;in any other accommodation
+            arranged by social services.</p>
+
+   <h2>Classed as 'vulnerable'</h2>
+        <p>The council can decide you are in priority need because you or a member of your household is classed as 'vulnerable'.</p>
+        <p>You might be vulnerable because of:</p>
+        <ul>
+            <li>old age</li>
+            <li>physical or learning disabilities</li>
+            <li>mental health problems</li>
+            <li>fleeing domestic abuse or violence</li>
+            <li>time spent in care, prison or the armed forces</li>
+        </ul>
+        <p>You're not automatically classed as vulnerable if you fit into one of these groups.</p>
+        <p>The council decides if you're vulnerable by looking at:</p>
+        <ul>
+            <li>how any disability or illness you have affects your daily life</li>
+            <li>how you will cope with being homeless</li>
+            <li>what support you would get from friends, family or other services</li>
+            <li>the risk of harm to you compared to the risk of harm to others who may become homeless</li>
+        </ul>
+        <p>Supporting information from your GP, psychiatrist, social worker or other agencies can help.
+            The letter should&nbsp;set out what harm you will suffer if you become street homeless.</p>
+
+   <h2>Homeless because of fire or flood</h2>
+        <p>You are in priority need if you're homeless because of an emergency such as fire or flood.</p>
+
+   <h2>If the council says you're not in priority need</h2>
+        <p>Get help from a housing adviser&nbsp;if the council says you're not in priority need or&nbsp;refuses to
+            help with emergency accommodation.</p>
+        <p>The council should give you a written decision if it decides you are not in priority need. You
+            can ask the council to review the decision within 21 days of getting the letter.</p>
+
+   <h3>Check if you can get legal aid</h3>
+        <p>If you have been refused homelessness help, you may qualify for free or reduced cost legal help if you're on a low income.</p>
+
+   </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

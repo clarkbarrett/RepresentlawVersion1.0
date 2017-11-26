@@ -1,0 +1,169 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Regulated tenancies{% endblock %}
+{% block description %}You may be a regulated tenant if your private tenancy began before 15 January 1989.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Regulated tenancies</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Regulated tenancies<br>
+                <small>You may be a regulated tenant if your private tenancy began before 15 January 1989.</small>
+            </h1>
+        </div>
+
+    <h2>What is a regulated tenancy?</h2>
+        <p>A regulated tenancy is a long-term tenancy with a private landlord.</p>
+        <p>You probably have a regulated tenancy if you pay rent to a private landlord and your tenancy
+            started before 15 January 1989.</p>
+        <p>You could be a regulated tenant if you later signed a new tenancy agreement after that date with the
+            same landlord, even if it is at a different address.</p>
+        <p>You won't be a regulated tenant if you've lived in the same property as your
+            landlord since your tenancy started.</p>
+
+    <h2>Fair rents</h2>
+        <p>Regulated tenants are entitled to a fair rent.</p>
+        <p>Fair rents are set by a rent officer at the Valuation Office Agency.</p>
+        <p>If a fair rent isn't already registered, you or your landlord can apply to the rent service to get one registered.</p>
+        <p>Your landlord can't charge you more than the fair rent once it's set.</p>
+
+    <h2>Rent increases</h2>
+        <p>Your landlord can apply to the Valuation Office Agency to increase a fair rent once every two years.
+            In limited circumstances a landlord can apply for
+            an increase before the two years expires.</p>
+        <p>You may be able to challenge a proposed rent increase using the tribunal for rent disputes.</p>
+
+    <h2>Help to pay the rent</h2>
+        <p>If you have a low income or if you claim benefits and need help pay your rent, you could claim housing benefit or
+            universal credit.</p>
+
+    <h2>Repairs</h2>
+        <p>Your landlord has to keep the structure and exterior of your home in good repair.
+            This includes the roof, guttering, walls, windows and doors.</p>
+        <p>Your landlord must also keep any gas, electricity, heating, water and sanitation equipment in good repair.</p>
+        <p>Your landlord must have a current
+            <a title="See also: Gas safety checks in rented homes"
+               href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                gas safety certificate
+            </a> for any gas appliances they provide. Furniture provided
+            should be fire resistant.</p>
+        <p>You are responsible for looking after the property and for carrying out minor repairs
+            such as changing a fuse.</p>
+        <p class="inline-callout highlight">Find out
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="See also: landlord and tenant responsibility for repairs?">more about responsibility for repairs
+            </a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+     <h2>Lodgers</h2>
+        <p>You have the right to rent out a room to a
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also: lodgers">lodger
+            </a> unless your tenancy agreement says you must get your landlord's permission first.</p>
+
+    <h2>Ending your tenancy</h2>
+        <p>You can end a tenancy by giving your landlord notice in writing of at least:</p>
+
+        <ul>
+            <li>four weeks&nbsp;if you pay your rent weekly</li>
+            <li>one month if you pay your rent monthly</li>
+        </ul>
+        <p>Your tenancy agreement might say you must give a longer period of notice.</p>
+        <p>The notice period must end on the first or last day of the period of a tenancy unless your
+            tenancy agreement says something different.</p>
+        <p>The first day of a period of your tenancy is the anniversary date each week or month of when
+            your tenancy began. This is often the same date that your rent is due, but not always.&nbsp;
+            Check with a housing adviser if you're not sure about the dates.</p>
+        <p>If you are still in a fixed-term period of your tenancy you can only give notice if
+            your tenancy agreement says this is allowed.</p>
+        <p>A regulated tenancy can also be ended at any time if both you and your landlord agree.
+            This is known as surrendering a tenancy.</p>
+        <p>Get your landlord's agreement in writing if you want to surrender your tenancy.</p>
+
+    <h2>Eviction of regulated tenants</h2>
+        <p>Regulated tenants have strong tenancy rights.</p>
+        <p>You can only be
+            <a href="{% url 'renters-eviction_of_regulated_tenants' %}"
+               title="See also: Eviction of regulated tenants">evicted from a regulated tenancy
+            </a> if your landlord gets a court order. Your landlord must prove there is a legal reason to evict you.</p>
+        <p>Your landlord can take court action to evict you if you do not pay your rent.</p>
+        <p>In most cases the court must also decide whether it is reasonable for you to be evicted.</p>
+        <p>It is easier to evict you if you no longer live in the property.</p>
+
+    <h2>Illegal eviction</h2>
+        <p>It's illegal eviction if your landlord tries to evict you without getting a court order.</p>
+        <p>Your local council can help if you're illegally evicted or harassed by your landlord.</p>
+        <p>A court can order your landlord to let you back into your home.</p>
+        <p>Get advice now if you are facing illegal eviction or harassment.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+
+    <h2>Succession rights after the death of a regulated tenant</h2>
+        <p>The inheritance of a tenancy is known as succession.</p>
+        <p>If you were living with the tenant before their death, you can inherit a regulated
+            tenancy if you were their:</p>
+
+    <ul>
+        <li>husband, wife or civil partner</li>
+        <li>cohabitee</li>
+    </ul>
+
+        <p>The tenancy remains a regulated tenancy if no one else had previously inherited the tenancy.</p>
+        <p>You could also inherit the tenancy if you are&nbsp;another member of the regulated tenant's
+            family and you were living with the tenant for at least the two
+            years before the death of the tenant.&nbsp;The tenancy becomes an assured tenancy.</p>
+        <p>Sometimes there is more than one person living with a tenant who could succeed to the
+            tenancy if the tenant dies. Only one person is allowed to succeed. Joint succession is
+            not allowed. A husband, wife, cohabitee or civil partner always takes priority
+            over another family member.</p>
+        <p>A regulated tenancy can only inherited twice in very specific circumstances. The person
+            who succeeds in this case will be an assured tenant.</p>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

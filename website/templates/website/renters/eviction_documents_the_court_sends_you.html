@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Eviction documents the court sends you{% endblock %}
+{% block description %}Find out about the documents the court sends you if your landlord wants to evict you and how you can respond.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction documents the court sends you</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Eviction documents the court sends you<br>
+                <small>Find out about the documents the court sends you if your landlord wants
+                        to evict you and how you can respond.</small>
+            </h1>
+        </div>
+
+    <h2>Get help with defending the case</h2>
+        <p>Get advice now if you're facing eviction. Have the papers you received from the court to hand when
+            you speak to an adviser.</p>
+        <p class="inline-callout phone">
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{ civil_legal_advice_url }}" target="_blank">
+                Call Civil Legal Advice on 0345 345 4 345 to see if you qualify for legal aid</a></p>
+
+
+   <h2>Why the court writes to you</h2>
+        <p>The court contacts you because your landlord has started a formal legal procedure to
+            evict you from your home.</p>
+        <p class="inline-callout">Your landlord can ask the court for a possession order to
+            evict you if you don't leave at the end of a
+            <a title="see also: eviction notices"
+               href="{% url 'renters-eviction_notices_from_private_landlords' %}">
+                correctly notified notice period</a>.</p>
+        <p>The court normally has a hearing to decide what to do.</p>
+        <p>Documents sent by the court set out your landlord's claim and tell you when your
+            case will be heard in court.</p>
+        <p>If you are a private tenant with an assured shorthold tenancy, your landlord may decide to use
+            a quicker route to eviction called the
+            <a title="see also: eviction - accelerated possession procedure"
+               href="{% url 'renters-eviction_using_the_accelerated_possession_procedure' %}">
+                accelerated possession procedure</a>. This can mean a court hearing isn't needed.</p>
+
+   <h2>What the court sends you</h2>
+        <p>The first documents the court sends are:</p>
+        <ul>
+            <li>a copy of your landlord's claim form and particulars of claim</li>
+            <li>a defence form</li>
+        </ul>
+
+   <h2>Claim form and particulars of claim</h2>
+        <p>The claim form and particulars of claim are forms that your landlord completes when they
+            start court action against you.</p>
+        <p>The claim form says what kind of court order the landlord has asked for.</p>
+        <p>The particulars of claim sets out the details of your landlord's case. These may be set out
+            on the claim form or be attached to it as a separate document.</p>
+        <p>You may also be sent copies of extra documents that your landlord wants the court to see.
+            For example a full schedule of your rent payments or a statement by your housing officer
+            about contact with you. These may be sent by your landlord or the court.</p>
+
+   <h2>Defence form</h2>
+        <p>The defence form is a form for you to complete and return to the court. It allows you to:</p>
+        <ul>
+            <li>give the court an explanation of your situation</li>
+            <li>provide reasons why you should be allowed to stay</li>
+            <li>say that information from the landlord is wrong</li>
+        </ul>
+        <p>Return the form within 14 days if you want to defend the claim. Your completed form helps the
+            court decide whether or not to make a possession order.</p>
+        <p>Even if you don't reply during this time, you can usually explain your situation to the court at the hearing.</p>
+        <p>If you owe rent and your landlord started their claim online, you can
+            reply online. The court explains this when it sends you the defence form.</p>
+
+   <h2>Summons from the court</h2>
+        <p>The court usually tells you on the front page of the claim form when and where the court
+            hearing will be held. This is often referred to as a summons.</p>
+        <p>The court could send you the summons separately at a later date.</p>
+        <p class="inline-callout">If your landlord uses the
+            <a title="see also: Eviction using the accelerated possession procedure"
+               href="{% url 'renters-eviction_using_the_accelerated_possession_procedure' %}">
+                accelerated possession procedure</a>, you won't be sent details of a court hearing.</p>
+        <p>If you send in a defence form, the court may set a date for a court hearing. The court
+            should give you at least 21 days' notice of the hearing.</p>
+
+   <h2>Challenge the case to evict you</h2>
+        <p>Complete and return your defence form to the court within 14 days.</p>
+        <p>Use the form to explain why you disagree with any information your landlord has given
+            about why you are being evicted, such as the amount of rent arrears.</p>
+        <p>You can also use the form to ask the court to allow you more time if the court does decide
+            to evict you. You might want to do this if you have health problems or young children and
+            can't easily find a new place to live.</p>
+        <p>Include evidence with your defence form. This could include copies of:</p>
+        <ul>
+            <li>receipts from the housing benefit department to show you have provided all the
+                information they asked for</li>
+            <li>award letters showing your entitlement to benefits</li>
+            <li>letters showing you have a new job</li>
+            <li>proof of payments into your rent account</li>
+            <li>hospital letters about your health problems</li>
+        </ul>
+
+   <h2>If you don't want to stay</h2>
+        <p>You do not have to defend a case if you don't want to stay.</p>
+        <p>Check with your landlord that your tenancy has ended or you could owe rent to your landlord
+            for a period after you have left.</p>
+        <p class="inline-callout">Find out more about
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: ending a fixed-term tenancy">
+                ending a fixed-term tenancy</a> and
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also: ending a periodic (month to month) tenancy">
+                ending a periodic (month to month) tenancy</a>.</p>
+        <p>You may be able to leave after the period in the notice from your landlord expires and won't be
+            liable for any further rent charges. But you might need to get written agreement from your landlord
+            that your tenancy has ended.</p>
+        <p>If you are applying as homeless to the council, it may not help you until the
+            <a title="see also: possession orders"
+               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
+                court makes a possession order</a> and
+            <a title="see also: when bailiffs evict tenants"
+               href="{% url 'renters-what_happens_when_bailiffs_evict_tenants' %}">
+                sends in the bailiffs</a>. If you leave before this, the council could decide it doesn't have a duty
+            to rehouse you in the long term.</p>
+
+        <h2>Next steps: court hearing</h2>
+        <p class="inline-callout">
+        Find out
+        <a title="See also: What happens at an eviction possession hearing"
+           href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}">
+            more about court possession hearings</a>.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

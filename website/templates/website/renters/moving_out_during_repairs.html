@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Moving out during repairs{% endblock %}
+{% block description %}If repair work is dangerous or will cause too much disturbance, you may have to move out for a short time or even permanently.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Moving out during repairs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Moving out during repairs<br>
+                <small>If repair work is dangerous or will cause too much disturbance, you may have to move out for a
+                    short time or even permanently.</small>
+            </h1>
+        </div>
+
+    <h2>Leaving your home temporarily because of disrepair</h2>
+        <p>Your landlord may ask you to move out temporarily during major repair work to your home.</p>
+        <p>Before moving out, ask your landlord to confirm in writing:</p>
+        <ul>
+            <li>how long the works will last</li>
+            <li>your right to return to the property after the work is completed</li>
+            <li>details of any alternative accommodation the landlord can provide for you</li>
+        </ul>
+        <p>Your landlord can apply to the courts for an order for you to leave if you refuse to
+            leave while repairs are being done.</p>
+        <p>If you have limited tenancy rights, your landlord might give you notice to end your tenancy instead.</p>
+        <p class="inline-callout internal">
+            <a href="{% url 'renters-tenancy_checker' %}"
+               title="See also: tenancy rights checker">
+                Use Represent's tenancy checker to check your tenancy rights</a>.</p>
+        <p>Depending on your tenancy agreement and the length of time it has taken for your landlord
+            to begin repairs, you may be entitled to
+            <a title="See also: Housing disrepair: check if you can claim compensation"
+               href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}">
+                compensation</a>.</p>
+        <p>Get advice to check your rights if you have to leave your home temporarily.</p>
+
+                <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+    <h2>Leaving your home permanently because of disrepair</h2>
+        <p>You might decide to look for somewhere else to live
+            if the disrepair in your home is bad and your landlord refuses to make repairs.</p>
+        <p>You must end your tenancy properly if you want to leave. If you don't, you could be
+            liable for the rent even after you've left.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: ending a fixed-term tenancy">ending a fixed-term tenancy</a> and
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also: ending a periodic (month to month) tenancy">
+                ending a periodic (month to month) tenancy</a>.</p>
+        <p>You could lose your deposit if you don't give the correct notice.</p>
+        <p class="inline-callout internal">Find out more about&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="see also: tenancy deposit deductions">
+                deductions your landlord can make from your deposit</a> and&nbsp;
+            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+               title="see also: How to get a tenancy deposit back">how to get your deposit back</a>.</p>
+        <p>If you still have a few months left on your tenancy agreement your landlord may say you have
+            to pay rent for the whole period.</p>
+        <p>You may be able to claim for damages if your landlord is breaking your tenancy agreement by refusing to
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: Landlord and tenant responsibilities for repairs">carry out repairs</a>.</p>
+        <p>You can take court action to
+            <a title="See also: Housing disrepair: check if you can claim compensation"
+               href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}">
+                claim compensation</a> even if you've already left.</p>
+
+       <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Applying as homeless</h2>
+        <p>You can make a homeless application if you have to move out of your home because it isn't safe to live there.</p>
+        <p>Do not give up your home before making the homeless application. The council could
+            decide you made yourself intentionally homeless.</p>
+
+    <h2>Eviction due to disrepair</h2>
+        <p>Depending on the type of tenancy you have, your landlord may need a legal reason to evict you.
+            They must follow the correct procedure to do this.</p>
+        <p class="inline-callout internal">Find out
+            <a title="See also: Eviction of assured shorthold tenants "
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                more about the eviction of private tenants</a>.</p>
+        <p>If you don't have strong tenancy rights, the landlord may only need to give you a short amount
+            of notice.</p>
+        <p>Your landlord may be able to get a
+            <a title="See also: Court action for eviction"
+               href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}">
+                court order to evict you</a>
+            if the repair work can't be carried out if you remain in the property. If this is the case the court
+            must normally make an order to evict you.</p>
+        <p>Your landlord cannot use this reason to evict you if you were a tenant before
+            they bought the property.</p>
+        <p>Alternatively, your landlord could get a court order that says you have to leave temporarily
+            so repairs can be carried out.</p>
+        <p>You can claim compensation from your landlord if you have to move into alternative
+            accommodation during repair works and your tenancy has not been ended.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}"
+               title="See also: Housing disrepair: check if you can claim compensation">
+                more about claiming compensation for disrepair</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Taking action to stop eviction</h2>
+        <p>You may be able to take action to stop your landlord evicting you.</p>
+        <p>Contact your local council's housing department. Ask if they have someone to help deal
+            with eviction due to disrepair.</p>
+        <p>
+            <a href="./?a=26010" title="Link to Gov.uk - find my council"
+               target="_blank" class="inline-callout external">
+                Find your local council's contact details.</a></p>
+
+    <h2>Harassment and illegal eviction due to disrepair</h2>
+        <p>Your <a title="See also: What is illegal eviction?"
+                   href="{% url 'renters-what_is_illegal_eviction' %}">
+            eviction may be illegal</a> if your landlord has not followed the correct procedure to evict you.</p>
+        <p>If your landlord tries to force you out by making life difficult for you, they may be
+            guilty of&nbsp;
+            <a href="{% url 'renters-harassment_by_a_private_landlord' %}"
+               title="see also: harassment">harassment</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+    </div>
+
+    <h2>Moving back in after repairs</h2>
+        <p>You may be able to move back in once repairs are completed.</p>
+        <p>You may have to ask the landlord to do more repair work if the repairs have been
+            <a href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}"
+               title="see also: What to do if your landlord won't do repairs">
+                done badly or not been properly finished</a>.</p>
+        <p>The landlord is responsible for fixing any damage caused during repair work.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: landlord and tenant responsibility for repairs">
+                more about&nbsp;landlord and tenant responsibility for repairs</a>.</p>
+        <p>Get advice if any of your personal belongings were damaged during repair or the repair work
+            has made your home dangerous.</p>
+        <p>You may be able to
+            <a title="see also: Housing disrepair: check if you can claim compensation"
+               href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}">
+                ask the court for compensation</a> or for an order to make your landlord carry out the work.</p>
+        <h2>Rent increases after repairs</h2>
+
+    <p>Depending on your tenancy agreement, your landlord may have the right to
+        <a title="See also:&nbsp;private tenancy rent increases"
+           href="{% url 'renters-rent_increases' %}">
+            increase your rent</a> after carrying out repairs and improvements.</p>
+
+    <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+    </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

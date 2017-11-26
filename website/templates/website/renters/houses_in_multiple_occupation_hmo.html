@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Houses in multiple occupation (HMO)</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Houses in multiple occupation (HMO)<br>
+                    <small>Your landlord has extra legal responsibilities if the house
+                        or flat you share with other tenants is a house in multiple occupation (HMO).</small>
+                </h1>
+            </div>
+
+    <h2>Extra legal protection in shared housing</h2>
+        <p>Your landlord usually has extra legal responsibilities if the home you rent is a house in
+            multiple occupation or HMO.</p>
+        <p>The extra rules are there to reduce the risk of fire and to make sure that people living
+            in shared houses or flats have adequate facilities.</p>
+
+    <h2>Extra responsibilities of HMO landlords</h2>
+        <p>Landlords of HMOs must make sure that:</p>
+        <ul>
+            <li>proper fire safety measures are in place, including working smoke alarms</li>
+            <li>annual
+                <a title="See also: Gas safety"
+                   href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                    gas safety checks</a> are carried out</li>
+            <li>
+                <a title="See also:Electrical safety responsibilities"
+                   href="{% url 'renters-electrical_safety_in_rented_homes' %}">
+                    electrics are checked
+                </a> every 5 years</li>
+            <li>the property is not
+                overcrowded</li>
+            <li>there are enough cooking and bathroom facilities for the number living there</li>
+            <li>communal areas and shared facilities are clean and in good repair</li>
+            <li>there are enough rubbish bins/bags</li>
+        </ul>
+
+
+    <h2>Is your home a house in multiple occupation?</h2>
+        <p>Your home is probably an HMO if:</p>
+        <ul>
+            <li>three or more unrelated people live there as at least 2 separate households &ndash; for example,
+                3 single people with their own rooms, or 2 couples each sharing a room</li>
+            <li>the 3 or more people living there share basic amenities, such as a kitchen or bathroom</li>
+        </ul>
+        <p>An HMO could be a:</p>
+        <ul>
+            <li>house split into separate bedsits</li>
+            <li>shared house or flat, where the sharers are not members of the same family</li>
+            <li>hostel</li><li>bed-and-breakfast hotel that is not just for holidays</li>
+            <li>shared accommodation for students &ndash; although many&nbsp;
+                <a title="See also: Student housing"
+                   href="{% url 'renters-university_accommodation_halls_of_residence' %}">
+                    halls of residence</a> and other types of student accommodation owned by educational establishments
+                are not classed as HMOs</li>
+        </ul>
+
+        <p>Ask
+            <a title="link to Gov.uk - find your local council" href="{{ find_council_url }}" target="_blank"> your local council
+            </a> to check if your home is registered as an HMO.</p>
+
+    <h2>Responsibility for repairs in HMOs</h2>
+        <p>Your landlord is responsible for any repairs to communal areas of your home.</p>
+        <p>They are also responsible for repairs to:</p>
+        <ul>
+            <li>the structure and exterior of the house &ndash; including the walls, window frames and gutters</li>
+            <li>water and gas pipes</li>
+            <li>electrical wiring</li>
+            <li>basins, sinks, baths and toilets</li>
+            <li>fixed heaters (radiators) and water heaters</li>
+        </ul>
+        <p>Check your
+            <a title="See  also: types of renting agreements"
+               href="{% url 'renters-types-of-renting-agreement' %}">
+                rental agreement
+            </a> to find out who's responsible for what.</p>
+
+        <p class="inline-callout highlight">Find out more about&nbsp;
+            <a title="landlord and tenant responsibility for   repairs"
+               href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                responsibility for repairs in private rented homes
+            </a>.</p>
+
+     <h2>HMO licence for a shared home</h2>
+        <p>Your landlord must get a licence from the council if the HMO:</p>
+        <ul>
+            <li>is at least 3 storeys high</li>
+            <li>has 5 or more unrelated people live in it</li>
+            <li>has 2 or more separate households living there</li>
+        </ul>
+        <p>Some councils also require other HMOs to be licensed.&nbsp;Some councils require all private
+            landlords to get a licence.</p>
+        <p class="inline-callout highlight">Check with your&nbsp;
+            <a title="Link to Gov.uk - find your local council"
+               href="{{ find_council_url }}" target="_blank">local council</a>
+            to find out if your landlord needs a licence and has obtained it.</p>
+        <p>HMOs don't need to be licensed if they are managed or owned by a housing association or
+            co-operative, a council, a health service or a police or fire authority.</p>
+        <p>Licences usually last for 5 years but some councils grant them for shorter periods.
+            When deciding whether to issue or renew a licence, the council checks that:</p>
+        <ul>
+            <li>the property meets an acceptable standard. For example, it looks at whether the property
+                is large enough for the occupants and if it is well managed</li>
+            <li>the landlord is a 'fit and proper' person</li>
+        </ul>
+
+        <h2>Right to rent</h2>
+
+        <p>From 1 February 2016, if you want to rent from a private landlord in England, the landlord must
+            check that you have the 'right to rent'.</p>
+        <p class="inline-callout highlight">Find out
+            <a title="see also: right to rent immigration checks"
+               href="{% url 'renters-right_to_rent_immigration_checks' %}">
+                more about right to rent immigration checks</a>.</p>
+
+     <h2>Landlord penalties for not having an HMO licence</h2>
+        <p>If you live in a HMO that should be licensed but isn't, your landlord can be&nbsp;fined
+            and&nbsp;ordered to repay up to 12 months' rent (or housing benefit to the council).</p>
+        <p>Many people living in HMOs have an
+            <a title="see also: assured shorthold tenancy"
+               href="{% url 'renters-assured-shorthold-tenancies' %}">
+                assured shorthold tenancy
+            </a>.
+            If you're an assured shorthold tenant and the HMO should be licensed but isn't, any section 21
+            notice (two months' notice to leave) your landlord gives you is not valid.</p>
+        <p class="inline-callout highlight">Find out more about
+            <a title="See also: Eviction of assured shorthold tenants"
+               id="2236"
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                eviction from an assured shorthold tenancy</a>.</p>
+
+     <h2>How to complain about an HMO landlord</h2>
+        <p>Contact the environmental health department of your&nbsp;
+            <a title="Link to Gov.uk - find your local council" href="{{ find_council_url }}"
+               target="_blank">local council
+            </a>
+            if you live in an HMO and you don't think your landlord is following these rules.</p>
+        <p>The council can do an assessment using the Housing Health Safety Rating System. This assessment
+            looks for specific hazards in the home. It allows councils to take action against landlords whose
+            properties are not safe or fit to live in.</p>
+        <p>The council can prosecute landlords of HMOs, or any manager they have employed, if they break the law.
+            In extreme cases, the council can take over the management of the property.</p>
+        <p class="inline-callout highlight">Find out
+            <a title="see also: health and safety standards for rented homes"
+               href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+                more about health and safety standards for rented homes</a>.</p>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

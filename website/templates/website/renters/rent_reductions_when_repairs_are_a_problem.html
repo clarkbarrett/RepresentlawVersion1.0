@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Rent reductions when repairs are a problem{% endblock %}
+{% block description %}Find out what you can do if repair work to your private rented home causes problems or major disruption.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Rent reductions when repairs are a problem</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Rent reductions when repairs are a problem<br>
+                <small>Find out what you can do if repair work to your private rented home causes problems or major disruption.</small>
+            </h1>
+        </div>
+
+    <h2>Rent payments and reductions</h2>
+        <p>You do not have the right to stop paying rent during repairs.</p>
+        <p>You can ask your landlord for a reduction in your rent if:</p>
+        <ul>
+            <li>you aren't able to use part of your home because of the works</li>
+            <li>because the work is very disruptive.</li>
+        </ul>
+        <p>You claim compensation if your landlord refuses to reduce the rent. You can claim this after the work has been done.</p>
+        <p>You could
+            <a href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}"
+               title="see also: Housing disrepair: check if you can claim compensation">
+                take your landlord to court to claim compensation</a>.</p>
+        <p>Get advice if your landlord refuses to reduce your rent.</p>
+        <p class="advice-highlight tool">Don't stop paying the rent or you could lose your home.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+
+    <h2>Redecoration after repair work</h2>
+        <p>When repairs are carried out, the landlord should arrange to fix any damage the repair work causes to
+            internal decorations.</p>
+        <p>This can mean:</p>
+        <ul>
+            <li>repairing damaged plaster or wall coverings</li>
+            <li>repainting if necessary</li>
+            <li>replacing damaged items such as carpets.</li>
+        </ul>
+        <p>Your landlord doesn't have to fix any damage afterwards if the work is an improvement, for example
+            putting in a shower when you didn't have one before.</p>
+        <p>Your landlord must have your permission before they can carry out any improvement work.</p>
+        <p>Ask your landlord to agree in writing to repair any damage before you agree to improvement work on your home.</p>
+
+    <h2>Use of your electricity and gas</h2>
+        <p>The landlord's workers might have to use your supply of electricity, gas and other services
+            while they're doing repair work.</p>
+        <p>If you think they've used too much or if it continues for a long time, ask your landlord to
+            pay something towards the bills.</p>
+
+    <h2>Right to stay during repair work</h2>
+        <p>You have the right to stay in your home while most repairs are being carried out.</p>
+        <p>During repairs, the landlord should try to keep disruption to a minimum.</p>
+        <p>Some repairs might take longer and cost the landlord more because you are still in your home.
+            Usually the landlord cannot use this as a reason to ask you to leave.</p>
+        <p class="inline-callout highlight">Most tenants do not have the right to be rehoused while repairs are being completed.</p>
+
+    <h2>Right to leave during repair work</h2>
+        <p>In some circumstances you might have to leave while repair work is being done to your home.</p>
+        <p class="inline-callout internal">Find out about
+            <a title="See also: moving out during repair work"
+               href="{% url 'renters-moving_out_during_repairs' %}">
+                moving out during repairs</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Poor or incomplete repairs</h2>
+        <p>Your landlord is usually only responsible for the repair and not for improving the property,
+            so they might decide to do the minimum required.</p>
+        <p>You can take action over badly-done repairs. Tell your landlord if the repair work doesn't fix the problem.
+            They must take steps to fix it.</p>
+        <p class="inline-callout internal">Find out what you can do if
+            <a href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}"
+               title="see also: What to do if your landlord won&rsquo;t do repairs">your landlord won't do the work</a>.</p>
+        <p>If the work was done because the environmental health department of your council or the court ordered it,
+            contact the council or the court again. Ask how they can force your landlord to do the work properly.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">complaining to environmental health
+                about conditions in your home</a>.</p>
+
+    <h2>Gas safety</h2>
+        <p>Any work done to gas supplies or installations in your home must be done by a qualified Gas Safe registered engineer.</p>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+               title="see also: gas safety in your rented home">gas safety in your rented home</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

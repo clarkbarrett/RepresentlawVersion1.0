@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Doing the repairs if your landlord won't{% endblock %}
+{% block description %}If your landlord won't do repairs, there's a procedure you must follow if you want to arrange to have the work done and bill your landlord.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Doing the repairs if your landlord won't</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Doing the repairs if your landlord won't<br>
+                <small>If your landlord won't do repairs, there's a procedure you must follow
+                        if you want to arrange to have the work done and bill your landlord.</small>
+            </h1>
+        </div>
+
+    <h2>Can you do repairs and deduct money from rent?</h2>
+        <p>It is possible to do repairs without your landlord's agreement and take the cost out of your rent.&nbsp;
+            You're responsible for the quality of the work that's carried out. If repairs are done badly
+            you'll have to pay to put things right.</p>
+        <p>You must follow the steps set out in this article.&nbsp;You should only use this procedure for minor repairs.</p>
+        <p>You can use this procedure if you are a:</p>
+        <ul>
+            <li>private tenant</li>
+            <li>council tenant (but not if you claim housing benefit)</li>
+            <li>housing association tenant</li>
+        </ul>
+        <p>If you claim housing benefit, get advice before using this procedure.</p>
+
+    <h2>No right to withhold rent</h2>
+        <p>You do not have the right to stop paying rent because your landlord won't do repairs.</p>
+        <p>Your landlord can take steps to evict you for rent arrears if you don't pay the rent.
+            In most cases a landlord has to go to court to get an order to evict you. The court could decide you
+            should be evicted if you have rent arrears.</p>
+
+
+    <h2>1. Write to inform your landlord about repairs</h2>
+        <p>You must let your landlord know that repairs are needed.</p>
+        <p>If you haven't already told your landlord about repairs, you can use Shelter's template letter
+            to write to your landlord to ask for repairs.</p>
+        <p class="inline-callout download">
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0007/1154185/R1_Request_for_repair.docx"
+               title="Download R1 letter requesting repairs">Write to your landlord to ask for repairs</a>.</p>
+        <p>Keep copies of all correspondence to and from your landlord and keep accurate records of what you've paid.</p>
+
+    <h2>2. Write saying you plan to arrange repairs</h2>
+        <p>Write to your landlord again if you don't get a reply or if the work doesn't start.</p>
+        <p>Explain that unless the repairs are done within a certain time (for example two weeks),
+            you'll arrange the work yourself and take the costs out of your rent.</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0003/1154190/R6_Inform_landlord_of_intention_to_carry_out_repairs.docx"
+               title="Download letter R6 Inform landlord of intention of carrying out repairs">
+                write to your landlord to tell them you'll carry out repairs yourself if they don't</a>.</p>
+        <p>This is the first of four letters you must write.</p>
+        <p>You can't deduct any other costs from your rent money.</p>
+        <p>You can
+            <a title="See also: Housing disrepair: check if you can claim compensation"
+               href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}">
+                ask your landlord for compensation</a> to cover extra costs caused by the repair problem. For example,
+            if you had to replace damaged belongings.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>3. Get quotes for repair work</h2>
+        <p>After the time you gave the landlord to start the repairs runs out, get three estimates or quotes for
+            the repair work from reliable contractors</p>
+
+    <h2>4. Send quotes to your landlord</h2>
+        <p>Send the quotes to your landlord with a letter explaining that unless they get the repairs done
+            within a certain time (for example two weeks), you'll go ahead with the cheapest quote.</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0004/1154191/R7_Quotes_for_repairs_work.docx"
+               title="Download letter R7 Quotes for repair works">write to tell your landlord you'll use the
+                cheapest quote if they don't do repairs</a>.</p>
+        <p>This is the second of four letters you must write.</p>
+
+     <h2>5. Arrange for repair work to be done</h2>
+        <p>Once the time you gave your landlord has passed, if your landlord hasn't responded, arrange for the
+            work to be done by the contractor that gave the cheapest quote.</p>
+        <p class="inline-callout urgent">Don't proceed if you have doubts about the contractor.
+            You'll have to put things right if the work is done badly.</p>
+
+    <h2>6. Send receipts to your landlord</h2>
+
+        <p>Pay for the work yourself and send a copy of the receipt to your landlord with a letter asking
+            them to refund the money.</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0005/1154192/R8_Receipts_for_repairs_work_with_request_for_payment.docx"
+               title="Download letter R8 Receipts for repair work with request for refund">
+                write to your landlord to tell them you've done the repairs and to ask for a refund</a>.</p>
+        <p>This is the third of four letters you must write.</p>
+
+    <h2>7. Write to confirm rent deductions</h2>
+        <p>If your landlord doesn't pay you, write and confirm that you're going to deduct the money from your future rent.</p>
+        <p>Explain exactly when the deductions will start and how long they'll last.</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0006/1154193/R9_Inform_landlord_of_intention_to_deduct_repair_cost_from_rent.docx"
+               title="Download letter R9 Inform landlord of intention to deduct costs of repairs from rent">
+                write to tell your landlord about the deductions you'll make from your rent</a>.</p>
+        <p>This is the fourth and final letter you must write.</p>
+
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

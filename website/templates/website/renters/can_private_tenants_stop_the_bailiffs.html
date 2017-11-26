@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Can private tenants stop the bailiffs{% endblock %}
+{% block description %}The court usually can't stop the eviction of a private tenant.
+        Sometimes it can agree to delay the eviction.
+{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Can private tenants stop the bailiffs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Can private tenants stop the bailiffs<br>
+                <small>The court usually can't stop the eviction of a private tenant.
+                    Sometimes it can agree to delay the eviction.</small>
+            </h1>
+        </div>
+    <h2>Get advice</h2>
+        <p>Get advice now if you're facing eviction. Have the papers you received from the court to hand
+            when you speak to an adviser.</p>
+        <p class="inline-callout phone">
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{ civil_legal_advice_url }}" target="_blank">
+                Call Civil Legal Advice on 0345 345 4 345 to see if you qualify for legal aid</a></p>
+
+    <h2>When bailiffs are needed to evict you</h2>
+        <p>Your landlord cannot evict you from a private tenancy. They have to follow a procedure to evict
+            you and get a court order.</p>
+        <p>Your landlord must:</p>
+        <ul>
+            <li>serve you with a valid notice to leave</li>
+            <li>get a court order that orders you to leave</li>
+            <li>if you don't leave, apply to the court for bailiffs to remove you and your belongings</li>
+        </ul>
+        <p>The bailiffs can evict you after a court grants a warrant for possession. This is usually
+            called a bailiff's warrant.</p>
+        <p>You don't have to leave until the bailiffs come.</p>
+        <p class="inline-callout">Find out more about
+            <a href="{% url 'renters-what_happens_when_bailiffs_evict_tenants' %}"
+               title="See also: when bailiffs evict tenants">
+                what happens when bailiffs evict tenants</a></p>
+        <p>Different rules apply if
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also: lodgers">you are a lodger</a>.</p>
+
+    <h2>When the court can't stop the bailiffs</h2>
+        <h3>Section 21 eviction</h3>
+        <p>The court can't stop the bailiffs if you are an assured shorthold tenant and your landlord gives
+            you a valid Section 21 notice and gets a court order.</p>
+        <p>Most private tenants have this type of tenancy. Landlords normally use a Section 21 notice
+            to end the tenancy. This must give you a minimum of 2 months' notice.</p>
+        <h3>Mandatory grounds</h3>
+        <p>The court can't stop the bailiffs if your landlord gets a court order using a mandatory ground
+            for possession.</p>
+        <p>If a landlord proves that a mandatory ground applies, the court must order you to leave
+            by a certain date. The court sets out its decision in a possession order.</p>
+        <p>The most common mandatory ground is Ground 8. Landlords can use this when you owe 8
+            weeks' or 2 months' rent at both the time your landlord gave you written notice and
+            at the time of the court hearing.</p>
+        <p class="inline-callout">Find out more about the&nbsp;
+            <a title="see also: evicting assured shorthold tenants"
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                rules for evicting assured shorthold tenants</a> and
+            <a href="{% url 'renters-eviction_of_assured_tenants' %}"
+               title="see also: evicting assured tenants">
+                rules for evicting assured tenants</a>.</p>
+
+    <h2>When the court can stop the bailiffs</h2>
+        <h3>Discretionary grounds</h3>
+        <p>Rent arrears and antisocial behaviour are examples of discretionary grounds for eviction.</p>
+        <p>It is not usual for private tenants to be taken to court on discretionary grounds but it does happen.</p>
+        <p>For the court to make a possession order for a discretionary ground, it must be
+            satisfied that your landlord both proved its case and that it is reasonable to make an order.</p>
+        <p>Your landlord can apply to the court for a bailiff's warrant if:</p>
+        <ul>
+            <li>the court made an outright order for possession and you stayed beyond the date the
+                court ordered you to leave</li>
+            <li>the court made a suspended possession order but you broke the conditions set by the court</li>
+        </ul><p>You can apply to the court to ask for the bailiffs to be stopped. If the court decides
+        to consider your application, there is usually a short court hearing. This could be on the same
+        day that you apply. At the hearing, you must explain to the court why it would be reasonable
+        to stop the eviction.</p>
+        <p>Telling the court you will be homeless isn't enough to stop the bailiffs.
+            The court considers reasons related to why you were taken to court. For example,
+            information about your earnings or a new job is relevant if you are being evicted for rent arrears.</p>
+        <p>The court will decide to stop the bailiffs if it thinks it is reasonable to do so.</p>
+        <p class="inline-callout">Find out about
+            <a href="{% url 'renters-stopping_eviction_by_bailiffs' %}"
+               title="see also: stopping eviction by bailiffs">stopping eviction by bailiffs</a>.</p>
+
+        <h3>If you&nbsp;weren't able to attend the court hearing</h3>
+        <p>You may be able to get a possession order cancelled (set aside) if you weren't able to
+            attend the hearing where the court decided you should lose your home.</p>
+        <p>Apply to the court as soon as you find out that a court order was made. Don't delay.</p>
+        <p>You can apply for the decision to be set aside if you:</p>
+        <ul>
+            <li>had a good reason for missing the court hearing</li>
+            <li>did not delay applying to cancel the order after you found out the original possession
+                order had been made</li>
+            <li>would have had a good chance of persuading the court not to make an order for possession
+                had you been there</li>
+        </ul>
+        <p>Apply to the court
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">using form N244</a>.</p>
+
+        <h3>Section 21 notice: when there was no court hearing</h3>
+        <p>You may be able to get a possession order cancelled (set aside) if:</p>
+        <ul>
+            <li>you are an assured shorthold tenant</li>
+            <li>your landlord served a Section 21 notice</li>
+            <li>there was no hearing because the court made a decision based on the documents provided</li>
+        </ul>
+        <p>You must have a good reason why the court should not have made a possession order. This could
+            be because the
+            <a title="see also: evicting assured shorthold tenants"
+               href="{% url 'renters-section_21_eviction_process' %}">
+                Section 21 notice is not valid</a>.</p>
+        <p>Apply to the court&nbsp;
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">using form N244</a> within 14 days of getting the possession order.</p>
+
+        <h3>If your tenancy started before 1989</h3>
+        <p>You could be a regulated tenant or fair rent tenant if you have a tenancy that started before 15 January 1989.
+            This is a long-term tenancy type that&nbsp;gives you strong tenancy rights.</p>
+        <p>Most regulated tenants are taken to court for discretionary grounds such as rent arrears.</p>
+        <p class="inline-callout">Find out
+            <a href="{% url 'renters-eviction_of_regulated_tenants' %}"
+               title="see also: eviction from a regulated tenancy">more about eviction from a regulated tenancy</a>.</p>
+
+    <h2>When the courts can delay eviction</h2>
+        <p>The court can sometimes delay eviction by bailiffs for a short time even if it can't stop the eviction.</p>
+        <p>Apply to the court&nbsp;
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">using form N244</a> to ask for the bailiffs to be delayed.</p>
+        <p>The court can only delay the eviction if you would suffer exceptional hardship and hadn't told the court about this before.</p>
+        <p>The maximum delay is 6 weeks. This runs from the date the court made the possession order telling you to leave.
+            For example, if 3 weeks have already passed by the time you apply to the court,
+            you can only ask the court to delay your eviction for a further 3 weeks.</p>
+
+    <h2>Court costs</h2>
+        <p>Unless you claim certain benefits or have a low income, you have to pay a fee to apply to the court to
+            stop the bailiffs coming.</p>
+        <p>You may also have to pay your landlord's court fees, including the costs of applying for bailiffs to
+            evict you. This is usually added to your rent arrears.</p>
+        <p>Find out more from
+            <a href="{{ hmcts_fees_url }}"
+               title="Link to HM Courts and Tribunals about court fees" target="_blank">
+                HM Courts and Tribunals about court fees.</a></p>
+
+    <h2>Rent payments</h2>
+        <p>Until you move out or are evicted, you must&nbsp;pay your rent or use and occupation charges.</p>
+        <p>If you claim housing benefit, this should continue until you actually leave the property.</p>
+
+    <h2>How to ask the court stop or delay the bailiffs</h2>
+        <p>Apply to the court&nbsp;
+            <a title="Link to Court Form N244"
+               href="{{ hmcts_form_n244_url }}"
+               target="_blank">using form N244</a>. There is a fee to pay. You may not have to pay this if you claim certain
+            benefits or have a low income.</p>
+
+        <p>See
+            <a title="Link to EX160A"
+               href="{{ hmcts_form_ex160a_url }}"
+               target="_blank">court leaflet EX160A for details</a>.</p>
+        <p>Explain on the form that you want the bailiffs' warrant to be suspended or delayed.</p>
+        <p>On the same form you may also need to ask the court to vary the possession order to change:</p>
+
+        <ul>
+            <li>the date you are being asked to leave on</li>
+            <li>conditions the court has ordered that you comply with</li>
+        </ul>
+
+    <h2>How to ask&nbsp;your landlord to stop the bailiffs</h2>
+        <p>Ask your landlord to let you stay in your home. If the problem is rent arrears, your landlord might agree
+            if you repay them or show that you can do so soon. Get any agreement with your landlord in writing if you can.</p>
+        <p>Your landlord can ask the court to stop the bailiffs by writing to them to&nbsp;say that they want to
+            withdraw the warrant for possession. Or your landlord can write to the court saying they do not
+            oppose your application to stop the bailiffs.</p>
+        <p>Check with the court that the bailiffs' visit is cancelled. Don't assume the bailiffs won't come
+            just because your landlord says you can stay.</p>
+        <p>If your landlord decides you can stay, they might agree to give you a new tenancy agreement. If this happens
+            the bailiffs can't evict you.</p>
+        <p class="inline-callout">Find out more about
+            <a href="{% url 'renters-stopping_eviction_by_bailiffs' %}"
+               title="see also: stopping eviction by bailiffs">stopping eviction by bailiffs</a>.
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

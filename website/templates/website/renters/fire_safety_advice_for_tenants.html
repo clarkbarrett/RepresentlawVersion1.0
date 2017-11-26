@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Fire safety advice for tenants{% endblock %}
+{% block description %}Find out what landlord should do to keep your rented home fire safe and what you can do if you are worried it's not.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Fire safety advice for tenants</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Fire safety advice for tenants<br>
+                <small>Find out what landlord should do to keep your rented home fire safe and what you
+                    can do if you are worried it's not.</small>
+            </h1>
+        </div>
+
+    <h2>Report a fire</h2>
+        <p>Call the Fire Brigade on 999 to report a fire</p>
+        <p>You can also call if you smell burning, but don't know where it's coming from.</p>
+
+    <h2>Landlords responsibility for fire safety</h2>
+        <p>Landlords are responsible for the safety of:</p>
+        <ul>
+            <li>the electrical wiring and any electrical appliances they provide</li>
+            <li>the gas supply and any gas appliances they provide&nbsp;&ndash; they have a legal duty to have
+                these checked each year by a gas safe engineer</li>
+            <li>any furniture they provide&nbsp;&ndash; upholstered furniture should usually be fire resistant</li>
+        </ul>
+        <p class="inline-callout urgent">Landlords can be fined and sent to prison if they don't follow fire safety regulations.</p>
+
+    <h2>Smoke alarms and carbon monoxide detectors</h2>
+        <p>By 1st October 2015, all private landlords had to make sure that working smoke alarms were
+            fitted on each floor of their rented properties.</p>
+        <p>After that they must make sure that the smoke alarms provided are in working order at the start of any new tenancy.</p>
+        <p>You are responsible for checking the alarm works after you move in. If an alarm stops working, check if
+            it needs new batteries or contact the landlord to arrange a replacement alarm.</p>
+        <p class="inline-callout urgent">You should allow your landlord access to your home to fit or repair smoke alarms.</p>
+        <p>Most council and housing association landlords also fit smoke alarms in their properties.</p>
+        <p>If you have a coal or wood fire in your rented home, your landlord must fit a carbon monoxide detector.</p>
+
+    <h3>Complain to the council about smoke alarms</h3>
+        <p>You can complain to your council's environmental health department if your private landlord hasn't
+            fitted a smoke alarm in your home or carbon monoxide detector if it's required.</p>
+        <p>The council can issue a notice telling your landlord to fit and test the alarms within 28 days.</p>
+        <p>If the landlord doesn't do this, the council can fine the landlord up to £5000 and arrange to fit the alarms itself.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                more about complaining to&nbsp;your council's environmental health department</a>.</p>
+
+    <h2>Electrical fire safety</h2>
+        <p>Electricity is a major cause of accidental fires in the home. Contact your landlord if you're worried about:</p>
+        <ul>
+            <li>the condition of wiring in your home</li>
+            <li>loose plugs on electrical items provided by the landlord</li>
+            <li>torn or fraying cables on kettles, toasters or other appliances provided by the landlord</li>
+            <li>sockets that do not work, have burn marks on them or feel hot</li>
+        </ul>
+        <p class="inline-callout internal">Find out more about
+            <a title="see also: electrical safety in rented homes"
+               href="{% url 'renters-electrical_safety_in_rented_homes' %}">
+                electrical safety in the home</a>.</p>
+
+    <h2>Gas safety</h2>
+        <p>Faulty gas appliances or pipework in your home can cause gas leaks and fire risks.</p>
+        <p>Contact your landlord if you're worried about gas cookers or fires, gas leaks or carbon monoxide poisoning.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="see also: gas safety"
+               href="{% url 'renters-gas_safety_in_rented_homes' %}">gas safety in the home</a>.</p>
+
+    <h2>Furniture fire safety</h2>
+        <p>When you rent a furnished property, any upholstered furniture such as sofas, cushions and mattresses
+            must meet fire safety standards.</p>
+        <p class="inline-callout internal">
+            Find out more about
+            <a title="see also: safety standards for furniture"
+               href="{% url 'renters-safety_standards_for_furniture_and_appliances' %}">
+                safety standards for furniture</a>.</p>
+
+    <h2>Complain to the council about fire safety</h2>
+        <p>If you are worried about fire safety in your home, you can ask your local council to inspect your
+            home for health and safety hazards.</p>
+        <p>You can complain to the council's environmental health inspector. If their inspection finds a
+            fire risk, the council can take action against your landlord.</p>
+        <p>The council uses the&nbsp;
+            <a title="see also; health and safety standards for rented homes"
+               href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+                Housing Health and Safety Rating System</a> to assess if your home is unsafe.</p>
+        <p class="inline-callout internal">Find out&nbsp;
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="See also: Complain to environmental health about rented housing">how to complain to environmental health</a>.</p>
+
+    <h3>Fire safety in shared homes</h3>
+        <p>Shared houses that are licensed by the council as
+            <a title="see also: HMOs"
+               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+                houses in multiple occupancy (HMOs)</a> must have extra fire precaution equipment and facilities.</p>
+        <p>As a condition of their licence, landlords of HMOs can be required to have fire doors, protected escape routes,
+            fire extinguishers or blankets.</p>
+        <p>Tenants in shared houses must also be given a copy of the latest electrician's inspection report.</p>
+
+    <h2>After a fire</h2>
+        <p>Contact your local council to make a homeless application
+            if you can't live in your home after a fire and have nowhere to stay.</p>
+        <p>If the Fire Service tells you your home is safe to return to:</p>
+        <ul>
+            <li>contact your landlord to arrange repairs</li>
+            <li>contact your insurance company to make a claim for your personal belongings</li>
+            <li>ask your landlord to arrange for gas, fire and electrical safety checks</li>
+        </ul>
+        <p>Get advice if your home is too badly-damaged to live in but your landlord tells you must keep
+            paying rent.</p>
+
+                <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Landlord and tenant responsibilities for repairs{% endblock %}
+{% block description %}Find out who is responsible for repairs and maintenance in your rented home.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Landlord and tenant responsibilities for repairs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Landlord and tenant responsibilities for repairs<br>
+                <small>Find out who is responsible for repairs and maintenance in your rented home.</small>
+            </h1>
+        </div>
+
+    <h2>Landlord's repair responsibilities</h2>
+        <p>Your landlord is responsible for most repairs in your home. This applies to private, council and housing
+            association landlords.</p>
+        <p>Your landlord's responsibilities include:</p>
+        <ul>
+            <li>the structure and exterior of the building, including the walls, stairs and bannisters, roof,
+                external doors and windows</li>
+            <li>sinks, baths, toilets and other sanitary fittings, including pipes and drains</li>
+            <li>heating and hot water</li>
+            <li>chimneys and ventilation</li>
+            <li>electrical wiring</li>
+        </ul>
+        <p>Your landlord is responsible for repairing the common parts of a building, such as entrance halls,
+            communal stairways and shared kitchens.</p>
+        <p>Your landlord also must put right any damage to internal decorations caused by repair problems
+            or while repairs were carried out.</p>
+        <p>Check your tenancy agreement to see if your landlord is responsible for repairing or replacing
+            faulty items or appliances they provided, such as a fridge, washing machine or gas oven.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Check what your tenancy agreement says</h2>
+        <p>Most tenants have a written tenancy agreement. This usually includes details about who is
+            responsible for repairs. Your landlord must do the repairs the law says they are responsible for,
+            even if your agreement says something different.</p>
+        <p>Your tenancy agreement may say when or how often certain types of repairs will be done.
+            It may say that you have some responsibilities, for example keeping the garden tidy or
+            sharing the cleaning of communal stairways and halls.</p>
+
+
+
+    <h2>Landlord's responsibility for health and safety</h2>
+        <p>Your landlord should make sure that your home is free from any hazards that could affect the health
+            and safety of anyone in your household.</p>
+        <p>Health hazards can include:</p>
+
+        <ul>
+            <li><a href="{% url 'renters-damp_and_mould_in_rented_homes' %}"
+                   title="See also: problems with damp and mould">problems with damp and mould</a></li>
+            <li>overcrowding.</li>
+        </ul>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+               title="See also: Health and safety standards for rented homes">
+                health and safety standards for your home</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Gas safety</h2>
+        <p>Your landlord is responsible for keeping gas appliances they provide in safe working order.</p>
+        <p>Your landlord must arrange an annual gas safety inspection to be carried out by a registered
+            Gas Safe engineer.</p>
+
+        <p class="inline-callout internal">Find out about
+            <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+               title="see also: gas safety checks">gas safety and gas safety checks</a>.</p>
+
+    <h2>Electrical appliances</h2>
+        <p>Your landlord is responsible for keeping electrical appliances they provide in safe working order.</p>
+        <p>It's your responsibility as a tenant to check that any appliances you own are in good safe working order.</p>
+        <p class="inline-callout internal">Find out about
+            <a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+               title="see also: electrical safety in your home">electrical safety in your home</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+     <h2>Fire safety</h2>
+        <p>Most private landlords are responsible for:</p>
+        <ul>
+            <li>installing smoke alarms on each floor of your home</li>
+            <li>installing carbon monoxide detectors in rooms with a coal fire or wood burning stove</li>
+        </ul>
+        <p>Your landlord must make sure any furniture they provide meets
+            <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+               title="see also: fire safety">fire safety regulations</a>.</p>
+
+    <h2>Tenant's responsibility for repairs and maintenance</h2>
+        <p>You must use your home in a responsible way.</p>
+        <p>You should:</p>
+        <ul>
+            <li>keep it clean</li>
+            <li>not damage the property and make sure your guests don't either</li>
+            <li>carry out minor maintenance such as replacing smoke alarm batteries</li>
+            <li>use the heating properly</li>
+            <li>not blocking flues or ventilation</li>
+        </ul>
+        <p>You usually are also responsible for minor repairs, such as:</p>
+        <ul>
+            <li>fixing a bathroom cabinet</li>
+            <li>renewing sealant around the bath</li>
+        </ul>
+        <p>Your landlord isn't responsible for fixing any appliances or furniture you own.
+            They are your responsibility.</p>
+        <p>You probably have to pay for repairs if you cause damage to the property, even if it's
+            accidental.&nbsp;You shouldn't have to pay for&nbsp;
+            <a href="{% url 'renters-damage_or_wear_and_tear' %}"
+               title="See also: Damage or wear and tear?">fair wear and tear to your home</a>.</p>
+        <p>If you don't fix damage you've caused, your landlord could&nbsp;
+            <a title="see also:tenancy deposits"
+               href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}">
+                deduct money from your tenancy deposit</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How to report repairs to a private landlord</h2>
+        <p>You should report any repairs your home needs to your private landlord as soon as possible.</p>
+        <p>Find out
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="See also: How to report repairs to your landlord">
+                how to report repairs to your private landlord</a>.</p>
+        <p>Your landlord doesn't have to fix repair problems until they know about them.</p>
+        <p class="inline-callout internal">Find out what to do
+            <a href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}"
+               title="see also: What to do if your landlord won&rsquo;t do repairs">
+                if your private landlord tells you they won't do repairs</a>.</p>
+
+    <h2>How to report repairs to a council or housing association</h2>
+        <p>You should report the need for repairs to your council or housing association landlord as soon as possible.</p>
+        <p>Find out
+            <a href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}"
+                       title="see also: See also: How to report repairs to your social landlord">
+                how to report repairs to the council or a housing association</a>.</p>
+        <p>Your landlord doesn't have to fix repair problems until they know about them.</p>
+        <p class="inline-callout internal">
+            Find out what to do
+            <a href="{% url 'renters-complain_about_council_or_housing_association_repairs' %}"
+               title="See also: Complain about council or housing association repairs">
+                if a social landlord won't do repairs</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

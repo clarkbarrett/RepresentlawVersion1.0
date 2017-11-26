@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Eviction of assured tenants{% endblock %}
+{% block description %}Most assured tenants can be evicted only in certain circumstances. Find out when landlords have the right to evict assured tenants and the procedures that must be followed.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction of assured tenants</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+        <div class="page-header">
+            <h1>Eviction of assured tenants<br>
+                <small>Most assured tenants can be evicted only in certain circumstances. Find out when landlords have the right to evict assured tenants and the procedures that must be followed.</small>
+            </h1>
+        </div>
+
+    <h2>Rights in an assured tenancy</h2>
+        <p>The law provides private tenants with rights. These depend on the type of living arrangement
+            you have, the date you moved in and the agreement you have with your landlord.</p>
+        <p>Assured tenants have strong tenancy rights. You can only be evicted if your landlord can
+            prove a reason (or 'ground') to the court.</p>
+        <p>If the ground is proven, the court:</p>
+
+        <ul>
+            <li>has no choice but&nbsp;to make a possession order (a 'mandatory ground'), or</li>
+            <li>only makes a possession order if it is reasonable to do so (a 'discretionary ground')</li>
+        </ul>
+
+
+    <h2>Notice for assured tenants</h2>
+        <p>Your landlord has to give you a written notice.&nbsp;It is often called a section 8 notice.</p>
+        <p>The notice must be in a special form.</p>
+        <p>The notice must include the ground on which your landlord is
+            <a title="See also: what is a possession order for eviction"
+               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
+                seeking possession</a>. It must also state the earliest date that court action can start.</p>
+        <p>The notice has to be for a set length of time. It must let you know that after that time ends your
+            landlord can apply to the court for a possession order. The length of time on the notice depends
+            on the reason your landlord is evicting you. Usually this is either 14 days or 2 months.</p>
+        <p>When the reason for wanting to evict you is antisocial behaviour, the notice takes effect
+            after 14 days, 4 weeks, 1 month or even immediately. The actual period depends on which ground is
+            being used and whether you have a fixed-term tenancy or not.</p>
+        <p>Notices remain valid for one year. This means that your landlord can start court action to evict you
+            at any time until exactly 12 months after the date the notice was served on you. If court action
+            is not started within this time your landlord has to serve a new notice.</p>
+
+    <h2>Reasons for eviction of assured tenants</h2>
+        <p>The reasons (or 'grounds') that landlords can use to evict assured tenants are in 2 groups.
+            These are 'mandatory grounds' and 'discretionary grounds'.</p>
+
+    <h3>Mandatory grounds</h3>
+        <p>If your landlord is using a mandatory ground the court has no choice but to make a
+            possession order if it is satisfied that the ground exists.</p>
+        <p>Examples of mandatory grounds include:</p>
+
+        <ul>
+            <li>more than 8 weeks' rent arrears owing, or two months if you pay your rent monthly, at
+                the time the notice was served and at the date of the court hearing</li>
+            <li>repossession by your landlord's mortgage lender (if prior notice of the possibility of this was given)</li>
+            <li>redevelopment of the property</li>
+            <li>antisocial behaviour, if the tenant (or a member of her/his household, or even a visitor
+                in some cases) has already been convicted of antisocial behaviour in the courts</li>
+        </ul>
+
+   <h3>Discretionary grounds</h3>
+        <p>If your landlord is using a discretionary ground for possession the court only makes a
+            possession order if the ground is proven and it is reasonable to do so.</p>
+        <p>Examples of discretionary grounds include:</p>
+        <ul>
+            <li>some rent arrears</li>
+            <li>persistent late payment of rent</li>
+            <li>breach of tenancy agreement</li>
+            <li>antisocial behaviour</li>
+            <li>damage to the property</li>
+        </ul>
+
+    <h2>Court orders for eviction of assured tenants</h2>
+        <p>Once you have been given a correct notice and the notice period has ended, your landlord can
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="See also: what is a possession order for eviction">
+                apply to the county court for a possession order</a>.</p>
+        <p>The court sends you
+            <a href="{% url 'renters-eviction_documents_the_court_sends_you' %}"
+               title="see also: eviction documents from the court">
+                documents telling you about your landlord's eviction claim</a>.</p>
+        <p>You can send back information to help the court decide whether to make a possession order. You can also
+            <a href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}"
+               title="see also: what happens at eviction court hearings ">go to the court hearing</a>.</p>
+        <p>If your landlord is using a mandatory ground and the court agrees that the ground is proven,
+            the court has no choice but to make a possession order. It is possible to delay the possession
+            order for up to 6 weeks, but only if you are suffering great hardship.</p>
+        <p>If your landlord is using a discretionary ground the court only makes a possession order if
+            it is reasonable to do so. When the court looks at whether it is reasonable to make a possession
+            order, it can consider your circumstances, such as your health and income.</p>
+        <p class="inline-callout">
+        It may be possible to get an eviction order changed.</p>
+
+   <h2>Illegal eviction of assured tenants</h2>
+        <p>Your landlord is breaking the law if they
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">try to evict you without getting a court order</a>.
+            There might be action you can take to stop your landlord doing this.</p>
+        <p>The council might be able to help stop the illegal eviction.</p>
+        <p>If you are evicted illegally, you may also be able to claim compensation.</p>
+
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+
+    <h2>Are you an assured tenant?</h2>
+        <p>You are probably an
+            <a href="{% url 'renters-assured_tenancies' %}"
+               title="see also: assured tenancies">assured tenant</a> if:</p>
+        <ul>
+            <li>you moved in before 1997 and did not receive a notice from your landlord saying you
+                are an assured shorthold tenant</li>
+            <li>your landlord told you in writing before your tenancy started that you are an assured tenant</li>
+            <li>you were an assured tenant with the same landlord immediately before your current tenancy started</li>
+        </ul>
+        <p class="inline-callout">Many private tenants are&nbsp;
+            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+               title="see also: assured shorthold tenants">assured shorthold tenants</a>.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

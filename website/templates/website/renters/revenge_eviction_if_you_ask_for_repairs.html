@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Revenge eviction if you ask for repairs{% endblock %}
+{% block description %}New rules might help protect you from eviction if you complain to a private landlord about repairs or bad conditions.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Revenge eviction if you ask for repairs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Revenge eviction if you ask for repairs<br>
+                <small>New rules might help protect you from eviction if you complain to a private landlord about repairs or bad conditions.</small>
+            </h1>
+        </div>
+
+    <h2>Risk of revenge eviction</h2>
+        <p>Revenge eviction is when a landlord tries to evict you after you ask for repairs or
+            complain about conditions in your home.</p>
+        <p>This is also called retaliatory eviction.</p>
+        <p>This might affect you if you're a private tenant with an
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}" title="See also: eviction of assured shorthold tenants">
+                assured shorthold tenancy
+            </a>. That's because it's easy to evict tenants with this type of contract.</p>
+        <p>A change in the law could make it harder for some landlords to do this. The change affects
+            assured shorthold tenancies that started or were renewed on or after 1 October 2015.</p>
+        <p>If you're a private tenant with an
+            <a href="{% url 'renters-eviction_of_assured_tenants' %}"
+               title="See also: Eviction of assured tenants">
+                assured tenancy
+            </a> or
+            <a href="{% url 'renters-eviction_of_regulated_tenants' %}"
+               title="See also: Eviction of regulated tenants">regulated tenancy
+            </a>, you already have more protection from revenge eviction. You can't be evicted unless
+            your landlord proves to a court that you are at fault, for example because you didn't pay the rent.</p>
+
+
+      <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+      </div>
+
+    <h2>Assured shorthold tenancies starting before 1 Oct 2015</h2>
+        <p>If your tenancy started before 1 October 2015, there's no special protection that prevents
+            your landlord evicting you if you complain about repairs.</p>
+        <p class="advice-highlight normal-advice">Rules that could protect you from retaliatory eviction
+            won't apply unless you start a new tenancy or sign a renewal contract from 1 October 2015.</p>
+        <p>Otherwise, you'll have to wait until 1 October 2018 to benefit from the new rules.</p>
+        <p>Your landlord can use the
+            <a href="{% url 'renters-section_21_eviction_process' %}"
+               title="See also: Eviction with a section 21 notice">section 21 eviction process
+            </a> to evict you when any fixed period ends, for example after 6 or 12 months. Your landlord
+            needs to get a court order, but won't have to prove you're at fault in any way.</p>
+        <p>Check if you can defend the case. The section 21 notice could be invalid if your landlord didn't
+            follow certain&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection schemes rules">tenancy deposit protection rules</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+        </div>
+
+
+        <p>Your landlord might be able evict you during a fixed term tenancy if you break certain terms and conditions.</p>
+        <p class="inline-callout internal">
+            Find out more about
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}" title="see also: eviction from an assured shorthold tenancy">
+                eviction from an assured shorthold tenancy</a>.</p>
+
+    <h2>Assured shorthold tenancies starting from 1 Oct 2015</h2>
+        <p>New rules could help if you complain about repairs or conditions in your home and your
+            landlord responds by giving you a section 21 notice.</p>
+        <p class="advice-highlight normal-advice">The rules apply if your new assured shorthold tenancy started
+            on or after 1 October 2015 or you signed a renewal contract on or after that date.</p>
+
+    <h3>Section 21 served after you complain to your landlord</h3>
+        <p>The new rules mean a court can refuse to order your eviction if all these apply:</p>
+        <ul>
+            <li>you complained to your landlord or letting agent&nbsp;in writing (by letter or email)</li>
+            <li>your landlord
+                <a href="{% url 'renters-section_21_eviction_process' %}"
+                   title="see also: eviction with section 21 notice">issued a section 21 notice
+                </a> after you complained</li>
+            <li>you
+                <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+                   title="see also: Complain to environmental health about rented housing">
+                    complained to the local council
+                </a> because your landlord didn't take steps to fix the problem</li>
+            <li>the council sent your landlord a notice telling them to make improvements or that the council
+                will carry out emergency work</li>
+        </ul>
+        <p>The new rules may also apply if you first complained about the repairs to the council because you
+            didn't have a
+            <a href="{% url 'renters-how_to_find_your_landlord' %}"
+               title="see also: how to find your landlord">postal or email address for your landlord</a>.</p>
+        <p>Once the council serves your landlord with an improvement notice or notice requiring remedial action,
+            the section 21 notice becomes invalid.</p>
+        <p>If the improvement notice is served before the court hearing, your landlord's case will fail
+            and the court won't order you to leave.</p>
+        <p class="advice-highlight normal-advice">If the council doesn't serve your landlord with an
+            improvement notice before the court hearing, the court can make an order for you to leave.
+            The court can't overturn an order to evict you if the council's notice comes later.</p>
+
+    <h3>Section 21 served after the council sends your landlord a notice</h3>
+        <p>If the council send your landlord an improvement notice or notice requiring improvement and
+            your landlord later gives you a section 21 notice, it won't be valid if it's served within
+            6 months of the council's notice.</p>
+        <p>A section 21 notice will be valid if it's served
+        after 6 months have passed.</p>
+
+    <h2>When the new rules won't help</h2>
+        <p>The new rules won't help if you:</p><ul>
+        <li>only complained verbally or your landlord serves a section 21 notice before you complained
+            to them in writing</li>
+        <li>complain to the council but it takes no action or serves your landlord with a 'hazard notice'</li>
+    </ul>
+        <p>The new rules also won't help if your landlord can prove to the court that:</p>
+
+        <ul>
+            <li>you caused the problem you're complaining about</li>
+            <li>they've genuinely put the property up for sale &ndash; sales to friends, family or business
+                partners might not count</li>
+            <li>the property has been repossessed by the landlord's lender and the property will be sold with
+                vacant possession (this will not apply if your tenancy started before your landlord took
+                out the mortgage)</li>
+        </ul>
+        <p>A section 21 notice is valid if your landlord gives it to you after the council serves
+            your landlord an improvement notice but suspends enforcement action. The council may
+            decide not to enforce the notice if there aren't any young children or anyone over the
+            age of 60 in your home.</p>
+        <p>The new rules don't help you if your landlord uses the section 8 court procedure for
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+               title="see also: eviction of assured shorthold tenants">
+                eviction if you haven't paid the rent</a>.</p>
+
+    <h2>Other legal changes from 1 October 2015</h2>
+        <p>Tenancies that started or were renewed on or after 1 October 2015 have more protection
+            following other changes in the law.</p>
+        <p>Section 21 notices can be invalid if a landlord doesn't follow certain rules about:</p>
+        <ul>
+            <li><a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                   title="see also: tenancy deposit protection schemes rules">tenancy deposit protection</a></li>
+            <li><a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+                   title="see also: gas safety">gas safety</a></li>
+            <li>providing you with information about your tenancy</li>
+        </ul>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+               title="see also: eviction from an assured shorthold tenancy">
+                eviction from an assured shorthold tenancy</a>.</p>
+
+
+       <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+        </div>
+
+
+    <h2>Assured and pre-1989 regulated tenants</h2>
+        <p>It's difficult for landlords to evict tenants from
+            <a href="{% url 'renters-eviction_of_assured_tenants' %}"
+               title="see also: eviction from assured tenancies">assured tenancies</a> and&nbsp;
+            <a href="{% url 'renters-eviction_of_regulated_tenants' %}"
+               title="See also: eviction of regulated tenants"> pre-15 January 1989 regulated tenancies</a>.
+            Landlords have to prove to a court that there is a legal reason to evict you.</p>
+
+        <p>Always tell your landlord if repairs are needed.&nbsp;Your landlord could try to evict you if you
+            have damaged your home or allowed its condition to deteriorate.</p>
+
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="see also: reporting repairs">taking action to get repairs done</a>.</p>
+
+     <h2>Why you should report repairs</h2>
+        <p>Your landlord must make sure your home meets certain standards. It's your responsibility to
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="see also: report repair problems">report repair problems</a>.</p>
+
+        <p>It's important to report problems because:</p>
+
+        <ul>
+            <li><a href="{% url 'renters-how_to_complain_about_an_unsafe_home' %}"
+                   title="see also: How to complain about an unsafe home">
+                unsafe or dangerous conditions</a> can result in injury</li>
+            <li>problems with
+                <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+                   title="See also: gas safety">gas safety </a>or
+                <a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+                   title="see also: electrical safety">electrical safety</a> can kill</li><li>problems such as
+            <a href="{% url 'renters-damp_and_mould_in_rented_homes' %}"
+               title="see also: damp and mould in rented homes">damp and mould</a> can contribute to
+            illness and poor health</li></ul><p class="advice-highlight internal-link">If you don't report
+        repair problems, your landlord could hold you responsible for damage if a small problem turns into
+        an expensive repair.</p>
+
+        <p class="inline-callout internal">Your landlord could also&nbsp;
+
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="see also: tenancy deposit deductions">keep some or all of your tenancy deposit</a>.</p>
+
+    <h2>How to deal with repairs problems</h2>
+        <p>Your first step should always be to
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="See also: How to report repairs to your landlord">
+                report repair problems to your landlord</a>.</p>
+        <p>If your landlord doesn't take action, you can
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="See also: Complain to environmental health about rented housing">
+                complain to your local council
+            </a>. The council may take action that results in your landlord doing the repairs or could do
+            emergency repairs itself.</p>
+        <p>You can take your landlord to court but this can be expensive.</p>
+        <p>Legal aid is available for
+            <a href="{% url 'renters-legal_action_if_your_landlord_wont_do_repairs' %}"
+               title="See also: Taking legal action over disrepair">legal action over disrepair
+            </a> if there is a serious risk of harm to the health or safety of you or your family.&nbsp;You
+            could qualify for legal aid if you claim benefits or have a low income.</p>
+
+
+      <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+
+     <h2>Harassment and illegal eviction</h2>
+        <p>Unlawful eviction and harassment are serious criminal offences.</p>
+        <p>Your landlord might be guilty of illegal eviction or harassment if they:</p>
+
+        <ul>
+            <li>send workers around at unsociable times or without giving you notice</li>
+            <li>start repairs and leave them unfinished</li>
+            <li>change the locks while you are out</li>
+        </ul>
+        <p>They can be taken to court and, if guilty, can be fined or sent to prison.</p>
+        <p class="inline-callout internal">Find out more about&nbsp;
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="See also:Harassment and illegal eviction by a landlord">illegal eviction or harassment</a>.</p>
+
+   <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

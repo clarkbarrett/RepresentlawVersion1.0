@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Renters Deposit Protection Check{% endblock %}
+{% block description %}Represent Renters Deposit Protection Check{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-5 col-md-offset-2">
+            <div class="row">
+
+                <h1>Disrepair Claims</h1>
+                <h4>Is your landlord not doing repairs? </h4>
+                <h4>Are your complaints about repairs being ignored? </h4>
+                <h4>Is your landlord trying to get you to pay for repairs they are required to do? </h4>
+
+                    <p>Housing repair disputes are some of most common tenancy disputes. Repair problems will affect most renters if they rent for any serious length of time
+                    under different landlords.  Despite what many letting agents or landlords say, there are many clearly defined legal repairing and maintenence duties which your
+                    landlord or letting agent must fulfil.  These include but are not limited to:</p>
+
+                    	<ul>
+                    	<li>The structure and exterior of the building, including the walls, stairs and bannisters, roof, external doors and
+                    		windows.</li>
+                    	<li>Sinks, baths, toilets and other sanitary fittings, including pipes and drains.</li>
+                    	<li>Heating and hot water.</li>
+                    	<li>Chimneys and ventilation.</li>
+                    	<li>Electrical wiring.</li>
+                    </ul>
+
+                    <p>Sometimes disrepair may be so bad, for example with damp problems or electrical safety, that it may be necessary to involve Local Environmental
+                    Health or the Health and Safety Executive.</p>
+
+                    <p>Many landlords and letting agents push these costs onto renters which they do not know how
+                    challenge or dare not to challenge due to the threat of retaliatory eviction.  Also, it is quite common for contracts to be framed to try to shift your landlord's repairing
+                    responsibilites even if it contravenes Parliamentary regulation.</p>
+
+                    <h3> Does your contract say you are responsible for housing repairs?</h3>
+
+                    <p>Many landlords and letting agents try to force housing repairs onto tenants.
+                        In many cases these claims can be challenged even if they
+                        are stipulated in your contract. A general outline of your and your
+                        landlord's repairing responsibilities may be found in our
+
+                        <a href="{% url 'renters-faqs' %}"><strong>frequently asked questions.</strong></a>
+                    </p>
+
+                    <p>The National Renters Alliance team has over 20 years' experience of housing repair disputes in the social
+                        and private renting sector.
+                    </p>
+                    <p>
+                        <strong>If you are having problems with your landlord or letting agent not doing repairs</strong>
+
+                        <a href="{% url 'contact' %}">
+                            <strong>Contact Represent and see how we can help you.</strong>
+                        </a>
+                        <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    </p>
+
+
+            </div>
+
+
+
+
+            </div>
+        </div>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+

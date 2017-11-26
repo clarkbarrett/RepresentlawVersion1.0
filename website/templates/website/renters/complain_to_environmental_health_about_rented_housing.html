@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Complain to environmental health about rented housing{% endblock %}
+{% block description %}If the condition of rented housing is affecting your health or safety,
+the council's environmental health inspectors could help.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Complain to environmental health about rented housing</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Complain to environmental health about rented housing<br>
+                <small>If the condition of rented housing is affecting your health or safety,
+                        the council's environmental health inspectors could help.</small>
+            </h1>
+        </div>
+
+    <h2>When to complain</h2>
+        <p>It is usually best to tell your landlord about problems with the condition of your home
+            before contacting the council. Your landlord might fix the problem.</p>
+        <p><a title="see also: how to report repairs"
+              href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+            How to tell a private landlord about problems in your home</a></p>
+        <p>
+            <a title="See also: how to report repairs to the council or housing associaition"
+               href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}">
+                Report problems to the council or a housing association</a>
+        </p>
+   <h2>How to contact environmental health</h2>
+        <p>An environmental health inspection should identify the cause of health and safety problems in your home.</p>
+        <p>Contact the environmental health team at your local council.</p>
+        <p class="inline-callout external">Use the&nbsp;
+            <a title="Link to Gov.uk - find your council"
+               href="./?a=26010" target="_blank">Gov.uk search to find details of your local council</a>.</p>
+        <p>The team may be part of another section like housing standards, housing advice or housing enforcement.</p>
+        <p>When you contact the council, tell them:</p>
+
+        <ul>
+            <li>what the problem is</li>
+            <li>the ages of everyone living in your home</li>
+            <li>if anyone affected has a serious illness or disability</li>
+        </ul>
+        <p class="inline-callout download">
+            <a title="download letter requesting council inspection"
+               href="http://england.shelter.org.uk/__data/assets/word_doc/0010/1154188/R4_Request_a_council_environmental_inspection.docx">
+                Ask the council to inspect your home</a>
+            using Shelter's template letter.</p>
+
+   <h3>What to expect</h3>
+        <p>The council should visit to inspect your home quickly if there is a serious risk of harm
+            to you or your family. You might have to wait longer for an inspection at busy times of
+            the year or if the disrepair problems are less serious.</p>
+        <p>An inspection by environmental health is usually free.</p>
+        <p>They can charge for dealing with&nbsp;
+            <a title="see also: pests and vermin"
+               href="{% url 'renters-pests_and_vermin_infestations_in_rented_homes' %}">
+                pests and vermin in your home</a>.</p>
+
+   <h2>What environmental health checks</h2>
+        <p>The council's environmental health inspection checks if your home contains serious health or
+            safety hazards.</p>
+        <p>Hazards the council checks for include:</p>
+
+   <ul>
+       <li>damp, condensation and mould growth</li>
+       <li>rats, cockroaches or other pests and vermin</li>
+       <li>broken glass, falling plaster or dangerous stairs</li>
+       <li>unsafe gas or electrical installations</li>
+       <li>problems with sewage</li>
+   </ul>
+        <p>If an environmental health officer visits your home, they check if the problems you have also affect
+            your neighbours' homes.</p><p class="inline-callout internal">Find out more about
+        <a title="see also: Health and safety standards for rented homes"
+           href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+            health and safety standards for your home</a>.</p>
+
+   <h3>Damp and mould problems</h3>
+        <p>Environmental health can take action against landlords when health and safety is at risk because of
+            <a title="See also: damp and mould"
+               href="{% url 'renters-damp_and_mould_in_rented_homes' %}">
+                problems with damp and mould</a>.</p>
+        <p>Environmental health can also advise tenants if there's action they can take to help improve the situation.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+   <h2>How environmental health can help</h2>
+        <p>You can complain to your local council if you are a private tenant or a housing association tenant
+            and there's a risk to your health or safety in the home.</p>
+        <p>The council can decide to:</p>
+        <ul>
+            <li>order your landlord to carry out repairs or improvements &ndash; they'll serve your
+                landlord with an improvement notice</li>
+            <li>do the repairs and charge your landlord for the work</li>
+        </ul><p>When conditions are very bad, the council can:</p>
+
+        <ul>
+            <li>make a prohibition order &ndash; this restricts access to all or part of your home or restricts
+                the number of people who can live there</li>
+            <li>order the demolition of the property</li>
+        </ul>
+        <p>In less serious cases, the council can serve a hazard notice to make your landlord aware of the problem.</p>
+        <p>If you are a council tenant, an environmental health report can be useful to let your
+            housing department know what work is needed to make your home safe.</p>
+        <p class="inline-callout internal">Find out
+            <a title="See also: How to complain about an unsafe home"
+               href="{% url 'renters-how_to_complain_about_an_unsafe_home' %}">
+                how to complain about an unsafe home
+            </a>.</p>
+
+    <h2>Risk of eviction for private tenants</h2>
+        <p>There's a risk that your private landlord could take steps to evict you rather than do repair work.
+            &nbsp;Some tenants with tenancies starting after 1 October 2015 may have some legal protection.</p>
+
+        <p class="inline-callout internal">Find out more if you are worried about
+            <a title="see also: Are you at risk of eviction if you ask for repairs?"
+               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                revenge eviction</a>.</p>
+
+   <h2>Get advice from Represent</h2>
+        <p>Get advice from Represent about complaining to environmental health.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

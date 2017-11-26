@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Damp and mould in rented homes{% endblock %}
+{% block description %}Find out which types of damp and mould problems are your landlord's responsibility, what they should do to resolve them and what you can do if they won't.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Damp and mould in rented homes</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+        <div class="page-header">
+            <h1>Damp and mould in rented homes<br>
+                <small>Find out which types of damp and mould problems are your landlord's responsibility,
+                        what they should do to resolve them and what you can do if they won't.</small>
+            </h1>
+        </div>
+
+    <h2>Types of damp problem</h2>
+        <p>Your home could be affected by:</p>
+
+        <ul>
+            <li>penetrating damp</li>
+            <li>rising damp</li>
+            <li>condensation and mould growth</li>
+        </ul>
+        <p>Your landlord might need the help of a damp expert to work out the cause of damp.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Penetrating damp</h2>
+        <p>Penetrating damp happens when water gets into your home from outside.</p>
+        <p>Your landlord is responsible for fixing penetrating damp caused by problems such as:</p>
+        <ul>
+            <li>a leaking roof, gutter or cracked wall</li>
+            <li>leaking pipes</li>
+            <li>rotten window frames</li>
+        </ul>
+        <h2>Rising damp</h2>
+        <p>Rising damp is when moisture beneath the building is soaked up into the bricks or concrete.
+            It's a common problem on the ground floor and basements of older houses.</p>
+        <p>Your landlord must replace any plaster, skirting boards and flooring damaged by rising damp.</p>
+        <p class="advice-highlight normal-advice">To get rid of rising damp, your landlord may also need to
+            fix or install a damp proof course. If your home has a damp proof course that isn't working,
+            your landlord must fix the damp proofing as well as repairing the damage.</p>
+        <p>If your home doesn't already have a damp proof course, your landlord won't usually have to get
+            one put in.</p>
+        <p>But if rising damp causes problems with rotten plaster, skirting boards and flooring that keep
+            coming back, your landlord may have to install a damp proof course.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Condensation&nbsp;and mould growth</h2>
+        <p>Condensation is the most common form of damp in rented properties.</p>
+        <p>Condensation appears when moisture in the air comes into contact with a cold surface,
+            such as a window or a cold wall. Mould can grow on walls and window frames.</p>
+        <p>Severe mould growth can be a health problem for people with asthma and other chest problems.</p>
+        <p class="inline-callout external">More from&nbsp;
+            <a href="./?a=1078452"
+               title="Link to NHS Choices - how damp and mould can affect health." target="_blank">
+                NHS Choices about how damp and mould can affect health</a>.</p>
+        <p>Some problems that cause condensation are your landlord's responsibility to fix.</p>
+        <p>But the way you heat and use your home can cause problems with condensation and mould or make them worse.
+            There may be things you can do to help.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h3>What your landlord should do about condensation problems</h3>
+        <p>Check your tenancy agreement. Your landlord should deal with the problem if the agreement says
+            they are responsible for keeping your home in a good condition or fit to live in.</p>
+        <p>Your landlord should do something to improve the situation even if your tenancy agreement doesn't
+            say anything about their responsibility for conditions in your home.</p>
+        <p>For example, your landlord could:</p>
+        <ul>
+            <li>provide a de-humidifier</li>
+            <li>install ventilation</li>
+            <li>improve the insulation of your home</li>
+        </ul>
+        <p>Your landlord could be in breach of contract if they don't deal with the problem.
+            You could take legal action against them.</p>
+
+    <h3>What you can do about condensation problems</h3>
+        <p>Day-to-day activities like cooking, washing and drying clothes indoors can cause or make a
+            condensation problem worse.</p>
+        <p>It can help if you:</p>
+        <ul>
+            <li>keep a lid on pans when cooking</li>
+            <li>dry clothes outdoors if possible</li>
+            <li>keep the door closed and window open when&nbsp;drying clothes indoors</li>
+        </ul>
+        <p>Try to keep your home properly heated.&nbsp;Regular heating keeps the walls and other surfaces
+            warm and reduces the risk of condensation.</p>
+
+    <h3>How to deal with mould growth</h3>
+        <p>You can treat mould growth to remove it and stop it getting worse. Use a fungicidal wash,
+            available from DIY shops or supermarkets.</p>
+        <p>Don't try to brush or vacuum mould. This releases it into the air and could make breathing problems worse.</p>
+        <p class="inline-callout external">See
+            <a href="./?a=1202172" title="Link to NHS Choices - how to get rid of mould"
+               target="_blank">
+                NHS Choices for more on how to get rid of mould</a>.</p>
+
+    <h2>Report a damp problem to your landlord</h2>
+        <p>Tell your landlord about the damp and any problems it's causing to:</p>
+        <ul>
+            <li>your furniture and other belongings</li>
+            <li>the health of you and your family</li>
+            <li>the structure of your home</li>
+        </ul>
+        <p>If you tell them in person or by phone, make sure you write to them about the damp as well.</p>
+        <p class="inline-callout download">Use
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0007/1154185/R1_Request_for_repair.docx"
+               title="download R1 request for repairs">Shelter's template letter to write to your landlord</a>.</p>
+        <p>Once you've reported the problem, your landlord should organise any investigations and repair work.</p>
+        <p class="inline-callout urgent">Your landlord doesn't have to do anything about damp problems until
+            they know about them.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How environmental health can help</h2>
+        <p>You can ask the council's environmental health department&nbsp;to visit your home if your landlord
+            doesn't fix the problems with damp.</p>
+        <p>They'll use the Housing Health and Safety Rating System (HHSRS) to assess how much risk there is
+            to your health and safety.</p>
+        <p class="inline-callout internal">Find out more about the&nbsp;
+            <a href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+               title="see also: health and safety standards in rented homes">Housing Health and Safety Rating System (HHSRS)</a>.</p>
+        <p>Environmental health can take action against a landlord if they decide the problems are a health and safety hazard.</p>
+        <p>If you are a private or housing association tenant, the council's environmental health team could order
+            your landlord to carry out repairs or improvements to your home. In some cases, the council will do the work
+            and charge the landlord.</p>
+        <p>Environmental health help for council tenants is more restricted, but it can still be useful to contact them.</p>
+
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                how to complain to environmental health about repairs and poor conditions</a>.</p>
+
+    <h2>Consider taking legal action</h2>
+        <p>Legal action may be an option if your landlord doesn't deal with repairs after you've reported them.</p>
+        <p>In some cases a court could order your landlord to do repairs or improvement work.</p>
+        <p>A court can also order your landlord to pay you compensation for inconvenience and any damage to your property or health.</p>
+        <p class="inline-callout internal">Find out about
+            <a href="{% url 'renters-legal_action_if_your_landlord_wont_do_repairs' %}"
+               title="See also: legal action for disrepair">legal action to deal with repairs problems</a>.</p>
+
+       <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Get advice about revenge eviction</h2>
+        <p>Some private landlords may take steps to evict you if you complain about the condition of
+            your home to them or the council. The law gives protection to some tenants.</p>
+        <p class="inline-callout internal">Find out more about&nbsp;
+            <a href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}"
+               title="see also: eviction if you ask for repairs">revenge eviction</a>.</p>
+
+    <h2>Get advice from Represent</h2>
+        <p>Get advice if your home is in a bad condition and you are not sure what to do.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

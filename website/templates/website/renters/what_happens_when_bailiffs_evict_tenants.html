@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - What happens when bailiffs evict tenants{% endblock %}
+{% block description %}Your landlord can ask a court to send bailiffs to evict you from your home.
+It's the bailiffs' job to hand the vacant property back to your landlord.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">What happens when bailiffs evict tenants</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>What happens when bailiffs evict tenants<br>
+                <small>Your landlord can ask a court to send bailiffs to evict you from your home.
+                        It's the bailiffs' job to hand the vacant property back to your landlord.</small>
+            </h1>
+        </div>
+
+    <h2>Who can evict tenants?</h2>
+        <p>Only bailiffs authorised by a court can evict you.</p>
+        <p>Bailiffs who evict people are usually employees of your local county court.
+            Sometimes they are private bailiffs authorised by the High Court.</p>
+        <p>The bailiff's job is to hand the property back to your landlord.
+            They will make sure you and anyone else living there leave.</p>
+        <p class="inline-callout">Don't delay if you want to
+            <a href="{% url 'renters-stopping_eviction_by_bailiffs' %}"
+               title="See also: How to stop eviction by bailiffs">
+                challenge an eviction by bailiffs</a>.</p>
+
+    <h2>Notice that bailiffs are coming</h2>
+        <p>County court bailiffs should write to tell you when they will evict you.
+            They post or hand deliver a Notice of Eviction (Form N54). This contains their contact details.</p>
+        <p>Private bailiffs authorised by the High Court can arrive to evict you without giving you any notice.
+            You will get some warning that this might happen because your landlord must give you notice
+            that they're applying to the High Court to use private bailiffs.</p>
+
+    <h2>What happens when the bailiffs evict you</h2>
+        <p>Bailiffs usually come between 9am and 5pm. Ask to see their identification, for example a badge,
+            ID card or enforcement agent certificate. Bailiffs must have this with them.</p>
+        <p>They will ask you to leave if you are still at home. Give them your keys and go.
+            Bailiffs may wait a short time while you move out, for example because you have children or are disabled,
+            but they don't have to.</p>
+        <p>Bailiffs can't use physical violence or offensive language.</p>
+        <p>The police don't usually come to an eviction. If you don't leave voluntarily,
+            the bailiffs are likely to call the police.&nbsp;The landlord or the bailiff may ask them to attend
+            if there is a risk of violence or to prevent a breach of the peace. You can be arrested for
+            breach of the peace.</p>
+
+    <h2>What happens to your belongings</h2>
+        <p>On the day of eviction, bailiffs will ask you to remove all your belongings that are still
+            in the property.&nbsp;Try to pack or remove most of your belongings before the eviction date.
+            This will make things easier on the day. Bailiffs don't have to give you extra time to pack your things.</p>
+        <p>They&nbsp;can pick up your belongings and put them outside or lock them inside the property.
+            You will then have to arrange a time with your landlord to go back and pick them up.</p>
+        <p>Bailiffs must not damage your belongings. The bailiffs should not take anything of yours
+            to pay for their costs or to cover any rent arrears, unless the court gives them a separate
+            court order to do this.</p>
+        <p>Your landlord must keep your belongings safe&nbsp;for a reasonable time if any are left behind.
+            You could be charged for storage, removal and disposal if you don't collect them.
+            Usually it is illegal for your landlord to destroy or sell your belongings.</p>
+        <p class="inline-callout">If you ask the council for help because you are homeless</a>,
+            it&nbsp;may have to look after your belongings. You can be charged a fee for this.</p>
+
+    <h2>Leaving before the bailiffs come</h2>
+        <p>You don't have to stay in your home until the bailiffs arrive.</p>
+        <p>You should stay until the day of the eviction if you ask the council for help because you are homeless
+            If you leave before you have to, the council could decide you are intentionally homeless.</p>
+
+    <h2>Moving back in after eviction</h2>
+        <p>Your landlord will probably change the locks after you've been evicted.&nbsp;You can be charged
+            with criminal damage if you try to get back in.</p>
+        <p>If you do move back in without the landlord's permission, you will be a squatter. Squatting
+            is a criminal offence that you can be arrested for.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

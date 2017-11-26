@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - How to deal with rent arrears{% endblock %}
+{% block description %}Take action to deal with rent arrears. You could be evicted if you don't.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to deal with rent arrears</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to deal with rent arrears<br>
+                <small>Take action to deal with rent arrears. You could be evicted if you don't.</small>
+            </h1>
+        </div>
+
+    <h2>Prioritise your rent payments</h2>
+        <p>Paying your rent is always a priority. You can be
+            <a href="{% url 'renters-eviction_for_rent_arrears' %}"
+               title="see also: Eviction for rent arrears">taken to court and evicted</a>
+            if you don't pay the rent.</p>
+        <p>If you can't pay the full rent on the day it is due you should:</p>
+        <ul>
+            <li>pay as much as you can afford&nbsp;</li>
+            <li>make a plan to pay off any arrears</li>
+        </ul>
+
+    <h2>Joint tenants</h2>
+        <p>If you have a
+            <a href="{% url 'renters-joint_tenancies' %}"
+               title="See also: Joint tenancies">joint tenancy</a>,
+            you're individually and collectively responsible for paying the rent.</p>
+        <p>This means that if one joint tenant doesn't pay, the landlord can ask any of the joint tenants to
+            make up the shortfall. You might have to pay more to avoid rent arrears even if you've
+            already paid your share.</p>
+
+    <h2>Talk to your landlord</h2>
+        <p>Contact your landlord if you're having problems paying your rent.</p>
+        <p>Don't ignore letters or phone calls from your landlord or agent. Your landlord may be willing to
+            keep you as a tenant if the payment problems can be sorted out.</p>
+
+    <h2>Check how much rent you owe</h2>
+        <p>Landlords and tenants can make mistakes. Make sure you agree on how much is owed.</p>
+        <p>Keep records of:</p>
+        <ul>
+            <li>all payments made by you</li>
+            <li>any housing benefit or universal credit payments&nbsp;</li>
+            <li>rent in advance paid at the start of the tenancy&nbsp;</li>
+        </ul>
+
+    <h2>Claim benefits to help pay your rent&nbsp;</h2>
+        <p>You can usually claim&nbsp;
+            <ul>
+                <li> housing benefit</li>
+                <li>universal credit housing costs</li>
+            </ul>
+        <p> if you're on a low income.</p>
+
+    <h3>Ask for payments to go direct to your landlord</h3>
+        <p>These benefits are usually paid direct to you. It might help if the payments are made direct to
+            your landlord instead.&nbsp;</p>
+        <p>Find out when you can request this if you claim:</p>
+        <ul>
+            <li>housing benefit</li>
+            <li>universal credit</li>
+        </ul>
+
+    <h3>Rent arrears caused by benefit delays</h3>
+        <p>You can ask for a payment on account after 14 days if you've given the council all the information it
+            needs to process your housing benefit claim.&nbsp;&nbsp;&nbsp;</p>
+        <p>Universal credit claims take at least 6 weeks to process. You
+            can ask for a short-term advance while you wait for your first payment.</p>
+
+    <h2>Apply for a discretionary housing payment</h2>
+        <p>You can apply for a discretionary housing payment (DHP) if:</p>
+
+        <ul>
+            <li>you're entitled to housing benefit or universal credit housing costs</li>
+            <li>these benefits don't cover your full rent</li>
+        </ul>
+        <p>The council decides whether to give you a DHP and how long the award will last.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

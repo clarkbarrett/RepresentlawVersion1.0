@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}How to complain about an unsafe home{% endblock %}
+{% block description %}If you are a private, council or housing association tenant, find out what you can do if your rented home isn't safe or healthy to live in.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to complain about an unsafe home</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to complain about an unsafe home<br>
+                <small>If you are a private, council or housing association tenant,
+                        find out what you can do if your rented home isn't safe or healthy to live in.</small>
+            </h1>
+        </div>
+
+    <h2>What are health and safety hazards?</h2>
+        <p>A hazard is a problem in a home that could harm the health or safety of someone living there.
+            A safe home should be free of serious risks.</p>
+        <p>Health hazards include problems with damp and mould or with pests such as rats, mice or cockroaches.
+            A cold home that doesn't have effective heating and insulation could be a health hazard.</p>
+        <p>Safety hazards in the home include
+            <a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+               title="see also: electrical safety">faulty wiring</a>,
+            <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+               title="see also: fire safety">fire risks</a> and the risk of carbon monoxide poisoning.</p>
+        <p>Health and safety risks in the home are assessed using the Housing Health and Safety Rating System (HHSRS).</p>
+        <p class="inline-callout internal">Find out more about&nbsp;the
+            <a href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+               title="See also: HHSRS"> Housing Health and Safety Rating System (HHSRS)</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Help from the council</h2>
+        <p>You can complain to the council about serious health or safety hazards in your home. An environmental
+            health officer should inspect your home if you ask.</p>
+        <p>What the council can do depends on how serious the problem is and who your landlord is. Category 1
+            hazards are the most serious.</p>
+        <p>The council must take action if it finds any category 1 hazards in your home if you're in private rented
+            housing or a housing association home.</p>
+        <p>If you rent from the council, environmental health can advise the housing department what needs to be done.</p>
+        <p>You can also ask the council to inspect a neighbouring property if it affects your health and safety.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">how to complain to environmental health</a>.
+        </p>
+
+    <h2>How to deal with damp and mould</h2>
+        <p>Damp and mould are among the most common problems affecting health in rented housing.</p>
+        <p class="inline-callout internal">Find out what you can do if you have problems with
+            <a href="{% url 'renters-damp_and_mould_in_rented_homes' %}"
+               title="See also: damp and mould">damp and mould</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Help with common health and safety problems</h2>
+        <p>You may be able to get help from the council to deal with:</p>
+        <ul>
+            <li>
+                <a href="{% url 'renters-pests_and_vermin_infestations_in_rented_homes' %}"
+                   title="See also: pests and vermin">pests and vermin</a></li>
+            <li>overcrowding.</li>
+        </ul>
+        <p class="inline-callout internal">Find out what you can do if you are worried about:</p>
+
+        <ul>
+            <li><a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+                   title="See also fire safety">fire safety</a></li>
+            <li><a href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                gas safety</a></li>
+            <li><a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+                   title="See also electrical safety">electrical safety</a></li>
+        </ul>
+
+     <h2>Private rented housing</h2>
+        <p class="inline-callout urgent">If there's a risk to your health and safety, the council can take
+            enforcement action to make a private landlord carry out work to improve conditions in your home.</p>
+        <p>For example, the council could order your landlord to do repairs or make improvements if there's:</p>
+        <ul><li>no heating at all</li>
+            <li>faulty wiring</li>
+            <li>damp or mould causing health problems</li>
+        </ul>
+        <p>The council can take emergency remedial action if it thinks you could suffer serious harm. It can
+            decide to fix the problems itself and then charge your landlord for the work.</p>
+        <p>For less serious situations, the council could just give your landlord notice that it's aware of
+            the problem and provide advice on how to solve it.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                how to complain to environmental health</a>.</p>
+        <p>Poor conditions in a home can be made worse by repair problems. Landlords are responsible for most
+            repairs in private rented housing.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="See also: how to report repairs to a private landlord">how to ask a private landlord to do repairs</a>.</p>
+        <p>Some private tenants may be at risk of revenge eviction for complaining. You might get some protection
+            if your tenancy started after 1 October 2015.</p>
+        <p class="inline-callout internal">
+            <a href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}"
+               title="See also: revenge eviction">Find out more about eviction if you ask for repairs</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Housing association homes</h2>
+        <p>Repairs problems can cause a risk to health and safety.</p>
+        <p>Find out
+            <a href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}"
+               title="See also: how to report repairs">how to ask your landlord to do repairs</a>.</p>
+        <p>Not all problems are solved this way. The council can take action to get your housing association
+            landlord to improve&nbsp;conditions in your home that pose a health or safety risk.</p>
+        <p>Examples of when the council could order your landlord to do repairs or make&nbsp;improvements include
+            if there's:</p>
+
+        <ul>
+            <li>damp or mould causing health problems</li>
+            <li>broken steps at the top of the stairs</li>
+            <li>a faulty boiler</li>
+        </ul>
+        <p>Find out
+        <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+           title="see also: Complain to environmental health about rented housing">
+            how to complain to environmental health</a>.</p>
+        <p>You can&nbsp;make a formal&nbsp;complaint to&nbsp;the housing association if it doesn't do the works needed.</p>
+        <p class="inline-callout external">If you're not happy with the way your complaint is investigated,
+            you can complain&nbsp;to the&nbsp;
+            <a title="Link to complain to the Ombudsman"
+               href="{% url 'renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                Housing Ombudsman</a>.</p>
+        <p>You could also consider taking legal action to get repairs done or claim compensation</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+        <h2>Council housing</h2>
+            <p>Contact your council's housing office if you are worried that the conditions
+                in your home are a health or safety risk.</p>
+        <p class="inline-callout internal">
+            Find out <a href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}"
+                        title="See also: how to report repairs">
+            how to ask the council to do repairs</a>.</p>
+        <p>You can also ask the council's environmental health officer to inspect your home. Environmental health can
+            advise your housing office what needs to be done to improve conditions in your home.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                how to complain to environmental health</a>.</p>
+        <p>You can make a formal complaint to the council&nbsp;if they don't do the repairs or works needed.</p>
+        <p class="inline-callout external">If you're not happy with the way your complaint is investigated, you
+            can complain to the&nbsp;
+            <a title="complain to the Ombudsman"
+               href="{% url 'renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                Housing Ombudsman</a>.</p>
+        <p>Councils often have improvement programmes so their homes meet the
+            <a title="See also: What counts as a 'decent home'? "
+               href="{% url 'renters-what_counts_as_a_decent_home' %}">
+                Decent Homes Standard</a>. This says council housing should be free of category 1 hazards.</p>
+        <p>Ask your landlord if improvements are planned for your home.</p>
+
+        <h2>Houses in multiple occupation</h2>
+
+            <p>There are additional health and safety requirements for houses in multiple occupation (HMOs).
+                These are shared homes containing multiple household such as bedsits, shared student housing&nbsp;and hostels.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="See also: Living in a shared house or flat"
+               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+                landlord's responsibilities in a shared house or flat</a>.</p>
+
+        <h2>Rehoused into a private tenancy by the council</h2>
+            <p>A private rented tenancy offered to you by the council because you're homeless shouldn't pose
+                a risk to your health and safety.&nbsp;The council should find you somewhere else to live.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

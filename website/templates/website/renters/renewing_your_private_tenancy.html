@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Renewing your private tenancy{% endblock %}
+{% block description %}Your options if you want to stay longer in a private tenancy that's nearing the end of its fixed term.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Renewing your private tenancy</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Renewing your private tenancy<br>
+                <small>Your options if you want to stay longer in a private tenancy that's nearing the
+                        end of its fixed term.</small>
+            </h1>
+        </div>
+
+    <h2>Options at the end of a fixed term tenancy</h2>
+        <p>If you agreed to rent your home for a fixed period such as 12 months, you'll need to decide what
+            you want to do when it ends.</p>
+        <p>Options for when the tenancy ends are to:</p>
+
+        <ul>
+            <li>sign a new fixed-term tenancy (if your landlord agrees)</li>
+            <li>stay on and automatically move to a month-to-month tenancy (also known as a
+                periodic or rolling tenancy)</li>
+            <li>move out at the end of your contract &ndash; you may need to give notice to your landlord</li>
+        </ul>
+        <p>Your landlord has to give you written notice to leave if they don't want you to stay on.</p>
+
+    <h2>Sign a new fixed-term tenancy agreement</h2>
+        <p>Your landlord may offer you a new fixed-term agreement or you can ask for one.</p>
+        <p>If you sign a new fixed term tenancy agreement, you have to pay the rent until the
+            end of the new fixed term.</p>
+        <p>You can't
+            <a title="see also: ending a fixed-term tenancy"
+               href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}">
+                end a fixed-term tenancy
+            </a>
+            early unless:&nbsp;</p>
+        <ul>
+            <li>there's a break clause in your tenancy agreement that says you can give notice early</li>
+            <li>you and the landlord agree that the tenancy can end early</li>
+        </ul>
+
+        <p>Your landlord or
+            <a title="See also; letting agent fees for tenants"
+               href="{% url 'renters-letting_agent_fees_for_tenants' %}">
+                letting agent may ask you to pay a fee
+            </a> to renew your contract. You can try to negotiate to reduce or cancel this.</p>
+        <p>Some landlords want long term tenants.&nbsp;Consider asking for a longer-term tenancy
+            if you'd like to stay on for 2 years or more.</p>
+
+    <h2>Stay on with a rolling tenancy</h2>
+        <p>You don't have to leave when your fixed-term agreement ends.</p>
+        <p>If you stay on and don't sign a new contract, your tenancy automatically becomes a
+            periodic tenancy. This is also known as a rolling agreement.</p>
+        <p>Periodic tenancies continue rolling on from month to month or from week to week, depending on
+            how often your rent is paid.</p>
+        <p class="inline-callout highlight">To
+            <a title="See also: Ending a month to month tenancy"
+               href="{% url 'renters-ending_a_periodic_tenancy' %}">
+                end a month-to-month tenancy
+            </a>,
+            you need to give at least 28 days' or a month's notice.</p>
+
+    <h2>Leave at the end of the tenancy</h2>
+        <p>You must end your tenancy correctly&nbsp;if you decide you want to move out at the end of
+            the fixed term.</p>
+        <p>
+            <a title="see also: ending a fixed-term tenancy"
+               href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}">
+                Find out how to end a fixed-term tenancy</a>.</p>
+
+     <h3>If your landlord wants you to leave</h3>
+        <p>Your landlord must give you notice if they want you to leave at the end of a fixed term tenancy.</p>
+        <p>If you have an
+            <a title="See also: Assured shorthold tenancies"
+               href="{% url 'renters-assured-shorthold-tenancies' %}">
+                assured shorthold tenancy
+            </a>, you should get at least two months' written notice.&nbsp;Your landlord will normally
+            use a&nbsp;
+            <a title="See also: Eviction with a section 21 notice"
+               href="{% url 'renters-section_21_eviction_process' %}">
+                section 21 notice</a>.</p>
+
+
+    <h2>Rent increases</h2>
+        <p>At the end of your fixed term, your landlord can increase the rent if you agree to stay
+            for a further fixed term.</p>
+        <p>If you refuse to accept the rent increase, your landlord can give you notice to leave.&nbsp;
+            Your landlord could rent to another tenant at the higher rent.</p>
+        <p>You can ask your landlord if they'll accept a lower increase in return for not having to
+            re-let the property.</p>
+
+    <p>Find out more about&nbsp;
+    <a title="See also: Private tenancy rent increases"
+       href="{% url 'renters-rent_increases' %}">
+        rent increases</a>.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

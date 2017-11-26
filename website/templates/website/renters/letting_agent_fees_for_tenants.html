@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Letting agent fees for tenants{% endblock %}
+{% block description %}Find out about letting agent charges when you rent a home.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Letting agent fees for tenants</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Letting agent fees for tenants<br>
+                <small>Find out about letting agent charges when you rent a home.</small>
+            </h1>
+        </div>
+
+    <h2>Proposed ban on fees for tenants</h2>
+        <p>In November 2016, the government announced in its Autumn Statement
+            that it plans to ban letting agent fees for tenants.</p>
+        <p>No timetable has been set for the new law needed to stop letting agents charging tenants.</p>
+
+    <h2>Charges before you move in</h2>
+        <p>Before you move in, most letting agents charge you for:</p>
+        <ul>
+            <li>drawing up
+                <a href="{% url 'renters-types-of-renting-agreement' %}"
+                   title="see also: types of renting agreements">the contract</a></li>
+            <li>doing
+                <a href="{% url 'renters-how_to_check_and_agree_an_inventory' %}"
+                   title="see also: how to check and agree an inventory">an inventory
+                </a>
+                of the property</li>
+            <li>doing credit checks to see if you've had problems paying bills in the past</li>
+            <li>getting references from your employer, bank or previous landlord</li>
+            <li>admin costs for things like phone calls and postage</li>
+        </ul>
+        <p>You may also be charged for a&nbsp;
+            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+               title="see also: right to rent immigration checks">
+                right to rent immigration check</a>.</p>
+        <p>You could also have to pay a holding deposit to 'reserve' the property before you sign a tenancy agreement.</p>
+        <p>It's worth shopping around as charges vary.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+               title="See also: Using a letting agent to find and rent a home">
+                using a letting agent to rent a home</a>.</p>
+    <h2>What letting agents can't charge you for</h2>
+        <p>Letting agents should not charge you for:</p>
+
+        <ul>
+            <li>routine inspections during your tenancy</li>
+            <li>anything they also charge the landlord for</li>
+        </ul>
+
+        <p>It's a criminal offence if a letting agent charges you to register with them or to show you a
+            list of properties to rent.</p>
+
+    <h2>What letting agents must tell you</h2>
+        <p>Before you sign a tenancy agreement, make sure you find out about all the fees you'll be charged.</p>
+        <p>Letting agents must clearly set out the fees they charge on their websites and in their offices.
+            They must&nbsp;not mislead you.&nbsp;They must&nbsp;clearly describe:</p>
+        <ul>
+            <li>the cost of each fee including VAT</li>
+            <li>what each fee covers</li>
+        </ul>
+        <p>Fees don't have to be published in this way for websites that just advertise properties,
+            like Rightmove or Zoopla.</p>
+
+    <h2>Rent in advance and tenancy deposits</h2>
+        <p>Once you've signed the tenancy agreement, most letting agents ask you to pay:</p>
+
+        <ul>
+            <li>
+                <a href="{% url 'renters-rent_in_advance' %}"
+                   title="see also: rent in advance">rent in advance
+                </a> (usually a month's rent)</li>
+            <li>
+                <a href="{% url 'renters-what_is_a_tenancy_deposit' %}"
+                   title="see also: tenancy deposit">a tenancy deposit</a>
+                (this is usually 4 or 6 weeks' rent)</li>
+        </ul>
+
+     <h2>Holding deposits to reserve a property</h2>
+        <p>If you want to reserve a property, a letting agent may ask you to pay a holding deposit while
+            they check your references.</p>
+        <p>Paying a holding deposit means:</p>
+
+        <ul>
+            <li>you're committed to renting the property</li>
+            <li>the landlord is committed to renting the property to you, subject to checks</li>
+        </ul>
+        <p>Don't pay a holding deposit or sign anything if you are not sure that you want the property.</p>
+        <p>Before you pay any money, ask the letting agent to confirm to you in writing:</p>
+        <ul>
+            <li>how the holding deposit will be used</li>
+            <li>if it will be returned to you (this should happen if the landlord decides not to
+                rent the property to you)</li>
+            <li>if it will be used towards your tenancy deposit or rent</li>
+            <li>if any of their fees will be taken from it</li>
+            <li>when some of it may not be refunded, for example, if you give inaccurate information about
+                yourself&nbsp;(they can't legally keep all of it)</li>
+        </ul>
+        <p>After you pay a holding deposit, the landlord shouldn't ask you to pay a higher rent
+            than you initially agreed. You have the right to change your mind and get all your
+            holding deposit back if they do.</p>
+        <p>You can take the letting agent to court for breaking the agreement if they:</p>
+
+        <ul>
+            <li>refuse to give you back your holding deposit</li>
+            <li>decide not to rent to you when all your references and credit checks were in order</li>
+        </ul>
+
+    <h2>Fees when your contract ends</h2>
+        <p>When your tenancy agreement ends the letting agent can ask you to pay for:</p>
+        <ul>
+            <li><a href="{% url 'renters-renewing_your_private_tenancy' %}"
+                   title="see also: renewing your tenancy agreement">renewing your tenancy agreement</a></li>
+            <li>an inspection of the property when you move out (if they told you about it when you moved in)</li>
+            <li>professional cleaning costs (if your tenancy or deposit agreement allow for this)</li>
+        </ul>
+        <p>You don't have to pay a fee to stay on after the fixed term ends if you don't sign a new agreement.</p>
+
+    <h2>How to complain about letting agent fees</h2>
+        <p>You must contact the agency first to complain about fees that are hidden or unclear.</p>
+        <p>You can complain to a letting agent redress scheme if the letting agent doesn't resolve the problem.
+            Letting agents must be a member of a redress scheme.</p>
+        <p>If fees are unlawful or the agency doesn't belong to a redress scheme you can complain to your local
+            council's trading standards department.</p>
+        <p>Only agencies themselves can deal with complaints about the level of fees.</p>
+
+        </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

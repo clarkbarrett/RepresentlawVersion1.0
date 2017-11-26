@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}What is illegal eviction?{% endblock %}
+{% block description %}Landlords must follow the correct procedures to evict private tenants and lodgers. It's illegal eviction if they don't.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">What is illegal eviction?</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>What is illegal eviction?<br>
+                <small>Landlords must follow the correct procedures to evict private tenants and lodgers. It's illegal eviction if they don't.
+                </small>
+            </h1>
+            </div>
+    <h2>Illegal eviction is a criminal offence</h2>
+        <p>It's a criminal offence for your landlord to evict you without following the correct
+            legal steps for eviction.&nbsp;</p>
+        <p>If bailiffs are required to evict you, it's illegal eviction if your landlord forces you to
+            leave before the bailiffs arrive, even if your landlord has a court order for you to leave</a>.</p>
+        <p>Your landlord must follow rules on how you can be evicted.</p>
+        <p><a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+              title="see also; eviction of assured shorthold tenants">
+            Rules for eviction of an assured shorthold tenant</a></p>
+        <p><a href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
+              title="see also: eviction of excluded occupiers">Rules for the eviction of lodgers</a></p>
+    <h3>Actions that count as illegal eviction</h3>
+        <p>It's usually illegal eviction if your landlord:</p>
+        <ul>
+            <li>forces you to leave by threatening or harassing you</li>
+            <li>physically throws you out</li>
+            <li>stops you from getting into certain parts of your home</li>
+            <li>changes the locks while you're out</li>
+        </ul>
+
+    <h2>When eviction by bailiffs is needed</h2>
+        <p>Only a bailiff can lawfully evict you from your home if you are a private tenant.&nbsp;</p>
+        <p>Before the bailiffs can come, your landlord must:</p>
+        <ul>
+            <li>give you notice to leave</li>
+            <li>go to a court for a possession order</li>
+            <li>apply to a court for bailiffs to evict you</li>
+        </ul>
+        <p>This applies if you have an&nbsp;
+            <a title="see also: eviction of Assured shorthold tenancies with private landlords "
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                assured shorthold tenancy</a>, an&nbsp;
+            <a href="{% url 'renters-eviction_of_assured_tenants' %}"
+               title="see also: eviction of assured tenants">assured tenancy
+            </a> or a&nbsp;
+            <a title="Eviction of regulated tenants"
+               href="{% url 'renters-eviction_of_regulated_tenants' %}">
+                regulated tenancy</a>.&nbsp;</p>
+        <p>It also applies if you live in the same building as your landlord, but don't share accommodation
+            with them (you are classed as an occupier with basic protection).</p>
+    </div>
+
+
+<div id="new_content_container_1354175">
+<div class="accordion">
+    <h2>When eviction by a landlord is allowed</h2>
+        <p>Your landlord can evict you from some types of accommodation if you stayed on&nbsp;after either:</p>
+    <ul>
+        <li>the end of a fixed term contract</li>
+        <li>the end of the period set out in a legal notice to leave</li>
+    </ul>
+    <p>This applies if you are:</p>
+    <ul>
+        <li>a lodger&nbsp;
+            <a href="https://england.shelter.org.uk/housing_advice/eviction/eviction_of_lodgers_and_other_excluded_occupiers"
+               title="see also: eviction of excluded occupiers">
+                being evicted from a home you share with your landlord</a></li>
+        <li>a hostel resident&nbsp;
+            <a href="https://england.shelter.org.uk/get_advice/advice_archive/2017_get_advice_archive/homelessness/eviction_from_hostels"
+               title="see also: eviction from hostels">being evicted from a hostel</a>
+            <a href="https://england.shelter.org.uk/housing_advice/council_housing_association/rights_in_temporary_council_accommodation"
+               title="See also: Rights in temporary council accommodation"> </a></li>
+        <li>evicted from temporary accommodation provided by the council while the council considers your homeless application</li>
+    </ul>
+
+        <p>Your landlord must not use threats or violence to evict you but they can change the locks while you are out.</p>
+
+    <h2>Contact the council about illegal eviction</h2>
+        <p>Get advice from the council if you are being threatened with illegal eviction or have been illegally evicted.</p>
+    <p>Your council's tenancy relations or private rented housing team:</p>
+    <ul>
+        <li>can negotiate with your landlord to try to get you back into your home</li>
+        <li>may also be able to prosecute your landlord for illegal eviction.</li>
+    </ul>
+    <p>Use the
+        <a title="Link to Gov.uk - find your local council" href="./?a=26010"
+           target="_blank">Gov.uk council search</a> to find details of your local council.</p
+    ><p class="inline-callout">
+    <a title="See also: Illegal eviction: Help from the council"
+       href="https://england.shelter.org.uk/housing_advice/eviction/help_from_the_council_after_illegal_eviction">
+        How councils help tenan</a>
+    <a title="See also: Illegal eviction: Help from the council"
+       href="https://england.shelter.org.uk/housing_advice/eviction/help_from_the_council_after_illegal_eviction">
+        ts facing illegal eviction</a>.</p>
+
+    <h2>Call the police</h2>
+        <p>Call the police if&nbsp;you're being illegally evicted by a private landlord and&nbsp;your
+            landlord is violent or threatens violence.</p>
+    <p>Call 999 if a crime is happening now or someone is in immediate danger.</p>
+    <p>
+        <a title="Link to Police - contact us" href="./?a=848530" target="_blank">
+            Find police contact numbers</a></p>
+
+    <p>The police should come to your home if they can prevent violence or a breach of the peace.&nbsp;
+        They can act to stop a breach of the peace.&nbsp;The police should not help the landlord to evict you.</p>
+    <p>The
+        <a title="Link to Gov.uk - Protection from Eviction Act 1977" href="./?a=848433"
+           target="_blank">Protection from Eviction Act 1977
+        </a> makes it a criminal offence for your landlord to evict you without following the correct legal steps.</p>
+    <p>Harassment is a criminal offence. A landlord who tries to make you leave by threatening violence may be guilty of
+        <a title="See also: Harassment by a private landlord"
+           href="https://england.shelter.org.uk/housing_advice/eviction/harassment_by_a_private_landlord">
+            harassment</a>.</p>
+    <p>Show the police a copy of your tenancy agreement if they need proof you are a tenant.</p>
+
+    <h2>Get free legal advice and help</h2>
+        <p>Get advice now if you're facing eviction.</p><p class="inline-callout">Contact
+    <a title="see also: help from the council"
+       href="https://england.shelter.org.uk/housing_advice/eviction/help_from_the_council_after_illegal_eviction"
+       target="_blank">your local council
+    </a> - their tenancy relations officers can negotiate with your landlord and may prosecute them for illegal
+    eviction and harassment</p><p class="inline-callout phone">Contact
+    <a title="External link: Gov.uk - Civil Legal Advice contact details"
+       href="./?a=25480" target="_blank">Civil Legal Advice</a> on 0345 345 4 345 to see if you qualify for
+    legal aid to challenge the eviction after it's happened</p>
+
+    <p class="inline-callout">
+        <a href="https://england.shelter.org.uk/get_help"
+           title="See also: Housing advice helpline">Contact a Shelter adviser online or by phone</a></p>
+
+    <p class="inline-callout directory">Use
+        <a href="http://england.shelter.org.uk/get_advice/advice_services_directory"
+           title="see also: Shelter's directory">Shelter's directory</a> to find local advice from Shelter,
+        Citizens Advice or a law centre</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

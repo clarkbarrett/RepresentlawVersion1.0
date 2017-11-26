@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Eviction of lodgers{% endblock %}
+{% block description %}Your landlord can evict you easily if you are a lodger or classed as an excluded occupier.  {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction of lodgers</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Eviction of lodgers<br>
+                <small>Your landlord can evict you easily if you are a lodger or classed as an excluded occupier.  </small>
+            </h1>
+        </div>
+
+    <h2>Lodgers and other excluded occupiers</h2>
+        <p>Lodgers have the legal status of an
+            <a href="{% url 'renters-excluded_occupiers' %}"
+               title="See also: Excluded occupiers">excluded occupier
+            </a>. You are a
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also: lodgers">lodger
+            </a> if you share the kitchen, bathroom or other living accommodation with your landlord.</p>
+        <p>You will also be classed as an excluded occupier if you live:</p>
+        <ul>
+            <li>in the same building as your landlord (as long as that building isn't a block of flats),
+                and you share the kitchen, bathroom or other living space with a member of your landlord's family</li>
+            <li>rent-free (but not if you work for your landlord and your pay is reduced to cover the 'rent')</li>
+            <li>in a hostel run by a local council or a housing association</li>
+            <li>in temporary accommodation arranged by the council while it is looking into your
+                homelessness application</a></li>
+        </ul>
+
+        <h2>How long you can stay</h2>
+        <p>You can stay in your accommodation until your landlord asks you to leave or for as long as your
+            written agreement says.</p>
+
+    <h2>Notice to leave</h2>
+        <p>Your landlord should give you reasonable notice to leave.&nbsp;Notice can be given verbally.&nbsp;
+            You must leave when the notice period ends.</p>
+        <p>If you have a
+        <a href="{% url 'renters-types-of-renting-agreement' %}"
+           title="See also: Types of renting agreement">written agreement
+        </a> (such as a licence agreement) it should say how much notice you should be given. Your landlord
+            doesn't have to give you notice in writing unless your agreement says they should.</p>
+        <p>Your landlord doesn't have to get a court order for you to leave&nbsp;when the notice expires.</p>
+
+    <h2>If you don't leave&nbsp;</h2>
+        <p>Your landlord can insist that you leave.&nbsp;If you don&rsquo;t move out, your landlord can change
+            the locks while you&rsquo;re out.</p>
+        <p>Your landlord must take reasonable care of any belongings you have left at the property. They should
+            contact you and make arrangements for you to collect your belongings within a reasonable time.</p>
+        <p>Your landlord can sell or dispose of your belongings if you don't collect them within a reasonable
+            time or if they can't make contact with you.</p>
+        <p>It is a criminal offence for a landlord to
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">use or threaten violence while evicting you</a>.</p>
+
+    <h2>Court action</h2>
+        <p>Your landlord does not need to go to court to evict you.&nbsp;</p>
+        <p>Your landlord could choose to&nbsp;
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="see also: eviction court orders">
+                apply to the court to ask for a possession order
+            </a>. As long as you were given reasonable notice,&nbsp;the court must make an order to evict you.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Rent increases when renting privately{% endblock %}
+{% block description %}Rules for rent increases in private renting vary according to the
+type of tenancy you have. Most private tenants have an assured shorthold tenancy.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Rent increases when renting privately</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Rent increases when renting privately<br>
+                <small>Rules for rent increases in private renting vary according to the type of tenancy you have. Most private tenants have an assured shorthold tenancy.</small>
+            </h1>
+        </div>
+
+    <h2>Rent increases for assured shorthold tenants</h2>
+
+        <p>Landlords can charge a market rent for an&nbsp;
+            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+               title="see also: assured shorthold tenancies">assured shorthold tenancy</a>.
+            Rent levels vary and are affected by the availability of rental properties in the area.</p>
+        <p>Your landlord must follow rules for when they can increase the rent.</p>
+
+        <h3>Rent increases if you sign a new contract</h3>
+
+        <p>Landlords can increase the rent if they renew your tenancy agreement. If you sign a new tenancy agreement,
+            you have to pay the amount of rent it sets out.</p>
+
+    <h3>Rent increases during a fixed-term tenancy</h3>
+        <p>Your landlord can't increase the rent during a fixed-term tenancy unless:</p>
+        <ul>
+            <li>there is a clause in your agreement that says when and how the rent can be increased</li>
+            <li>you agree to the increase</li>
+        </ul>
+
+    <h3>If you don't have a fixed term agreement&nbsp;</h3>
+        <p>You have a periodic tenancy if you never had a fixed-term tenancy agreement or your tenancy's
+            fixed term has ended and the tenancy hasn't been renewed.</p>
+        <p>Rent for a periodic tenancy can be increased if&nbsp;you agree to the increase or accept it by paying it.</p>
+        <p>If you don't agree to the rent rise, your landlord can give you at least one month's written notice
+            of a proposed rent increase using Form 4. The new rent will apply after the notice expires. This will
+            be a minimum of 28 days.</p>
+
+    <h3>Negotiations with your landlord</h3>
+        <p>It costs landlords time and money to re-let a property, so you may want to try negotiating with
+            your landlord if you:</p>
+
+        <ul>
+            <li>don't want to accept the rent increase at all</li>
+            <li>would accept a lower rent increase</li>
+            <li>want the increase to be rolled out in stages over a period of time</li>
+        </ul>
+        <p>If your landlord won't negotiate, you may have to accept a proposed rent increase if you want
+            to stay in your home.&nbsp;&nbsp;Your landlord could decide to rent to someone who will pay the
+            higher rent.</p>
+        <p>If they want you to leave, your landlord must give you at least 2 months notice and follow
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                the correct procedure to evict you legally</a>.</p>
+        <p>If you decide to leave, make sure you give proper notice in writing.</p>
+
+    <h2>Rent increases if you have an assured tenancy</h2>
+        <p>You are likely to have an&nbsp;
+            <a href="{% url 'renters-assured_tenancies' %}"
+               title="see also: assured tenancy">assured tenancy</a> if:</p>
+
+        <ul>
+            <li>your tenancy started between 15 January 1989 and 27 February 1997</li>
+            <li>your landlord did not give you a notice saying that you have an assured shorthold tenancy</li>
+        </ul>
+        <p>Your landlord can charge a market rent. Market rents are affected by the availability and cost of
+            similar accommodation in the area.</p>
+
+    <h3>Rent increases for fixed-term tenants</h3>
+        <p>Your rent can only be increased during the fixed-term of your tenancy if your tenancy agreement
+            sets out how and when it can be increased.</p>
+
+    <h3>Rent increases for periodic tenants</h3>
+        <p>Your rent can be increased&nbsp;after a fixed-term expires or if you never had a fixed term agreement.</p>
+        <p>Your rent can only be increased if&nbsp;</p>
+
+        <ul>
+            <li>you agree to the increase</li>
+            <li>your landlord has given you one month's written notice of the proposed increase on a special form</li>
+            <li>your tenancy agreement has a&nbsp;rent review clause - this sets out how and when your rent can
+                be increased&nbsp;</li>
+        </ul>
+        <p>Your landlord may not be able to use a rent review clause for a fixed-term tenancy that has expired.</p>
+
+    <h3>How to challenge a proposed rent increase</h3>
+
+        <p>You have the right to apply to a tribunal for rent disputes
+            if your landlord gives you notice of a proposed increase. You must
+            apply before the notice period expires.&nbsp;</p>
+        <p>The tribunal decides the level of rent you have to pay. The tribunal may decide to increase the rent
+            if they think it is lower than comparable properties in the area.</p>
+        <p>Challenging a rent increase won't affect your right to stay in your home. Your landlord needs a legal
+            reason to take steps to&nbsp;
+            <a title="See also: Eviction of assured tenants"
+               href="{% url 'renters-eviction_of_assured_tenants' %}">
+                evict you from an assured tenancy</a>.
+            Rent arrears is a legal reason for eviction, so make sure you keep your rent payments up to date.</p>
+        <p>If you pay the higher rent proposed, it usually means you have agreed to the increase.</p>
+
+    <h2>Rent increases if you have a regulated tenancy</h2>
+        <p>You probably have a&nbsp;
+            <a href="{% url 'renters-regulated_tenancies' %}"
+               title="see also: regulated tenancy">regulated tenancy</a> if your tenancy started before
+            15 January 1989.</p>
+        <p>Regulated tenants are entitled to a 'fair rent'.&nbsp;A fair rent is the maximum rent your landlord
+            can charge. This&nbsp;is usually less than the market rent paid by most private tenants.</p>
+        <p>Fair rents are set by a rent officer at the
+            Valuation Office Agency. You or your landlord can apply to get a fair rent registered
+            if it hasn't already been done.</p>
+        <p>Fair rents can normally only be increased every two years. Your landlord must give you written notice
+            on a special form if they want to increase the rent.&nbsp;</p>
+        <p>The increase is calculated using a special formula. A larger increase may be awarded if the landlord
+            has improved your home.</p>
+        <p>You can write to the rent officer if you think the proposed increase is too high.</p>
+
+    <h2>Rent increase for lodgers</h2>
+        <p>Landlords of&nbsp;
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also:lodgers">lodgers</a> can charge a market rent. This is the typical rate for rents
+            in an area.</p>
+        <p>The rent cannot be increased during a fixed-term agreement unless:</p>
+
+        <ul>
+            <li>your agreement says how and when it can be increased</li>
+            <li>you agree to an increase</li>
+        </ul>
+        <p>If you don't have a fixed-term agreement, there are no rules limiting the amount your rent can be
+            increased. Your only option is to try to negotiate a lower increase with your landlord.</p>
+
+    <h2>If you can't afford a rent increase</h2>
+        <p>Check if you can claim either&nbsp;housing benefit or&nbsp;universal credit help with housing costs.</p>
+        <p>An increase in your rent counts as a&nbsp;change in your circumstances&nbsp;if you are already
+            claiming one of these benefits. You'll need to notify:</p>
+        <ul>
+            <li>the council's housing benefit department - if you claim housing benefit</li>
+            <li>Jobcentre Plus - if you claim universal credit</li>
+        </ul>
+        <p>You'll need to report the increase and provide evidence such as&nbsp;a letter from your landlord.</p>
+
+        <h2>Get advice</h2>
+        <p>Get advice as soon as you can if&nbsp;you are not happy about a proposed rent increase.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

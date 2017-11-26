@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Tips for viewing a home to rent{% endblock %}
+{% block description %}Make sure you ask the right questions before you sign up for a property to rent.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Tips for viewing a home to rent</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Tips for viewing a home to rent<br>
+                <small>Make sure you ask the right questions before you sign up for a property to rent.</small>
+            </h1>
+        </div>
+
+    <h2>Inspect the condition of the property</h2>
+        <p>
+            <a title="See also: Responsibilities for repair"
+               href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                Landlords are responsible for most repairs</a>.</p>
+        <p>If you see any problems, check that they will be repaired before you move in. Ask who you should contact if
+            you need&nbsp;
+            <a title="See also: Asking your landlord to do repairs in your home"
+               href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+                to report repairs</a>.</p>
+        <p>You can
+            <a href="{% url 'renters-how_to_complain_about_an_unsafe_home' %}"
+               title="See also: how to complain about an unsafe home">complain about an unsafe home</a>,
+            but it's a problem best avoided from the start.</p>
+
+    <h3>Inside</h3>
+        <p>Check for signs of:</p>
+        <ul>
+            <li>
+                <a href="{% url 'renters-damp_and_mould_in_rented_homes' %}"
+                   title="See also: damp and mould in rented homes">
+                    damp or condensation</a> - such as mould on the walls or carpets.</li>
+            <li><a title="see also: pests and vermin in rented homes"
+                   href="{% url 'renters-pests_and_vermin_infestations_in_rented_homes' %}">
+                signs of pests and vermin</a> - such as mice, rats and cockroaches</li>
+            <li>leaks from baths, showers, radiators or pipes</li>
+        </ul>
+
+    <h3>The exterior</h3>
+        <p>Make sure the outside of the property is in good condition. Look for loose roof tiles,
+            leaking pipes and gutters and crumbling brickwork.</p>
+
+    <h3>Communal areas</h3>
+        <p>Ask who is responsible for the upkeep of any communal areas such as a garden, entrance hall or stairwell.</p>
+
+    <h2>Ask about gas, electrical and fire safety</h2>
+
+        <h3>Gas safety</h3>
+        <p>All gas appliances such as boilers, cookers and heaters must be checked every 12
+            months by a Gas Safe registered engineer.</p>
+        <p>Ask to see record of the latest safety check. Your landlord must give you a
+            <a title="See also: Gas safety checks in rented homes "
+               href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                certificate of gas safety</a> before you move in.</p>
+
+        <h3>Electrics</h3>
+        <p class="inline-callout highlight">Your landlord has
+        <a title="See also: Electrical safety responsibilities "
+           href="{% url 'renters-electrical_safety_in_rented_homes' %}">
+            electrical safety responsibilities</a>.</p>
+        <p>Your landlord should have electrical appliances checked every 12 months. Usually the electrician puts a
+            sticker on the plug of each appliance saying when they were last checked.
+            Keep your eye out for any fittings that are loose from the wall.</p>
+
+    <h3>Fire safety</h3>
+        <p>Check that there is a working smoke alarm on each floor.</p>
+        <p class="inline-callout highlight">
+            <a title="see also: fire safety"
+               href="{% url 'renters-fire_safety_advice_for_tenants' %}">
+                Find out about fire safety</a></p>
+
+    <h2>Check the heating</h2>
+        <p class="inline-callout highlight">
+            Check what sort of heating the property uses and ask the landlord how much the bills are.</p>
+
+    <h2>Check furniture and appliances</h2>
+        <p>Ask if any furniture and appliances are provided (such as cooker, fridge, freezer and washing machine).
+            Check if your landlord will repair or replace them if they go wrong.</p>
+        <p>To avoid disputes, make sure you and your landlord
+            <a title="See also: check and agree an inventory"
+               href="{% url 'renters-how_to_check_and_agree_an_inventory' %}">
+                agree an inventory</a> to record the condition of everything that comes with the property.</p>
+
+        <p>If you have furniture that you need to bring in, check it will fit.</p>
+
+    <h2>Find out about the landlord</h2>
+        <p class="inline-callout highlight">Find out
+            <a href="{% url 'renters-how_to_find_your_landlord' %}"
+               title="see also: how to find your landlord">how to contact your landlord</a>
+            including in case of emergencies.</p>
+        <p>If a letting agent will be managing the property, check they are registered with an professional body
+            and letting agent redress scheme.</p>
+
+    <h2>Check the costs of renting</h2>
+        <p>Rent will be your biggest monthly outgoing, so check you can afford it.</p>
+        <p>If you need to claim housing benefit to help pay the rent check the landlord is willing to rent to you.</p>
+
+    <p>Check if you have to
+        <a href="{% url 'renters-what_is_a_tenancy_deposit' %}"
+           title="see also: what is a deposit">pay a deposit</a> and rent in advance.</p>
+        <p>Ask about other bills such as gas, electricity, water and council tax:</p>
+        <ul>
+            <li>how much they're likely to be</li>
+            <li>what is and isn't included in the rent</li>
+        </ul>
+        <p>Check if extra charges apply - some properties have a service charge for the upkeep of communal areas.</p>
+
+    <h2>Check how long the contract is for</h2>
+        <p>Many tenancies start off as fixed-term contracts, often for six or 12 months.</p>
+        <p>You can't usually
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: ending a fixed-term tenancy">end a fixed-term tenancy</a>
+            during the fixed term unless there's a break clause that allows you or the landlord to end the tenancy early.</p>
+        <p>Check if you will be able to&nbsp;
+            <a href="{% url 'renters-renewing_your_private_tenancy' %}"
+               title="see also: renewing your tenancy">renew your tenancy</a>
+            when a fixed-term contract ends.&nbsp;Your landlord has to give you
+            <a href="{% url 'renters-eviction_notices_from_private_landlords' %}"
+               title="See also: eviction notices from private landlords">notice if they want you to leave</a>.</p>
+        <p>You could stay on a periodic or rolling contract if you don't renew with another fixed term.
+            These typically roll from month to month.</p>
+        <p>You can
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also: ending a periodic tenancy">end a periodic or rolling tenancy</a>
+            by giving correct notice.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

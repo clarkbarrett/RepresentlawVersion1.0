@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Gas safety in rented homes{% endblock %}
+{% block description %}Your landlord must make sure that gas appliances in your home are safe and regularly checked.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Gas safety in rented homes</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Gas safety in rented homes<br>
+                <small>Your landlord must make sure that gas appliances in your home are safe and regularly checked.</small>
+            </h1>
+        </div>
+
+    <h2>Who to contact in a gas emergency</h2>
+        <p>Call the National Gas Emergency Service immediately on 0800 111 999 if you smell gas or think there's a gas leak.</p>
+        <p>For information on gas safety, call the HSE's free
+            Gas Safety Advice Line on 0800 300 363.</p>
+
+    <h2>Landlord's responsibility for gas safety</h2>
+        <p>Landlords have gas safety responsibilities under the law. This applies to private,
+            council and housing association landlords.</p>
+        <p>Your landlord must make sure that the gas supply and appliances in your home:</p>
+        <ul>
+            <li>are in a safe condition</li>
+            <li>are fitted or repaired by a Gas Safe registered engineer</li>
+            <li>have a gas safety check every 12 months by a Gas Safe registered engineer</li>
+        </ul>
+        <p>This includes gas pipework, gas cookers, gas boilers, gas fires and gas water heaters. The
+            landlord isn't responsible for the safety of gas appliances you own.</p>
+        <p>If you are a private rented tenant, your landlord is responsible for installing smoke
+            alarms in your home.</p>
+        <p>Your landlord must also install carbon monoxide
+            detectors if you have a coal fire or wood burning stove.</p>
+
+    <h2>Responsibility for your gas appliances</h2>
+        <p>You are responsible for any gas appliances that you own. But your landlord is usually responsible
+            for any flues, pipework or chimneys they are connected to.</p>
+        <p>When a Gas Safe engineer checks the appliances owned by your landlord, you can ask them to check
+            your appliances, but you may have to pay to have them checked.</p>
+
+    <h2>Gas safety inspections</h2>
+        <p>Your landlord must arrange a&nbsp;gas safety check every 12 months.</p>
+        <p>Only
+            <a title="External link: Gas Safe - registration scheme details"
+               href="{{ gassafe_url }}"
+               target="_blank">Gas Safe registered engineers
+            </a> are allowed to inspect or&nbsp;do repairs&nbsp;on gas appliances in your home.</p>
+        <p>If there's a serious problem with any of the gas installations in your home, the engineer must
+            make them safe. They can disconnect faulty equipment and arrange for your gas supply to be cut off.</p>
+        <p>The engineer sends your landlord a record of what was checked and any problems found.</p>
+        <p>Your landlord should give you a reasonable amount of notice about a gas safety check.&nbsp;You must allow
+            the engineer access to your home to carry out the inspection and do any repair work.</p>
+        <p>Always ask to see the engineer's Gas Safe ID card.</p>
+        <p class="inline-callout external">Find out
+            <a title="Link to Gas Safe Register" href="{{ gassafe_url }}" target="_blank">what the Gas Safe engineer checks</a>.</p>
+
+    <h2>Write to your landlord about gas safety inspections</h2>
+        <p>Ask your landlord to arrange a gas safety check if one hasn't been done in the past 12 months.</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a title="Download letter G2 request for a gas safety inspection"
+               href="http://england.shelter.org.uk/__data/assets/word_doc/0006/1154184/G2_Request_for_gas_safety_inspection.docx">
+                write to ask your landlord for a gas safety inspection</a>.</p>
+        <h2>Gas safety record</h2>
+        <p>A Gas Safe registered engineer gives your landlord a gas safety record after inspecting your home.</p>
+        <p>If the record shows there are problems that affect gas safety, the landlord must get the
+            problems repaired.</p>
+        <p>Your landlord must give you a copy of the latest gas safety record:</p>
+
+        <ul><li>before you move in if you are new tenant</li>
+            <li>within 28 days of the gas safety check being carried out</li>
+        </ul>
+
+    <h2>Write to your landlord about the gas safety record</h2>
+        <p>You can contact your landlord to ask for a copy of the gas safety record if you haven't
+            been given one.</p>
+        <p class="inline-callout download">
+            Use Shelter's template letter to
+            <a title="download letter G1 Request for gas safety record "
+               href="http://england.shelter.org.uk/__data/assets/word_doc/0004/1154182/G1_Request_for_gas_safety_record.docx">
+                write to your landlord to ask for a gas safety record</a>.</p>
+
+    <h2>How to complain about gas safety</h2>
+        <p>You can complain to the
+            <a title="Link to HSE gas safety complaints" href="{{ hse_gas_tenants_url }}"
+               target="_blank">Health and Safety Executive (HSE)
+            </a> if your landlord won't carry out gas safety checks.</p>
+        <p>The HSE can take action to force your landlord to do checks. Landlords can be fined or sent
+            to prison if they don't comply.</p>
+        <p>If you are a private tenant or a housing association tenant, you can also complain to the
+            council's environmental health department if your landlord&nbsp;won't do gas safety checks
+            or you're worried about gas safety in your home.</p>
+        <p>The council can take legal action against your landlord if&nbsp;there's a
+            <a title="see also: health and safety standards "
+               href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+                threat to your health and safety in the home</a>.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                how to complain to environmental health</a>.</p>
+
+   <h2>Carbon monoxide detectors</h2>
+        <p>If you are a private rented tenant, your landlord should have installed a carbon monoxide detector
+            in rooms that have&nbsp;a coal fire or a wood burning stove by 1 October 2015. They&nbsp;are breaking the
+            law and can be&nbsp;fined if they didn't.</p>
+        <p>The detector must be in proper working order:</p>
+
+        <ul>
+            <li>when it was installed</li>
+            <li>at the start of all new tenancies</li>
+        </ul>
+
+        <p>You are responsible for checking it is still working after that.&nbsp;If a detector stops working,
+            contact the landlord to arrange for new batteries or a replacement detector.</p>
+        <p>Carbon monoxide detectors are also recommended for all homes with gas or oil heaters
+            and boilers, but your landlord doesn't have a legal duty to supply one. If you are a council
+            or housing association tenant, your landlord might install one if you ask.</p>
+
+        <p class="inline-callout external">Find out
+            <a href="{{ nhs_carbon_monoxide_poisoning_url }}" title="Link to NHS - carbon monoxide poisoning" target="_blank">more
+                from the NHS about carbon monoxide poisoning</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for carbon monoxide poisoning</h4></a>
+                    <p></p>
+                    <p>You might be able to claim compensation if your health has suffered because of faulty gas equipment.</p>
+                    <p>Contact represent to find out if you have a claim</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Claim compensation against my landlord</a></p>
+
+        </div>
+
+    <h2>Private tenant eviction if gas safety rules are broken</h2>
+        <p>If you're an assured shorthold tenant, your landlord can usually evict you using a
+            <a title="See also: Eviction with section 21 notice"
+               href="{% url 'renters-section_21_eviction_process' %}">
+                section 21 notice</a>.</p>
+        <p>New rules may give you some protection against eviction if your landlord doesn't follow gas
+            safety rules.</p>
+        <p>If your tenancy started on or after 1 October 2015, your landlord can't use a section
+            21 notice to end your tenancy if they haven't given you a copy of the latest gas safety record.</p>
+        <p class="inline-callout internal">Find out more about the
+            <a title="see also: assured shorthold tenants"
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                eviction of assured shorthold tenants</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

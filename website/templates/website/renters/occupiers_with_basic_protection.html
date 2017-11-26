@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Occupiers with basic protection{% endblock %}
+{% block description %}Occupiers with basic protection include students in halls and if you live in the same building
+as your landlord but you don't share living accommodation with them.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Occupiers with basic protection</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Occupiers with basic protection<br>
+                <small>Occupiers with basic protection include students in halls and if you live in
+                        the same building as your landlord but you don't share living accommodation with them.</small>
+            </h1>
+        </div>
+
+    <h2>Are you an occupier with basic protection?</h2>
+        <p>You are probably an occupier with basic protection if, for example, you:</p>
+        <ul>
+            <li>live in a university-owned student hall of residence</li>
+            <li>live in the same building as your landlord but do not share living accommodation with them, for example
+                if your landlord lives in a separate flat in a converted house</li>
+            <li>pay a high rent of £100,000 or more per year</li>
+        </ul>
+        <p>You might also be an occupier with basic protection if you were a secure council tenant, assured tenant
+            or assured shorthold tenant but that's not your main home any more.</p>
+        <p>Use
+            <a href="{% url 'renters-tenancy_checker' %}"
+               title="see also:Tenancy rights checker">Represent's tenancy checker</a>
+            if you are not sure what type of tenancy you have.</p>
+
+    <h2>Right to rent immigration checks</h2>
+        <p>Before a private landlord can rent to you, they must ask you to prove that you have the right to live
+            in the UK and the right to rent.</p>
+        <p>Your landlord can be fined if they don't do these right to rent checks.</p>
+        <p>The checks don't have to be carried out if your tenancy started before 1st February 2016.</p>
+        <p>
+            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+               title="see also: right to rent immigration checks">
+                Find out more about right to rent immigration checks</a></p>
+
+    <h2>Rental agreements</h2>
+        <p>Your landlord doesn't have to give you a written tenancy agreement but it's a good idea to have one.</p>
+        <p>A written rental agreement should set out the rights and responsibilities of both you and your landlord.</p>
+        <p>Your agreement with your landlord could be:</p>
+        <ul>
+            <li>periodic &ndash; this means it runs from week-to-week or month-to-month, with no set date for ending</li>
+            <li>fixed term &ndash; this lasts for a fixed period, for example 6 or 12 months</li>
+        </ul>
+        <p>At the end of a fixed term agreement it will become periodic unless you sign up to a new fixed term.</p>
+
+    <h2>Tenancy deposits</h2>
+        <p>If you paid a tenancy deposit, it should be returned to you when you move out.</p>
+        <p>Your landlord can make reasonable deductions from your deposit if you owe rent or cause any damage.</p>
+        <p>Find out
+            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+               title="see also: getting back your deposit at the end of your tenancy">
+                more about getting back your deposit at the end of your tenancy</a>.</p>
+        <p>If you pay a deposit, it doesn't have to be protected in a government-backed tenancy deposit protection scheme.</p>
+        <p>Rules for
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection schemes rules">tenancy deposit protection</a> only cover
+            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+               title="see also: assured shorthold tenancies">assured shorthold tenancies</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if we can help you get your deposit back
+                    if your landlord is keeping it unfairly.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Help me get my deposit back</a></p>
+
+    </div>
+
+    <h2>Rent and rent increases</h2>
+        <p>You pay the rent that you agreed with your landlord. If you pay your rent weekly, your landlord must provide a rent book.</p>
+        <p>Your landlord can't increase the rent during any fixed term of your tenancy unless you agree to the increase or
+            your tenancy agreement has a rent review clause.</p>
+        <p>If you don't pay your rent, your landlord can take steps to evict you.</p>
+
+    <h2>Responsibility for repairs</h2>
+        <p>The law says your landlord must keep your home's structure, exterior, plumbing and electrics in good repair.</p>
+        <p>Your landlord must give you a copy of a current gas safety certificate if there are any gas appliances in the property.
+            They must arrange for an
+            <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+               title="See also: Gas safety checks">annual gas safety check</a>. Any furniture provided should be
+            <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+               title="see also: safety standards">fire resistant</a>.</p>
+        <p>You are responsible for carrying out minor maintenance to the property. This might include things like changing
+            a fuse or replacing a light bulb.</p>
+        <p>You could also have other responsibilities depending on what your tenancy agreement says.</p>
+        <p>You are not responsible for&nbsp;&nbsp;
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: landlord and tenant responsibility for repairs">
+                repairs that the law says are your landlord's responsibility</a>.</p>
+        <p>Tell your landlord if your accommodation needs repairs. Get advice if your landlord doesn't do repairs they're responsible for.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see how we can help</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+    <h2>How to end your periodic tenancy</h2>
+        <p>Your can end your periodic tenancy by:</p>
+        <ul>
+            <li>agreeing with your landlord to end the tenancy (known as surrender)</li>
+            <li>serving a valid notice to quit on your landlord</li>
+        </ul>
+        <p>You can surrender your tenancy at any time as long as you have your landlord's agreement.
+            Try to get this in writing to avoid any disputes about when and if the tenancy had ended.</p>
+        <p>To serve a notice to quit you must give your landlord notice in writing. This must be at least
+            28 days' notice for a weekly tenancy or one month's notice for a monthly tenancy.</p>
+        <p>Sometimes your tenancy agreement may say you have to give more notice. The notice must end on the first
+            or last day of a period of your tenancy. The first day is usually the day that that your rent is due.</p>
+        <p>When the notice period ends, your tenancy ends. You no longer have any right to live in the property.
+            If you stay, the landlord must get a court order to evict you.</p>
+        <p class="inline-callout">
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also:  ending a periodic tenancy">Find out more about ending a periodic tenancy</a></p>
+
+    <h2>How to end your fixed-term tenancy</h2>
+        <p>If you have a fixed-term tenancy you can only give notice to end your tenancy during the fixed-term
+            if your tenancy agreement says this is allowed.</p>
+        <p>The length of notice you have to give depends on what your tenancy agreement says.</p>
+        <p>You can surrender your fixed-term tenancy at any time but you must have your landlord's agreement.</p>
+        <p>When your contract ends your tenancy also ends and you no longer have any right to live in your home.
+            If you stay, the landlord must get a court order to evict you..</p>
+
+        <p class="inline-callout">
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: end a fixed-term tenancy">
+                Find out more about ending a fixed-term tenancy</a></p>
+     <h2>Periodic agreements: how your landlord can evict you</h2>
+
+        <p>If you have a periodic tenancy, your landlord must give you the correct written notice. This is known as a Notice to Quit.</p>
+        <p>Your landlord must then get a
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="see also: court orders">possession order from the court</a>.</p>
+
+
+    <h2>Fixed-term agreements: how your landlord can evict you</h2>
+        <p>If you have a fixed-term agreement your landlord can apply to the court for a
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="see also: possession order">possession order</a> after the fixed-term period ends.</p>
+        <p>There is no need for the landlord to give you notice.</p>
+        <p>Your landlord can only apply to the court to evict you before the end of the fixed-term if
+            there is a clause in your tenancy agreement that allows this.</p>
+
+
+    <h2>Illegal eviction</h2>
+        <p>It may be a criminal offence if your landlord tries to evict you without getting a court order.</p>
+        <p>Your local council should help if you have been
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: What is illegal eviction?">
+                illegally evicted or harassed</a> by your landlord.</p>
+        <p>Get help if this is happening to you.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    <h2>Passing your accommodation on to someone else</h2>
+        <p>You have no rights to sublet or pass on your accommodation unless this is specifically set out in your tenancy agreement.</p>
+        <p>If you attempt to pass your accommodation to someone else under any other circumstances,
+            your landlord can evict you and the person you attempt to pass it to.</p>
+
+                <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <p></p>
+    <p>Get in touch with Represent to see how we can help</p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

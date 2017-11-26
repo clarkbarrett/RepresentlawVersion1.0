@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Eviction for rent arrears{% endblock %}
+{% block description %}Your landlord must take certain steps before they can evict you for rent arrears.
+    Find out about the legal process and what you can do before and after eviction. {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction for rent arrears</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Eviction for rent arrears<br>
+                <small>Your landlord must take certain steps before they can evict you for rent arrears.
+                    Find out about the legal process and what you can do before and after eviction. </small>
+            </h1>
+        </div>
+
+    <h2>What to do if you're in rent arrears</h2>
+        <p>Eviction is a legal process. It takes time and many landlords only use it as a last resort.</p>
+        <p>Contact your landlord if you have
+            <a href="{% url 'renters-how_to_deal_with_rent_arrears' %}"
+               title="See also: How to deal with rent arrears">problems paying your rent</a>.&nbsp;</p>
+        <p>You might be able to sort things out.</p>
+
+    <h2>Steps your landlord must take to evict</h2>
+        <p>Your landlord must give you notice and get a court order to evict you for rent arrears.&nbsp;</p>
+        <p>There will be a court hearing unless the landlord uses the
+            <a href="{% url 'renters-eviction_using_the_accelerated_possession_procedure' %}"
+               title="See also: Eviction using the accelerated possession procedure">accelerated possession procedure</a>.</p>
+        <p>You can attend the hearing and ask the court to stop or delay an eviction if you're a:</p>
+
+        <ul>
+            <li>secure or flexible council tenant</li>
+            <li>housing association assured tenant with less than 8 weeks' arrears</li>
+        </ul>
+        <p>If you're a&nbsp;
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+               title="See also: Eviction of assured shorthold tenants">private assured shorthold tenant</a>,
+            the court can only stop an eviction if your landlord gave you an invalid section 21 notice or applied
+            to the court too late.&nbsp;&nbsp;&nbsp;</p>
+        <p class="inline-highlight">An
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="See also: What is a possession order for eviction?">outright possession order</a>
+            contains a date for possession. Your landlord can apply for bailiffs to evict you if you stay past this date.</p>
+
+    <h3>If you live with your landlord</h3>
+        <p>Your landlord must give you reasonable notice to leave if you're a
+            <a href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
+               title="See also: Eviction of lodgers">lodger</a>.&nbsp;</p>
+        <p>Your landlord <strong>does not</strong> have to get a court order once your notice or contract has ended.
+            They can't forcibly evict you but they could change the locks while you're out.</p>
+
+    <h2>If you leave because of rent arrears</h2>
+        <p>You might decide to leave your tenancy because you can't afford the rent.</p>
+        <p>Things to consider before leaving include:&nbsp;</p>
+        <ul>
+            <li>if you'll need to
+                apply as homeless</li>
+            <li>whether you can find anything more affordable</li>
+            <li>the extra costs you'll have to pay if the landlord goes to court</li>
+        </ul>
+        <p class="inline-highlight">Don't feel pressured into leaving early, especially if you have nowhere else to go.
+            It usually takes a few months for the eviction process to go through court.&nbsp;</p>
+
+    <h3>Ending your tenancy</h3>
+        <p>If you decide to leave, you must&nbsp;end your tenancy properly or your rent arrears will continue to
+            grow until the property is re-let.</p>
+        <p>Your landlord might agree that you can end your tenancy immediately or at short notice.
+            Get any agreement in writing to avoid disputes later on.</p>
+        <p>If you have a rolling (periodic) tenancy,
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="See also: Ending a month to month tenancy ">you must give at least 4 weeks' notice</a>
+            unless your landlord agrees to a shorter notice period.&nbsp;</p>
+        <p>If you have a fixed-term tenancy, you'll need to negotiate an early end to the tenancy or check your contract for a
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="See also: How tenants can end a fixed-term tenancy ">break clause</a>.</p>
+
+    <h2>How to find a new home&nbsp;</h2>
+        <p>It can be difficult to find somewhere new to live if you're evicted or owe rent at a previous address.</p>
+        <p>
+            <a href="{% url 'renters-how_to_rent_from_a_private_landlord_or_letting_agent' %}"
+               title="See also: How to rent from a private landlord or letting agent">
+                Private landlords and letting agents</a> usually ask for a reference from your most recent landlord.</p>
+        <p>You can ask the council for help if you're homeless or at risk of losing your home.&nbsp;You don't have
+            to wait until you're evicted.&nbsp;&nbsp;&nbsp;</p>
+        <p class="inline-highlight">You might get less help if the council decides you're intentionally homeless
+            because of rent arrears or because you left too early.</p>
+        <p>The council might exclude you from the housing register or give you less priority.&nbsp;&nbsp;&nbsp;</p>
+        <p>Get advice if you have problems finding a new home after eviction.&nbsp;</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

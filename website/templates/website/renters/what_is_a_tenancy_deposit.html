@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">What is a tenancy deposit?</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>What is a tenancy deposit?<br>
+                    <small>Most private landlords ask new tenants to pay a tenancy deposit to cover damage or
+                        unpaid rent.</small>
+                </h1>
+            </div>
+    <h2>Why you pay a tenancy deposit</h2>
+        <p>You pay a tenancy deposit to give your landlord protection in case you leave without paying the
+            rent or cause damage to the property or its contents.</p>
+        <p>Your landlord should confirm in writing what the deposit covers. This may be set out in your
+            tenancy agreement or your landlord may give you a separate document that's signed by both you
+            and your landlord.</p>
+
+    <h2>What a tenancy deposit costs</h2>
+        <p>Landlords usually ask for a tenancy deposit that's equivalent to one or two months' rent.</p>
+        <p class="inline-callout highlight">You may be asked to pay a bigger deposit if the landlord
+            is concerned about your credit rating or if you can't provide someone to act as a guarantor.</p>
+        <p>There's no legal limit on the amount that landlords can ask for.</p>
+
+    <h2>Who you pay the deposit to</h2>
+        <p>Tenancy deposits are often paid direct to landlords.</p>
+        <p>You may be asked to pay the tenancy deposit to a
+            <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+               title="See also: Using letting agents to rent a home">letting agent if you rent a home through them</a>.</p>
+
+    <h2>How your deposit is protected</h2>
+        <p>If you are a private tenant with an assured shorthold tenancy, your deposit must be protected&nbsp;with
+            a government-backed tenancy deposit scheme.</p>
+        <p>Your landlord must follow
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection schemes rules">tenancy deposit protection scheme rules</a>.</p>
+        <h2>Why you should make an inventory</h2>
+        <p>You'll need to&nbsp;
+            <a href="{% url 'renters-how_to_check_and_agree_an_inventory' %}"
+               title="see also: checking and agreeing an inventory">check and agree an inventory
+            </a> before you move in. This can prevent disputes about how much of your deposit should be returned
+            when you move out.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h2>How to get your deposit back</h2>
+        <p>Your tenancy deposit is your money.&nbsp;</p>
+        <p>If you've paid all the rent due and caused no damage, the full amount of your
+            <a href="{% url 'renters-how-to-get-your-deposit-back' %}">
+                deposit should be returned</a> at the end of your tenancy.</p>
+        <p>Your landlord can make&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="see also: tenancy deposit deductions">
+                reasonable deductions from your deposit
+            </a>
+            to&nbsp;cover certain losses.</p>
+        <p>Find out what to do
+            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+               title="See also: How to get your tenancy deposit back">
+                if your landlord hasn't returned your deposit</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h2>Holding deposits</h2>
+        <p>You might be asked for a holding deposit when you agree to rent a property.</p>
+        <p>By paying a holding deposit, you commit to taking up the tenancy so that it isn't let
+            to someone else.&nbsp;The landlord or letting agent holds the property for you until you
+            sign the contract.</p>
+        <p>A holding deposit should be returned to you when you sign the contract. It can also
+            be used as payment towards rent in advance or your tenancy deposit.</p>
+        <p>Holding deposits do not have to be protected in a government-backed scheme.</p>
+        <p>If the holding deposit is used as part of your deposit,&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection scheme rules">
+                tenancy deposit protection rules
+            </a> apply from that point.</p>
+        <p>Check what the holding deposit covers, how it will be used and the conditions for a refund.</p>
+        <p>Don't pay a holding deposit unless you are certain you want that particular property. If you decide
+            not to move in, it could be difficult to get it back.</p>
+
+    <h2>Smart deposits</h2>
+        <p>A landlord or letting agent may ask you&nbsp;to pay a non-refundable smart deposit rather
+            than a tenancy deposit.&nbsp;</p>
+        <p>Despite the name, this is not a deposit. It's an insurance policy.</p>
+        <p>You pay either a lump sum or a monthly amount on top of your rent.&nbsp;The cost is less than you
+            would pay for a tenancy deposit, but&nbsp;you don't get any of it back when you leave.</p>
+        <p>After you leave, if you owe the landlord rent or have damaged the property, the insurance
+            company makes a pay out to the landlord.&nbsp;The insurance company can ask you to repay
+            any money it pays to your landlord.</p>
+        <p>
+            Smart deposits do not have to be protected in a government-backed scheme.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

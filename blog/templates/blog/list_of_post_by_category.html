@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}{{ category.name }}{% endblock %}
+{% block description %}{{ post.seo_title }}{% endblock %}
+{% block author %}Represent{% endblock %}
+
+
+
+{% block content %}
+
+	<div class="container-fluid">
+        <h1 align="center">Represent Blog</h1>
+	    <div class="row row-offcanvas row-offcanvas-left">
+	        <div class="row-offcanvas row-offcanvas-right">
+	            <div class="col-sm-2 sidebar-offcanvas" id="sidebarLeft" role="navigation">
+	                <div class="well sidebar-nav">
+	                    <ul class="nav">
+	                        <li>Left Sidebar</li>
+	                        <li class="active"><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                    </ul>
+	                </div><!--/.well -->
+	            </div><!--/span-->
+
+
+	            <div class="col-xs-8 col-sm-6">
+	                <div class="row">
+						{% for post in posts %}
+							<div class="col-sm-12 col-sm-offset-0">
+								<div class="thumbnail">
+                                    {% autoescape off %}
+									    <a href="{{post.get_absolute_url}}"><h1>{{post.title}}</h1>
+											<img src="/blog{{ post.image.url }}" alt="Blog image"/>
+									    </a>
+									    <div class="caption">
+									    	<h3>Written by {{post.author}} on {{post.published}}</h3>
+                                             <p>{{post.published|timesince}} ago</p>
+											<a href="{{post.category.get_absolute_url}}">{{post.category}} </a>
+											<p></p>
+									    	    {{post.content|truncatewords:100|linebreaks|safe}}
+
+									    	  <p><a href="#" class="btn btn-default" role="button">View</a></p>
+									    </div>
+                                    {% endautoescape %}
+								</div>
+							</div>
+						{% endfor %}
+						{% include 'blog/paginator.html' with page=posts %}
+					</div>
+	            </div>
+	            <!--/span-->
+	            <div class="col-xs-4 col-sm-3 sidebar-offcanvas" id="sidebarRight" role="navigation">
+	                <div class="well sidebar-nav">
+	                    <ul class="nav">
+	                        <li>Right Sidebar</li>
+	                        <li class="active"><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li>Sidebar</li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                    </ul>
+	                </div><!--/.well -->
+	            </div>
+	        </div>
+	    </div><!--/row-->
+	</div>
+	<!--/.container-->
+{% endblock %}

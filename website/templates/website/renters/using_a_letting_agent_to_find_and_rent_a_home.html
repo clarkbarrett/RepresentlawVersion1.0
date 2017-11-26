@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Using a letting agent to find and rent a home{% endblock %}
+{% block description %}Find out about the fees, checks and complaints procedures involved in renting with a letting agent.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Using a letting agent to find and rent a home</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Using a letting agent to find and rent a home<br>
+                <small>Find out about the fees, checks and complaints procedures involved
+                        in renting with a letting agent.</small>
+            </h1>
+        </div>
+
+    <h2>Register with a letting agent</h2>
+        <p>You usually have to register with a letting agent if you want to rent a property through them.
+            You can register with as many as you like.</p>
+        <p>The letting agent must not&nbsp;charge you for registering or giving you information on
+            properties.&nbsp;It is a criminal offence to do this.</p>
+        <p>Letting agents advertise homes for rent on property websites and in their office.</p>
+        <p>A letting agent may also collect rent and arrange for repairs of the property.</p>
+
+    <h3>If you claim benefits</h3>
+        <p>Check the agent has landlords who will give you a tenancy if you need to claim housing benefit
+            or universal credit</a>
+            to help pay your rent.</p>
+        <p>Tell the agent if you will need to claim benefits, or else you could lose money you have paid in
+            fees and charges.</p>
+
+    <h2>Check the agent meets professional standards</h2>
+        <p>A letting agent will have agreed to a voluntary code of conduct if it is a member of one of
+            these organisations:</p>
+
+        <ul>
+            <li><a href="./?a=25965" title="Link to: National Approved Letting Scheme"
+                   target="_blank">National Approved Lettings Scheme (NALS)</a></li>
+            <li><a href="./?a=25964" title="Link to: Association of Residential Letting Agents (ARLA)"
+                   target="_blank">Association of Residential Letting Agents (ARLA)</a></li>
+            <li><a href="./?a=89994" title="Link to Link to UK Association of Letting Agents (UKALA)"
+                   target="_blank">UK Association of Letting Agents (UKALA)</a></li>
+            <li><a href="./?a=25489" title="Link to: National Association of Estate Agents"
+                   target="_blank">National Association of Estate Agents (NAEA)</a></li></ul>
+        <h2>Ask questions before you sign the contract</h2>
+        <p>Before you agree to take on a tenancy from a letting agent, make sure
+            you know:</p><ul>
+        <li>how much the rent is,&nbsp;when and how often it has to be paid</li>
+        <li>what&nbsp;fees and charges you have to pay before you move in, on renewal and
+            at the end of the tenancy</li>
+        <li>if your fees will be refunded if you or the landlord decides not to&nbsp;go ahead</li>
+        <li>what length of tenancy agreement is on offer -&nbsp;6 months, 12 months or longer</li>
+        <li>if you or your landlord can end the tenancy early using a break clause</li>
+    </ul>
+        <p class="inline-highlight">Most private tenants sign up to an&nbsp;
+            <a href="{% url 'renters_assured_shorthold_tenancies' %}"
+               title="See also: Assured shorthold tenancies with private landlords">assured shorthold tenancy
+            </a>.</p>
+
+    <h2>Get repairs done before you move in</h2>
+        <p>Ask the letting agent to confirm in writing that&nbsp;
+            <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="See also: How to report repairs to a private landlord">repairs
+            </a>
+            will be done before you move in. It may be harder to get the work done after you have moved in.</p>
+        <p>Check if you have to contact the letting agent or the landlord to sort out repairs after you move in.</p>
+        <p class="inline-highlight">If you agree an inventory with the agent at the start of your tenancy,
+            it can help to resolve tenancy deposit disputes later.</p>
+
+    <h2>Pay charges</h2>
+        <p>There will usually be charges to pay before the tenancy can start.
+            Make sure you have set money aside for:</p>
+
+        <ul>
+            <li><a href="{% url 'renters-letting_agent_fees_for_tenants' %}"
+                   title="See also: Letting agent fees for tenants">letting agent fees</a>
+                (for example, to cover the cost of drawing up the contract)</li>
+            <li><a href="{% url 'renters-letting_agent_fees_for_tenants' %}"
+                   title="See also: Letting agent fees for tenants">holding deposit</a>
+                to secure the property while checks are done</li>
+            <li><a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                   title="See also: Tenancy deposit protection rules">tenancy deposit</a>
+                that should be protected with a deposit protection scheme</li>
+        </ul>
+        <p class="inline-highlight">The letting agent must display a list of all fees you will have
+            to pay in their office and on their website.</p>
+
+    <h2>Prepare for letting agent checks</h2>
+        <p>Before you can start your tenancy, a letting agent will run checks to ensure you have the right
+            to rent in the UK and are likely to be a good tenant.</p>
+        <p>Checks normally include:</p>
+
+        <ul>
+            <li><a href="{% url 'right_to_rent_immigration_checks' %}"
+                   title="See also: Right to rent immigration checks">
+                right to rent immigration checks</a></li>
+            <li>a credit check</li>
+            <li>checks on your income</li>
+            <li>references from your employer or previous landlords</li></ul>
+        <p>You might be asked for a guarantor if you fail a credit check or are unable to give references.
+            This is someone who agrees to pay the rent for you if you do not.</p>
+
+    <h2>Allow inspections during your tenancy</h2>
+        <p>Letting agents might carry out inspections of your home during your tenancy to check the
+            condition of the property.</p>
+        <p>Check your tenancy agreement to see if and when inspections can happen.</p>
+        <p>The letting agent should give you at least 24 hours&rsquo; notice in writing and the
+            visit must be at a reasonable time.</p>
+        <p>If you can&rsquo;t make the time, suggest an alternative. It is illegal for them to enter your
+            home without your permission.</p>
+        <p>You should not be charged for inspections.</p>
+        <h2>Make a complaint</h2>
+        <p>You should
+            complain directly to your letting agent first.</p>
+        <p>If you're unhappy with the response or you don't get one within 8 weeks, you can contact the agent's
+            redress scheme.&nbsp;Redress schemes investigate complaints against their members.</p>
+        <p>If your agent is not a member of a redress scheme, you can report this to your council, which may
+            take action against the agent.</p>
+        <p class="inline-callout">Use&nbsp;
+            <a href="http://england.shelter.org.uk/get_advice/downloads_and_tools/letting_agent_dispute_tool"
+               title="See also: Represent's letting agent dispute tool">Represent's letting agent dispute tool
+            </a> to complain to a letting agent redress scheme</p>
+
+    <h3>Find out who your landlord is</h3>
+        <p>You have a legal right to know&nbsp;
+            <a href="{% url 'renters-how_to_find_your_landlord' %}"
+               title="See also: How to find your landlord">
+                who&nbsp;your landlord is
+            </a>, even if you deal directly with a letting agent.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

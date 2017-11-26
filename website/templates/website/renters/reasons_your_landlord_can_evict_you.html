@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Reasons your landlord can evict you{% endblock %}
+{% block description %}Find out if your landlord needs a reason to evict you and what you can do if they start the legal process for eviction.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Reasons your landlord can evict you</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Reasons your landlord can evict you<br>
+                <small>Find out if your landlord needs a reason to evict you and what you can do if they start
+                    the legal process for eviction.</small>
+            </h1>
+        </div>
+
+    <h2>Eviction for no reason:&nbsp;Section 21</h2>
+        <p>Your private landlord doesn't need a legal reason or ground to evict you from an assured shorthold tenancy.</p>
+        <p>It's enough for them to:</p>
+        <ol>
+            <li>serve you with a valid Section 21 notice</li>
+            <li>take court action and obtain a possession order</li>
+            <li>ask the bailiffs to evict you.</li>
+        </ol>
+        <p>Find out about the
+            <a title="See also: eviction with a Section 21 notice"
+               href="{% url 'renters-section_21_eviction_process' %}">
+                3 steps in a Section 21 eviction</a>.</p>
+        <p>In some situations a&nbsp;landlord can apply for a court order where a judge makes a decision without a court hearing.
+            This is called the
+            <a title="Eviction using accelerated possession procedure"
+               href="{% url 'renters-eviction_using_the_accelerated_possession_procedure' %}">
+                accelerated possession procedure</a>.</p>
+        <p>You can challenge a section 21 eviction if the notice used is not valid, for example if it doesn't contain the correct
+            information or your landlord failed to protect your tenancy deposit.
+            You'll need to attend a court hearing.</p>
+        <p class="inline-callout">Find out when it's possible to challenge&nbsp;
+            <a title="See also: eviction from an assured shorthold tenancy"
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                eviction from an assured shorthold tenancy</a>.</p>
+
+    <h2>Eviction for rent arrears</h2>
+        <p>You are at risk of eviction if you don't pay your rent.</p>
+        <p>Always sort out your rent problems first. You can also&nbsp;get help to deal with other debts.</p>
+        <p>You must take action quickly to&nbsp;
+            <a title="see also: dealing with rent arrears "
+               href="{% url 'renters-how_to_deal_with_rent_arrears' %}">
+                deal with rent arrears</a>. You may be able to come to an agreement with your landlord to pay
+            off your arrears over time.&nbsp;Make sure that this is affordable and that you can keep to the arrangement.
+            You are less likely to be evicted if you keep the agreements you make.</p>
+        <p>Tell your landlord if you are in rent arrears because of housing benefit delays or problems.
+            Check you have given the council all the information it needs to process your housing benefit claim.</p>
+        <p class="inline-callout"> Find out what you can do if you have&nbsp;rent arrears due
+            to a housing benefit claim.</p>
+
+
+    <h2>Eviction for antisocial behaviour</h2>
+        <p>Your landlord may want to&nbsp;
+                evict you&nbsp;because of antisocial behaviour.</p>
+        <p>If you agree that your behaviour has caused problems, you should do everything to make sure it stops.
+            The first step is to talk to your landlord.&nbsp;Try to show your landlord that the problems have stopped.</p>
+        <p>If your landlord takes you to court, you'll have to persuade the judge that the problems won't continue.</p>
+        <p>You may be able to go to mediation to sort out your problems if your neighbours have been complaining
+            unreasonably about your behaviour or noise.</p>
+
+
+    <h2>Eviction for causing damage</h2>
+        <p>Your landlord may want to evict you because you haven't taken care of your home.
+            This could be because you aren't keeping it reasonably clean or because you have damaged it or allowed it to be damaged.</p>
+        <p>You could repair the damage or offer to pay for the repairs if you have damaged the property.
+            Only try to repair something yourself if you know what you are doing.
+            Making the damage worse will only cause more problems with your landlord.</p>
+        <p>If you have neglected your home, you must deal with the problem and prove that you can keep
+            the place in good condition.&nbsp;Tell your landlord if you are having difficulty
+            looking after the place because of problems with your health. They may be able to put you in touch
+            with someone who can help you look after your home.</p>
+        <p>You can contact the council's social services department to ask for an assessment of your needs and arrange for some help.</p>
+        <p class="inline-callout">Find out
+            <a title="See also: Responsibility for repairs"
+               href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                about a tenant's responsibility for maintenance and repairs</a>.</p>
+
+    <h2>Eviction if your landlord thinks you've moved out</h2>
+        <p>Your landlord may want to evict you if they think you aren't living in your home,
+            especially if you have been away for a while.</p>
+        <p>Contact your landlord. Explain that you have been away but still want to come back to live in your home.
+            You should have a good reason for being away, such as looking after a sick relative or working away from
+            home for a short time.</p>
+        <p>If you are living in your home, you may be able to prove this by showing your telephone, gas or electricity bills.</p>
+
+    <h2>If your husband, wife or partner wants to evict you</h2>
+        <p>A partner, civil partner or spouse may try to force you out of your home if you split up.</p>
+        <p>They may not have the right to do this. You may be able to prevent this from happening.</p>
+        <p>Get advice if your partner has told you to leave.</p>
+
+    <h2>Eviction if you ask for repairs</h2>
+        <p>Most landlords are happy to do repairs to the homes they rent out. Some private landlords try to
+            evict tenants rather than pay for repairs.</p>
+        <p>Find out more about
+            <a title="See also: eviction due to asking for repairs"
+               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                eviction because of repairs</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    <h2>Next steps</h2>
+        <p>If you are given a possession order telling you to leave, you may be able to go to court and have
+            this order changed or cancelled.</p>
+        <p>You may be able to get help from the council
+            if you are about to become homeless. The council has a legal duty to provide advice and assistance to
+            people who are threatened with homelessness.</p>
+        <p>You may need to look for somewhere else to live if there is nothing you can do to stop the eviction.</p>
+
+    <h2>Get advice about eviction</h2>
+        <p>Get advice now if you're facing eviction. Have the papers you received from the court to hand when you speak to an adviser.</p>
+        <p class="inline-callout phone">Call
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{ civil_legal_advice_url }}" target="_blank">Civil Legal Advice</a> on 0345 345 4 345 to see if you qualify for legal aid</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

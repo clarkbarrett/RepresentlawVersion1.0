@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent University accommodation: Halls of residence{% endblock %}
+{% block description %}Halls of residence provide purpose-built accommodation for students.
+They are usually close to the university or college and have communal facilities. {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">University accommodation: Halls of residence</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>University accommodation: Halls of residence<br>
+                <small>Halls of residence provide purpose-built accommodation for students.
+                    They are usually close to the university or college and have communal facilities. </small>
+            </h1>
+        </div>
+
+    <h2>University halls of residence</h2>
+        <p>Check your college or university's website for information about the price and location of
+            their halls of residence.</p>
+        <p>Work out your budget before you apply. Electricity, water, internet connection are usually included
+            in your rent.&nbsp;You don't need to pay council tax.</p>
+        <p>Most universities give priority to first-year students. Apply in plenty of time as places might be
+            allocated on a first-come, first-served basis.&nbsp;</p>
+        <p>If you pay a deposit for your room to cover any unpaid rent or damage, it doesn't have to be protected
+            in a tenancy deposit protection scheme.</p>
+        <p>You are likely to be an
+            <a href="{% url 'renters-occupiers_with_basic_protection' %}"
+               title="See also: Occupiers with basic protection">occupier with basic protection</a>
+            when you live in halls of residence managed by your college or university.</p>
+
+    <h2>Private halls</h2>
+        <p>Privately run halls of residence tend to be newly built and located centrally. They can be more
+            expensive than university halls.</p>
+        <p>Ask your university accommodation office&nbsp;for information on local private halls or&nbsp;check online.</p>
+        <p>You'll have to pay a deposit and a booking fee (between £200-£400). Be prepared to pay rent
+            for the whole year,&nbsp;not just during term time.</p>
+        <p>Check the company's cancellation policy before you sign a contract. If you leave before the end of
+            your contract, most private halls charge you rent until someone else takes the room.</p>
+        <p>You are probably an
+            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+               title="see also:assured shorthold tenant">assured shorthold tenant</a>
+            if you live in private halls of residence.</p>
+        <p>If you are an assured shorthold tenant, any deposit you pay must be protected in a
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="See also: Tenancy deposit protection scheme rules">tenancy deposit protection scheme</a>.</p>
+        <p>You don't need to pay council tax if you stay in private halls of residence.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+        </div>
+
+
+    <h2>Complaints about standards in halls of residence</h2>
+        <p>Talk to the manager of the halls of residence if you encounter problems such as mould, poor
+            security or a slow internet connection.</p>
+        <p>If you live in one of your university's halls of residence and the problem can't be resolved,
+            you can complain formally using the university's internal complaints procedure.</p>
+        <p>Ask your students union to help you make a complaint about the halls of residence.</p>
+
+    <h2>Problems paying your rent</h2>
+        <p>Contact your students union or university student welfare office or the NUS
+            for advice if you are struggling to pay your rent,</p>
+        <p>Most full-time students aren't eligible for housing benefit, but there are some exceptions.</p>
+
+    <h2>If you don't get a place in halls of residence</h2>
+        <p>Rooms in halls are limited. If you don't get a room, consider other options such as:</p>
+        <ul>
+            <li>renting a flat or a shared house</li>
+            <li>applying to rent a university-owned house or flat</li>
+            <li>living at home</li>
+        </ul>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

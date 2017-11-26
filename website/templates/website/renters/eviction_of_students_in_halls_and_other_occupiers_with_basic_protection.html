@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Eviction of students in halls{% endblock %}
+{% block description %}Legal procedures your landlord must follow to evict you if you are an occupier with basic protection, such as a student in halls.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction of students in halls</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Eviction of students in halls<br>
+                <small>Legal procedures your landlord must follow to evict you
+                        if you are an occupier with basic protection, such as a student in halls.</small>
+            </h1>
+        </div>
+
+    <h2>Legal status</h2>
+        <p>You are probably an occupier with basic protection if you live in:</p>
+        <ul>
+            <li>student halls of residence</li>
+            <li>the same building as your landlord but don't share living accommodation with them</li>
+        </ul>
+
+    <h2>Notice&nbsp;</h2>
+        <p>Your landlord must follow certain legal procedures to give you notice and evict you.
+            This applies even if you don't have a written
+            <a title="see also: types of private renting agreement"
+               href="{% url 'renters-types-of-renting-agreement' %}">
+                tenancy agreement</a>.</p>
+
+    <h3>Notice for fixed-term agreements that have expired</h3>
+        <p>Your landlord doesn't have to give you written notice to leave if you have a fixed-term agreement that has expired.</p>
+        <p>Your landlord must get a possession order from the court when they want to evict you.
+            The court sends you a copy of the application for a possession order.</p>
+
+    <h3>Notice for fixed-term agreements that haven't expired</h3>
+        <p>Your landlord can't evict you if you have a fixed-term agreement that has not expired,&nbsp;unless there
+            is a break clause in your tenancy agreement that allows this.&nbsp;</p>
+        <p>Your landlord must give the amount of notice set out in your agreement and then get a&nbsp;
+            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
+               title="see also: possession order from the court">possession order</a> from the court.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    <h3>Notice for periodic agreements</h3>
+        <p>A periodic agreement means your tenancy runs from one rent period to the next, with no set date for ending.</p>
+        <p>Your landlord must give you a written notice to quit if you have a periodic agreement.
+            They don't have to give a reason for wanting you to leave.</p>
+        <p>To be valid the notice from your landlord must:</p>
+        <ul>
+            <li>end on a day that your rent is due</li>
+            <li>be for a minimum of 4 weeks or a month, depending on how often you pay your rent</li>
+            <li>contain certain legal information, including telling you that you should get advice
+                if you're not sure of your rights</li></ul>
+
+    <h2>Court hearing</h2>
+        <p>Once the notice ends or your fixed-term agreement has expired, your landlord can apply to the court for a
+            <a title="See also: possession orders for eviction"
+               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
+                possession order</a>.</p>
+        <p>The court has no choice but to make a possession order&nbsp;if you were given valid
+            notice or your agreement has expired.</p>
+        <p>The court can delay the possession order for a maximum of 6 weeks only if you are suffering great hardship.</p>
+        <p>You will probably have to pay some of your landlord's court costs if your landlord has to take you to
+            court to force you to leave.</p>
+
+    <h2>Bailiffs&nbsp;</h2>
+        <p>Your landlord can ask bailiffs to evict you if you still haven't left after a court order takes effect.</p>
+        <p class="inline-callout">Find out
+            <a href="{% url 'renters-what_happens_when_bailiffs_evict_tenants' %}"
+               title="see also: eviction by bailiffs">
+                what happens when bailiffs evict you</a>.</p>
+
+    <h2>Illegal eviction&nbsp;</h2>
+        <p>It is against the law for your landlord to try to
+            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">evict you without getting a court order</a>.
+            There might be action you can take to stop your landlord doing this.</p>
+     <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

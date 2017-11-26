@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to check and agree an inventory</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>How to check and agree an inventory<br>
+                    <small>How to check and agree an inventory An accurate inventory could help you avoid disputes
+                        over your deposit when you move out.</small>
+                </h1>
+            </div>
+
+    <h2>What is an inventory?</h2>
+        <p>At the start of a tenancy, the landlord or
+            <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+               title="See also: Using a letting agent to find and rent a home">letting agent
+            </a> should draw up an inventory for you that records the condition of the property.
+            Another one should be done when you move out.</p>
+        <p>It should be easy to understand and say who carried it out and when. Your landlord or
+            letting agent may charge you for compiling an inventory.</p>
+        <p>An inventory can help avoid a dispute over the return of your
+            <a href="{% url 'renters-what_is_a_tenancy_deposit' %}"
+               title="See also: What is a tenancy deposit?"><strong>tenancy deposit</strong>
+            </a> when you move out. This is because it proves the state of property when you moved in.
+            It's in your landlord's interest to provide one.</p>
+        <p>Keep a copy of the inventory for your records.</p>
+
+    <h2>Check and sign</h2>
+        <p>You'll need to check what's recorded in the inventory before you sign it.</p>
+        <p>It should provide an overview of the whole property and a list of its contents,
+            with detailed information like the condition of:</p>
+        <ul>
+            <li>the walls, ceiling and floor</li>
+            <li>the paintwork</li>
+            <li>carpets and curtains</li>
+            <li>any furniture and appliances</li>
+            <li>fittings such as cupboards</li>
+            <li>windows and doors</li>
+        </ul>
+        <p>The inventory will say whether smoke alarms and any carbon monoxide detectors are provided and working.</p>
+        <p>The inventory may also contain a record of meter readings.</p>
+        <p>You can amend the inventory to record anything that's incorrect. You can:</p>
+
+        <ul>
+            <li>add details of anything that's missing</li>
+            <li>note damage that's not been recorded</li>
+            <li>write down if something's not working</li>
+            <li>amend incorrect meter readings</li>
+        </ul>
+        <p>Take photos of any cracks, marks or scratches that aren&rsquo;t recorded in the inventory.</p>
+        <p class="inline-highlight">Only sign and date the inventory when you&rsquo;re happy it&rsquo;s accurate.</p>
+
+    <h2>Keep records of repairs</h2>
+        <p>You must <a href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}"
+               title="See also: How to report repairs to a private landlord">report repairs
+            </a> to your landlord in writing as soon as possible.</p>
+        <p>Keep records if you replace something you broke or had something mended (for example because of
+            accidental damage).</p>
+        <p>Keep copies of correspondence between you and your landlord.</p>
+        <p>Keep a record of any damage to your belongings or health that results from repairs not being done.</p>
+
+    <h2>Check your inventory when you move</h2>
+        <p>Try to be present when your landlord or agent is taking an inventory when you move out.</p>
+        <p>You can make sure any disagreements are recorded and provide proof of damage that was there
+            before you moved in.</p>
+        <p class="inline-highlight">Sign and date the moving-out inventory if you're happy it's accurate</p>
+
+    <h2>Disputes at the end of your tenancy</h2>
+        <p>If you broke or damaged anything in the property while you were living there, your landlord can make
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="See also: Tenancy deposit deductions your landlord can make">
+                tenancy deposit deductions
+            </a>.</p>
+        <p>Your landlord shouldn&rsquo;t make deductions for normal wear and tear, such as worn carpets or faded
+            curtains.</p>
+        <p>You can dispute unfair deductions from your tenancy deposit. A tenancy deposit protection scheme or
+            court will expect your landlord to provide evidence to support any deductions made.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}How to find your landlord{% endblock %}
+{% block description %}As a tenant you have the right to know the name and address of your landlord.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to find your landlord</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to find your landlord<br>
+                <small>As a tenant you have the right to know the name and address of your landlord.</small>
+            </h1>
+        </div>
+
+    <h2>Ask the letting agent</h2>
+        <p>If you pay your rent to a letting agent, they must give you the landlord's name
+            and address if you write to ask for it.</p>
+        <p>Keep a copy of your letter, and if you don't deliver it by hand get proof of delivery.</p>
+        <p>The agent has 21 days to write to you with the information. If they do not reply
+            within this time, they are committing a criminal offence and could be fined up to £2,500.</p>
+        <p class="inline-callout highlight">Find out
+            <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+               title="See also: Using a letting agent to find and rent a home">more about letting agents</a>.</p>
+
+    <h2>Search the internet</h2>
+        <p>Google the landlord's name. Be aware that the information you find online might not be
+            accurate or up-to-date. You might find several people with the same name.</p>
+        <p>Search&nbsp;<a title="Link to 192.com" href="./?a=948601"
+                          target="_blank">192.com
+        </a> for names and addresses based on information from electoral rolls, phone directories
+            and Companies House</p>
+        <p class="inline-callout highlight">It's free to search the 192 directory, but you must
+            pay a fee&nbsp;to access more detailed information</p>
+
+    <h2>Get advice from Represent</h2>
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
+    <p></p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

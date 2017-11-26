@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}How tenants can end a month to month tenancy{% endblock %}
+{% block description %}Find out how to end a periodic tenancy, such as one that rolls from month to month, by giving notice or surrendering the tenancy.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How tenants can end a month to month tenancy</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How tenants can end a month to month tenancy<br>
+                <small>Find out how to end a periodic tenancy,
+                    such as one that rolls from month to month, by giving notice or surrendering the tenancy.</small>
+            </h1>
+        </div>
+
+    <h2>Periodic tenancies</h2>
+        <p>A periodic tenancy is one that rolls from month to month or week to week and has no set end date.</p>
+        <p>You will have a periodic tenancy if your tenancy agreement:</p>
+
+        <ul>
+            <li>doesn't contain a fixed end date</li>
+            <li>had an end date but you stayed after it passed and didn't agree to a further fixed term</li>
+        </ul>
+
+        <p>Different rules apply if you&nbsp;
+            <a title="see also: Ending a fixed term tenancy"
+               href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}">
+                have a fixed term tenancy
+            </a> and the fixed term hasn't expired. For example, if you're 7 months into a 12 month contract.</p>
+
+    <h2>Writing your notice letter</h2>
+        <p>You must give your landlord notice in writing to end a periodic tenancy. This is called a 'notice to quit'.</p>
+        <p>Your notice letter should include:</p>
+
+        <ul>
+            <li>your name and address</li>
+            <li>your landlord's name and address</li>
+            <li>the date your notice period ends</li>
+        </ul>
+        <p>You could also include a forwarding address for your landlord to&nbsp;
+            <a title="see also: how to get a deposit back when a tenancy ends"
+               href="{% url 'renters-how-to-get-your-deposit-back' %}">
+                return your tenancy deposit</a>.</p>
+        <p>If you deliver the letter to your landlord by hand, ask for a receipt. If you post it, use recorded
+            delivery so you can prove it arrived.</p>
+        <p>Don't send an email unless your contract says you can. Your notice won't be valid.</p>
+
+    <h2>How much notice to give</h2>
+        <p>You must give the correct date for when your notice period ends. Your notice letter won't be valid otherwise.</p>
+        <p>Check your tenancy agreement.&nbsp;If it sets out the amount of notice you must give your landlord,
+            follow what your agreement says.</p>
+        <p>If your tenancy agreement doesn't set out a notice period, you must give your landlord at least:</p>
+
+        <ul>
+            <li>1 month's notice for a monthly tenancy</li>
+            <li>4 weeks' notice for a weekly tenancy</li>
+        </ul>
+    <p>The end date of your tenancy must be either the first day or last day of your rental period. You can
+        choose which one to use.</p>
+
+    <h3>Monthly tenancy end dates</h3>
+        <p>If your tenancy started for example on 15 April:</p>
+    <ul>
+        <li>the last day of your rental period will be 14th of the month</li>
+        <li>the first day of the next rental period will be 15th of the month</li>
+    </ul>
+        <p>It's easier to calculate the final month's rent if you give notice to end on the
+            last day of the rental period.</p>
+
+    <h3>Weekly tenancy&nbsp;end dates</h3>
+        <p>If your tenancy started for example on a Monday:</p>
+    <ul>
+        <li>the last day of the rental period will be on a Sunday</li>
+        <li>the first day of the next rental period be the following Monday</li>
+    </ul>
+
+    <h2>Agree to surrender your tenancy</h2>
+        <p>Your landlord may agree to accept a shorter notice period if you ask.</p>
+        <p>Ask your landlord to confirm the end date of your tenancy in writing.</p>
+        <p>Send your landlord a notice letter that includes the agreed leaving date.</p>
+
+    <h2>Paying the final month's rent</h2>
+        <p>You are responsible for paying the rent until your tenancy comes to an end.</p>
+        <p>Your landlord is entitled to
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="see also: Tenancy deposit deductions your landlord can make">
+                make deductions from your deposit
+            </a> for any unpaid rent.</p>
+        <p>Your landlord could also take you to court if you withhold rent.</p>
+
+    <h2>Leaving without giving notice</h2>
+        <p>If you leave without giving notice, for example if you move and then put your
+            keys through the letterbox, this is called abandonment.</p>
+        <p>Abandoning your tenancy doesn't end it. Your agreement with the landlord continues even
+            though you've left.</p>
+        <p>The landlord can continue to charge you rent if you haven't ended your tenancy correctly.</p>
+        <p>Your landlord can hold you responsible for paying the rent until you end the tenancy
+            properly or the property is re-let. Your landlord can apply for a court order to make
+            you pay what you owe.</p>
+        <p>It could make it harder to find a new home if you leave without giving notice or paying
+            the rent in full. Most private landlords ask to see references from previous landlords.</p>
+
+     <h2>Ending a joint tenancy</h2>
+        <p>You have a
+            <a title="see also: Joint tenancies"
+               href="{% url 'renters-joint_tenancies' %}">
+                joint tenancy
+            </a> if there's more than one tenant's name on the tenancy agreement.</p>
+        <p>If you want to end a joint tenancy, any one of the joint tenants can&nbsp;give notice to the
+            landlord. This will end the agreement for all the joint tenants.</p>
+        <p>You could ask the landlord if someone else can take your place. Your landlord could agree a
+            new tenancy with the people who want to stay.</p>
+        <p>If one of you leaves without giving notice, the whole rent will still be due. If it's not paid,
+            the landlord can deduct money from the tenancy deposit or take court action for the money to be paid.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

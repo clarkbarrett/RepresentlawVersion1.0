@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Can housing association tenants stop the bailiffs{% endblock %}
+{% block description %}You can apply to have a bailiff's warrant suspended to stop eviction from a housing association home.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Can housing association tenants stop the bailiffs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Can housing association tenants stop the bailiffs<br>
+                <small>You can apply to have a bailiff's warrant suspended to stop eviction from a housing association home.</small>
+            </h1>
+        </div>
+
+    <h2>Get advice</h2>
+        <p>Get advice now if you're facing eviction. Have the papers you received from the court to hand
+            when you speak to an adviser.</p>
+        <p class="inline-callout phone">
+            <a title="External link: Gov.uk - Civil Legal Advice contact details" href="{{ civil_legal_advice_url }}"
+               target="_blank">Call Civil Legal Advice on 0345 345 4 345 to see if you qualify for legal aid</a></p>
+
+    <h2>When bailiffs can evict you</h2>
+        <p>Court bailiffs can evict you from your home if a court has issued a warrant of possession,
+            commonly called a bailiff's warrant.</p>
+        <p>Your landlord has to apply to the court to ask for a bailiffs warrant. Your landlord can apply for a
+            bailiffs warrant if the court made:</p>
+        <ul>
+            <li>a suspended possession order and you have broken the conditions set by the court</li>
+            <li>an outright possession order and you've stayed beyond the date the court ordered you to leave</li>
+        </ul>
+        <p>These court orders will have been made at a previous court hearing.</p>
+
+    <h2>When the court can stop the bailiffs</h2>
+        <p>In most cases, the court has the power to&nbsp;stop the bailiffs coming to evict you if you are a housing
+            association tenant.</p>
+        <p>Most housing association tenants are taken to court for discretionary grounds such as rent arrears.
+            The court can decide to stop the bailiffs if your landlord has taken you to court to evict you
+            for a discretionary ground.</p>
+        <p>When the court made a possession order based on discretionary grounds, it was because it was satisfied
+            that your landlord had proved a legal reason to evict you and that it was reasonable to have made an order.</p>
+        <p>The usual way for the court to stop the bailiffs is by suspending the bailiffs warrant.
+            In some cases, the court may also need to change the terms of court orders made in the past.</p>
+        <p>You have to apply for a bailiffs warrant to be suspended. The court decides if it is reasonable
+            for you to lose your home considering all the circumstances of your case.</p>
+        <p>The bailiffs can't evict you if a court decides to suspend a bailiffs' warrant.</p>
+
+    <h2>When the court can't stop the bailiffs</h2>
+        <h3>Illegal subletting</h3>
+        <p>The court can't stop the bailiffs if the housing association takes you to court because you
+            rented out (sublet) all your home.</p>
+
+        <h3>Mandatory grounds</h3>
+        <p>The court can't stop the bailiffs coming if a court made a possession order on a mandatory ground.</p>
+        <p>Examples of mandatory grounds include for:</p>
+        <ul>
+            <li>antisocial behaviour when you or a household member have already been convicted of an antisocial
+                behaviour offence in the courts</li>
+            <li>rent arrears using 'Ground 8'</li>
+        </ul>
+        <p>Ground 8 can be used if you owed 8 weeks or 2 months' rent both when your landlord gave you written
+            notice and on the date of the court hearing.</p>
+
+        <h3>Asking to delay eviction</h3>
+        <p>Even if the court can't stop the bailiffs, it can sometimes delay eviction by bailiffs for a short time.
+            The court can only delay the eviction if you would suffer exceptional hardship and you hadn't
+            told the court about this before.</p>
+        <p>The maximum delay is 6 weeks. This runs from the date of the court hearing when the possession order was made.
+            If 4 weeks have already passed, you can only ask the court to delay your eviction for a further 2 weeks.</p>
+        <p class="inline-callout">Apply to the court
+            <a href="{{ hmcts_form_n244_url }}"
+               title="Link to Court Form N244" target="_blank">using form N244</a> to ask for the bailiffs to be delayed.</p>
+
+    <h2>How to stop the bailiffs coming</h2>
+
+        <h3>Apply to the court to suspend the warrant</h3>
+        <p>You must
+            <a href="{{ hmcts_form_n244_url }}"
+               title="Link to Court Form N244" target="_blank">apply to the court using form N244</a>.</p>
+        <p>There is a fee of £50. You may not have to pay this if you claim certain benefits or have a low income.
+            See
+            <a href="{{ hmcts_form_ex160a_url }}" title="Link to EX160A"
+               target="_blank">court leaflet EX160A for details</a>.</p>
+
+        <p>Set out on the form that you want the bailiffs' warrant to be suspended and your reasons why it should be.
+            For example explain why you weren't able to keep to the conditions set out on the original court order and
+            why you will be able to in the future.</p>
+
+
+        <h3>Apply to change the possession order</h3>
+        <p>On the same
+            <a href="{{ hmcts_form_n244_url }}"
+               title="Link to Court Form N244" target="_blank">
+                N244 form</a> you may also need to ask the court to vary the possession order to</p>
+        <ul>
+            <li>change the conditions the court has ordered that you comply with, such as reducing the amount
+                you have to pay each week to bring down your rent arrears</li>
+            <li>vary an outright order to a suspended order</li>
+        </ul>
+        <p>Where there is an outright order and the court has the power to stop the bailiffs coming,
+            you should always ask the court to convert it to a suspended order.</p>
+
+        <h3>What to say to the court</h3>
+        <p>There will be a short court hearing to decide whether to stop the bailiffs. This could even be on
+            the same day that you apply.</p>
+        <p>At the hearing explain to the judge why it would be reasonable to stop the eviction.
+            Telling the judge you will be homeless will not be enough.</p>
+        <p>The judge wants to hear matters that are connected to the reason why you are being evicted.
+            Take any evidence you have to show why for example you couldn't make all your rent payments before,
+            but you can from now on.</p>
+
+        <h3>What the court can decide</h3>
+        <p>Often the court decides to postpone the bailiffs for a short period while you try to put things right.
+            For example, the court could allow you a month to sort out your housing benefit problems before making
+            a final decision about whether to stop your eviction.</p>
+        <p>Sometimes the court stop the bailiffs coming providing you comply with certain conditions such as
+            paying an amount each week towards your rent arrears. If you don't keep to the conditions set, you could
+            face eviction by bailiffs again.</p>
+        <p>The court can also decide to let the eviction go ahead.</p>
+
+    <h2>How to ask the housing association if you can stay</h2>
+        <p>Contact your housing office to see if they will let you stay. Tell them about any relevant change in your
+            circumstances. For example, you can show you have reduced your
+            <a href="{% url 'renters-how_to_deal_with_rent_arrears' %}"
+               title="see also: dealing with rent arrears">rent arrears</a> or have a new job which means you
+            can make regular extra payments.</p>
+        <p>Get any agreement in writing if you can.</p>
+        <p>Your housing officer may agree to tell the court to say that they want to withdraw the warrant for possession</p>
+        <p>Don't assume the bailiffs won't come just because your housing officer says you can stay.
+            Check with the court that the bailiffs' visit is cancelled.</p>
+        <p>Sometimes the housing officer may say that they will not challenge your application to stop the bailiffs.
+            You must still apply to the court for this to happen.</p>
+        <p>If the bailiffs visit isn't cancelled or your housing officer doesn't agree to stop the bailiffs,
+            you'll have to apply to the court to suspend the bailiffs' warrant using&nbsp;
+            <a href="{{ hmcts_form_n244_url }}"
+               title="Link to Court Form N244" target="_blank">court form N244</a>.</p>
+
+    <h2>Costs of staying in your home</h2>
+        <p>You have to pay your rent or use and occupation charges until you move out or are evicted.
+            Any housing benefit should continue until you actually leave the property.</p>
+        <p>You may also have to pay the housing association's court fees including the costs of applying for bailiffs to evict you.
+            This will normally be added to any rent arrears.</p>
+        <p>Unless you claim certain benefits or have a low income, you have to pay a fee to apply to the
+            court to stop the bailiffs coming.</p>
+        <p class="inline-callout">Find out more from
+            <a href="{{ hmcts_fees_url }}"
+               title="Link to HM Courts and Tribunals about court fees" target="_blank">
+                HM Courts and Tribunals about court fees.</a></p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

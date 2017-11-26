@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Renters{% endblock %}
+{% block description %}Represent helping renters with deposits, deposit protection, HMOs, Rent Repayment Orders and Repairs{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Law </h1>
+                <h1 align="center"><small style="color:white">Renters Services</small></h1>
+            </div>
+
+            </div>
+          </div>
+
+<!--Renters services-->
+<div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                    <img src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Landlord and tenant law">
+              <div class="caption">
+                <a href="{% url 'deposit-protection-claims' %}"><h3 align="center">Deposit Protection Claims</h3>
+                </a>
+                <li>Has your landlord not protected your deposit?</li>
+                  <li>Was your deposit not protected?</li>
+                  <li>Is your landlord not doing repairs?</li>
+                    <p>Represent is here to help you with all of your renting problems</p>
+                <a href="{% url 'deposit-protection-claims' %}" class="btn btn-primary btn-lg" role="button">Get help today</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="{% static 'images/lease-extension.png' %}" alt="Disrepair Claims" width="600" height="600" >
+              <div class="caption">
+                  <a href="{% url 'renters-disrepair-claims' %}"><h3 align="center">Disrepair Claims</h3></a>
+                <p>Disrepair Claims</p>
+                <p><a href="{% url 'renters-disrepair-claims' %}" class="btn btn-primary btn-lg" role="button">Get help now</a></p>
+              </div>
+            </div>
+          </div>
+
+<!--HMO Claims-->
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                    <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="HMO Claims">
+                <div class="caption">
+                <a href="/hmo-claims"><h3 align="center">HMO Claims</h3>
+                </a>
+                <p>HMO Claims</p>
+                <p><a href="/hmo-claims" class="btn btn-primary btn-lg" role="button">Get help</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                    <img src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Deposit deductions">
+              <div class="caption">
+
+                  <a href="/deposit-claims"><h3 align="center">Deposit deductions</h3></a>
+
+                  <li>
+                    <a href="{% url 'deposit-protection-claims' %}">Was your deposit not protected?</a>
+                  </li>
+                  <li><a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+                         title="see also: types of renting agreements">Get your deposit back </a>
+                  </li>
+
+                    <p>Represent is here to help you with all of your renting problems</p>
+                <p><a href="/deposit-claims" class="btn btn-primary btn-lg" role="button">Get help today</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="{% static 'images/lease-extension.png' %}" alt="Disrepair Claims" width="600" height="600" >
+              <div class="caption">
+                  <a href="/housing-disrepair"><h3 align="center">Landlord Checker</h3></a>
+                <p>Landlord Checker</p>
+                <p><a href="/housing-disrepair" class="btn btn-primary btn-lg" role="button">Check my landlord</a></p>
+              </div>
+            </div>
+          </div>
+
+<!--FAQs-->
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                    <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="HMO Claims">
+                <div class="caption">
+                <a href="{% url 'renters-faqs' %}"><h3 align="center">FAQs</h3>
+                </a>
+                <p>FAQs</p>
+                <p><a href="{% url 'renters-faqs' %}" class="btn btn-primary btn-lg" role="button">FAQs</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+<div class="container">
+        <div class="row">
+
+          <div div class="col-sm-3 col-md-offset-1">
+
+              <h3><a title="Rent Deposit recovery" href="https://www.nationalrentersalliance.co.uk/deposit-recovery">
+                  <i class="fa fa-gbp"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+
+              </i>  Deposit Recovery</a></h3>
+
+                <p class="text-justify">Is your landlord or letting agent not returning your
+                deposit? Was your deposit placed in a government-backed deposit guarantee scheme
+                within 30 days of the start of your tenancy? Is your landlord or letting agent
+                making false claims <span lang="en-gb">about</span> <em>professional cleaning </em>to unfairly
+                <strong><span lang="en-gb">take</span> money from your deposit<span lang="en-gb">?</span></strong>
+                <span lang="en-gb">Unfortunately, this is becoming the norm rather than the
+                exception. </span>The National Renters Alliance team has over twenty years<span lang="en-gb">'</span> experience helping renters recover their rightfully owed money.
+
+                <span lang="en-gb">Please see our</span> frequently asked questions<a href="https://www.nationalrentersalliance.co.uk/frequently-asked-questions-english"> about <strong>common
+                <span lang="en-gb">reasons</span> landlords use to <span lang="en-gb">take</span> money from your deposit<span lang="en-gb">.
+                </span></strong><span lang="en-gb">If your landlord is unjustified, the</span><strong> </strong>National
+                Renters Alliance c<span lang="en-gb">ould </span>help you <span lang="en-gb">get your</span>
+                deposit <span lang="en-gb">back if you act quickly.<strong> </strong></span></a>&nbsp;Please
+                <strong>contact us</strong><span lang="en-gb"> </span>if
+                <a href="https://www.nationalrentersalliance.co.uk/contact"> you<span lang="en-gb">r</span>
+                landlord or letting agent has <strong>unfairly take<span lang="en-gb">n</span>
+                money from your deposit</strong></a><span lang="en-gb">.</span>
+                  </p>
+                <p><a title="Deposit Recovery" href="https://www.nationalrentersalliance.co.uk/deposit-recovery">Deposit Recovery <i class="fa fa-arrow-right"></i></a></p>
+
+
+          </div>
+            <div class="col-md-3">
+                <h3><a title="Repairs and Maintenance" href="https://www.nationalrentersalliance.co.uk/repairs-and-maintenance"> <i class="fa fa-wrench"></i>  Repairs and Maintenance</a></h3>
+                <p class="text-justify">If your landlord or letting agent is <strong>not doing repairs they are responsible for?</strong>
+                    <span lang="en-gb">Have you complained over and over about repairs and nothing
+                    is being done?&nbsp; If so contact the </span>National Renters Alliance<span lang="en-gb">
+                    to see how we can help you. This may be informing your landlord about his or her
+                    legal repair obligations or giving you the tools to take more serious action.&nbsp; The National Renters
+                    Alliance has over twenty years' experience in tenancy and <strong>housing repair
+                    matters</strong>.&nbsp; If you are unsure about which
+                    <a href="https://www.nationalrentersalliance.co.uk/frequently-asked-questions-english">
+                    housing repairs you are responsible for please visit our frequently asked
+                    questions.</a>&nbsp; Often landlords and letting agents use renter's lack of
+                    knowledge of their rights to give them a raw deal. <strong>You do not need to
+                    suffer due to poor housing conditions. </strong>&nbsp;<a href="https://www.nationalrentersalliance.co.uk/contact">Contact
+                    the National Renters Alliance today and see how we can help you with <strong>
+                    housing repair problems</strong>.</a></span></p>
+                    <p><a title="Repairs and Maintainance" href="https://www.nationalrentersalliance.co.uk/repairs-and-maintenance">Repairs and Maintenance <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+
+            <div class="col-md-3">
+                <h3><a title="Repairs and Maintenance" href="https://www.nationalrentersalliance.co.uk/repairs-and-maintenance"> <i class="fa fa-wrench"></i>  Repairs and Maintenance</a></h3>
+                <p class="text-justify">If your landlord or letting agent is <strong>not doing repairs they are responsible for?</strong>
+                    <span lang="en-gb">Have you complained over and over about repairs and nothing
+                    is being done?&nbsp; If so contact the </span>National Renters Alliance<span lang="en-gb">
+                    to see how we can help you. This may be informing your landlord about his or her
+                    legal repair obligations or giving you the tools to take more serious action.&nbsp; The National Renters
+                    Alliance has over twenty years' experience in tenancy and <strong>housing repair
+                    matters</strong>.&nbsp; If you are unsure about which
+                    <a href="https://www.nationalrentersalliance.co.uk/frequently-asked-questions-english">
+                    housing repairs you are responsible for please visit our frequently asked
+                    questions.</a>&nbsp; Often landlords and letting agents use renter's lack of
+                    knowledge of their rights to give them a raw deal. <strong>You do not need to
+                    suffer due to poor housing conditions. </strong>&nbsp;<a href="https://www.nationalrentersalliance.co.uk/contact">Contact
+                    the National Renters Alliance today and see how we can help you with <strong>
+                    housing repair problems</strong>.</a></span></p>
+                    <p><a title="Repairs and Maintainance" href="https://www.nationalrentersalliance.co.uk/repairs-and-maintenance">Repairs and Maintenance <i class="fa fa-arrow-right"></i></a></p>
+
+            </div>
+
+        </div>
+</div>
+
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>How to get your tenancy deposit protected<br>
+                    <small>Rent deposit money paid to a landlord to cover unpaid rent or damage should be
+                        protected by a tenancy deposit scheme.</small>
+                </h1>
+            </div>
+
+        <h2>1. Ask your landlord to protect your deposit</h2>
+            <p>You pay a tenancy deposit to a landlord in case you damage the property you are renting or leave
+                without paying all the rent.</p>
+            <p>Your landlord has a legal duty to protect your tenancy deposit if&nbsp;you have an assured shorthold tenancy.
+                Most renters have this tenancy type.&nbsp;</p>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+            <p>Your landlord usually has 30 days from when you pay your deposit to protect it with a tenancy deposit
+                protection scheme&nbsp;and to provide you with information about the scheme used.&nbsp;
+                (<a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                    title="see also: tenancy deposit protection rules">Different time limits apply to tenancy deposits paid before 6 April 2012</a>).
+            </p>
+            <p>Email, call or ask your landlord in person if they've done this and which tenancy deposit protection
+                scheme they are using.&nbsp;You can ask your landlord's letting agent instead if they're dealing with
+                tenancy deposit issues on behalf of your landlord.</p>
+            <p class="inline-callout">Your landlord doesn't
+                have to protect your deposit if
+            <a title="see also: lodgers"
+               href="{% url 'renters-lodgers' %}">
+                you are a lodger</a>.
+            </p>
+
+            <br>
+
+            <h2>2. Send a letter</h2>
+                <p>Landlords usually have 30 days to protect your tenancy deposit&nbsp;after they receive it.
+                     This applies to renters with an assured shorthold tenancy, the most common tenancy type.&nbsp;</p>
+
+                 <p>(<a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                        title="see also: tenancy deposit protection rules">Different time limits apply to tenancy deposits
+                     paid before 6 April 2012</a>).
+                 </p>
+                 <p>You can ask your landlord to protect your deposit even if they have missed the deadline. It's better for
+                     your landlord to protect your deposit late than not at all.&nbsp;Most landlords will protect a tenancy
+                     deposit when they're asked.&nbsp;</p>
+                 <p>Send a letter or email asking your landlord to protect your tenancy deposit:&nbsp;</p>
+
+                 <p class="inline-callout download">Use
+                     <a title="Download TDP1 Request for tenancy deposit information"
+                        href="http://england.shelter.org.uk/__data/assets/word_doc/0008/1154087/Request_for_tenancy_deposit_protection_information_TDP1_sample_letter.docx"
+                        target="_blank">
+                         Shelter's template letter to ask your landlord to protect your tenancy deposit</a>.
+                 </p>
+                 <p>Send a polite reminder if you think it will help your negotiations:</p>
+                 <p class="inline-callout download">Use
+                     <a title="Download TDP2 Second request for tenancy deposit information"
+                        href="http://england.shelter.org.uk/__data/assets/word_doc/0010/1154089/Second_request_for_tenancy_deposit_protection_information_TDP2_sample_letter.docx"
+                        target="_blank">Shelter's template letter to ask your landlord again to protect your tenancy deposit</a>.
+                 </p>
+                 <p>You can send the letter or email your landlord's letting agent&nbsp;if they are dealing with tenancy deposit issues on behalf of your landlord.</p>
+
+                 <p class="inline callout-urgent">Your landlord doesn't have to protect your deposit if
+                     <a title="see also: lodgers"
+                        href="{% url 'renters-lodgers' %}">
+                         you are a lodger</a>.
+                 </p>
+
+                 <br>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+            </div>
+
+            <h2>3. Check if it's been protected&nbsp;</h2>
+
+                <p>Have these details ready:&nbsp;rental property postcode,&nbsp;tenancy start date,&nbsp;tenancy deposit amount,&nbsp;tenant's name.</p>
+                <p>There are 3 tenancy deposit scheme providers.&nbsp;</p>
+                <p>Use their websites to check if your deposit is protected by them:</p>
+                <p class="inline-callout external">
+                    <a title="Link to The Dispute Service"
+                       href="https://www.thedisputeservice.co.uk/is-my-deposit-protected.html" target="_blank">
+                        The Dispute Service (TDS)
+                    </a>&nbsp;</p>
+
+                <p class="inline-callout external">
+                <a title="Link to The Deposit Protection Service"
+                   href="https://www.depositprotection.com/is-my-deposit-protected" target="_blank">
+                    The Deposit Protection Service (TDPS)</a>
+                </p>
+                <p class="inline-callout external">
+                    <a title="Link to mydeposits" href="https://www.mydeposits.co.uk/tenants/deposit-checker/"
+                       target="_blank">mydeposits.co.uk</a>
+                </p>
+
+                <p>Tenancy&nbsp;deposits paid to Capita Tenancy Deposit Service were transferred to&nbsp;mydeposits.</p>
+                <p>Your landlord should provide you with information saying which tenancy deposit protection scheme they've used to protect it.
+                    Your landlord's letting agent&nbsp;may provide this information instead.</p>
+
+                <br>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+            </div>
+
+            <h2>4. Threaten court action&nbsp;</h2>
+
+                <p>The court can order your landlord to protect your tenancy deposit and pay you compensation if&nbsp;your landlord&nbsp;missed the 30 day deadline
+                    for protecting your deposit.</p>
+                <p>You can threaten court action if your landlord ignores your requests to protect
+                your tenancy deposit. To do this, you'll have to send your landlord a legal letter
+                    called a letter before action.&nbsp;</p>
+                <p>After receiving your letter before action, your landlord may decide to protect your deposit.
+                    Your landlord may offer to settle the case and pay you compensation.</p>
+                <p>Your letter before action should:</p>
+                <ul>
+                    <li>give the landlord a deadline to respond – allow at least 14 days</li>
+                    <li>set out the legal arguments you would use in court</li>
+                    <li>include details of any claim for compensation</li>
+                    <li>provide evidence to back up your case such as copies of letters and emails</li>
+                </ul>
+                <p class="inline-callout download">Use
+                    <a title="Download TD9 Letter before action: failure to protect tenancy deposit"
+                       href="http://england.shelter.org.uk/__data/assets/word_doc/0014/1154120/Letter_before_action_for_the_failure_to_protect_my_tenancy_deposit_TD9_sample_letter.docx"
+                       target="_blank">Shelter's template letter before action to get your deposit protected</a>.
+                </p>
+                <p>Send this letter by recorded delivery or get proof of posting.</p>
+
+                <br>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+            </div>
+
+            <h2>5. Take your landlord to court</h2>
+                <p>If you start court action&nbsp;while you are still living in the property, the court can&nbsp;order your landlord to
+                    both:&nbsp;</p>
+                <ul>
+                    <li>protect your tenancy deposit</li>
+                    <li>pay you compensation</li>
+                </ul>
+                <p>If you wait until after your tenancy has ended and you've left, the court can order your landlord to both:</p>
+                <ul>
+                    <li>return your tenancy deposit&nbsp;</li>
+                    <li>pay you compensation</li>
+                </ul>
+                <p>Tenancy deposit compensation&nbsp;will be&nbsp;between 1 and&nbsp;3 times the amount of your deposit.</p>
+                <p class="inline-callout internal">Find out more about&nbsp;
+                    <a title="See also: Court action to claim tenancy deposit compensation"
+                       href="{% url 'deposit-protection-claims' %}">
+                        court action  to get your deposit returned or protected
+                    </a>.
+                </p>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+

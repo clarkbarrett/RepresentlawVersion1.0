@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Deposit deductions your landlord can make</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Tenancy deposit deductions your landlord can make<br>
+                    <small>Don't risk losing your deposit money because you haven't paid the rent
+                        or cleaned up when you leave.</small>
+                </h1>
+            </div>
+
+            <p><b> Don't risk losing your deposit money because you haven't paid the rent or cleaned up when you leave.
+</b></p>
+    <h2>Deductions your landlord can make</h2>
+    <p>Your landlord can usually make certain deductions from your deposit
+        after you leave your rented home. They must tell you what any deductions are for and how
+        much for each item. They&nbsp;must return what's left to you.&nbsp;</p>
+    <p>Landlords can usually deduct money from a deposit to cover:</p>
+
+    <ul>
+        <li>unpaid rent</li>
+        <li>damage to the property</li>
+        <li>missing items</li>
+        <li>cleaning costs</li>
+    </ul>
+    <p>The items they can deduct money for are usually set out in your
+        <a href="{% url 'renters-types-of-renting-agreement' %}"
+           title="see also: types of renting agreements">
+            tenancy agreement
+        </a> or a separate document you both signed.&nbsp;</p>
+    <p>Your landlord can make deductions for items that aren't spelt out if this includes wording
+        such as 'deductions from your deposit can be made for breaches of your
+        tenancy agreement'.</p>
+
+    <h3>Deductions your landlord can't make</h3>
+
+        <p>Your landlord isn't allowed to make deductions from your deposit to cover:</p>
+    <ul>
+        <li>costs for re-letting the property&nbsp;</li>
+        <li>unpaid gas, electricity or water bills if your name is on the bill</li>
+    </ul>
+
+    <p>They can't make deductions just because you had a&nbsp;noisy party or kept a pet.
+    This applies even if&nbsp;your tenancy agreement said you couldn't.</p>
+
+    <h2>Unpaid rent</h2>
+    <p>Your landlord can deduct any unpaid rent from your deposit.
+        If you owe more than the deposit, they could take you to court to get
+        the rest of the money back.</p>
+
+    <h2>Damage to property</h2>
+
+    <p>Your inventory should state the condition of the walls, paintwork and carpets when
+        you move in.</p>
+    <p>You should leave the property in the same condition it was in when you moved in, allowing
+        for normal wear and tear.</p>
+    <p>Your landlord can't deduct money from your deposit for normal wear and tear, but
+        they can for damage.</p>
+    <p>Examples of damage are:</p>
+    <ul>
+        <li>a burn hole or nail varnish spill on a carpet</li>
+        <li>holes in plaster or damaged paintwork caused by hanging pictures
+            on a wall</li>
+        <li>torn or missing curtains</li>
+    </ul>
+    <p>Examples of normal wear and tear are:</p>
+    <ul>
+        <li>worn carpets</li>
+        <li>minor scrapes and scuffs on the walls</li>
+        <li>faded curtains</li>
+    </ul>
+    <p>If your landlord does need to replace what you've damaged,
+    they should do so on a like-for-like basis. For example if you damage a cheap mattress,
+        you don't have to pay for a better quality new one.</p>
+    <p>Find out more about
+    <a href="{% url 'renters-how_to_check_and_agree_an_inventory' %}"
+       title="see also: checking and agreeing an inventory">checking and agreeing an inventory</a>.
+    </p>
+
+    <h2>Missing items</h2>
+    <p>Your landlord can make deductions for missing items. The inventory you agreed with your
+        landlord should set out the items provided.&nbsp;</p>
+    <p>If your landlord needs to replace missing items, they should do so on a like-for-like basis.
+        You shouldn't be asked to pay for an expensive replacement for a budget item.</p>
+
+    <h2>Cleaning costs</h2>
+
+    <p>Leave the property clean and tidy at the end of your tenancy. You shouldn't normally
+        have to pay to make it cleaner than it was when you first moved in.&nbsp;</p>
+    <p>Check your
+        <a href="{% url 'renters-types-of-renting-agreement' %}"
+                     title="see also: types of renting agreements">tenancy agreement</a>.
+        If it says you must have the carpets and curtains professionally cleaned before you move out, you should do this.</p>
+    <p>Keep receipts for any cleaning that you do or pay for.&nbsp;</p>
+
+    <h2>Keeping pets</h2>
+    <p>Your landlord can deduct money from your tenancy agreement to cover damage caused by your pets.
+        This includes the cost of cleaning to remove smells caused by pets.&nbsp;&nbsp;</p>
+    <p>Don't install cat flaps or make any changes to the structure of your home without your
+        landlord's permission. It could count as damage.</p>
+    <p>If no damage was done, your landlord
+    can't deduct money just because you kept a pet. This applies even if your tenancy agreement said
+    you couldn't keep pets.</p>
+
+    <h2>If you disagree with deductions</h2>
+    <p>You can challenge the deductions your landlord has made from your deposit.</p>
+
+    <p class="inline-highlight">Find out
+        <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+           title="see also: how to get your tenancy deposit back">
+            how to get your tenancy deposit back
+        </a>.
+    </p>
+
+        </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

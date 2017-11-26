@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Joint tenancies</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Joint tenancies<br>
+                    <small>Joint tenants are equally responsible for paying the rent. You all have the same
+                        rights and responsibilities.</small>
+                </h1>
+            </div>
+
+    <h2>Tenancy agreements</h2>
+        <p>You have a joint tenancy if you and the other tenants all signed a single tenancy agreement with a
+            landlord when you moved in.</p>
+        <p>If each of you signed a separate agreement with the landlord, you have separate tenancies.</p>
+        <p class="inline-callout highlight">Use
+            <a href="{% url 'renters-tenancy_checker' %}"
+               title="see also: Represent tenancy checker">Represents's tenancy checker
+            </a> to check what type of tenancy you have.</p>
+
+     <h2>Right to rent</h2>
+        <p>You can only become a private tenant if you have the right to rent. Each joint tenant must have
+            the right to rent.</p>
+        <p>A private landlord or letting agent must carry out a right to rent
+            check before you sign up to a private tenancy.</p>
+        <p>Find out
+            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+               title="see also: right to rent immigration checks">more about right to rent immigration checks</a>.</p>
+
+     <h2>Paying the rent when you're a joint tenant</h2>
+        <p>Joint tenants are each jointly and individually responsible for paying the rent.</p>
+        <p>If one tenant moves out without giving notice or doesn't pay their share of the rent, the other
+            joint tenants are responsible for paying it for them.</p>
+        <p>If none of you pay your rent, your landlord can ask any one of you to pay the outstanding rent.</p>
+
+     <h2>Tenancy deposits</h2>
+        <p>When you move into private rented accommodation, you usually need to pay a
+            <a href="{% url 'renters-what_is_a_tenancy_deposit' %}"
+               title="see also: what is a tenancy deposit">tenancy deposit
+            </a> to cover any damage or unpaid rent.</p>
+        <p>If you have an
+        <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+           title="see also: Assured shorthold tenancies with private landlords">assured shorthold tenancy
+        </a>, check that your deposit&nbsp;is protected with a tenancy deposit scheme.</p>
+        <p>Find out about&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection schemes rules">tenancy deposit protection scheme rules</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if we can help you get your deposit back
+                    if your landlord is keeping it unfairly.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Help me get my deposit back</a></p>
+
+</div>
+
+     <h2>Deductions from a tenancy deposit</h2>
+        <p>The landlord normally takes a single deposit for the whole of the tenancy. Even if you and the other
+            joint tenants paid separate or different shares to the landlord or agent.</p>
+        <p>If one joint tenant fails to pay their share of the rent or if they cause damage to the property,
+            the landlord is entitled to deduct the shortfall or the costs of the damage from the whole deposit.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="see also: tenancy deposit deductions">deductions a landlord can make from your deposit</a>.</p>
+        <p>You and the other joint tenants decide how to divide up the remaining deposit when it is returned.</p>
+        <p class="inline-callout highlight">Find out
+            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+               title="see also: How to get a tenancy deposit back">how to get your deposit back</a>.</p>
+
+     <h2>Tenancy deposits when a joint tenant moves out</h2>
+        <p>If you are replacing another tenant who is moving out, they may ask you to pay the deposit to them instead.
+            This could cause problems. If the tenant who is moving out has caused any damage to the property or left
+            any unpaid bills, the landlord can deduct these costs from the deposit when you move out.</p>
+        <p>Get advice if you are in this situation. It might be better to ask the landlord to give a new tenancy
+            agreement to you and the other tenants who are staying on.</p><p>
+
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if we can help you get your deposit back
+                    if your landlord is keeping it unfairly.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Help me get my deposit back</a></p>
+
+</div>
+
+    <h2>How you can end a fixed-term joint tenancy</h2>
+        <p>If you have a fixed-term tenancy (for example for
+        12 months) you can only the tenancy before the fixed term ends if:</p>
+        <ul>
+            <li>you, the other tenants and your landlord all agree that the tenancy can end early (this is called
+                a 'surrender')</li>
+            <li>there is a 'break clause' in your tenancy agreement, which allows you to give notice and end
+                your tenancy early</li>
+        </ul>
+        <p>You need the agreement of the other joint tenants to end your tenancy early.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: ending a fixed-term tenancy">
+                ending a fixed-term tenancy</a>.</p>
+
+     <h2>How to end a joint tenancy that isn't a fixed-term</h2>
+        <p>If you don't have a fixed-term tenancy or it has ended and not been renewed, you or any other joint
+            tenant can end the tenancy by giving a valid notice to quit to the landlord.</p>
+        <p>You can do this with or without the agreement of the other joint tenants. The tenancy ends
+            for all the joint tenants.</p>
+        <p>When the notice to quit expires none of you has the right to continue living there.</p>
+        <p>Find out more about
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also: ending a periodic (month to month) tenancy">
+                ending a periodic (month to month) tenancy</a>.</p>
+
+     <h2>Leaving a joint tenancy</h2>
+        <p>If you want to leave a joint tenancy and the others want to stay it is usually best to discuss it with
+            the other joint tenants before you take any action.</p>
+        <p>If they don't want to move out, they can try to negotiate a new agreement with the landlord.</p>
+        <p>The remaining tenants may be able to find another person to become a joint tenant with
+            them. They must get the landlord's agreement for this.</p>
+        <p>Or the remaining tenants could all agree to stay on and pay the rent between them.</p>
+        <p>However if the joint tenancy has not been ended the landlord could still ask you to pay
+            any arrears if the rent is not fully paid, even if you are no longer living there.</p>
+        <p>Get advice from Represent about leaving a joint tenancy.</p>
+        <p>
+
+    <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if we can help you get your deposit back
+                    if your landlord is keeping it unfairly.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Help me get my deposit back</a></p>
+
+    </div>
+
+     <h2>Eviction of joint tenants</h2>
+        <p>Your landlord cannot evict one joint tenant without evicting all the others.</p>
+        <p>Your landlord may be able to end the tenancy and offer a new one to the remaining tenants.</p>
+        <p>Talk to your landlord as soon as possible if you are in this situation and you want to stay.</p>
+        <p>Find out more about the
+            <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+               title="See also: Eviction of assured shorthold tenants">
+                eviction of assured shorthold tenants
+            </a> and
+            <a href="{% url 'renters-eviction_notices_from_private_landlords' %}"
+               title="See also: Eviction notices from landlords">eviction notices from landlords</a>.</p>
+
+     <h2>Relationship breakdown</h2>
+        <p>Your landlord could grant you a new tenancy in your name only if the joint tenancy with your ex-partner
+            has been properly ended.</p>
+        <p>You may also have other rights. For example:</p>
+
+        <ul>
+            <li>it may be possible for court to transfer the tenancy into your name &ndash; even
+                if the other joint tenant won't agree to it</li>
+            <li>it may be possible to stop the other joint tenant from ending the tenancy by applying
+                for an occupation order or an injunction</li>
+            <li>if you have experienced domestic violence, it may be possible to
+                keep the perpetrator out of your home or to take legal action such
+                as an&nbsp;injunction</li>
+        </ul>
+        <p>
+            <a href="{{ civil_legal_advice_url }}"
+               title="Link to: Citizens Advice - What happens to your home when you separate"
+               target="_blank">Find out more from Citizens Advice about your housing rights in a rented
+                home when your relationship ends</a></p>
+        <p>Get advice if you are worried about losing your home after a relationship breakdown.</p>
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
+    <p></p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+     <h2>Problems with other joint tenants</h2>
+        <p>If you have a problem with another joint tenant you probably have to sort this out yourself.</p>
+        <p>Landlords are usually reluctant to get involved, although council or housing associations are
+            more likely to get involved than private landlords.</p>
+    </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+

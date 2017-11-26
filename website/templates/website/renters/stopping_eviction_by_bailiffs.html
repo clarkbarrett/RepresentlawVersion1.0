@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - How to stop eviction by bailiffs{% endblock %}
+{% block description %}Get advice as soon as you get a bailiffs' letter. You may be able to delay eviction and keep your home.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to stop eviction by bailiffs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to stop eviction by bailiffs<br>
+                <small>Get advice as soon as you get a bailiffs' letter. You may be able to delay eviction and keep your home.</small>
+            </h1>
+        </div>
+
+    <h2>Get advice</h2>
+        <p>Get advice now if you're facing eviction. Have the papers you received from the court with you when you speak to an adviser.</p>
+        <p class="inline-callout phone">Call
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{ civil_legal_advice_url }}"
+               target="_blank">Civil Legal Advice</a> on 0345 345 4 345 to see if you qualify for legal aid</p>
+
+
+    <h2>Look out for notice the bailiffs are coming</h2>
+        <p>You get notice of the time and date of&nbsp;an eviction on a court document called Form N54.
+            The bailiffs post this or deliver it by hand.</p>
+        <p>You should get at least two or three days' notice that the bailiffs are coming.</p>
+        <p class="inline-callout">Find out&nbsp;
+            <a title="See also: what happens when bailiffs evict tenants"
+               href="{% url 'renters-what_happens_when_bailiffs_evict_tenants' %}">
+                what happens when bailiffs come to evict you</a>.</p>
+
+    <h2>Find out if you can stop the bailiffs</h2>
+        <p>It may be possible for a court to stop or delay the bailiffs.</p>
+        <p>Find out how to stop the bailiffs if you are a:</p>
+        <ul>
+            <li><a title="See also: can you stop the bailiffs: council tenants"
+                   href="{% url 'renters-can_council_tenants_stop_the_bailiffs' %}">
+                council tenant</a></li>
+            <li>
+                <a title="Can you stop the bailiffs: housing association tenants"
+                   href="{% url 'renters-can_housing_association_tenants_stop_the_bailiffs' %}">
+                    housing association tenant</a></li>
+            <li>
+                <a title="See also: can you stop the bailiffs: private tenants"
+                   href="{% url 'renters-can_private_tenants_stop_the_bailiffs' %}">
+                    private tenants</a></li>
+        </ul>
+        <p>What the court can do depends on what type of tenancy you have and the reasons why the court made a possession order.</p>
+
+    <h2>Check if bailiffs can be used to evict you</h2>
+        <p>Only a court can send bailiffs to evict you from your home. It's not lawful for your landlord to evict you themselves.</p>
+        <p>Your landlord must apply to the court for a bailiffs' warrant. This is also known as a warrant for possession.
+            This allows the bailiffs to evict you.</p>
+        <p>Your landlord can apply for the bailiffs to evict you if:</p>
+        <ul>
+            <li>you don't leave your home by the date the court set in a possession order</li>
+            <li>the court has made a suspended possession order but you haven't kept to the conditions the court imposed</li>
+        </ul>
+        <p>A common example of breaking conditions is if you don't pay your rent and&nbsp;the rent arrears payments set
+            out in the court order.</p>
+
+    <h2>Get legal advice for a court hearing</h2>
+        <p>To stop the bailiffs, you'll need to apply to ask the court to consider whether to stop&nbsp;the bailiffs coming.
+            There will probably be a short court hearing.</p>
+        <p>Ask the court if it has a&nbsp;free legal advice service available at the court.
+            The service may be called the housing possession court duty scheme, court desk scheme or county court duty scheme.</p>
+        <p>Not all courts have an adviser available when you need them. Get advice in advance if you can.</p>
+
+   <h2>Get help if you'll be homeless</h2>
+        <p>You can ask the council for help if you are going to become homeless.&nbsp;&nbsp;
+            The council may have a duty to provide you with somewhere to live.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Letting agent redress schemes{% endblock %}
+{% block description %}You can complain to an independent redress scheme if a letting agent doesn't resolve your complaint about its service.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Letting agent redress schemes</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Letting agent redress schemes<br>
+                <small>You can complain to an independent redress scheme if a letting agent doesn't resolve
+                        your complaint about its service.</small>
+            </h1>
+        </div>
+
+    <h2>What is a letting agent redress scheme?</h2>
+        <p>Letting agents must join a government approved letting agent redress scheme.</p>
+        <p>The three letting agent redress schemes are:</p>
+
+        <ul>
+            <li>The Property Ombudsman (TPO)</li>
+            <li>The Property Redress Scheme</li>
+            <li>Ombudsman Services Property</li>
+        </ul>
+        <p>Letting agent redress schemes provide a free, independent service for resolving disputes between
+            letting agents and their customers.&nbsp;Landlords and tenants can complain to the schemes.&nbsp;</p>
+        <p>Letting agents must cooperate with any investigation.&nbsp;</p>
+        <p>The decision made by a redress scheme is binding on all parties.</p>
+        <p>The letting agency has to comply with any orders to pay you compensation, to pay a fine or to put
+            something right. Tell the scheme if the letting agent doesn't comply.</p>
+
+    <h2>Check which scheme a letting agent belongs to</h2>
+        <p>Ask your letting agent&nbsp;which scheme they belong to or&nbsp;check their website. Some letting
+            agents display details on stickers in their windows.</p>
+        <p>You can search each scheme's membership list to find out which one a letting agent has joined.</p>
+        <p>It's an offence for a letting agent not to join a redress scheme.&nbsp;Your&nbsp;
+            <a title="Link to Gov.uk - find your local council "
+               href="{{ find_council_url }}" target="_blank">local council</a> can investigate and prosecute letting agents
+            who haven't joined to a scheme.</p>
+        <p>The council can issue a fixed penalty fine of up to £5000 to a letting agency branch that is
+            not a member of a scheme. Letting agents with multiple branches could face multiple fines.</p>
+
+    <h2>What you can complain about</h2>
+        <p>Issues you can complain about to a letting agent redress scheme include:</p>
+        <ul>
+            <li>lack of transparency about fees</li>
+            <li>inaccurate property descriptions</li>
+            <li>disputes about holding deposits taken to reserve a property</li>
+            <li>not passing rent onto the landlord</li>
+            <li>slow or poor service</li>
+        </ul>
+        <p>You can also complain if a letting agent breaches the redress scheme's code of conduct or doesn't
+            have&nbsp;an in-house complaints procedure.</p>
+
+        <p class="inline-callout highlight">The schemes won't cover complaints about the amount of fees charged
+            or if they are reasonable, tenancy deposits or issues which are the landlord's responsibility.</p>
+
+    <h2>When to complain</h2>
+        <p>You can only complain to a redress scheme after you have given the letting agency the chance
+            to deal with your complaint first.&nbsp;&nbsp;</p>
+        <p>You can complain to the letting agent's redress scheme&nbsp;after you receive their final response
+            to your complaint or after 8 weeks if the letting agent doesn't resolve the issue within this time.</p>
+        <p>You must complain within the time limit set by the redress scheme.&nbsp;You may prefer to complain after
+            you have left.</p>
+
+    <h2>How to complain to a letting agent redress scheme</h2>
+        <p class="inline-callout highlight">Use Shelter's
+            <a href="http://england.shelter.org.uk/get_advice/downloads_and_tools/letting_agent_dispute_tool"
+               title="See: Letting agent dispute tool">Letting agent dispute tool</a>
+            to make your complaint.</p>
+
+    <h2>Other ways to resolve the dispute&nbsp;</h2>
+        <p>Letting agent redress schemes aren't the only way to resolve disputes with letting agencies.</p>
+        <p>Your other options could include:</p>
+
+        <ul>
+            <li>complaining to your local council</li>
+            <li>complaining to a letting agent's professional association, if it is a member</li>
+            <li>taking the letting agent to court to claim compensation (letting agent redress&nbsp;schemes
+                can't help if you have already started court action about a dispute)</li>
+        </ul>
+
+    <h2>If you are worried about the risk of eviction</h2>
+        <p>Get advice if you are worried that you may be evicted if you complain.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

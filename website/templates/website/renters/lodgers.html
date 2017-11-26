@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Lodgers{% endblock %}
+{% block description %}Find out about your housing rights if you rent a room in your landlord's home.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Lodgers</small></h1>
+
+
+
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Lodgers<br>
+                <small>Find out about your housing rights if you rent a room in your landlord's home.</small>
+            </h1>
+        </div>
+
+         <!--TEST-->
+                  <button class="btn btn-primary btn-lg" align="center" name="pdf" type="submit"></button>
+
+                  <!-- END TEST-->
+
+    <h2>Who is a lodger</h2>
+        <p>You are a lodger if you rent a room in your landlord's home and you share facilities such as the bathroom
+            and kitchen with your landlord.</p>
+
+    <h2>Rental agreements for lodgers</h2>
+        <p>A landlord doesn't have to provide a lodger with a written contract but it is a good idea to have one.</p>
+        <p>A contract should set out the rights and responsibilities of both you and your landlord.</p>
+        <p>Your agreement with your landlord could be:</p>
+
+            <ul style="list-style-type:square">
+                <li>fixed term &ndash; usually for 6 or 12 months</li>
+                <li>periodic &ndash; this means it runs from one rent period to the next, with no set date for ending</li>
+            </ul>
+
+        <p>Find out more about
+            <a href="{% url 'renters-types-of-renting-agreement' %}"
+               title="see also: types of renting agreements">types of renting agreements</a>.</p>
+
+    <h2>Deposits paid by lodgers</h2>
+        <p>Your landlord might ask you to pay a deposit to cover any damage or unpaid rent. The deposit is your
+            money and should be returned to you when you leave.</p>
+        <p>Ask your landlord for information about what deductions could be made from your deposit, for example to
+            cover unpaid rent. Get this in writing if possible.</p>
+        <p class="inline-callout highlight">Ask your landlord for an
+            <a href="{%  url 'renters-how_to_check_and_agree_an_inventory'%}"
+               title="See also: check and agree an inventory">inventory</a> listing the contents and condition of
+            your room and any rooms you share with your landlord. You and your landlord should sign the
+            inventory to avoid disputes when you leave.</p>
+        <p>Deposits paid by lodgers are not covered by
+            <a href="{%  url 'renters-tenancy_deposit_protection_rules'%}"
+               title="see also: tenancy deposit protection schemes rules">tenancy deposit protection rules</a>.</p>
+        <p>Find out
+            <a href="{% url 'renters-return_of_a_lodgers_deposit' %}"
+               title="see also: return of a lodger's deposit">more about the return of a lodger's deposit</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if we can help you get your deposit back
+                    if your landlord is keeping it unfairly.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Help me get my deposit back</a></p>
+
+</div>
+
+    <h2>Right to rent immigration checks</h2>
+        <p>Before you move in as a lodger, your landlord must ask you to prove that you have the right to live in
+            the UK and the right to rent. Your landlord is breaking the law if they don't ask for this.</p>
+        <p>Right to rent checks won't apply to you if you moved in before 1 February 2016.</p>
+        <p>Find out
+            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+               title="see also: right to rent immigration checks">more about right to rent immigration checks</a>.</p>
+
+    <h2>Rent</h2>
+        <p>Pay your rent on the day you agree with your landlord. If you have a written agreement this should tell
+            you when you pay your rent.</p>
+        <p>Usually you have to pay your rent in advance every week or month. This means you pay for the week or month coming.</p>
+
+        <p class="inline-callout highlight">If possible, set up a standing order to pay the rent.&nbsp;Ask for a receipt
+            if you pay your rent in cash.</p>
+
+   <h2>Rent increases</h2>
+        <p>During a fixed-term agreement your rent cannot be increased unless:</p>
+        <ul>
+            <li>your agreement says how and when it can be increased</li>
+            <li>you agree to an increase</li>
+        </ul>
+        <p class="inline-callout highlight">If you never had a fixed term agreement or the fixed term has
+            ended, your landlord can increase your rent anytime.</p>
+        <p>If you don't agree to the increase your landlord can give you notice to leave.</p>
+        <p>Find out
+            <a href="{% url 'renters-rent_increases' %}"
+               title="see also: rent increases">more about rent increases</a>.</p>
+
+   <h2>Repairs and safety in the home</h2>
+        <p>Your landlord should fix any repair problems in the home and in your room. If you have a written
+            agreement this may set out what your landlord must repair.</p>
+        <p>You'll have to fix something if you caused the damage.</p>
+        <p>Usually your landlord should make sure a Gas Safe registered engineer carries out a gas safety check
+            every 12 months.</p>
+        <p>If your landlord is a tenant, their landlord must arrange safety checks.</p>
+
+        <div class="bs-callout bs-callout-primary">
+            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <p></p>
+            <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+   <h2>When you are asked to leave</h2>
+        <p>Your landlord only has to give you reasonable notice if they want you to leave.</p>
+        <p>Lodgers are excluded occupiers. This means if your landlord wants you to leave they:</p>
+        <ul>
+            <li>only have to give you reasonable notice</li>
+            <li>do not need a court order to evict you</li>
+        </ul>
+        <p>Find out more about the
+            <a title="See also: Eviction of excluded occupiers"
+               href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}">
+                notice your landlord must give you</a>.</p>
+
+
+   <h2>If your landlord's home is repossessed</h2>
+        <p>You will have to leave if the property is repossessed.</p>
+        <p>Find out
+            <a title="See also: Repossession by a landlord's lender"
+               href="{% url 'renters-repossession_by_a_landlords_lender' %}">
+                more about repossession by the landlord's lender</a>.</p>
+        <p>Get advice if you are in this situation.</p>
+        <p>
+
+    <div class="bs-callout bs-callout-primary">
+        <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+        <p></p>
+        <p>
+        Get in touch with Represent to see how we can help</p>
+        <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+    </div>
+
+   </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

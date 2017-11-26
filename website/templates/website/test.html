@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% load crispy_forms_tags %}
+{% crispy form form.helper %}
+
+{% block title %}Add comment to {{ category.name }}{% endblock %}
+{% block description %}{{ post.seo_title }}{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block content %}
+
+<div class="container">
+        <div class ="col-md-8">
+            <div class="page-header">
+                <h1>Sign up to the Represent newsletter</h1>
+            </div>
+                <form method='POST'>
+                    {% csrf_token %}
+                    {% crispy form %}
+                    <button type='submit' class="btn btn-success">Subscribe</button>
+                    <p></p>
+                </form>
+        </div>
+    </div>
+{%  endblock %}

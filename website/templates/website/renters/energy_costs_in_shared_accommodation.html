@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Energy costs in shared accommodation{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Energy costs in shared accommodation</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Energy costs in shared accommodation<br>
+                <small>It is important that all housemates pay their share of the energy bills on time,
+                    as the person named on the bill is ultimately responsible.</small>
+            </h1>
+        </div>
+
+     <h2>Charges for energy you didn't use</h2>
+        <p>When you move into a new home there should be an existing energy supply.</p>
+        <p>The previous tenant or landlord should have told the supplier that they were leaving.
+            They should have arranged to pay for any outstanding energy costs before you move in.</p>
+        <p>When you first move in, take a note of the meter readings. Take a photo if you can.</p>
+        <p>Contact the existing energy supplier and let them know you have moved in. Give them the meter reading
+            to make sure you're not asked to pay for energy you didn't use.</p>
+
+   <h2>Your energy supplier</h2>
+        <p>You don't have to stay with the existing energy supplier when you move into a new home.</p>
+        <p>Use a price comparison website to check if another supplier is offering a cheaper deal. For example:</p>
+
+        <ul>
+            <li>MoneySuperMarket</li>
+            <li>uSwitch</li>
+            <li>Which? Switch</li>
+        </ul>
+        <p>Find out more from Ofgem about switching energy supplier.</p>
+        <p>If you plan to change energy suppliers,
+            you still need to pay the existing supplier for any energy you use. Changing suppliers can take a few weeks.</p>
+
+   <h2>Responsibility for bills</h2>
+        <p>In
+        <a href="{% url 'renters-houses_in_multiple_occupation_hmo' %}"
+           title="See also: Houses in multiple occupation">shared accommodation</a>,
+            it is a good idea to split the gas and electricity bills equally. It is cheaper to set up a direct debit to
+            pay your bills.</p>
+        <p>It is sometimes easier to deal with the energy company if just one of the tenants is named on the utility contract.
+            That person is responsible and liable to pay the whole bill until the end of the contract.
+            The other tenants should pay their share to the tenant named on the bill.</p>
+        <p>Tell the supplier in writing if you are the only person named on your energy contract. Explain that you
+            are acting on behalf of the other tenants and that you are all sharing the bills equally. This could
+            help protect you in the event of a dispute.</p>
+        <p>Your energy supplier may allow you to set up an account that has all the tenants' names on the contract.</p>
+        <p>You are all liable to pay the bills until the contract ends if you are all named on the contract.
+            This means that you are responsible for making sure the bills are covered completely, not just your share.</p>
+        <p>If a flatmate moves out,&nbsp;take a reading for that day and ask your supplier for&nbsp;for a bill
+            so you can split&nbsp;the&nbsp;bill&nbsp;fairly.</p>
+
+   <h2>Flatmate won't pay their share</h2>
+        <p>If one of the tenants can't or won't pay their share of the energy bills, the other tenants will
+            probably have to pay it.</p>
+        <p>Tell the energy supplier what is happening. They may give you more time to pay your bill while
+            you resolve the issue.</p>
+        <p>Try to find out what the problem is. If one tenant can't afford to pay, discuss the options.
+            To get your money back, you may have to take legal action against a tenant who does not pay.</p>
+
+
+   <h2>Understanding your bills</h2>
+        <p>You can choose whether you want to receive paper bills or check your bills online.</p>
+        <p>Your energy bill should tell you the:</p>
+
+    <ul>
+        <li>period the bill refers to</li>
+        <li>the amount of fuel used or an estimated amount</li>
+        <li>total amount you owe</li>
+        <li>price per unit (for gas and electricity separately)</li>
+    </ul>
+        <p>The most accurate bills are based on meter readings. If your bill is estimated, you could be paying
+            too much or too little. You can ask your supplier to recalculate the bill based on a new meter reading
+            if your bill was estimated.</p>
+        <p>Always check your bill carefully. Contact your supplier if you have any other queries.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

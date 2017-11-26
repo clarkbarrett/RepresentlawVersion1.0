@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}How to report repairs to a private landlord{% endblock %}
+{% block description %}Find out how to report repairs to a private landlord.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to report repairs to a private landlord</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to report repairs to a private landlord<br>
+                <small>How to report repairs to a private landlord</small>
+            </h1>
+        </div>
+
+    <h2>Check if your landlord is responsible for repairs</h2>
+        <p>Your landlord is responsible for fixing most repair problems in your rented home.</p>
+        <p>Check
+            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: landlord and tenant responsibilities for repair">
+                who is responsible for repair problems
+            </a>.</p>
+        <p>You could be responsible for repairs if you have damaged your home.</p>
+        <p class="inline-callout internal">Find out what to do
+            <a href="{% url 'renters-damage_or_wear_and_tear' %}"
+               title="See also: Damage or wear and tear?">
+                you are responsible for repairs caused by accidental damage</a>.</p>
+
+    <h3>Report gas leaks</h3>
+        <p class="inline-callout urgent">Call the Gas emergency number 0800 111 999
+            immediately if there is a gas leak or you notice any
+            signs of carbon monoxide poisoning.</p>
+
+    <h2>Report repairs in writing</h2>
+        <p>Report all repair issues to your landlord as soon as possible.</p>
+        <p>You can report repairs to your&nbsp;letting agent if they manage the property on behalf of the landlord.</p>
+        <p>You can tell the landlord or agent about the repair problem in person, by phone or text. You should also
+            write to them or email them to confirm the details.</p>
+        <p>If there's a dispute about repairs not being done, a letter or email helps show you told your
+            landlord about the problem.</p>
+        <p>If you use the Royal Mail's signed for service, you'll be able to&nbsp;prove the landlord got your letter.</p>
+        <p class="inline-callout download">Use Shelter's template letter to
+            <a title="Download R1 letter - request repairs (first letter)"
+               href="http://england.shelter.org.uk/__data/assets/word_doc/0007/1154185/R1_Request_for_repair.docx"
+               target="_blank">write to your landlord to ask for repairs</a>.</p>
+
+    <h3>Send a reminder if your landlord doesn't respond</h3>
+        <p>Contact your landlord again if they don't reply to your first request for repairs.</p>
+        <p class="inline-callout download">Use
+            <a href="http://england.shelter.org.uk/__data/assets/word_doc/0008/1154186/R2_Second_request_for_repairs.docx"
+               title="Download letter R2 Second request for repair">Shelter's template letter
+            </a>to write again to ask your landlord for repairs.</p>
+        <p>If there is still no response or you can't find your landlord, find out
+            <a href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}"
+               title="see also: What to do if your landlord won&rsquo;t do repairs">
+                what to do if your landlord won't do repairs
+            </a>.</p>
+
+     <h3>Keep records</h3>
+        <p>Make sure you keep a record of all your contact with your landlord about the repair problem.</p>
+        <p>This can include:</p>
+
+        <ul>
+            <li>copies of letters and emails you've sent to your landlord</li>
+            <li>dates of any visits to your home from your landlord</li>
+            <li>copies of letters and emails received from your landlord</li>
+            <li>date and time of phone calls made to your landlord, and what was said</li>
+        </ul>
+        <p class="inline-callout download">Use
+            <a href="http://england.shelter.org.uk/__data/assets/pdf_file/0006/730419/Phone_log_form.pdf"
+               title="see also: Shelter's checklist phone log form" target="_blank">Shelter's phone log checklist
+            </a> to keep a record of phone calls.</p>
+
+    <h2>Why you should report repairs</h2>
+        <p>Your tenancy agreement might say that reporting repairs is a condition of your tenancy.</p>
+        <p>If you don't report repairs when they're needed, a small problem could get worse and cost
+            your landlord more to fix.</p>
+        <p>Your landlord could
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="see also: tenancy deposit deductions">deduct money from your tenancy deposit
+            </a> or decide not to renew your tenancy.</p>
+
+        <p>Problems with repairs or conditions in your home
+        could also harm your health.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+               title="see also: health and safety standards in your rented home.">more about health
+                and safety standards in your rented home</a>.</p>
+
+    <h2>Eviction if you ask for repairs</h2>
+        <p>Some landlords start legal action for eviction if tenants ask for repairs.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}"
+               title="see also: Revenge eviction if you ask for repairs">
+                more about revenge eviction if you ask for repairs</a>.</p>
+        <p>If your tenancy started or was renewed on or after October 1st 2015, you could have extra
+            legal protection from eviction.</p>
+        <p>Get advice if you reported repairs and your landlord told you to leave or you're&nbsp;worried they might.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

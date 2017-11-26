@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - How to deal with pests and vermin in your home{% endblock %}
+{% block description %}Nobody wants to share their home with mice, cockroaches or other pests. Find out how deal with infestations.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to deal with pests and vermin in your home</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>How to get your tenancy deposit protected<br>
+                <small>Nobody wants to share their home with mice, cockroaches or other pests.
+                    Find out how deal with infestations.</small>
+            </h1>
+        </div>
+
+    <h2>Landlord's duty to deal with pests and vermin</h2>
+        <p>It's usually your landlord's responsibility to deal with a pests or vermin infestation if it's caused
+            by conditions in your rented home.</p>
+        <p>If the problem with rats, mice or other pests or vermin was there when you first moved into a furnished home,
+            your landlord is responsible for dealing with it.</p>
+        <p>Furnished private rented property must be fit to live in at the start of the tenancy.</p>
+        <p>If your tenancy agreement says the landlord must make sure your home is fit to live in or in a good
+            condition, it's your landlord's responsibility to deal with the problem.</p>
+        <p>Problems with pests and vermin in your home could cause a
+            <a href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+               title="see also: Health and safety standards for rented homes">
+                health hazard</a>.</p>
+        <p class="advice-highlight internal-link">You can
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also:Complain to environmental health about rented housing">
+                complain to your council's environmental health department</a>.</p>
+
+    <h2>Tenant's responsibility</h2>
+        <p>You probably have to deal with the problem if it was caused by you, for example if you didn't
+            clear away rubbish or leftover food.</p>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-how_to_deal_with_pests_and_vermin_in_your_home' %}"
+               title="see also deal with pests and vermin">how to deal with a pests or vermin problem</a>.</p>
+
+    <h2>Landlord's duty to repair your home</h2>
+        <p>It's your landlord's responsibility to fix holes in the wall or floor which allow rats
+            or mice to enter your home.</p>
+        <p>If pests and vermin cause damage to your home, it's your landlord's responsibility to repair the damage,
+            for example:</p>
+        <ul>
+            <li>fix doors, skirting boards, pipes, brickwork when rats or mice have chewed through them</li>
+            <li>urgently fix any damage to electrical wiring</li>
+        </ul>
+        <p class="inline-callout internal">Your landlord is
+            <a title="See also: Responsibility for repairs"
+               href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                responsible for most repairs to your home</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>How to report the problem to your landlord</h2>
+        <p>Report the problem to your landlord as soon as possible. Do this in writing.</p>
+        <p>Find out more about:</p>
+        <ul>
+            <li>
+                <a title="See also: How to report repairs to your landlord"
+                   href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+                    how to report repairs in private homes</a></li>
+            <li>
+                <a title="See also: Reporting repairs and allowing access"
+                   href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}">
+                    how to report repairs in council and housing association homes</a></li>
+        </ul>
+
+    <h2>Legal action to claim compensation</h2>
+        <p class="inline-callout internal">Find out if you can take
+            <a href="{% url 'renters-housing_disrepair_check_if_you_can_claim_compensation' %}"
+               title="see also: Housing disrepair: check if you can claim compensation">
+                legal action to claim compensation from your landlord</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Rent payments if you move out</h2>
+        <p class="advice-highlight normal-advice">
+            You must usually give your landlord proper notice to leave if you decide to move because of
+            problems with pests and vermin.</p>
+        <p>If you don't give the correct notice, you will still be responsible for paying the rent.</p>
+        <p>Your tenancy continues if you don't end it properly.</p>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+               title="see also: ending a fixed-term tenancy">
+                ending a fixed-term tenancy</a> and
+            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+               title="see also: ending a periodic (month to month) tenancy">
+                ending a periodic (month to month) tenancy</a>.</p>
+
+    <h2>Homeless because of pests and vermin</h2>
+        <p>Ask the council for help if it is not reasonable for you to stay because pests and vermin pose a
+            serious health risk to you or your family.</p>
+        <p>You can make a homeless application to the council's housing department.</p>
+        <p>The council will need to see evidence that you can't stay in your home because of the problems with
+            pests or vermin. The council might have to find you somewhere else to live.</p>
+        <p class="inline-callout internal">Find out more about making a homeless application.</p>
+        <p>Don't leave your home before the council accepts you are homeless. If you do, the council could decide you
+            made yourself intentionally homeless and it wouldn't have a duty to rehouse you.</p>
+        <p>Get advice if you want to leave your home or make a homeless application.</p>
+
+
+    <h2>Pests and vermin from neighbours' homes</h2>
+        <p>If pests are coming from your neighbours home or gardens, you can ask them to deal with the issue.
+            If your neighbours rent their home, you can complain to their landlord.</p>
+        <p>Complain to the council's environmental health department if your neighbours or their
+            landlord don't fix the problem.</p>
+        <p>Environmental health can serve a notice ordering your neighbours to deal with the problem.
+            If they don't, the council can arrange for work to be done and charge your neighbours
+            or their landlord for it.</p>
+        <p class="inline-callout external">Find out more about
+            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+               title="see also: Complain to environmental health about rented housing">
+                complaining to the council's environmental health department</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

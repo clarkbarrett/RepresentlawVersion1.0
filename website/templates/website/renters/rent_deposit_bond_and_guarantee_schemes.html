@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Rent deposit, bond and guarantee schemes{% endblock %}
+{% block description %}If you don't have money for a tenancy deposit, check if there's a rent deposit, rent guarantee or bond scheme that can help.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Rent deposit, bond and guarantee schemes</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Rent deposit, bond and guarantee schemes<br>
+                <small>If you don't have money for a tenancy deposit, check if there's a rent deposit, rent guarantee or bond scheme that can help.</small>
+            </h1>
+        </div>
+
+    <h2>How a rent deposit scheme works</h2>
+        <p>Rent deposit schemes help people who can't afford a tenancy deposit to rent from a private landlord.
+            Rent deposit schemes are usually run by a local council or housing association or sometimes by a charity.</p>
+        <p>Rent deposit schemes offer loans to be used as deposits. Usually, the scheme lends you the money in
+            advance and you pay it back over a period of time from your wages or benefits.</p>
+        <p>If you pay a deposit to your landlord, your money must be protected with a
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection schemes rules">tenancy deposit protection scheme</a>.
+            This applies if you have an&nbsp;
+            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+               title="see also: assured shorthold tenancy agreement">assured shorthold tenancy</a>.
+            Most private tenants have this tenancy type.</p>
+        <p>You should get your deposit back as a lump sum at the end of your tenancy&nbsp;If there are no problems.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    <h2>How a rent guarantee or bond scheme works</h2>
+        <p>Bond schemes or rent guarantee schemes are usually run by a council, housing association or charity.</p>
+        <p>Instead of a cash deposit, the scheme-provider&nbsp;gives a written guarantee to your landlord to cover losses
+            due to unpaid rent or damage.</p>
+        <p>Your landlord doesn't have to register the bond with a government-backed tenancy deposit scheme.</p>
+        <p>When you sign up to a guaranteed rent or bond scheme, you usually have to agree to repay the
+            council any money it has to pay the landlord or letting agent.</p>
+        <p>When your tenancy ends, your landlord can ask the scheme-provider to pay for damage you caused
+            or rent you didn't pay (often up to a maximum of one month's rent).
+            If the rent deposit or bond scheme provider pays your landlord, you will be asked you to repay
+            the money to the scheme.</p>
+
+    <h2>Who can apply</h2>
+        <p>Different schemes have different rules on who can apply.</p>
+        <p>Schemes run by local councils often provide help to families who are
+            <a title="See also: Priority need"
+               href="{% url 'renters-priority_need' %}">
+                homeless and in priority need</a>.</p>
+        <p>Schemes run by charities offer help to certain groups of people such as families with young children,
+            single homeless people with alcohol or drug problems, ex-offenders or people with a history of rough sleeping.</p>
+
+    <h2>Find a local scheme</h2>
+        <p class="inline-callout highlight">Use the Crisis&nbsp;
+            <a title="External link: Crisis Private Rented Sector"
+               href="{{ crisis_url }}" target="_blank">Private Rented Sector</a>
+            directory to search for a private rented sector (PRS) scheme in your area.</p>
+        <p>For information about local schemes you can also contact
+            <a title="External link to Find my council" href="{{ find_council_url }}"
+               target="_blank">your local council</a>.</p>
+
+    <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

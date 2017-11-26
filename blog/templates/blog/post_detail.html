@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}{{post.seo_title}}{% endblock %}
+{% block description %}{{ post.seo_description }}{% endblock %}
+{% block author %}{{ post.author }}{% endblock %}
+
+
+{% block content %}
+	<div class="container-fluid">
+	    <div class="row row-offcanvas row-offcanvas-left">
+	        <div class="row-offcanvas row-offcanvas-right">
+	            <div class="col-sm-2 sidebar-offcanvas" id="sidebarLeft" role="navigation">
+	                <div class="well sidebar-nav">
+	                    <ul class="nav">
+	                        <li>Left Sidebar</li>
+	                        <li class="active"><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                    </ul>
+	                </div><!--/.well -->
+	            </div><!--/span-->
+
+
+	            <div class="col-xs-8 col-sm-6">
+	                <div class="row">
+							<div class="col-sm-12 col-sm-offset-0">
+								<div class="thumbnail">
+                                    {% autoescape off %}
+									    <a href="{{post.get_absolute_url}}"><h1>{{post.title}}</h1>
+									    	<img src="/blog/media/{{post.image|default_if_none:'#' }}" alt="Blog image"/>
+									    </a>
+									    <div class="caption">
+									    	<h3>Written by {{post.author}} on {{post.published}}</h3>
+                                             <p>{{post.published|timesince}} ago</p>
+									    	    {{post.content|linebreaks|safe}}
+											<hr>
+											<h3>Comments ({{ post.comments.count }})</h3>
+
+											<a class="btn btn-default" href="{% url 'blog:add_comment' slug=post.slug%}">Leave a comment</a>
+											{% for comment in post.comments.all %}
+
+											<div class="panel panel-default" >
+  												<div class="panel-heading"><strong> <strong>{{ comment.user }}</strong> Posted on {{ comment.created }} </strong></div>
+  												<div class="panel-body" style="word-wrap: break-word">
+  												  {{ comment.body }}
+  												</div>
+  											</div>
+												{% empty %}
+											<p>There are no comments </p>
+											 {% endfor %}
+									    </div>
+                                    {% endautoescape %}
+								</div>
+							</div>
+
+
+					</div>
+	            </div>
+	            <!--/span-->
+	            <div class="col-xs-4 col-sm-3 sidebar-offcanvas" id="sidebarRight" role="navigation">
+	                <div class="well sidebar-nav">
+	                    <ul class="nav">
+	                        <li>Right Sidebar</li>
+	                        <li class="active"><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                        <li>Sidebar</li>
+	                        <li><a href="#">Link</a></li>
+	                        <li><a href="#">Link</a></li>
+	                    </ul>
+	                </div><!--/.well -->
+	            </div>
+	        </div>
+	    </div><!--/row-->
+	</div>
+	<!--/.container-->
+{% endblock %}

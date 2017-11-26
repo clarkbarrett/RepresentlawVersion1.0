@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Eviction with a Section 21 notice{% endblock %}
+{% block description %}Find out the three steps your landlord has to follow to evict you from your private rented home.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction with a Section 21 notice</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Eviction with a Section 21 notice<br>
+                <small>Find out the three steps your landlord has to follow to evict you from your private rented home.</small>
+            </h1>
+        </div>
+
+   <h2>Step 1: Section 21 notice</h2>
+        <p>A section 21 notice is the most commonly used way to begin the three-step eviction process for
+            renters with&nbsp;an assured shorthold tenancy contract.</p>
+        <p>If you're given a section 21 notice, you don't have to leave immediately. Landlords must give
+            you at least two months' notice. Your landlord doesn't have to give a reason for wanting you to leave.</p>
+        <p>To be legal a Section 21 notice must:</p>
+   <ul>
+       <li>be delivered in writing and give you at least two months' notice</li>
+       <li>be on a special form if you signed a new contract or a renewal agreement on or after 1 October 2015</li>
+   </ul>
+        <p>Your landlord must also have followed certain
+            <a title="see also: tenancy deposit protection schemes rules"
+               href="{% url 'renters-tenancy_deposit_protection_rules' %}">
+                rules for protecting your tenancy deposit</a>
+            and given you required tenancy deposit information.</p>
+        <p>Your landlord&nbsp;can't use a section 21 notice to evict you during the fixed term of your contract.</p>
+        <p>Get advice now if you're facing eviction. Have the papers you received from the court to hand
+            when you speak to an adviser.</p>
+
+        <p class="inline-callout phone">Call&nbsp;
+        <a title="External link: Gov.uk - Civil Legal Advice contact details"
+           href="{{ civil_legal_advice_url }}" target="_blank">Civil Legal Advice
+        </a> on 0345 345 4 345 to see if you qualify for legal aid</p>
+
+
+   <h2>Step 2: Going to court</h2>
+        <p>If you stay in the property after your two months' notice has ended, your landlord&nbsp;must
+            apply to court for a possession order to get the property back.</p>
+        <p>Your landlord will&nbsp;usually get the possession order if they&nbsp;have served the section
+            21 notice correctly. The eviction process takes from 4 to 6 months,&nbsp;depending on how busy the court is.</p>
+        <p>You can challenge the eviction if the section 21 notice isn't valid.</p>
+        <p>The papers the court sends you include a defence form. Use it to reply to the court
+            and&nbsp;explain why&nbsp;your landlord can't use the section 21 notice to evict you,
+            for example because you
+            <a title="see also: revenge eviction if you ask for repairs"
+               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                complained about repairs
+            </a> or
+            <a title="see also: tenancy deposit protection schemes rules"
+               href="{% url 'renters-tenancy_deposit_protection_rules' %}">
+                your tenancy deposit wasn't protected</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+        <p>If you want the court to delay the eviction, you can ask for an extension to stay up
+            to&nbsp;42 days longer.&nbsp;This is only granted in exceptional circumstances.&nbsp;Use the
+            defence form to ask.</p>
+        <p>After you send the court&nbsp;your defence form, it arranges a hearing. At the&nbsp;
+            <a title="see also: what happens at eviction court hearings"
+               href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}">
+                court hearing
+            </a>, you have a chance to put forward your case. The judge considers your situation and what the
+            law says. The judge won't grant a possession order if you didn't receive a section 21
+            notice or if it isn't valid. Otherwise, the court will give you a date to leave.</p>
+        <p>You only have 14 days to send your defence form to the court. If you don't, the case can be dealt
+            with using the&nbsp;
+            <a title="see also: eviction using accelerated possession procedure"
+               href="{% url 'renters-eviction_using_the_accelerated_possession_procedure' %}">
+                accelerated possession procedure</a>.
+            This allows the court to grant your landlord a possession order without having a hearing.</p>
+
+        <h2>Step 3: Bailiffs</h2>
+            <p>When a landlord is granted a possession order, the court sets a date for you to leave.</p>
+        <p>If you stay beyond this date, your landlord can
+            <a title="see also: what happens when  bailiffs evict tenants"
+               href="{% url 'renters-what_happens_when_bailiffs_evict_tenants' %}">
+                ask the court to send a bailiff to evict you</a>.</p>
+        <p>Only court bailiffs can evict you from your home.</p>
+        <p>The court will send you a letter to let you know that the bailiffs are coming. This gives
+            you time to pack your things.</p>
+        <p>Bailiffs can remove you and your belongings from the property but must not use force.</p>
+
+   </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Subtenants{% endblock %}
+{% block description %}You might be a subtenant if you rent a room or all of a property from another tenant rather than from the owner.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Subtenants</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Subtenants<br>
+                <small>You might be a subtenant if you rent a room or all of a property from another tenant rather than from the owner.</small>
+            </h1>
+        </div>
+
+    <h2>Are you a subtenant?</h2>
+        <p>You could be a subtenant if another tenant rents the place you live and you then rent it from the tenant.</p>
+        <p>For example, a tenant rents a house from the council and then the tenant sublets a room to you as a subtenant.</p>
+        <p>The tenant is your immediate landlord. The owner of the property is called the head landlord.</p>
+        <p>Most
+            <a href="{% url 'renters-lodgers' %}"
+               title="see also: lodgers">lodgers</a> are not subtenants.</p>
+
+    <h2>Rights of subtenants</h2>
+        <p>Your rights depend on:</p>
+        <ul>
+            <li>the type of accommodation you live in</li>
+            <li>whether you share with your immediate landlord</li>
+            <li>the date you moved in</li>
+            <li>what your tenancy agreement says</li>
+        </ul>
+        <p>Subtenants have a valid tenancy for as long as the immediate landlord's tenancy continues.</p>
+        <p>Subtenants can have different types of tenancy, depending on their living arrangements.</p>
+        <p>If you don't live in the same building as your landlord, you're probably an
+            <a title="See also: assured shorthold tenant"
+               href="{% url 'renters-assured-shorthold-tenancies' %}">
+                assured shorthold tenant</a>.</p>
+        <p>If you live in the same building as your landlord but don&rsquo;t share living accommodation such as the
+            kitchen and bathroom with them, you're probably an
+            <a href="{% url 'renters-occupiers_with_basic_protection' %}"
+               title="See also: Occupiers with basic protection">
+                occupier with basic protection</a>.</p>
+        <p>Use Represent's
+            <a href="{% url 'renters-tenancy_checker' %}">
+                tenancy checker</a> to find out what kind of tenancy you have.</p>
+
+    <h2>Right to rent immigration checks</h2>
+        <p>If you move in on or after 1 February 2016, your landlord must ask you to prove that you have the right to
+            live in the UK and the right to rent.</p>
+        <p>Your landlord could be fined if they don't do right to rent checks.</p>
+        <p>Find out
+            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+               title="see also: right to rent immigration checks">
+                more about right to rent immigration checks</a>.</p>
+
+    <h2>If your landlord's tenancy ends</h2>
+        <p>If your immediate landlord's tenancy ends, your rights to stay in the accommodation depend on the type
+            of tenancy you have and whether your immediate landlord had permission to sublet to you.</p>
+        <p>Whether or not you have permission for your subtenancy depends on:</p>
+
+        <ul>
+            <li>what type of tenancy your immediate landlord has</li>
+            <li>what it says in your immediate landlord's tenancy agreement</li>
+            <li>whether the head landlord (the person your landlord rents from) agreed to the subtenancy</li>
+        </ul>
+        <p>If the head landlord accepts rent directly from you, your tenancy is likely to be permitted.
+            This is true even if your subtenancy did not originally have permission to sublet,
+            for example because your immediate landlord's tenancy agreement said that subletting is not permitted.</p>
+        <p>By accepting rent, the head landlord accepts that you have the right to occupy the accommodation.</p>
+
+    <h2>Eviction of subtenants</h2>
+        <p>You can be evicted easily if:</p>
+        <ul>
+            <li>the tenancy ends for the person you rent from and your subtenancy has not been accepted by the head landlord</li>
+            <li>you live in the same building as your immediate landlord</li>
+        </ul>
+
+    <h2>Subletting your home</h2>
+        <p>Subletting is only allowed in certain circumstances. Tenants who want to sublet usually need permission
+            from their landlord.</p>
+        <p>You may be allowed to rent out a room. But if you attempt to sublet the whole of your property without permission,
+            your landlord may be able to end your tenancy very easily. This is particularly likely if the landlord is
+            a council or housing association.</p>
+        <p>If you sublet your property to another tenant without permission, and have made a profit from subletting,
+            your landlord may be able to take you to court to claim damages. This may also be tenancy fraud if you
+            rent from a council or housing association.</p>
+        <p>Organisations often work together to identify tenancy fraud and may:</p>
+        <ul>
+            <li>take photographs of tenants to confirm their identity</li>
+            <li>visit unannounced to check who is living at the property</li>
+            <li>conduct interviews and investigations to gather evidence</li>
+            <li>run a telephone hotline where people can anonymously report illegal subletting &ndash; cash rewards may
+                even be offered for information</li>
+        </ul>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

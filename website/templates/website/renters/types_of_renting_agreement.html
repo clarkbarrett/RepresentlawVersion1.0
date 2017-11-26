@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Types of renting agreement</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Types of renting agreement<br>
+                    <small>If you pay rent to a private landlord, you have either a tenancy or a licence.
+                        Both tenancy and licence agreements can be written or verbal.</small>
+                </h1>
+            </div>
+
+            <h2>Tenancy types</h2>
+                <p>Different types of tenancy give you very different rights:</p>
+                <ul>
+                    <li>most people who rent from a private landlord have an&nbsp;
+                        <a title="See also: assured shorthold tenancy"
+                           href="{% url 'renters-assured-shorthold-tenancies' %}">
+                            assured shorthold tenancy
+                        </a>
+                    </li>
+                    <li>some have an&nbsp;
+                        <a title="See also: assured tenancies"
+                           href="{% url 'renters-assured_tenancies' %}">
+                            assured tenancy
+                        </a> or a
+                        <a title="See also: Regulated tenancies"
+                           href="{% url 'renters-regulated_tenancies' %}">
+                            regulated tenancy
+                        </a> - these tenancies have stronger tenants' rights</li>
+                    <li>if you share accommodation with your landlord, you're probably
+                        <a href="{% url 'renters-lodgers' %}"
+                           title="see also: lodgers">a lodger</a></li>
+                </ul>
+                    <p>The type of tenancy you have mainly depends on:</p>
+                    <ul>
+                        <li>the date you moved in</li>
+                        <li>who you live with</li>
+                        <li>who your landlord is</li>
+                        <li>the type of housing you live in</li>
+                    </ul>
+                    <p>You can usually tells you the type of tenancy you have buy looking at your tenancy agreement.&nbsp;
+                        It's sometimes possible that you have a different type of tenancy than your agreement says.</p>
+                    <p class="inline-callout highlight">Use
+                        <a title="See also: tenancy checker"
+                           href="{% url 'renters-tenancy_checker' %}">
+                            Represent's's tenancy checker</a> to check what type of tenancy you have.</p>
+
+            <h2>Written rental agreements</h2>
+                <p>Your written agreement sets out the rights and responsibilities of you and your landlord.&nbsp;</p>
+                <p>Read the agreement carefully before you sign it.&nbsp;Ask the landlord to explain anything you're not sure of.</p>
+                <p>Certain rights and obligations apply regardless of what the agreement says, for example: a
+                    <a title="See also: Landlord and tenant responsibilities for repairs"
+                       href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                        landlord's responsibility for repairs
+                    </a>.</p>
+                <p>Check whether your agreement includes information such as:</p>
+                    <ul>
+                        <li>the name of the tenant(s)</li>
+                        <li>the address of the property (or room) you are renting</li>
+                        <li>the
+                            <a href="{% url 'renters-how_to_find_your_landlord' %}"
+                               title="see also: how to find your landlord">name and address of the landlord
+                            </a>
+                            and the
+                            <a title="See also: Using a letting agent to find and rent a home"
+                               href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}">
+                                letting agent</a> if there is one</li>
+                        <li>how much the rent is, when it is due and how it should be paid</li>
+                        <li>if the rent includes bills such as council tax, water rates or other charges</li>
+                        <li>how long the agreement is for</li>
+                        <li>when the landlord can increase your rent</li>
+                        <li>rules on ending your tenancy</li>
+                    </ul>
+                    <p>The agreement may also say who to contact about repairs, the rules on lodgers, subletting and passing
+                        on your tenancy.The agreement may have rules about pets,
+                        guests or smoking.</p>
+                    <p>Your agreement should say&nbsp;whether you
+                        <a href="{% url 'renters-get-deposit-protected' %}"
+                           title="see also: tenancy deposit protection">have to pay a deposit
+                        </a>, what it covers and what circumstances mean you don't get your
+                        deposit back.</p>
+
+
+<div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+
+            <h2>Verbal renting agreements</h2>
+
+                    <p>Some rules apply to everyone renting a home. These rules don't have to be written down.</p>
+                    <p>Most landlords give their tenants a written agreement.&nbsp;If you don't have a written agreement,
+                        you still have legal rights.&nbsp;If the landlord accepts rent from you for living in the property,
+                        any verbal agreement you have counts as a legal agreement.</p>
+                    <p>Ask your landlord to put your agreement in writing.&nbsp;Having a written agreement
+                        helps make sure that both you and your landlord understand your rights and responsibilities.</p>
+                    <p>Verbal agreements can be more difficult to enforce if there is any dispute.</p>
+
+
+            <h2>Fixed-term and periodic agreements</h2>
+                <p>Some tenancy agreements are granted for a fixed-term, such as six months or one year.</p>
+                    <p>When the fixed-term ends&nbsp;your landlord could either:</p>
+
+                    <ul>
+                        <li>give you a new agreement for a further fixed-term</li>
+                        <li>allow your tenancy to automatically continue by rolling on from roll from month to month
+                            or week to week&nbsp;&nbsp;
+                        </li>
+                    </ul>
+                    <p>Your landlord must follow a set of rules to&nbsp;
+                        <a title="See also: Eviction notices from landlords"
+                           href="{% url 'renters-eviction_notices_from_private_landlords' %}">
+                            end your tenancy</a>.
+                        This means they have to go to court to get an order for possession.</p>
+                    <p>Give the landlord written notice if you want to leave at the end of the fixed-term. Your
+                        tenancy agreement may say you have to do this.</p><p>Find out more about
+                    <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+                       title="see also: ending a fixed-term tenancy">ending a fixed-term tenancy
+                    </a>
+                    and <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+                           title="see also: ending a periodic (month to month) tenancy">ending a periodic (month to month)
+                        tenancy</a>.</p>
+                    <p>Different rules apply if you are a
+                        <a title="see also: lodgers"
+                           href="{% url 'renters-lodgers' %}">lodger
+                        </a>.</p>
+
+            <h2>Difference between a tenancy and a licence</h2>
+                    <p>Your renting agreement with your landlord is either a tenancy or a licence.&nbsp;</p>
+                    <p>The main difference between a tenancy and a licence is that a tenancy usually gives
+                        you more protection from eviction.</p>
+                    <p>You do not have a licence or a tenancy just because the landlord says that's what you have.</p>
+                    <p>Your agreement with your landlord can give you extra rights. It cannot take away any rights that
+                        the law gives you. These rights depend upon the type of tenancy or licence you have.</p>
+
+
+<div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+</div>
+
+
+        <div class="bs-callout bs-callout-primary">
+    <a href="{% url 'contact' %}"><h4>Get advice from represent if you're not sure what type of tenancy you have.</h4></a>
+    <p></p>
+    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+</div>
+
+
+
+            <h2>Joint tenancy agreements</h2>
+
+                <p>When you sign&nbsp;a
+                    <a title="See also: joint tenancies" href="{% url 'renters-joint_tenancies' %}">
+                        joint tenancy agreement
+                    </a> with another person or group of people, you have exactly the same rights and obligations as
+                    each other. You are all equally responsible for keeping to the conditions of the agreement.</p>
+            <p>If one person doesn't pay their share of the rent, the others have to pay it for them. As a group,
+                each of you is responsible for making sure that the whole rent is paid.</p>
+            <p>If one of you wants to leave and gives the landlord notice to end the agreement, it normally ends the
+                agreement for everyone. Anyone who wants to stay could try to negotiate a new tenancy agreement with
+                the landlord before the original one ends. This does not apply during a fixed-term tenancy agreement.</p>
+
+            <h2>Right to rent checks</h2>
+            <p>If you moved in on or after 1st February 2016, your landlord has to do
+                <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+                   title="see also: right to rent checks">right to rent immigration checks</a>.
+                They will&nbsp;ask you to prove you have the right to stay in the UK.</p>
+
+            <h2>Your inventory</h2>
+                <p>Your tenancy agreement may also tell you about what furniture and other fittings are provided.</p>
+                <p>Use an&nbsp;inventory to record the condition these are in.&nbsp;</p>
+                <p class="inline-callout highlight">
+                An inventory can help if there are disputes about
+                <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}">
+                    deductions from your tenancy deposit</a> at the end of your tenancy.</p>
+                <p>Find out more about
+                <a href="{% url 'renters-how_to_check_and_agree_an_inventory' %}"
+                   title="see also: checking and agreeing your inventory.">checking and agreeing your inventory</a>.
+                </p>
+
+            <h2>Unfair terms in tenancy agreements</h2>
+                <p>Your agreement should be written in language that you can understand.</p>
+                <p>Your tenancy agreement shouldn't contain any unfair terms.</p>
+                <p>Examples include clauses saying that:</p>
+
+                <ul>
+                    <li>the landlord can change the terms of the agreement whenever they like</li>
+                    <li>you have to pay for or arrange structural repairs&nbsp;&ndash;&nbsp;these are the landlord's responsibility</li>
+                    <li>your landlord can come into your home whenever they like, without giving notice (this could be
+                        <a title="See also: Harassment"
+                           href="{% url 'renters-harassment_by_a_private_landlord' %}">
+                            harassment</a>)
+                    </li>
+                </ul>
+                <p>Unfair terms in a tenancy agreement are not legally binding on you.</p>
+                <p>Get advice if you think your agreement includes unfair terms or your landlord is holding you to something you don't think is fair.</p><p>
+
+                <p>Call Represent on {{telephone}} </p>
+
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <strong>Contact Represent and see how we can help you.</strong>
+                </a>
+        <br>
+        <br>
+    </div>
+</div>
+
+{% endblock %}

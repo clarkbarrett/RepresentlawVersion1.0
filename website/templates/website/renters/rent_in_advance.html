@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Rent in advance{% endblock %}
+{% block description %}
+    Private rented sector landlords usually ask for at least one month's rent in addition to a tenancy deposit.
+    Find out if you can get help paying rent in advance.
+{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Rent in advance</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+        <div class="page-header">
+            <h1>Rent in advance<br>
+                <small>Private rented sector landlords usually ask for at least one month's rent in
+                        addition to a tenancy deposit. Find out if you can get help paying rent in advance.</small>
+            </h1>
+        </div>
+
+    <h2>Rent payments before you move in</h2>
+        <p>Before you start a tenancy most private landlords ask you to pay at least one month&rsquo;s
+            rent in advance. This covers your first rent payment.</p>
+        <p>You'll usually also be asked to pay a
+            <a href="{% url 'renters-what_is_a_tenancy_deposit' %}"
+               title="see also: what is a tenancy deposit ">tenancy deposit
+            </a>.&nbsp;A deposit is a guarantee for landlords in case you don't pay your rent or damage the property.</p>
+
+    <h2>Rent payments after you move in</h2>
+        <p>You will usually be asked to pay your rent at the start of every rental period:</p>
+
+        <ul>
+            <li>if you pay monthly, you pay a month&rsquo;s rent at the start of every monthly period</li>
+            <li>if you pay weekly, you pay a week&rsquo;s rent at the start of every weekly period</li>
+        </ul>
+        <p>At the end of the tenancy, your last payment of rent will be a week or month before the date
+            your tenancy ends.</p>
+        <p class="inline-callout highlight">Always ask the landlord or&nbsp;
+            <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+               title="See also: Using a letting agent to find and rent a home">letting agent</a>
+            for a receipt for any money you have paid and check when&nbsp;your rent payments are due.</p>
+
+    <h2>Rent shortfalls before housing benefit is paid</h2>
+        <p>You can claim housing benefit or universal credit to help pay the rent. Payment can't be made
+            before your tenancy starts.&nbsp;If your landlord asks for rent in advance before your
+            tenancy starts, you'll need to find this money from somewhere else.</p>
+        <p>Housing benefit&nbsp;is paid in arrears at the end of every rental period. This is
+            usually at the end of every two or four weeks, even if you have to pay your rent in
+            advance every week or month.</p>
+        <p>Help with housing costs under universal credit is paid in arrears every month.</p>
+
+
+    <h2>Budgeting loans to help pay for rent in advance</h2>
+        <p>You may be able to apply for a budgeting loan or budgeting advance if you can't afford to
+            pay rent in advance.</p>
+        <p>To qualify for a budgeting loan, you or your partner must have been receiving income support or income based
+            jobseeker's allowance for at least 26 weeks.</p>
+    <p>You can make an application for a budgeting loan at your local Jobcentre Plus.</p>
+
+    <h2>Other loan schemes&nbsp;to help pay for rent in advance</h2>
+        <p>Some councils, charities and housing associations operate loan schemes to help tenants
+            cover the cost of their first month's rent.</p>
+        <p>Different schemes have different rules. To be eligible you should:</p>
+    <ul>
+        <li>have a local connection</li>
+        <li>be on a low income or claiming welfare benefits</li>
+        <li>be homeless or threatened with homelessness</li>
+    </ul>
+    <p>Some schemes want you to show that you can repay a loan and are able to sustain a tenancy.</p>
+    <p>These schemes usually offer an interest free loan that is paid directly to the landlord.
+        You repay this amount at an agreed rate. If you are eligible for housing benefit, the
+        money could be repaid&nbsp;from this.</p>
+    <p class="inline-callout highlight">Contact your
+    <a title="External link to Gov.uk- find your local council" href="{{ find_council_url }}" target="_blank">
+        local council</a>
+        to ask for information about schemes in your area.</p>
+
+    <h2>Make a DHP claim for rent in advance</h2>
+        <p>If you already claim housing benefit or universal credit in your current home, you can
+            ask your council for a discretionary housing payment towards&nbsp;the rent in advance before you move in.</p>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

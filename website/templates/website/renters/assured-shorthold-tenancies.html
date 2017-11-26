@@ -1,0 +1,218 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent: Assured Shorthold Tenancies{% endblock %}
+{% block description %}Represent Assured Shorthold Tenancies{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Assured Shorthold Tenancies</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-5 col-md-offset-2">
+            <div class="row">
+                <h1>Assured shorthold tenancies</h1>
+
+                <p><b> Most private tenants are given assured shorthold tenancies, usually for 6 or 12 months.
+                    Your deposit must be protected and you must be given at least 2 months&rsquo; notice to leave.
+                </b></p><h2>The contract</h2><p>Most landlords give you an assured shorthold tenancy contract to
+                sign before your tenancy starts.</p><p>Your contract tells you how much rent to pay, who is
+                responsible for repairs and how long the tenancy lasts.</p>
+                <p>You are committed to paying the
+                agreed rent for at least the length of your contract. This is usually six months or a year.</p>
+
+                <h2>Tenancy deposit</h2>
+
+                <p>At the start of an assured shorthold tenancy, your landlord takes a sum of money as a deposit in
+                    case the property is damaged or you leave without paying all your rent.</p>
+                <p>Your landlord has to
+                    <a href="{% url 'renters-get-deposit-protected' %}">
+                        protect your tenancy deposit</a> in a government approved scheme.</p>
+                <p>Your deposit should be returned at the end of your tenancy.</p>
+
+                <p>Your landlord can make
+                    <a href="{% url 'tenancy_deposit_deductions_your_landlord_can_make' %}">
+                        reasonable deductions from your tenancy deposit
+                    </a> if you cause damage or don't pay the rent.
+                </p>
+
+                <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>You might be able to claim compensation if your landlord hasn't protected your deposit.</p>
+                        <p>Get in touch with Represent if you would like help with your deposit.
+                    </p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+                <h2>Make an inventory</h2>
+                <p>You and your landlord should
+                    <a title="See also: check and agree an inventory"
+                       href="{% url 'renters-how_to_check_and_agree_an_inventory' %}">
+                        agree an inventory
+                    </a> of your rented home before you move in.
+                </p>
+                <p>Take photos of the inside and outside of your home and any existing damage and repairs that are needed.</p>
+                <p>An inventory can help resolve disputes about
+                    <a href="{% url 'tenancy_deposit_deductions_your_landlord_can_make' %}">
+                        deductions from your tenancy deposit</a> at the end of your tenancy.</p>
+
+
+                <h2>Rent increases</h2>
+
+                <p>Your landlord cannot increase your rent during the fixed term of an assured shorthold tenancy, unless:</p>
+                <ul>
+                    <li>you agree to it</li>
+                    <li>there is a rent review clause in your contract</li>
+                </ul>
+                <p>A rent review clause sets out when and by how much your landlord can increase the rent.</p>
+                <p>Once the fixed term ends, your landlord can give you one month's notice to
+                    <a title="See also: Private tenancy rent increases"
+                       href="{% url 'renters-rent_increases' %}">
+                        increase your rent</a>.</p>
+
+                <h2>Get help to pay the rent</h2>
+                <p>You may be able to claim housing benefit or universal credit to help pay some or all of the cost
+                    of your rent if you are working and have a low income or if you claim benefits.</p>
+
+                <h2>Repairs</h2>
+
+                <p>Your landlord is
+                    <a title="See also: Responsibility for repairs"
+                       href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                        responsible for most repairs
+                    </a>. This includes repairs to:
+                </p>
+                <ul>
+                    <li>the roof and walls</li>
+                    <li>external windows and doors</li>
+                    <li>wiring and plumbing</li>
+                </ul>
+                <p>Tell your landlord or
+                    <a href="{% url 'renters-using_a_letting_agent_to_find_and_rent_a_home' %}"
+                       title="see also: using a letting agent">
+                        letting agent
+                    </a> if repairs are needed.
+                </p>
+                <p>You must allow your landlord access to your home to carry out repairs.
+                    Your landlord must give you reasonable notice.</p>
+                <p>Every year your landlord must arrange for a gas safety inspection and give you a copy of the&nbsp;
+                    <a title="See also: Gas safety checks in rented homes"
+                       href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                        gas safety certificate</a>.
+                </p>
+
+                <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                </div>
+
+
+                <h2>Take care of your home</h2>
+
+                <p>Take care of the property and carry out day-to-day tasks. For example, you might need to unblock a sink,
+                    change lightbulbs and clean windows.</p>
+                <p>Check your contract for other responsibilities, for example maintaining the garden or communal areas.</p>
+                <h2>Documents from your landlord</h2><p>Your landlord should give you a copy of your tenancy agreement.</p>
+                <p>If you are not given a written agreement you can ask your landlord for certain information.
+                    Your landlord must write to tell you:</p>
+                <ul>
+                    <li>the date your tenancy started</li>
+                    <li>the rent and when it is to be paid</li>
+                    <li>any provision for
+                        <a href="{% url 'renters-rent_increases' %}"
+                           title="see also: rent increases">rent increases</a></li>
+                    <li>the length of your agreement</li>
+                    <li>
+                        <a href="{% url 'renters-how_to_find_your_landlord' %}"
+                           title="see also: how to find your landlord">their name and address</a>
+                    </li>
+                </ul>
+                <p>If you pay your rent weekly you must be given a rent book.</p>
+                <p>Your landlord must give you a copy of the latest:</p>
+                <ul>
+                    <li>energy performance certification for the building</li>
+                    <li>gas safety certificate, if there are
+                        <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+                           title="see also: gas safety in rented homes">gas appliances</a>
+                    </li>
+                </ul>
+
+                <h2>At the end of a fixed term</h2>
+
+                <p>You may have a number of options when your contract comes up for renewal.</p>
+                <p>You can:</p>
+                <ul>
+                    <li>ask your landlord for a new fixed term contract if you want to stay longer &ndash;
+                        if you do this you may have to pay a renewal fee and pay a higher rent.</li>
+                    <li>leave at the end of the fixed term &ndash; if your contract says that you must
+                        <a title="See also: Ending a fixed term tenancy"
+                           href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}">
+                            give notice that you intend to leave</a>,
+                        you should do this to avoid disputes</li>
+                    <li>stay beyond the fixed term&nbsp;even if you don't sign a new contract &ndash; your&nbsp;agreement becomes
+                        'periodic' and rolls from month to month with the same&nbsp;rent.</li>
+                    <li>leave before the end of the fixed term &ndash; your contract may include a 'break clause' which
+                        gives you this option. If it doesn't you'll need to agree with your landlord that your tenancy can end early
+                    </li>
+                </ul>
+
+                <h2>Eviction</h2>
+
+                <p>You have some protection from eviction. You don't have to leave just because the landlord tells you to.</p>
+                <p>The landlord must follow
+                    <a title="See also: Eviction of assured shorthold tenants"
+                       href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                        eviction procedures</a>.
+                    They must give you notice and then get a court order to evict you.</p>
+
+                <h2>Right to rent</h2>
+                <p>From 1 February 2016 you can only become a private tenant in England if you have the right to rent.</p>
+                <p>A landlord or letting agent must carry out a
+                    <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+                       title="see also: right to rent immigration checks">
+                        right to rent immigration check</a>
+                    before you start a private tenancy.</p>
+
+                <h2>Get advice</h2>
+
+                <p>Ask an adviser if you have any questions or concerns about your tenancy or contract.</p>
+
+                <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see how we can help</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+{% endblock %}
+
+
+

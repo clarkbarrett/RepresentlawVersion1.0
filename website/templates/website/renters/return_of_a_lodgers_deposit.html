@@ -1,0 +1,215 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Return of a lodger's deposit{% endblock %}
+{% block description %}If you are a lodger you can take your landlord to court if they don't return your deposit.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Return of a lodger's deposit</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Return of a lodger's deposit<br>
+                <small>If you are a lodger you can take your landlord to court if they don't return your deposit.</small>
+            </h1>
+        </div>
+
+    <h2>When tenancy deposit protection doesn't apply</h2>
+        <p>If you're not an assured shorthold tenant your landlord doesn't have to protect your deposit
+            in a government-backed tenancy deposit scheme.</p>
+        <p>You probably won't be an assured shorthold tenant if you:</p>
+
+        <ul>
+            <li>are a lodger or live in the same house as your landlord</li>
+            <li>live in a student halls of residence</li>
+            <li>have an assured tenancy or regulated tenancy</li>
+        </ul>
+        <p>This means that if your landlord doesn't return your deposit, the only way to get your money back is
+            to take your landlord to court.</p>
+        <p class="inline-callout highlight">Find out more about&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+               title="see also: tenancy deposit protection scheme rules">
+                tenancy deposit protection rules</a>.</p>
+
+    <h2>Return of your deposit</h2>
+        <p>A tenancy deposit is your money. It should be returned to you at the end of your tenancy.</p>
+        <p>Your landlord can make reasonable&nbsp;
+            <a href="{% url 'renters-tenancy_deposit_deductions_your_landlord_can_make' %}"
+               title="See also: Tenancy deposit deductions your landlord can make">
+                deductions from your deposit</a> if for example you've not paid all the rent due or caused damage.</p>
+
+    <h2>Consider court action</h2>
+        <p>If you can't persuade your landlord to return your deposit,&nbsp;you can ask a county court to settle the dispute.</p>
+        <p>The court will look at all the evidence and decide if your landlord should return all or part of your deposit.</p>
+        <p>Your case should be dealt with as a small claim if you are claiming less than £10,000 from your landlord. The
+            court decides how it will deal with your case.</p>
+        <p>You can't get&nbsp;legal aid to help with this type of court action.</p>
+        <p>You can ask a housing adviser for help.</p>
+
+        <p>Use
+        <a href="http://england.shelter.org.uk/get_advice/advice_services_directory">
+            Shelter's directory</a> to find a housing adviser</p>
+
+    <h2>Send a letter before action</h2>
+        <p>Going to court should be your last resort. Before you start a court claim, you must send your landlord a letter before action.</p>
+    <p>The letter should include:</p>
+
+    <ul>
+        <li>dates of any letters and emails you sent to your landlord about the deposit</li>
+        <li>details of any deductions and why you disagree with them</li>
+        <li>a deadline, such as 14 days, for your landlord to respond</li>
+    </ul>
+
+    <p class="inline-callout download">Use Shelter's template letter to
+        <a title="download Shelter letter before action TD3 - failure to return deposit"
+           href="https://england.shelter.org.uk/__data/assets/word_doc/0016/1154113/Letter_before_action_failure_to_return_my_deposit_TD3_sample_letter.docx">
+            write to your landlord warning you'll go to court if they don't refund your deposit.</a></p>
+    <p>You can also write to your landlord if you don't agree with any deductions they made from your deposit.</p>
+    <p class="inline-callout download">Use Shelter's template letter to
+        <a title="download Shelter letter before action TD4 - failure to return balance of deposit"
+           href="https://england.shelter.org.uk/__data/assets/word_doc/0018/1154115/Letter_before_action_failure_to_return_the_balance_of_deposit_TD4_sample_letter.docx">
+            write to your landlord warning you'll go to court if they don't refund the deductions from your deposit.</a></p>
+    <p>Many landlords agree to pay you what they owe as soon as they get a letter before action, so you may not have to go to court.</p>
+    <p>Find out more about&nbsp;
+        <a href="https://england.shelter.org.uk/housing_advice/tenancy_deposits/tenancy_deposit_deductions_your_landlord_can_make"
+           title="see also: tenancy deposit deductions">deductions a landlord can make from your deposit</a>.</p>
+
+    <h2>How to apply to the court</h2>
+        <p>Use Court Form N1 from HM Courts and Tribunal to start your court claim.</p>
+        <p>Read Notes&nbsp;1A for guidance on what to say on your claim form. Read Forms EX301 and EX302 for&nbsp;
+            more information on going to court to settle a dispute.</p>
+    <p class="inline-callout download">Download the
+        <a title="Link to Ministry of Justice court form N1 and guidance"
+           href="./?a=26414" target="_blank">forms and notes from HM Courts and Tribunal</a>.</p>
+    <p>When you have completed the form, keep a copy for yourself. Send three copies to:</p>
+    <p>
+        <strong>County Court Money Claims Centre Salford Business Centre </strong></p>
+    <p><strong>PO Box 527 </strong></p>
+    <p><strong>Salford M5 0BY.</strong></p>
+
+    <h3>Apply online</h3>
+        <p>You could apply online using the Courts &amp; Tribunals Service
+            <a title="Link to Ministry of Justice - HM Courts &amp; Tribunals Service: Money claim online"
+               href="./?a=432502" target="_blank">
+                online money claim</a>.</p>
+    <p>Find out
+    <a title="Link to Gov.uk - money claims online" href="./?a=1035164" target="_blank">
+        more from Gov.uk about claiming online</a>.</p>
+
+    <h3>Pay court fees to start a deposit claim</h3>
+        <p>You have to pay a fee to start your claim. The amount varies depending on how much you're claiming back
+            from your landlord.</p>
+    <p>If you have a low income or claim benefits, you can apply for reduced fees or an exemption (called 'remission').</p>
+
+    <p class="inline-callout highlight">Find out more from
+        <a href="./?a=1247192" title="Link to HM Courts and Tribunals about court fees" target="_blank">
+            HM Courts and Tribunals about court fees.</a></p>
+    <p>If you win your case, you can claim your court fees back from your landlord. If you don't win, you'll lose
+        your court fee.</p>
+    <p>You can't make your claim online if you are asking for a fee exemption.</p>
+
+    <h3>Provide the court with important documents</h3>
+        <p>Unless you make your claim online, attach copies of all the relevant documents to your claim form. These can include:</p>
+
+        <ul>
+            <li>a copy of your tenancy or licence agreement</li>
+            <li>letters to and from your landlord</li>
+            <li>records of your rent payments</li>
+            <li>the inventory and any photographs</li>
+            <li>receipts of any items you have repaired or replaced</li>
+            <li>statements from witnesses</li>
+        </ul>
+
+    <h3>Claim for interest and court fees</h3>
+        <p>You can also ask the court to make your landlord pay interest on the amount of deposit they owe you
+            and the court fees you paid to start your claim.</p>
+        <p>Interest can be claimed from the date your deposit should have been returned. You must state on your
+            claim form if you want to claim interest.</p>
+
+    <h2>Court contact with your landlord</h2>
+        <p>The court sends a copy of your claim with forms for your landlord to fill in and return to the court.</p>
+        <p>Your landlord could:</p>
+
+        <ul>
+            <li>agree with your claim and pay in full</li>
+            <li>pay part of your claim</li>
+            <li>disagree with your claim and challenge it in court</li>
+            <li>do nothing</li>
+        </ul>
+        <p>Your landlord is usually given 14 days to respond.</p>
+
+    <h3>If your landlord doesn't respond to the court</h3>
+        <p>You can apply to the court to order your landlord to pay the money you've claimed, along with interest and your court fee.</p>
+    <p class="inline-callout highlight">Find out
+        <a title="Link to Ministry of Justice court form EX 304"
+           href="./?a=1135761" target="_blank">how to apply to the court if your landlord doesn't respond</a>.</p>
+
+    <h3>If your landlord makes an offer</h3>
+        <p>Your landlord may make you an offer at this stage. If you accept an offer, contact the court to say you're
+            withdrawing your claim. You should also confirm that you've told your landlord you're doing this</p>
+    <p>If you turn down a reasonable offer from your landlord the judge may decide that you have to pay some of your
+        landlord's court expenses.</p><p>Get advice if you're not sure about accepting an offer.</p>
+
+    <p>Use
+        <a href="http://england.shelter.org.uk/get_advice/advice_services_directory">Shelter's directory</a> to find a housing adviser</p>
+
+    <h2>Attend the court hearing</h2>
+        <p>if your landlord disputes your claim, the court will set a date for a court hearing.&nbsp;The court will write to
+            tell you the date.</p>
+    <p>The court also sets a deadline for you and your landlord to provided documents to the court. You usually have
+        to provide all the evidence at least 14 days before the hearing.</p>
+    <p>You'll need to:</p>
+
+    <ul>
+        <li>send in important documents if you haven't already done so</li>
+        <li>prepare and sign a short statement setting out the history of what has happened</li>
+        <li>attach all the evidence you want the judge to consider</li>
+    </ul>
+    <p>Any witnesses (such as a friend who can confirm the state of the property when you moved in)
+        must also sign a written statement.</p>
+    <p>The court hearing should be informal and you can represent yourself. The judge will ask questions
+        based on the evidence provided.</p>
+    <p>Your landlord may be represented by a solicitor.</p>
+
+    <h2>Court decisions about disputed deposits</h2>
+        <p>If you win a court hearing about the return of your deposit, the court orders your landlord to
+            pay your claim plus your court fee and any interest claimed.</p>
+        <p>The court can provide you with information about what you can do if your landlord doesn't pay you.</p>
+        <p class="inline-callout download">
+            <a title="Link to Court form EX321" href="./?a=1035165"
+               target="_blank">Download court&nbsp;leaflet EX321</a>.</p>
+        <p>If you lose the case there's nothing more you can do to get your deposit back unless you appeal.
+            This could be because you think the court hasn't considered the evidence properly.</p>
+        <p>Get legal advice if you want to appeal.</p><p class="inline-callout">
+            <a href="https://england.shelter.org.uk/get_help" title="See also: housing advice helpline">
+                Contact a Shelter adviser online or by phone</a>.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

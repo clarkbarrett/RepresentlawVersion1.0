@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Complain about council or housing association repairs{% endblock %}
+{% block description %}Find out what action to take if your council or housing association landlord refuses to do repairs, takes too long or does them badly.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Complain about council or housing association repairs</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Complain about council or housing association repairs<br>
+                <small>Find out what action to take if your council or housing association landlord refuses to do repairs, takes too long or does them badly.</small>
+            </h1>
+        </div>
+
+    <h2>Before you take action</h2>
+        <p>Make sure you
+            <a title="see also: reporting repairs and allowing access"
+               href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}">
+                report the need for repairs</a> to your council or housing association and allow them a reasonable amount
+            of time to do them. Most councils and housing associations carry out repairs once they know about them.</p>
+        <p>You do not have the right to withhold&nbsp;&nbsp;rent payments if repairs aren't done.</p>
+        <p>If you don't pay the rent, your landlord could take steps to evict you.</p>
+
+    <h2>Use your landlord's complaints procedure</h2>
+        <p>If you rent from the council, check your tenants' handbook or landlord's website for details of the
+            complaints procedure.</p>
+        <p>Housing associations and housing cooperatives should have a formal complaints procedure.</p>
+        <p>You can use this if you're not happy about the condition of your home.</p>
+
+    <h2>Complain to environmental health</h2>
+        <p>You can ask the environmental health department to send someone to inspect your home for health and safety hazards.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="see also: Complain to environmental health about rented housing"
+               href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}">
+                complaining to environmental health</a>.</p>
+        <p>Environmental health may be able to take enforcement action against your landlord if
+            you are a housing association tenant.</p>
+        <p>If you are a council tenant, they can give the council's housing department advice about what to do
+            to improve conditions in your home.</p>
+        <p>It's worth complaining as you can use any report provided as evidence for a complaint or legal action.</p>
+        <p class="inline-callout external">Find an independent surveyor through the
+            <a title="External link to Royal Institute for Chartered Surveyors" href="{{ rics_url }}"
+               target="_blank">Royal Institute for Chartered Surveyors</a>.</p>
+    <h2>Complain to the Ombudsman</h2>
+        <p>Complain to the Housing Ombudsman Service if you have gone through your landlord's
+            complaints procedure and are not satisfied with the result.</p>
+        <p class="inline-callout external">Find out more about
+            <a title="see also: complain to the Ombudsman Service"
+               href="{% url 'renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                complaining to the Housing Ombudsman Service</a>.</p>
+        <p>If the ombudsman agrees with your complaint, they can recommend that your landlord takes
+            steps to put things right. They may suggest that your landlord also pays you compensation.</p>
+        <p>Most councils and housing associations take the steps the ombudsman suggests.</p>
+
+    <h2>Consider legal action against your landlord</h2>
+        <p>It may be possible to
+            <a title="See also: Court action for disrepair"
+               href="{% url 'renters-legal_action_if_your_landlord_wont_do_repairs' %}">
+                take your landlord to court</a> if you reported repairs but they weren't done.</p>
+        <p>You may be able to claim compensation for repairs</p>.
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+        <p>Legal aid may be available if your health and safety is at risk. There are strict rules for who
+            qualifies. You may qualify if you have a low income or claim benefits.</p>
+
+
+    <h2>Claim right to repair scheme compensation</h2>
+        <p>Small repairs in council tenancies are usually covered by the right to repair scheme.</p>
+        <p>If repairs are not done on time, you can claim a small amount of compensation.</p>
+        <p class="inline-callout internal">Find out more about&nbsp;the
+            <a title="See also: Right to repair for council tenants"
+               href="{% url 'renters-right_to_repair_for_council_tenants' %}">
+                right to repair scheme</a>.</p>
+
+    <h2>Arrange your own repairs</h2>
+        <p>It may be possible for you to arrange for repairs to be done and deduct the cost from your rent.</p>
+        <p>If you decide to take this course of action, you must follow
+            <a title="See also: Doing repairs yourself"
+               href="{% url 'renters-doing_the_repairs_if_your_landlord_wont' %}">
+                the correct procedure</a>.&nbsp;You could be&nbsp;
+            <a title="See also: Eviction for rent arrears"
+               href="{% url 'renters-eviction_for_rent_arrears' %}">
+                evicted for rent arrears</a> if you don't.</p>
+
+    <h2>Make sure you keep evidence</h2>
+        <p>Collect all the evidence you can about the repairs that are needed and what you've done to
+            get your landlord to carry them out.</p>
+        <p>Keep&nbsp;copies of any:</p>
+        <ul>
+            <li>letters or emails&nbsp;sent to and from your landlord</li>
+            <li>doctor's notes or hospital reports that show your health has been affected by repair problems</li>
+            <li>a record of any phone calls you make or receive about problems</li>
+            <li>receipts for money spent (for example to replace belongings damaged by mould)</li>
+        </ul>
+        <p>Take photographs to show what's wrong. Try to keep damaged belongings if possible.</p>
+        <h2>Get advice from Shelter</h2>
+        <p>Get advice about repair problems in your council or housing association home.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Right to rent immigration checks{% endblock %}
+{% block description %}Find out about the passport and immigration checks that landlords must do when you rent a home in England.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Right to rent immigration checks</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+            <div class="page-header">
+                <h1>Right to rent immigration checks<br>
+                    <small>Find out about the passport and immigration checks that landlords must
+                        do when you rent a home in England.</small>
+                </h1>
+            </div>
+
+    <h2>How landlords check you have the right to rent</h2>
+        <p>Before you can rent a home in England, a landlord or letting agent must check your immigration
+            status and that of anyone aged 18 or over who'll be living with you.</p>
+        <p>They'll ask to see your passport or other official documents that prove your immigration status.
+            They must take copies of the documents and keep the copies safe.&nbsp;Current or expired passports
+            are acceptable documents for British, Irish and EU citizens.</p>
+        <p class="inline-callout highlight">If you are a British or Irish citizen without a passport,
+            your birth certificate plus another accepted proof of identity should be enough.</p>
+        <p>A landlord or letting agent is allowed to charge you a fee for right to rent checks.</p>
+
+     <h2>Checks if you don't have documents</h2>
+        <p>A check can be done even if the Home Office has your original documents because of an ongoing
+            immigration application or appeal.</p>
+        <p>The landlord or letting agent can ask for&nbsp;
+            <a title="Link to Gov.uk: right to rent checker"
+               href="{{ right_to_rent_gov }}" target="_blank">a Home Office right to rent check
+            </a>.
+            They'll need your Home Office reference number and should get a response within 2 days.</p>
+
+     <h2>When checks are needed for private tenants</h2>
+        <p>Right to rent checks must be done before you start a private tenancy in England. The checks apply
+            to verbal and written agreements.</p>
+        <p>Checks are needed for tenancies that started from:</p>
+        <ul>
+            <li>1 February 2016 anywhere in England</li>
+            <li>1 December 2014 in&nbsp;Birmingham, Dudley, Sandwell,&nbsp;Walsall and&nbsp;Wolverhampton</li>
+        </ul>
+        <p>A check isn't needed&nbsp;if you became a tenant before these dates and your landlord renews
+            your agreement.</p>
+        <p>A landlord or letting agent can't rent you the place if you can't show you have the right to rent.
+            Your landlord must make sure that any other adults living in the property have the right to rent,
+            so must check their immigration status too. Your landlord could be fined or imprisoned if they don't do this.</p>
+        <p>Checks aren't needed for guests in your home.&nbsp;A guest includes someone whose main home is somewhere
+            else or who doesn't pay you rent. Contributions towards food and costs such as gas and electricity
+            don't count as rent.</p>
+        <p>Immigration checks aren't needed for&nbsp;children aged under 18, but landlords should check
+            they are aged under 18.</p>
+
+     <h2>Right to rent checks for lodgers</h2>
+
+        <p>Right to rent checks are needed for lodgers. The checks apply to people
+            renting a room from home-owners, private tenants, council tenants or housing association tenants.</p>
+        <p>Right to rent checks are needed if a lodger moves in from:</p>
+
+        <ul>
+            <li>1 February 2016 anywhere in England</li>
+            <li>1 December 2014 in&nbsp;Birmingham, Dudley, Sandwell,&nbsp;Walsall and&nbsp;Wolverhampton</li>
+        </ul>
+        <p>A check isn't needed&nbsp;if you became a lodger before these dates and your landlord renews your agreement.</p>
+
+     <h2>Checks if you have a time limited right to rent</h2>
+        <p>If a right to rent check showed there's a time limit on your permission to stay in the UK,
+            your landlord must do a follow-up check. The deadline for this is the latest of these dates:</p>
+        <ul>
+            <li>12 months after the last check</li>
+            <li>the date your permission to stay in the UK runs out</li>
+            <li>the expiry date of passport or other document that shows your right to be in the UK</li>
+        </ul>
+
+        <p>The check can be done up to 28 days before the deadline.</p>
+        <p>Your landlord must tell the Home Office if a follow up check shows you no longer have the right to rent.</p>
+
+     <h2>Eviction if you don't have the right to rent</h2>
+        <p>A landlord must take reasonable steps to evict tenants or lodgers if:</p>
+        <ul>
+            <li>the Home Office sends them a notice that says someone living in their household doesn't have the
+                right to rent</li>
+            <li>a follow up check shows you no longer have the right to rent</li>
+        </ul>
+        <p>Your landlord is allowed time to come to an agreement with you about when you will move out.
+            It's considered reasonable, for example, for you to leave at the end of your tenancy's fixed
+            term if there are 3 months or less left to run.</p>
+
+
+    <h3>Eviction if no-one in your home has the right to rent</h3>
+        <p>Special rules apply if:</p>
+        <ul>
+            <li>you are a single person household and you don't have the right to rent</li>
+            <li>you live with other adults and none of you have the right to rent</li>
+        </ul>
+        <p>If you don't reach an agreement about when you will move out, your landlord can give you 28 days'
+            notice to leave. The notice must be on a special form with a copy of the Home Office notice attached.
+            If you stay past the 28 day deadline, your landlord can&nbsp;evict you (they don't need a
+            court order but shouldn't use force) or they can ask bailiffs from the High Court to do so.</p>
+        <p>If you are a lodger and you don't have the right to rent, your landlord may only have to give you
+            reasonable notice to leave.</p>
+
+    <h3>Eviction if someone in your home has the right to rent</h3>
+
+        <p>If you're in a household that includes two or more adults, your landlord must take action to end the
+            tenancy if any of you don't have the right to rent.</p>
+        <p>It's reasonable for a landlord to:</p>
+        <ul>
+            <li>agree to rent to adults who do have a right to rent if anyone
+                without the right to rent has moved out</li>
+            <li>take steps to evict everyone in your household, including children
+                and those who do have the right to rent.</li>
+        </ul>
+        <p>Your landlord must follow the
+            <a title="See also: Eviction of assured shorthold tenants"
+               href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}">
+                correct legal process for eviction</a>. A court order is usually needed.</p>
+
+     <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+    </div>
+
+
+    <h2>Check if you have the right to rent</h2>
+        <p>You have the right to rent if you are:</p>
+        <ul>
+            <li>British</li>
+            <li>a citizen of a country in the EU or EEA</li>
+            <li>a citizen of another country with no time limits on your permission to live in the UK
+                (such as indefinite leave to remain)</li>
+        </ul>
+        <p>You can have a time-limited right to rent if&nbsp;there's a time limit on your permission to stay
+            in the UK. This is likely&nbsp;if you have&nbsp;a visa:</p>
+        <ul>
+            <li>for work</li>
+            <li>to study</li>
+            <li>as a husband, wife or civil partner of someone settled in the UK</li>
+        </ul>
+        <p>The time-limited right to rent also applies if you have&nbsp;humanitarian protection,
+            limited leave or discretionary leave to remain.</p>
+        <p class="inline-callout highlight">See
+            <a title="Link to Gov.uk - check if someone has the the right to rent"
+               href="{{ right_to_rent_gov }}" target="_blank">Gov.uk to check who has the right to rent</a>.</p>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

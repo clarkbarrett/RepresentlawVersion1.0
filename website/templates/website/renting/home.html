@@ -1,0 +1,299 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Law{% endblock %}
+{% block description %}Welcome to Represent Law{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron jumbotron-extend">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Welcome to Represent: Landlord & Tenant </h1>
+                <h1 align="center"><small style="color:white">Helping you with your renting problems</small></h1>
+            </div>
+
+              <div class="container" align="center">
+
+                <form class="navbar-form">
+                            <div class="form-group">
+                              <input type="text" class="form-control" align="center" placeholder="I need help with">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+              </div>
+
+                <div class="row">
+
+          <div class="col-md-4 col-md-offset-4" >
+            <div class="input-group" align="center">
+              <input type="text" class="form-control" aria-label="...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">I need help with <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">Will</a></li>
+                  <li><a href="#">Probate</a></li>
+                  <li><a href="#">Buying a house</a></li>
+                    <li><a href="#">Conveyancing (residential)</a></li>
+                    <li><a href="#">Commerical Conveyancing</a></li>
+                    <li><a href="#">Employment law</a></li>
+                  <li><a href="#">Selling a house</a></li>
+                  <li><a href="#">Extend my leasehold</a></li>
+                  <li><a href="#">Commercial law</a></li>
+                  <li><a href="#">Family law</a></li>
+                  <li><a href="#">Divorce</a></li>
+                  <li><a href="#">Lasting power of attorney</a></li>
+                  <li><a href="#">Litigation</a></li>
+                  <li><a href="#">Debt recovery</a></li>
+                  <li><a href="#">Landlord & Tenant Law</a></li>
+                  <li><a href="#">Selling a house</a></li>
+                  <li><a href="#">Immigration</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+              <div class="container" align="center">
+                <p style="color:white">
+                  Or search by area of law
+                </p>
+                  <!-- Split button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-danger">Area of law</button>
+                      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Landlord & Tenant</a></li>
+                        <li><a href="#">Conveyancing</a></li>
+                        <li><a href="#">Wills</a></li>
+                        <li><a href="#">Probate</a></li>
+                          <li><a href="#">Lasting power of attorney</a></li>
+                          <li><a href="#">Leasehold extension</a></li>
+                          <li><a href="#">Family</a></li>
+                          <li><a href="#">Commercial</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">General</a></li>
+                      </ul>
+
+                    </div>
+              </div>
+
+              <div class="container" align="center">
+                <a class="chevron-bottom" href="#" role="button"> </a>
+              </div>
+
+            </div>
+          </div>
+
+<!--Carousel-->
+<div class="bs-example">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="Conveyancing" width="600" height="600" >
+                <div class="carousel-caption">
+                  <h3>Conveyancing</h3>
+                  <p><a href="/conveyancing">All your conveyancing needs</a>All your conveyancing needs</p>
+                </div>
+            </div>
+
+
+            <div class="item">
+               <img src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Landlord and tenant law">
+                <div class="carousel-caption">
+                  <h3>Landlord and Tenant Law</h3>
+                  <p><a href="/conveyancing">All your conveyancing needs</a>All your conveyancing needs</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/lease-extension.png' %}" alt="Lease Extension" width="600" height="600" >
+            </div>
+          <div class="item">
+               <img src="{% static 'images/writing-a-will.jpg' %}" alt="Writing a Will" width="600" height="600" >
+              <div class="carousel-caption">
+                  <h3>Writing a will</h3>
+                  <p>Writing a will is one of the most responsible things you can do.
+                      <a href="/wills-and-probate"></a>Let Represent write your will.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+  </div>
+
+<!--End Carousel-->
+
+    <div class="container">
+        <div class="page-header" align="center">
+            <h1>Welcome to Represent Law <small><br>Representing you with all of your legal needs</small></h1>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/landlord-and-tenant/"><h3 align="center">Landlord and Tenant</h3>
+                    <img src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Landlord and tenant law">
+                </a>
+              <div class="caption">
+                <h3>Landlord & Tenant</h3>
+                <li>Do you have a problem with your landlord?</li>
+                  <li>Was your deposit not protected?</li>
+                  <li>Is your landlord not doing repairs?</li>
+                    <p>Represent is here to help you with all of your renting problems</p>
+                <p><a href="/landlord-and-tenant" class="btn btn-primary btn-lg" role="button">Get help today</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="{% static 'images/lease-extension.png' %}" alt="Lease Extension" width="600" height="600" >
+              <div class="caption">
+                <h3>Leasehold Extension</h3>
+                <p>Do you need to extend your leasehold or buy the freehold? Represent has the best leasehold lawyers in the UK.
+                    We are experts at leashold extensions, right to manage and buying the freehold.</p>
+                <p><a href="/leasehold" class="btn btn-primary btn-lg" role="button">Represent Leaseholds</a></p>
+              </div>
+            </div>
+          </div>
+
+<!--Conveyancing-->
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/conveyancing"><h3 align="center">Conveyancing</h3>
+                    <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="Conveyancing">
+                </a>
+                <div class="caption">
+                <h3>Conveyancing</h3>
+                <p>Whether you are buying or selling a property, Represent understands that it is one
+                    of the most stressful things you can do. Our expert team is here to help you today.
+                    will guide you through the process quickly and professionally.</p>
+                <p><a href="/conveyancing" class="btn btn-primary btn-lg" role="button">Represent Conveyancing</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--Wills-->
+                <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'wills' %}"><h3 align="center">Will Writing</h3>
+                    <img src="{% static 'images/writing-a-will.jpg' %}" alt="Wills">
+                </a>
+              <div class="caption">
+                <h3>Wills</h3>
+                    <p>
+                    Your Will is one of the most important documents you'll ever make.
+                        It's the only way of making sure that the people and causes you care about are looked
+                        after when you're gone. Represent is here to help you.
+                    </p>
+                <p><a href="{% url 'wills' %}" class="btn btn-primary btn-lg" role="button">Write your will today</a>
+              </div>
+            </div>
+          </div>
+
+                    <!--Probate services-->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/probate-services"><h3 align="center">Probate services</h3>
+                    <img src="{% static 'images/probate-services.jpg' %}" alt="Probate Services" width="600" height="600" >
+                </a>
+              <div class="caption">
+                <h3>Probate Services</h3>
+                <p>
+                When someone close to you passes away,
+                    it can be difficult working out what to do.
+                    Our expert lawyers have have unmatched legal know-how to deal with the estate in the most
+                    tax-efficient way, keeping your costs to a minimum.
+                </p>
+                <p><a href="/probate-services" class="btn btn-primary btn-lg" role="button"> Visit Represent Probate</a></p>
+              </div>
+            </div>
+          </div>
+
+
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/conveyancing"><h3 align="center">Conveyancing</h3>
+                    <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="Conveyancing">
+                </a>
+                <div class="caption">
+                <h3>Conveyancing</h3>
+                <p>Whether you are buying or selling a property, Represent understands that it is one
+                    of the most stressful things you can do. Our expert team is here to help you today.
+                    will guide you through the process quickly and professionally.</p>
+                <p><a href="/conveyancing" class="btn btn-primary btn-lg" role="button">Represent Conveyancing</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+
+
+      <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">
+    0%
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 30%;">
+    2%
+  </div>
+</div>
+
+      <!-- Media -->
+      <div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" HEIGHT="64" WIDTH="64" src="https://alborsanews.com/app/uploads/2016/01/1460088171_791773_211_99700_.jpg?5d68c5" alt="Alt text">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Middle aligned media</h4>
+    ...
+  </div>
+</div>
+      <!--End Media -->
+
+    </div>
+
+{% endblock %}
+
+
+

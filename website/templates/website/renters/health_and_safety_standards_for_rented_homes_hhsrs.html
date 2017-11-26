@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent - Health and safety standards for rented homes (HHSRS){% endblock %}
+{% block description %}Councils use the Housing Health and Safety Rating System (HHSRS) to assess if there are risks to your health and safety in your home{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Health and safety standards for rented homes (HHSRS)</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 col-md-offset-1">
+
+        <div class="page-header">
+            <h1>Health and safety standards for rented homes (HHSRS)<br>
+                <small>Councils use the Housing Health and Safety Rating System (HHSRS) to assess
+                        if there are risks to your health and safety in your home</small>
+            </h1>
+        </div>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>What is the HHSRS?</h2>
+        <p>A hazard is a problem in your home that could harm the health or safety of anyone living there.</p>
+        <p>Local councils use the Housing Health and Safety Rating System (HHSRS) to assess if your rented home
+            has hazards that could put your health at risk. The HHSRS assessment identifies who's
+            responsible for doing any work that's needed.</p>
+        <p>If the assessment shows your home isn't safe, the council can take action against your landlord.&nbsp;In
+            some cases, the council can do the work and recover the cost from your landlord.</p>
+
+    <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Tenants who can complain using the HHSRS</h2>
+        <p>The HHSRS covers any rented home. You can complain if you are a private, housing association or council tenant.</p>
+        <p>The HHSRS can help you if you rent a house, flat or a room in a shared home.</p>
+        <p class="inline-callout internal">Find out
+            <a title="see also: Complain to environmental health about rented housing"
+               href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}">
+                how to complain to your council's environmental health department</a>.</p>
+
+    <h2>Types of hazards you can complain about</h2>
+        <p><br />Common hazards that affect health in the home include:</p>
+        <ul>
+            <li><a href="{% url 'renters-damp_and_mould_in_rented_homes' %}"
+                   title="See also: damp and mould in rented homes">damp and mould growth</a></li>
+            <li>excessive cold</li>
+            <li>overcrowding</li>
+        </ul>
+        <p>Common hazards that affect safety in the home include:</p>
+
+        <ul>
+            <li><a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+                   title="See also: gas safety in rented homes">a faulty gas boiler</a></li>
+            <li><a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+                   title="See also: fire safety for tenants">fire risks</a></li>
+            <li>
+                <a href="{% url 'renters-electrical_safety_in_rented_homes' %}"
+                   title="See also: electrical safety in rented homes">dangerous electrics</a></li>
+        </ul>
+        <p>They also include the risk of falling on stairs, floors or paths leading to your home.</p>
+
+    <h2>How hazards are assessed</h2>
+        <p>The hazards in your home are rated according to how serious they are and how likely it is
+            that someone will be badly affected by them.&nbsp;The HHSRS takes into account any extra risk
+            to young children or older people.</p>
+        <p>A category 1 hazard is the most serious.</p>
+
+    <h3>Category 1 hazards</h3>
+        <p>A category 1 hazard is a hazard that poses a serious threat to the health or safety of people
+            living in or visiting your home.</p>
+        <p>Examples of category 1 hazards can include:</p>
+        <ul>
+            <li>exposed wiring or overloaded electrical sockets</li>
+            <li>dangerous or broken boiler</li>
+            <li>bedrooms that are very cold</li>
+            <li>leaking roof</li>
+            <li>mould on the walls or ceiling</li>
+            <li>rats or other pest or vermin infestation</li>
+            <li>broken steps at the top of the stairs</li>
+            <li>lack of security due to badly-fitting external doors or problems with locks</li>
+        </ul>
+        <p class="inline-callout urgent">The council must take action if its assessment shows
+            that there is category 1 hazard in your home.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>Action the council can take</h2>
+        <p>The council decides what action to take against your landlord if repairs or essential
+            works are needed to improve health and safety in your home</p>
+        <p>They can serve your landlord with a notice or order that sets out what your landlord should do.
+            You should be given a copy.</p>
+        <p>The council can only serve one type of notice or order at any time.</p>
+        <p>The council can also provide advice to tenants on any problems they can deal with themselves.</p>
+
+    <h3>Hazard awareness notice</h3>
+        <p>A hazard awareness notice warns your landlord that the council is aware of a problem in
+            your home and that it will take no further action at the moment.</p>
+        <p>Contact the council again if nothing is done or the problem gets worse.</p>
+
+    <h3>Improvement notice</h3>
+        <p>An improvement notice tells your landlord to carry out repairs or improvements that
+            are needed to remove or reduce the risk to your health and safety. The notice gives a time limit
+            for your landlord to do the work.</p><p>Your landlord can be prosecuted or fined if they don't comply.</p>
+
+    <h3>Emergency remedial action</h3>
+        <p>If it's likely that you'll suffer serious harm in the near future if conditions in your home don't
+            improve, the council can take emergency action.</p>
+        <p>The council can do the work itself and charge your landlord for it.</p>
+
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+
+    <h3>Prohibition order</h3>
+        <p>A prohibition order puts restrictions on access to all or part of your home or places a limit on the
+            number of people living there.</p>
+        <p>The council can suspend the prohibition order so that people currently living there don't have to
+            move out but new people can't move in.</p>
+        <p>These orders are not common.</p>
+
+    <h3>Demolition order</h3>
+        <p>In extreme cases the council can order that the building is demolished.</p>
+
+    <h2>What the council can do</h2>
+        <p>If you rent your home from a private landlord, the council can take enforcement action against them.</p>
+        <p class="inline-callout internal">
+            <a title="See also: housing standards in private rented homes"
+               href="{% url 'renters-housing_standards_in_private_rented_homes' %}">
+                How to deal with problems with poor conditions in private rented homes</a>.</p>
+        <p>The council can also take enforcement action against a housing association landlord.</p>
+        <p>If you rent your home from the council, environmental health can't take enforcement
+            action against your landlord but they should inspect your home. They should tell your housing
+            office what needs to be done to fix the problem.</p>
+        <p class="inline-callout internal">
+            <a title="see also: poor conditions in council and housing association homes"
+               href="{% url 'renters-poor_conditions_in_council_or_housing_association_homes' %}">
+                How to deal with poor conditions in council or housing association homes</a>.</p>
+
+    <h3>If your landlord doesn't do what the council orders</h3>
+        <p>Contact the council again if your landlord doesn't improve the conditions in your home.</p>
+        <p>You can ask the council to take further action.</p>
+
+    <h2>If you have to move out of your home</h2>
+        <p>You can make a homeless application to the council's housing department if you have
+            to move out of your home because it's:</p>
+        <ul>
+            <li>no longer safe for you to live there</li>
+            <li>being demolished</li>
+        </ul>
+        <p>The council may have a duty to rehouse you if you are homeless.</p>
+        <p>If you have to leave because the council made a prohibition or demolition order,
+            you can claim a home loss payment of £5,300 from the council if you've lived in the property for at least one year.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+                </div>
+
+    <h2>If the council won't help</h2>
+        <p>If you rent privately, you may be able to
+            <a title="See also: court action"
+               href="{% url 'renters-legal_action_if_your_landlord_wont_do_repairs' %}">
+                take your landlord to court</a> if the council's environmental health department doesn't take action.</p>
+        <p>If you are a council tenant, find out more about
+            <a href="{% url 'renters-complain_about_council_or_housing_association_repairs' %}"
+               title="see also: Complain about council or housing association repairs">
+                taking action if your landlord won't do repairs</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+
+    <h2>Eviction if you complain about conditions</h2>
+        <p>If your tenancy started or was renewed on or after October 1st 2015, you might have some extra
+            protection from eviction after you complain about repairs.</p>
+        <p class="inline-callout internal">Find out more about the
+            <a title="See also: eviction if you ask for repairs"
+               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                eviction if you complain about repairs or conditions in your home</a>.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <p></p>
+                    <p>It may be possible to claim compensation if you have been evicted illegally</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent to claim compensation for illegal eviction</a></p>
+
+        </div>
+
+
+    <h2>Get more advice from Represent</h2>
+        <p>Get advice if your home is not fit to live in and you are not sure what to do.</p>
+        <p>Contact the&nbsp;
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{ civil_legal_advice_url }}" target="_blank">Civil Legal Advice</a> helpline on 0345 345 4 345.</p>
+
+        <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
+                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
