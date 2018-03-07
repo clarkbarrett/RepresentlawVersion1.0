@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Renters{% endblock %}
+{% block description %}Represent helping renters with deposits, deposit protection, HMOs, Rent Repayment Orders and Repairs{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- templates/email.html -->
+<h1>Contact Us</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>
+
+{% endblock %}

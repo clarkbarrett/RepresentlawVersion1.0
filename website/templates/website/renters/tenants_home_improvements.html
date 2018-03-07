@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>Tenant's home improvements<br>
+                <small>Find out when you need your landlord's permission to
+                    make improvements to your private, council or housing association home.</small>
+            </h1>
+        </div>
+
+        <h2>What counts as an improvement?</h2>
+        <p>Your landlord has a duty to carry out most repairs in your home but doesn't usually have to
+            carry out improvements.</p>
+        <p>Examples of an improvement include:</p>
+        <ul>
+            <li>insulating your loft</li>
+            <li>installing double glazing to replace single glazed windows</li>
+            <li>replacing kitchen units with new ones</li>
+            <li>redecorating</li>
+            <li>putting up a garden shed</li>
+        </ul>
+        <p>Your landlord has a
+            <a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                duty to carry out most repairs in your home</a> but doesn't usually have to carry out improvements.</p>
+
+        <h2>Council or housing association tenant's home improvements</h2>
+        <p>If you rent your home from the council or a housing association, you always need permission
+            for major improvements such as:</p>
+
+        <ul>
+            <li>dividing a room to create an extra bedroom</li>
+            <li>installing a new kitchen of your choice</li>
+        </ul>
+        <p>You are usually responsible for decorating your home and don't need your landlord's permission.</p>
+        <p>You might need permission for small improvements such as getting a garden shed.&nbsp;Check what your
+            tenancy agreement says.</p>
+        <p>Council tenants usually have to pay for their own improvements. You might be able to get compensation
+            for doing certain improvements, but only when your tenancy ends.</p>
+        <p>More about
+            <a href="{% url 'website:renters-repairs_and_maintenance_in_council_and_housing_association_homes' %}"
+               title="see also: repairs and maintenance in council and housing association homes">
+                repairs and maintenance in council and housing association homes</a>.</p>
+
+    <h2>Private tenant's home improvements</h2>
+        <p>You usually need your landlord's permission to make any improvements to a private rented home.
+            Get their agreement in writing.</p>
+        <p>Check what your
+            <a href="{% url 'website:renters-types-of-renting-agreement' %}"
+               title="see also: types of private renting agreement">tenancy agreement</a>
+            says about making&nbsp;home improvements.</p>
+        <p>Your landlord might agree to improvements you want to make if you agree to put things back the way
+            they were when you leave.</p>
+        <p>It's usually your responsibility to pay for any improvements you make.</p>
+        <p>If you don't have a long-term tenancy agreement you might not benefit much from any improvements you make.
+            It can be worthwhile if you have a more secure type of private tenancy such as an
+            <a href="{% url 'website:renters-assured_tenancies' %}"
+               title="see also: assured tenancy">assured tenancy</a> or
+            <a href="{% url 'website:renters-regulated_tenancies' %}"
+               title="see also: pre-1989 regulated tenancy">pre-1989 regulated tenancy</a>.</p>
+
+
+    <h2>Improvements if you have a disability</h2>
+        <p>Your landlord should make reasonable adjustments to make sure you're not put at a serious
+            disadvantage&nbsp;because of&nbsp;a disability. What's reasonable depends on each individual
+            situation.&nbsp;Landlords are not allowed to treat disabled tenants less favourably than others.</p>
+        <p>You have to ask your landlord to make reasonable changes for you. For example, you could ask to add a
+            ramp over a small front doorstep.</p>
+
+        <p>If you want to make some improvements to your rented home because of a disability, you'll usually
+            have to pay for them.&nbsp;You must also ask for your landlord's permission first before you make
+            improvements but your landlord can't unreasonably refuse.</p>
+
+
+    <h2>What to do if your home is unsafe</h2>
+        <p>An improvement may sometimes be needed to fix a repair problem or because there is a risk to your
+            <a href="{% url 'website:renters-tenants_home_improvements' %}"
+               title="see also: Health and safety standards for rented homes">health and safety in the home</a>
+            if it's not done.</p><p>If there's a risk to your health or safety, it's your landlord's responsibility
+        to carry out the work that's needed.</p>
+
+        <p>Find out <a href="{% url 'website:renters-how_to_complain_about_an_unsafe_home' %} "
+                       title="see also: how to complain about an unsafe home">
+            how to complain about an unsafe home</a>.</p>
+
+        {% include 'disrepair-callout.html' %}
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+
+
+

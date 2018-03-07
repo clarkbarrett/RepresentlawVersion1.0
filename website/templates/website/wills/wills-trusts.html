@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Probates and Estates{% endblock %}
+{% block description %}Represent Law Probate and Estates services{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+             <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Wills & Trusts </h1>
+                <h1 align="center"><small style="color:white">Helping you today and tomorrow</small></h1>
+            </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1 align="center">Wills and Trusts</h1>
+        </div>
+
+
+           <p>A valid and properly drafted and executed Will should work for you to ensure your instructions about what
+                you want to happen to your assets when you die. Represent can help you put in place this important
+                document to take care of your property, personal possessions, money or other assets and if relevant also
+                appoint guardians for young children and detail funeral arrangements.</p>
+
+            <p>If you die without making a valid will, the law will determine how your property is distributed, in
+                proportions set by statute (Government made laws). Without a valid will, you will have no say in how
+                your estate is distributed among your family and friends. Therefore taking the time to put in place a
+                valid will can avoid costly and stressful legal actions after your death since it gives you more control
+                over the destination of your property than dying without a will.</p>
+
+            <h1>Reviewing your will</h1>
+
+            <p>Wills should be reviewed when you marry or enter into a civil partnership, cohabit, divorce or separate,
+                move home or lose someone who was mentioned in a previous Will or if there are any other significant
+                changes to your life. If you marry, any will made before marriage is automatically revoked (unless it
+                was made in contemplation of that marriage).</p>
+
+            <p>The team at Austin Ray has the breadth and depth of expertise to advise on any of these life events.</p>
+
+            <h1>Expert Wills &amp; Trusts support from Represent</h1>
+
+            <p>Although you choose what to say in your will, the law specifies how you should say it. If your will is
+                not properly drafted and executed there is a risk that your will – or parts of it – may be considered
+                invalid.</p>
+
+            <p>At the time you give consideration to your will you may also want to consider making a Lasting Power of
+                Attorney or applying for voluntary registration of your land at HM Land Registry. Indeed, how you hold
+                any jointly-owned property is an important issue which our Represent team can guide you on; if required
+                we can take care of severing a joint tenancy and other land related issues.</p>
+
+            <p>At Represent we can help you by listening to what you want and what matters concern you about planning
+                your will. Our expert team will ensure that any property related matters are also considered and dealt
+                with appropriately. We will then draft a will or codicil for you, ensuring that all is executed
+                correctly. In that way, you can be assured that you have an effective will dealing with your estate in
+                the way you want, and that your loved ones will receive what they deserve.</p>
+
+            <p>You may be interested to read the information on our website about <a
+                        href="{% url 'website:power-attorney-home' %}">Powers of Attorney
+                    & Court of Protection</a>, <a
+                        href="{% url 'website:probate-home' %}">Administration of
+                    Estates/Probate</a> and <a href="{% url 'website:elderly-client-home' %}">Elderly
+                    Client Services</a>.</p>
+        </div>
+</div>
+
+{% endblock %}
+
+
+

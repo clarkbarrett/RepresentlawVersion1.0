@@ -29,7 +29,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Assured tenancies<br>
@@ -64,12 +64,12 @@
         </ul>
         <p class="inline-callout highlight">Use our
         <a title="See also: tenancy checker"
-           href="{% url 'renters-tenancy_checker' %}">
+           href="{% url 'website:renters-tenancy_checker' %}">
             tenancy checker
         </a> to check what type of tenancy you have.</p>
         <p>Most private tenants have an
             <a title="See also: assured shorthold tenancy with private landlord"
-               href="{% url 'renters-assured-shorthold-tenancies' %}">
+               href="{% url 'website:renters-assured-shorthold-tenancies' %}">
                 assured shorthold tenancy</a>.</p>
 
     <h2>How long your tenancy lasts</h2>
@@ -106,10 +106,10 @@
         <p>It may be possible to leave on the day a fixed term agreement expires without giving any notice.
             But it's always best to let your landlord know what you plan to do to avoid disputes.</p>
         <p class="inline-callout highlight">Find out more about
-            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+            <a href="{% url 'website:renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
                title="see also: ending a fixed-term tenancy">ending a fixed-term tenancy
             </a> and
-            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+            <a href="{% url 'website:renters-ending_a_periodic_tenancy' %}"
                title="see also: ending a periodic (month to month) tenancy">
                 ending a periodic (month to month) tenancy</a>.</p>
 
@@ -124,7 +124,7 @@
             the court must also decide whether it is reasonable for you to be evicted.</p>
         <p class="inline-callout highlight">For more information, see&nbsp;&nbsp;
             <a title="See also: Eviction of assured tenants"
-               href="{% url 'renters-eviction_of_assured_tenants' %}">
+               href="{% url 'website:renters-eviction_of_assured_tenants' %}">
                 eviction of assured tenants</a>.</p>
 
     <h2>Illegal eviction</h2>
@@ -133,9 +133,9 @@
             <a href="{{ find_council_url }}" title="Link to Gov.uk - find your council" target="_blank">
                 your local council</a>.
             They may be able to help if you have been
-            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
                title="See also: What is illegal eviction?">illegally evicted</a> or
-            <a href="{% url 'renters-harassment_by_a_private_landlord' %}"
+            <a href="{% url 'website:renters-harassment_by_a_private_landlord' %}"
                title="See also: Harassment by a private landlord">harassed by your landlord</a>.</p>
         <p>You can also apply for a court order requiring the landlord to allow you back into the property.</p>
 
@@ -144,7 +144,7 @@
         <p>Your landlord is not allowed to enter the property without your permission or interfere
             with your right to live in your home in other ways.</p>
         <p>If your landlord tries to do this, they may be guilty of
-            <a href="{% url 'renters-harassment_by_a_private_landlord' %}"
+            <a href="{% url 'website:renters-harassment_by_a_private_landlord' %}"
                title="See also: Harassment by a private landlord">harassment</a>.</p>
 
      <h2>Rent increases</h2>
@@ -162,7 +162,7 @@
             You must do this before the notice period expires or the new rent will take effect.</p>
         <p>Find out more about&nbsp;
             <a title="See also: Private tenancy rent increases"
-               href="{% url 'renters-rent_increases' %}">
+               href="{% url 'website:renters-rent_increases' %}">
                 private tenancy rent increases</a>.</p>
 
     <h2>Help to pay the rent</h2>
@@ -180,29 +180,29 @@
         <p>Your landlord must keep also fix problems with gas, electricity, heating, water and sanitation equipment.</p>
         <p class="inline-callout highlight">Your landlord must have a valid
             <a title="See also: Gas safety checks in rented homes"
-               href="{% url 'renters-gas_safety_in_rented_homes' %}">
+               href="{% url 'website:renters-gas_safety_in_rented_homes' %}">
                 gas safety certificate</a> for any gas appliances in the property.</p>
         <p>Any furniture provided should be fire resistant.</p>
         <p>Find out
-            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+            <a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}"
                title="See also: Responsibility for repairs">more about responsibilities for repairs
             </a>.</p>
         <p>Tell your landlord or letting agent if your accommodation needs repairs.</p>
         <p>If your landlord doesn't do repairs, there may be
             <a title="See also: Steps to take to get repairs done"
-               href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}">
+               href="{% url 'website:renters-what_to_do_if_your_landlord_wont_do_repairs' %}">
                 steps you can take
             </a> to get your landlord to carry out the work.</p>
         <p class="inline-callout highlight">Your landlord may have extra responsibilities if you live in a
             <a title="See also: Living in a shared house or flat"
-               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+               href="{% url 'website:renters-houses_in_multiple_occupation_hmo' %}">
                 house in multiple occupation (HMO)</a>.</p>
 
                 <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -215,15 +215,15 @@
             <li>checking and replacing smoke alarm batteries</li>
         </ul>
         <p>Find out
-            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+            <a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}"
                title="see also: Landlord and tenant responsibilities for repairs">
                 more about your responsibility for minor repairs and maintenance</a>.</p>
 
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
     <h2>Inheriting an assured tenancy</h2>
@@ -247,7 +247,7 @@
         <p class="inline-callout highlight">Your benefits could be reduced if someone else moves into your home.
             This can happen even if the person is a family member and doesn't pay you any rent.</p>
         <p>Find out
-            <a href="{% url 'renters-lodgers' %}"
+            <a href="{% url 'website:renters-lodgers' %}"
                title="see also: lodgers">more about lodgers
             </a>.</p>
 
@@ -259,10 +259,10 @@
             that you are planning to return, for example by leaving your personal belongings at home.</p>
 
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Do you have a renting problem?</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
     </div>

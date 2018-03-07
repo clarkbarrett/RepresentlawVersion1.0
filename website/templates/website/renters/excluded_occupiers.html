@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Excluded occupiers<br>
@@ -44,7 +44,7 @@
             <li>do not pay any rent</li>
         </ul>
             <p>Use Represent's
-                <a href="{% url 'renters-tenancy_checker' %}">
+                <a href="{% url 'website:renters-tenancy_checker' %}">
                 tenancy checker</a> if you are not sure what type of tenancy you have.</p>
 
     <h2>Right to rent immigration checks</h2>
@@ -52,7 +52,7 @@
             right to live in the UK and the right to rent.</p>
         <p>This does not apply to you if&nbsp;you moved in before 1 February 2016.</p>
         <p>Find out
-            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+            <a href="{% url 'website:renters-right_to_rent_immigration_checks' %}"
                title="see also: right to rent immigration checks">more about right to rent immigration checks</a>.</p>
 
     <h2>Agreements for excluded occupiers</h2>
@@ -63,19 +63,19 @@
         <p>If you pay a deposit for your accommodation it should be returned to you when you move out.</p>
         <p>Your landlord can make reasonable deductions if you owe any rent or cause any damage.</p>
         <p class="inline-callout">
-            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+            <a href="{% url 'website:renters-how-to-get-your-deposit-back' %}"
                title="see also: Negotiating the return of lodgers deposits">
                 Find out more about getting back your deposit at the end of your tenancy</a></p>
         <p>Your deposit doesn't have to be protected in a government-backed
-            <a href="{% url 'renters-get-deposit-protected' %}"
+            <a href="{% url 'website:renters-get-deposit-protected' %}"
                title="see also: tenancy deposit protection schemes">tenancy deposit protection scheme</a>.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if we can help you get your deposit back
                     if your landlord is keeping it unfairly.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         Help me get my deposit back</a></p>
 
         </div>
@@ -86,7 +86,7 @@
         <p>If you pay rent weekly, your landlord must give you a rent book.</p>
         <p>The landlord cannot
             <a title="See also: Private tenancy rent increases"
-               href="{% url 'renters-rent_increases' %}">
+               href="{% url 'website:renters-rent_increases' %}">
                 increase your rent</a> during any fixed-term rental agreement unless:</p>
 
         <ul>
@@ -96,7 +96,7 @@
 
         <p>Your landlord can increase your rent after the fixed term ends or if you don&rsquo;t have a fixed term agreement.</p>
         <p>If you don't pay your rent
-            <a href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
+            <a href="{% url 'website:renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
                title="see also: Eviction of excluded occupiers">your landlord can evict you</a>.</p>
 
         <h2>If you want to leave</h2>
@@ -126,21 +126,21 @@
                title="see also: Eviction - court orders">court order</a> to evict you.</p>
 
         <p class="inline-callout">
-            <a href="{% url 'renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
+            <a href="{% url 'website:renters-eviction_of_lodgers_and_other_excluded_occupiers' %}"
                title="see also: eviction of excluded occupiers">
                 Find out more about eviction of excluded occupiers</a></p>
 
     <h2>Illegal eviction</h2>
         <p>It is a
             <a title="See also: Harassment and illegal eviction"
-               href="{% url 'renters-what_is_illegal_eviction' %}">
+               href="{% url 'website:renters-what_is_illegal_eviction' %}">
                 criminal offence</a> for your landlord to use or threaten violence while evicting you.</p>
         <p>Get advice if this is happening to you.</p>
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
                     <p></p>
                     <p>It may be possible to claim compensation if you have been evicted illegally</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         Contact Represent to claim compensation for illegal eviction</a></p>
 
 </div>

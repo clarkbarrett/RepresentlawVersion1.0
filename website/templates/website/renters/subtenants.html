@@ -26,7 +26,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Subtenants<br>
@@ -39,7 +39,7 @@
         <p>For example, a tenant rents a house from the council and then the tenant sublets a room to you as a subtenant.</p>
         <p>The tenant is your immediate landlord. The owner of the property is called the head landlord.</p>
         <p>Most
-            <a href="{% url 'renters-lodgers' %}"
+            <a href="{% url 'website:renters-lodgers' %}"
                title="see also: lodgers">lodgers</a> are not subtenants.</p>
 
     <h2>Rights of subtenants</h2>
@@ -54,15 +54,15 @@
         <p>Subtenants can have different types of tenancy, depending on their living arrangements.</p>
         <p>If you don't live in the same building as your landlord, you're probably an
             <a title="See also: assured shorthold tenant"
-               href="{% url 'renters-assured-shorthold-tenancies' %}">
+               href="{% url 'website:renters-assured-shorthold-tenancies' %}">
                 assured shorthold tenant</a>.</p>
         <p>If you live in the same building as your landlord but don&rsquo;t share living accommodation such as the
             kitchen and bathroom with them, you're probably an
-            <a href="{% url 'renters-occupiers_with_basic_protection' %}"
+            <a href="{% url 'website:renters-occupiers_with_basic_protection' %}"
                title="See also: Occupiers with basic protection">
                 occupier with basic protection</a>.</p>
         <p>Use Represent's
-            <a href="{% url 'renters-tenancy_checker' %}">
+            <a href="{% url 'website:renters-tenancy_checker' %}">
                 tenancy checker</a> to find out what kind of tenancy you have.</p>
 
     <h2>Right to rent immigration checks</h2>
@@ -70,7 +70,7 @@
             live in the UK and the right to rent.</p>
         <p>Your landlord could be fined if they don't do right to rent checks.</p>
         <p>Find out
-            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+            <a href="{% url 'website:renters-right_to_rent_immigration_checks' %}"
                title="see also: right to rent immigration checks">
                 more about right to rent immigration checks</a>.</p>
 

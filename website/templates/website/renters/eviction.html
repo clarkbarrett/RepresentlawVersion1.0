@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Eviction Help{% endblock %}
+{% block description %}Get advice about eviction including the eviction process,
+how to stop eviction by bailiffs, how to deal with rent arrears and prevent illegal evictions.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Eviction</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-6 offset-md-2">
+
+            <div class="page-header">
+                <h1>Get advice about eviction including the eviction process, how to stop eviction by bailiffs,
+                    how to deal with rent arrears and prevent illegal evictions.
+                </h1>
+            </div>
+            <hr>
+
+
+            <h2>Eviction by bailiffs</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-complain_about_council_or_housing_association_repairs' %}">
+                What is a possession order for eviction?</a></li>
+            <li><a href="{% url 'website:renters-housing_disrepair_check_if_you_can_claim_compensation' %}">
+                How to get an eviction court order changed</a></li>
+            <li><a href="{% url 'website:renters-what_happens_at_a_repossession_hearing' %}">
+                What happens at an eviction possession hearing</a></li>
+            <li><a href="{% url 'website:renters-legal_action_if_your_landlord_wont_do_repairs' %}">
+                How to stop eviction by bailiffs</a></li>
+            <li><a href="{% url 'website:renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                What happens when bailiffs evict tenants</a></li>
+        </ul>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'website:contact' %}"
+                          class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+                </div>
+
+
+    <h2>Private tenants and lodgers</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-eviction-of-assured-shorthold-tenants' %}">
+                Eviction of assured shorthold tenants</a></li>
+            <li><a href="{% url 'website:renters-eviction_of_assured_tenants' %}">
+                Eviction of assured tenants</a></li>
+            <li><a href="{% url 'website:renters-eviction_of_regulated_tenants' %}">
+                Eviction of regulated tenants</a></li>
+            <li><a href="{% url 'website:renters-eviction_of_lodgers_and_other_excluded_occupiers' %}">
+                Eviction of lodgers</a></li>
+        </ul>
+
+        <h2>Illegal eviction</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-what_is_illegal_eviction' %}">
+                What is illegal eviction? </a></li>
+            <li><a href="{% url 'website:renters-harassment_by_a_private_landlord' %}">
+                Harassment by a private landlord</a></li>
+            <li><a href="{% url 'website:renters-how_to_get_an_illegal_eviction_injunction' %}">
+                How to get an illegal eviction injunction</a></li>
+            <li><a href="{% url 'website:renters-help_from_the_council_after_illegal_eviction' %}">
+                Help from the council after illegal eviction</a></li>
+
+        </ul>
+
+        <h2>Rent arrears</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-eviction_for_rent_arrears' %}">
+                Eviction for rent arrears</a></li>
+            <li><a href="{% url 'website:renters-how_to_deal_with_rent_arrears' %}">
+                How to deal with rent arrears</a></li>
+        </ul>
+
+            {% include "disrepair-callout.html" %}
+
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+
+

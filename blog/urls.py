@@ -6,6 +6,8 @@ from django.conf.urls import url
 from .feeds import RSSSiteNewsFeed, AtomSiteNewsFeed
 
 
+app_name = "blog"
+
 urlpatterns = [
     url(r'^$', views.list_of_post, name='list_of_post'),
     # url(r'^$', TemplateView.as_view(template_name='blog/list_of_post.html'), name='list_of_post'),
@@ -21,12 +23,3 @@ urlpatterns = [
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
-"""urlpatterns = [
-                url(r'^$', ListView.as_view(queryset=Post.objects.all().order_by("-date")[:25],
-                                            template_name="blog/blog2.html"), name='blog_home'),
-                url(r'^(?P<slug>.*)/$', DetailView.as_view(model=Post, template_name='blog/post.html'),
-                    name='blog_post'),
-                url(r'^comments/', include('django_comments.urls')),
-                url(r'^(?P<slug>.*)/comment/$', views.add_comment, name='add_comment')
-] """

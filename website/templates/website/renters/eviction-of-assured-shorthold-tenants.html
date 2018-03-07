@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
             <div class="page-header">
                 <h1>Eviction of assured shorthold tenants<br>
@@ -61,10 +61,10 @@
         apply to the court for bailiffs to evict you.</p>
         <p class="inline-callout">It's against the law for your landlord to try to
             <a title="see also: what is illegal eviction"
-               href="{% url 'renters-what_is_illegal_eviction' %}">
+               href="{% url 'website:renters-what_is_illegal_eviction' %}">
                 evict you themselves</a> or
             <a title="see also: harassment by private landlords "
-               href="{% url 'renters-harassment_by_a_private_landlord' %}">
+               href="{% url 'website:renters-harassment_by_a_private_landlord' %}">
                 harass you</a>.</p>
 
         <h2>How to defend possession proceedings</h2>
@@ -122,7 +122,7 @@
 
         <h3>If your landlord breaks tenancy deposit rules</h3>
             <p>In many cases, a section 21 notice won't be valid if you paid a
-                <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+                <a href="{% url 'website:renters-tenancy_deposit_protection_rules' %}"
                    title="See also: Tenancy deposit protection scheme rules">tenancy deposit</a>
                 to your landlord or their letting agent and any of these apply:</p>
             <ul>
@@ -136,10 +136,10 @@
         <p>You may also be able to claim compensation from your landlord if deposit protection rules were broken.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         See if you can make a deposit protection claim</a></p>
 
 </div>
@@ -164,7 +164,7 @@
         </ul>
         <p>Find out more about the
             <a title="Eviction if you complain about repairs"
-               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+               href="{% url 'website:renters-revenge_eviction_if_you_ask_for_repairs' %}">
                 rules for eviction if you complain about repairs
             </a>.</p>
 
@@ -178,7 +178,7 @@
             <li>an energy performance certificate</li>
             <li>a current
                 <a title="see also: gas safety checks in rented homes"
-                   href="{% url 'renters-gas_safety_in_rented_homes' %}">
+                   href="{% url 'website:renters-gas_safety_in_rented_homes' %}">
                     gas safety record</a></li>
             <li>the 'How to rent'
                 guide produced by the government (a paper copy is required unless the you agree to accept
@@ -191,7 +191,7 @@
         <h3>If you live in a shared house</h3>
             <p>A section 21 notice won't be valid if you live in a
                 <a title="see also: tenancy agreements in shared homes"
-                   href="{% url 'tenancy_agreements_in_shared_homes' %}">
+                   href="{% url 'website:tenancy_agreements_in_shared_homes' %}">
                     house in multiple occupation
                 </a> (HMO) that should be licensed by the council but isn't.
                 Many houses with bedsits and bed and breakfasts are HMOs.</p><h2>Section 21: when a landlord can
@@ -201,10 +201,7 @@
             expired and after&nbsp;any fixed term has ended.</p>
         <p>There's no time limit for making the application if your tenancy started before 1 October 2015 and
             you haven't signed a renewal contract.&nbsp;The section 21 notice does not have an expiry date.</p>
-        <p>For a tenancy that starts or is renewed on or after 1 October 2015, in most cases, your landlord must
-            <a title="see also: possession court orders"
-               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
-                apply to court for a possession order
+        <p>For a tenancy that starts or is renewed on or after 1 October 2015, in most cases, your landlord must apply to court for a possession order
             </a> within 6 months of giving you a section 21 notice.</p>
 
 
@@ -278,10 +275,7 @@
                 give the grounds for eviction that are being used.</p>
             <p>The notice period will be either 14 days, four weeks or two months, depending on why your
                 landlord is trying to evict you.</p>
-            <p>After the notice period ends, your landlord can
-                <a title="see also: possession court orders"
-                   href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
-                    apply to the court for a possession order
+            <p>After the notice period ends, your landlord can apply to the court for a possession order
                 </a>. The notice is valid for 1 year after the date it was served on you.</p>
 
         <h2>Section 8: defending possession proceedings</h2>

@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Problems during council or housing association repairs{% endblock %}
+{% block description %}What you can do if council or housing association repairs cause problems or the work is done badly{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>Problems during council or housing association repairs</h1>
+                <h2>What you can do if council or housing association repairs cause
+                    problems or the work is done badly. </h2>
+        </div>
+
+        <h2>Staying in your home during repairs</h2>
+        <p>You have the right to stay in the property while repairs are being carried out. The landlord should try
+            to make sure there's not too much disruption.</p>
+        <p>Some repairs might take longer and cost the landlord more because you are still in your home.
+            The landlord cannot use this as an excuse to ask you to leave.</p>
+        <p>Having repairs carried out means that you might have to put up with some disruption. You do not have
+            the right to be rehoused while repairs are being completed.</p>
+        <p>You do not have the right to stop paying the rent during repairs.</p>
+        <p class="inline-callout highlight">If repairs to your home are very disruptive (for example,
+            if some rooms are unusable) you can ask your landlord for a reduction on your rent.</p>
+
+    <h2>Moving out during repairs</h2>
+        <p>You may have to move out of your home if it needs major repairs or has been badly
+            damaged in a fire or flood.</p>
+        <p>Your landlord should provide you with alternative accommodation.</p>
+        <p>Before you move out, ask your landlord about:</p>
+        <ul>
+            <li>paying rent</li>
+            <li>how much they will pay towards any extra costs you have, such as removal costs</li>
+            <li>how long the work will take</li>
+        </ul>
+        <p>You should also ask for your landlord's agreement in writing that you'll be able to move back to
+            your home after repairs are finished.</p>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'website:renters-housing_help_if_your_home_is_flooded' %}"
+               title="see also: housing help after a flood">housing help after a flood</a>.</p>
+
+        <h2>Eviction during repair works</h2>
+        <p>Your landlord can take court action to evict you if the repair works cannot be done unless you move out.</p>
+        <p>If you are a council tenant
+            or a secure housing association tenant, your landlord can only evict you if they can offer you
+            suitable alternative accommodation. You can get a home loss payment if the move is permanent.</p>
+        <p>If you are an
+            <a href="{% url 'website:renters-eviction_of_assured_tenants' %}"
+               title="See also: Eviction of housing association tenants">
+                assured (or assured shorthold) housing association tenant</a>, a court can evict you if the
+            housing association cannot carry out major repairs with you still in the property. The housing
+            association does not have to offer you anywhere else to live if this happens.</p>
+        <p>Get advice if you are in this situation.</p>
+
+
+
+    <h2>Use of your electricity and gas</h2>
+        <p>The landlord's workers probably have to use your electricity, gas and other services during repair works.</p>
+        <p>If you think they have used too much or if it continues for a long time, ask your landlord if they can
+            make a contribution towards your bills.</p>
+    <h2>Responsibility for repair work</h2>
+        <p>Your landlord must make sure that their repair work is
+        carried out properly.&nbsp;</p>
+        <p>The work should:</p>
+        <ul>
+            <li>be completed within a reasonable time</li>
+            <li>not cause other repair problems</li>
+        </ul>
+        <p>The landlord should also make sure that internal decorations and your personal belongings are not
+            damaged.</p>
+        <p>Your landlord is responsible for repairing any damage caused by the disrepair or by the work to
+            fix it.&nbsp;</p>
+        <p>For example, the landlord should repair any damaged plaster or wall coverings,
+            repaint if needed and replace any damaged items such as carpets.</p>
+
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also:responsibility for repairs">responsibility for repairs</a>.</p>
+
+    <h2>Complain if repairs aren't done properly</h2>
+        <p>If you're not happy with the standard of the repairs, report any outstanding disrepair.</p>
+        <p class="inline-callout internal">Find out
+            <a href="{% url 'website:renters-how_to_report_repairs_to_a_social_landlord' %}"
+               title="See also: Reporting &amp; allowing access">more about reporting repairs</a>.</p>
+        <p>You can also complain using your landlord's formal complaints procedure. Ask your landlord
+            for more information about this or check your tenants' handbook.</p>
+        <p>You can&nbsp;
+            <a title="See also: Complaining to the Ombudsman"
+               href="{% url 'website:renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                complain to the ombudsman</a> or
+            <a href="{% url 'website:renters-legal_action_if_your_landlord_wont_do_repairs' %}"
+               title="see also: court action for disrepair">take your landlord to court</a>
+            if you're not happy with the response you receive.</p>
+
+   <h2>Claim compensation</h2>
+    <p>You may be able to claim a small amount of compensation through the right to repair scheme
+        if you are a council tenant.</p><p class="inline-callout internal">Find out more about the
+        <a title="See also: Right to repair for council tenants"
+           href="{% url 'website:renters-right_to_repair_for_council_tenants' %}">
+            right to repair scheme</a>.</p>
+
+    <h2>Take legal action</h2>
+        <p>You can consider taking your landlord to court if the repairs affect your quality of life.&nbsp;
+            For example if the repairs:</p>
+        <ul>
+            <li>make you ill</li>
+            <li>cause major inconvenience or stress</li>
+            <li>mean you can't use all your home</li>
+            <li>damage your belongings</li>
+        </ul><p class="inline-callout internal">Find out more about
+        <a href="{% url 'website:renters-legal_action_if_your_landlord_wont_do_repairs' %}"
+           title="see also: court action for disrepair">taking your landlord to court</a>.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

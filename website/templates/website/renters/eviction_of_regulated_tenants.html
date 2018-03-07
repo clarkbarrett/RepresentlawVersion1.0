@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Eviction of regulated tenants<br>
@@ -39,12 +39,10 @@
      <h2>Rights of regulated tenants</h2>
         <p>If you are a private tenant, your rights depend on the type of living arrangement you have,
             the date you moved in and the agreement you have with your landlord.</p>
-        <p><a href="{% url 'renters-regulated_tenancies' %}"
+        <p><a href="{% url 'website:renters-regulated_tenancies' %}"
               title="see also: regulated tenancies ">Regulated tenants
         </a> have stronger rights than most other private tenants.</p>
-        <p>Your landlord must get a
-            <a title="See also: what is a possession order for eviction"
-               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">possession order from the court
+        <p>Your landlord must get a possession order from the court
             </a> to evict you.</p>
         <p>The court only makes a possession order if your landlord proves a legal reason or 'ground'
             for evicting you. Sometimes, the court can only make a possession order
@@ -52,9 +50,9 @@
         <p>Get advice as soon as possible if you are being threatened with eviction. Don't give up
             your home without doing this.</p>
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
     <p></p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
     <h2>Does it matter what stage your tenancy is at?</h2>
@@ -73,18 +71,15 @@
             tenancy is in its statutory stage.</p>
 
     <h2>Court action to evict regulated tenants</h2>
-        <p>The landlord can
-            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
-               title="See also: what is a possession order for eviction">apply for a possession order
-                from the court
-            </a> if your tenancy is at the statutory stage.</p>
+        <p>The landlord can apply for a possession order
+                from the court if your tenancy is at the statutory stage.</p>
         <p>The court writes to you to tell you about the landlord's eviction claim.
             You can
-            <a href="{% url 'renters-eviction_documents_the_court_sends_you' %}"
+            <a href="{% url 'website:renters-eviction_documents_the_court_sends_you' %}"
                title="see also: eviction documents from the court">
                 send information about your case to the court
             </a> and you can
-            <a href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}"
+            <a href="{% url 'website:renters-what_happens_at_an_eviction_possession_hearing' %}"
                title="see also: what happens at eviction possession hearings">
                 go to the court hearing
             </a>.</p>
@@ -129,16 +124,13 @@
         <p>Even if the court does grant possession to your landlord it can suspend possession.
             This means that you can't be evicted as long as you keep to certain conditions set by
             the court, for example paying a certain amount each week towards your rent arrears.</p>
-        <p class="inline-callout">Find out more about
-            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
-               title="see also: possession court orders">orders the court can make
-            </a> and
+        <p class="inline-callout">Find out more about orders the court can make and
                 if these orders can be changed.</p>
 
    <h2>Could the eviction be illegal?</h2>
         <p>It is against the law for your landlord to try to evict you without getting a court order.</p>
         <p>
-            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
                title="see also: what is illegal eviction">
                 Find out more about illegal eviction</a>.</p>
         <p>There are steps you can take to stop the landlord doing this. Your&nbsp;local council
@@ -147,16 +139,16 @@
            <h2>Claim compensation for illegal eviction?</h2>
         <p>If you are evicted illegally, it may be possible to claim compensation from your landlord</p>
         <p>
-            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
                title="see also: what is illegal eviction">
                 Find out more about illegal eviction</a>.</p>
 
 
         <div class="bs-callout bs-callout-primary">
-            <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+            <a href="{% url 'website:contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
             <p></p>
             <p>Get in touch with Represent to see if you've been evicted illegally.</p>
-            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+            <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         Contact Represent</a></p>
 
 </div>

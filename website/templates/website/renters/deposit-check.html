@@ -26,11 +26,26 @@
         </div>
 
 <!--FAQs-->
-<div class="container-fluid">
-        <div class="col-md-5 col-md-offset-2">
-            <div class="row">
 
-                <h1>Check if your tenancy deposit is protected</h1>
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1 align="center">Check if your tenancy deposit is protected
+            </h1>
+        </div>
+
+                <h1></h1>
+
+        			<div class="data entry_content">
+			<div class="inner_content">
+				<section class="frame">
+                    <iframe src="{% url 'website:renters-deposit-check-lookup' %}" height="500" width="700"></iframe>
+				</section>
+			</div>
+		</div>
+
+
                     <p>There is no one way or central place to check if your landlord has protected your tenancy deposit.</p>
                     <p>The 3 tenancy deposit scheme providers each have a website you can use to check.&nbsp;</p>
                     <p>You'll have to supply your&nbsp;rental property postcode, tenancy start date, tenancy deposit amount and the&nbsp;tenant's name.</p>
@@ -46,13 +61,13 @@
 
                 <h3>Who should check</h3>
                     <p>Only check&nbsp;if&nbsp;you have an&nbsp;
-                        <a href="{% url 'renters-assured-shorthold-tenancies' %}" title="see also: assured shorthold tenancies">assured shorthold tenancy</a>.
+                        <a href="{% url 'website:renters-assured-shorthold-tenancies' %}" title="see also: assured shorthold tenancies">assured shorthold tenancy</a>.
                     </p>
                     <p>Landlords don't have to protect your tenancy deposit if
-                        <a href="{% url 'renters-lodgers' %}"
+                        <a href="{% url 'website:renters-lodgers' %}"
                            title="see also: lodgers">you are a lodger</a>
                     or a
-                        <a href="{% url 'renters-university_accommodation_halls_of_residence' %}"
+                        <a href="{% url 'website:renters-university_accommodation_halls_of_residence' %}"
                            title="see also: student halls of residence">student in halls</a>.</p>
 
                 <h2>What to do next</h2>
@@ -65,7 +80,7 @@
                     <li>give you certain information about the scheme</li>
                 </ul>
                     <p>If they don't, you can
-                        <a href="{% url 'deposit-protection-claims' %}"
+                        <a href="{% url 'website:deposit-protection-claims' %}"
                            title="See also: tenancy deposit compensation claims">
                             take your landlord to court to claim tenancy deposit compensation</a>.
                     </p>
@@ -73,36 +88,36 @@
                         the amount of your deposit.</p>
 
                 <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
                 <h3>If your deposit isn't yet protected</h3>
                 <p>Follow our 5 step guide:&nbsp;
-                    <a href="{% url 'renters-get-deposit-protected' %}"
+                    <a href="{% url 'website:renters-get-deposit-protected' %}"
                        title="see also: how to protect your tenancy deposit ">
                         how to get a landlord to protect your tenancy deposit</a>.
                 </p>
 
 
                 <h3>If your deposit was protected late</h3><p>Find out how to take court action to&nbsp;
-                <a href="{% url 'deposit-protection-claims' %}" title="See also: tenancy deposit compensation claims">
+                <a href="{% url 'website:deposit-protection-claims' %}" title="See also: tenancy deposit compensation claims">
                     get your tenancy deposit protected or returned and claim compensation</a>.</p>
 
                 <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
                 <h3>If your tenancy deposit was protected in time</h3>
                 <p>Find out
-                    <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+                    <a href="{% url 'website:renters-how-to-get-your-deposit-back' %}"
                        title="See also: how to get your tenancy deposit back at the end of your tenancy">
                         how to get your deposit back at the end of your tenancy</a>.
                 </p>

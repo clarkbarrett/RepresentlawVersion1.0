@@ -28,7 +28,7 @@ the council's environmental health inspectors could help.{% endblock %}
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Complain to environmental health about rented housing<br>
@@ -41,11 +41,11 @@ the council's environmental health inspectors could help.{% endblock %}
         <p>It is usually best to tell your landlord about problems with the condition of your home
             before contacting the council. Your landlord might fix the problem.</p>
         <p><a title="see also: how to report repairs"
-              href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+              href="{% url 'website:renters-how_to_report_repairs_to_a_private_landlord' %}">
             How to tell a private landlord about problems in your home</a></p>
         <p>
             <a title="See also: how to report repairs to the council or housing associaition"
-               href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}">
+               href="{% url 'website:renters-how_to_report_repairs_to_a_social_landlord' %}">
                 Report problems to the council or a housing association</a>
         </p>
    <h2>How to contact environmental health</h2>
@@ -53,7 +53,7 @@ the council's environmental health inspectors could help.{% endblock %}
         <p>Contact the environmental health team at your local council.</p>
         <p class="inline-callout external">Use the&nbsp;
             <a title="Link to Gov.uk - find your council"
-               href="./?a=26010" target="_blank">Gov.uk search to find details of your local council</a>.</p>
+               href="{{ find_council_url }}" target="_blank">Gov.uk search to find details of your local council</a>.</p>
         <p>The team may be part of another section like housing standards, housing advice or housing enforcement.</p>
         <p>When you contact the council, tell them:</p>
 
@@ -75,7 +75,7 @@ the council's environmental health inspectors could help.{% endblock %}
         <p>An inspection by environmental health is usually free.</p>
         <p>They can charge for dealing with&nbsp;
             <a title="see also: pests and vermin"
-               href="{% url 'renters-pests_and_vermin_infestations_in_rented_homes' %}">
+               href="{% url 'website:renters-pests_and_vermin_infestations_in_rented_homes' %}">
                 pests and vermin in your home</a>.</p>
 
    <h2>What environmental health checks</h2>
@@ -93,21 +93,21 @@ the council's environmental health inspectors could help.{% endblock %}
         <p>If an environmental health officer visits your home, they check if the problems you have also affect
             your neighbours' homes.</p><p class="inline-callout internal">Find out more about
         <a title="see also: Health and safety standards for rented homes"
-           href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+           href="{% url 'website:renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
             health and safety standards for your home</a>.</p>
 
    <h3>Damp and mould problems</h3>
         <p>Environmental health can take action against landlords when health and safety is at risk because of
             <a title="See also: damp and mould"
-               href="{% url 'renters-damp_and_mould_in_rented_homes' %}">
+               href="{% url 'website:renters-damp_and_mould_in_rented_homes' %}">
                 problems with damp and mould</a>.</p>
         <p>Environmental health can also advise tenants if there's action they can take to help improve the situation.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -131,7 +131,7 @@ the council's environmental health inspectors could help.{% endblock %}
             housing department know what work is needed to make your home safe.</p>
         <p class="inline-callout internal">Find out
             <a title="See also: How to complain about an unsafe home"
-               href="{% url 'renters-how_to_complain_about_an_unsafe_home' %}">
+               href="{% url 'website:renters-how_to_complain_about_an_unsafe_home' %}">
                 how to complain about an unsafe home
             </a>.</p>
 
@@ -141,17 +141,17 @@ the council's environmental health inspectors could help.{% endblock %}
 
         <p class="inline-callout internal">Find out more if you are worried about
             <a title="see also: Are you at risk of eviction if you ask for repairs?"
-               href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}">
+               href="{% url 'website:renters-revenge_eviction_if_you_ask_for_repairs' %}">
                 revenge eviction</a>.</p>
 
    <h2>Get advice from Represent</h2>
         <p>Get advice from Represent about complaining to environmental health.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 

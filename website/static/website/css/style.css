@@ -121,9 +121,19 @@ p {
 }
 
 /* Font Families */
-body, h1, h2, h3, h4, h5, h6, .top-bar-section ul li > a, button, .button, input[type=submit], .accordion .accordion-navigation > a, .accordion dd > a, .sub-nav dt, .sub-nav dd, .sub-nav li {
+body, h1, h2, h3, h4, h5, h6, .top-bar-section ul li > a, button, .button, input[type=submit],
+.accordion .accordion-navigation > a, .accordion dd > a, .sub-nav dt, .sub-nav dd, .sub-nav li {
     font-family: "Lato", Helvetica, Arial, sans-serif;
 }
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 275px;
+font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px;
+font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+
+
 
 a.site-title {
     font-family: "Oswald", Helvetica, Arial, sans-serif;

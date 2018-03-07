@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Electrical safety in rented homes<br>
@@ -45,7 +45,7 @@
         <p>Your landlord can arrange for an electrical inspection by a qualified electrician before you move in.</p>
         <p>If you
             <a title="see also: HMOs"
-                     href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+                     href="{% url 'website:renters-houses_in_multiple_occupation_hmo' %}">
             live in a shared house</a> your landlord must have an inspection carried out every five years.</p>
         <p>Electrical appliances that have been checked by an electrician should have a PAT (portable appliance test)
             sticker on the plug. This shows the date it was tested.</p>
@@ -56,7 +56,7 @@
         <p>The landlord must get an electrician's periodic inspection report showing the property continues to be safe.
             This must be available to tenants.</p>
         <p class="inline-callout internal">Find out
-            <a href="{% url 'renters-houses_in_multiple_occupation_hmo' %}"
+            <a href="{% url 'website:renters-houses_in_multiple_occupation_hmo' %}"
                title="see also: HMOs">more about houses in multiple occupation</a>.</p>
 
     <h2>Safety of your own appliances</h2>
@@ -76,10 +76,10 @@
         </ul>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for disrepair</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -91,11 +91,11 @@
         <ul>
             <li>
                 <a title="see also: report repairs"
-                   href="{% url 'renters-how_to_report_repairs_to_a_private_landlord' %}">
+                   href="{% url 'website:renters-how_to_report_repairs_to_a_private_landlord' %}">
                     reporting repairs to a private landlord</a></li>
             <li>
                 <a title="see also: report repairs to council or housing association landlords"
-                   href="{% url 'renters-how_to_report_repairs_to_a_social_landlord' %}">
+                   href="{% url 'website:renters-how_to_report_repairs_to_a_social_landlord' %}">
                     reporting repairs to a council or housing association</a></li>
         </ul>
         <p class="inline-callout highlight">You must allow your landlord or an electrician access to your home
@@ -108,28 +108,29 @@
         <p>If you've reported an electrical problem to your landlord and they refuse to fix it or they ignore
             your request, contact
             <a title="see also: Complain to environmental health about rented housing"
-               href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}">
+               href="{% url 'website:renters-complain_to_environmental_health_about_rented_housing' %}">
                 your local council's environmental health team</a>.</p>
+
         <p>The council can take action against landlords who don't comply with safety rules.</p>
+
         <p class="inline-callout internal">Find out more about problems with repairs in
             <a title="see also:What to do if your landlord won&rsquo;t do repairs"
-               href="{% url 'renters-what_to_do_if_your_landlord_wont_do_repairs' %}">
+               href="{% url 'website:renters-what_to_do_if_your_landlord_wont_do_repairs' %}">
                 private rented homes</a> and
             <a title="see also: Complain about council or housing association repairs"
-               href="{% url 'renters-complain_about_council_or_housing_association_repairs' %}">
+               href="{% url 'website:renters-complain_about_council_or_housing_association_repairs' %}">
                 council or housing association homes</a>.
 
-        <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for disrepair</h4></a>
+        <p class="bs-callout bs-callout-primary">
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for disrepair</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
-
-                </div>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
+                        Contact Represent</a>
+                    </p>
 
     </div>
 </div>
-
 {% endblock %}
 
 

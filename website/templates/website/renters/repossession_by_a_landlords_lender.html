@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Repossession by a landlord's lender<br>
@@ -61,10 +61,10 @@
         <p>Represent offers a landlord and contact checking service.
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Landlord and tenancy information check service</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Landlord and tenancy information check service</h4></a>
                     <p></p>
                     <p>Get in touch with Represent today and ask for a landlord and tenancy check</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">COntact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">COntact Represent</a></p>
 
                 </div>
 
@@ -78,13 +78,13 @@
         <p>Find out about eviction from:</p>
         <ul>
             <li>
-                <a href="{% url 'renters-eviction-of-assured-shorthold-tenants' %}"
+                <a href="{% url 'website:renters-eviction-of-assured-shorthold-tenants' %}"
                    title="See also: Eviction of assured shorthold tenants">an assured shorthold tenancy</a></li>
             <li>
-                <a href="{% url 'renters-eviction_of_assured_tenants' %}"
+                <a href="{% url 'website:renters-eviction_of_assured_tenants' %}"
                    title="See also: Eviction of assured tenants">an assured tenancy</a></li>
             <li>
-                <a href="{% url 'renters-eviction_of_regulated_tenants' %}"
+                <a href="{% url 'website:renters-eviction_of_regulated_tenants' %}"
                    title="See also: Eviction of regulated tenants">a regulated tenancy</a></li>
         </ul>
     <h2>If a mortgage lender doesn't become your landlord</h2>
@@ -106,10 +106,10 @@
             <li>
                 live in accommodation provided by your employer</li>
             <li>are a
-            <a href="{% url 'renters-lodgers' %}"
+            <a href="{% url 'website:renters-lodgers' %}"
                title="see also: lodgers">lodger</a> (or other type of&nbsp;
                 <a title="See also: excluded occupiers"
-                   href="{% url 'renters-excluded_occupiers' %}">
+                   href="{% url 'website:renters-excluded_occupiers' %}">
                     excluded occupier</a>)</li>
             <li>live in the same building as your landlord (that isn't a purpose-built block of flats)</li>
             <li>don't pay any rent</li>
@@ -128,7 +128,7 @@
             addressed to 'the tenant or the occupier'.</p>
         <p>Always open post addressed to 'the occupiers'. Don't assume that it's junk mail.</p>
         <p class="inline-callout">Find out more about
-            <a href="{% url 'renters-what_happens_at_a_repossession_hearing' %}"
+            <a href="{% url 'website:renters-what_happens_at_a_repossession_hearing' %}"
                title="see also: what happens at a repossession hearing">what happens at a repossession hearing</a>.</p>
 
     </div>

@@ -2,7 +2,6 @@
 {% load staticfiles %}
 {% load static %}
 
-
 <html lang="en">
 
 <head>
@@ -12,24 +11,34 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="{% block description %}{% endblock %}">
     <meta name="author" content="{% block author %}{% endblock %}">
-    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link href="{% static 'img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
 
     <!--TITLE-->
     <title>{% block title %}{% endblock %}</title>
 
     {% block css %}
     {% endblock %}
-    <!--{% block javascript %}
-    {% endblock %}-->
+
+        {% block head %}
+    {% endblock %}
 
     <!--CSS Files -->
-    <link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/ie10-viewport-bug-workaround.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}" />-->
+
+    <!--<link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.min.css' %}" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ie10-viewport-bug-workaround.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
 
     <!--JS-->
-    <script type="text/javascript" src="{% static 'website/js/ie-emulation-modes-warning.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -37,83 +46,89 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
-
-
-    {% block head %}
-    {% endblock %}
-
 </head>
 
 <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- Static navbar -->
-        <nav class="navbar navbar-default navbar-inverse" style="font-weight: bold; background-color: #000000">
-            <div class="container-fluid">
-              <div class="navbar-header">
-              </div>
-              <div id="navbar" class="navbar-collapse collapse">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'website:about' %}">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'blog:list_of_post' %}">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="/services" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!--<a class="dropdown-item" href="#">Family</a>
+                            <a class="dropdown-item" href="#">Conveyancing</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Probate</a>-->
 
-                  {% if user.is_authenticated %}
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                  <li><a href="{% url 'about' %}">About</a></li>
-                  <li><a href="/contact">Contact</a></li>
-                  <li class="dropdown">
-                        <a href="/blog" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
-                            <ul class="dropdown-menu" style="background:black; width:800px;">
-                                <div class="jumbotron" align="center">
-                                  <h1>Hello, world!</h1>
-                                  <p>...</p>
-                                  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-                                </div>
-                                <li><a href="/blog">Blog</a></li>
-            	                <li><a href="https://www.nationalrentersalliance.co.uk/faqs">English</a></li>
-            	                <li><a href="https://www.nationalrentersalliance.co.uk/faqs-spanish">Español</a></li>
-                                <li><a href="https://www.nationalrentersalliance.co.uk/faqs-german">Deutsch</a></li>
-                            </ul>
-                  </li>
+                            <a class="dropdown-item" href="{% url 'website:wills' %}">Wills</a>
+                  <a class="dropdown-item" href="{% url 'website:probate-home' %}">Probate and Estates</a>
+                  <a class="dropdown-item" href="{% url 'website:conveyancing-residential-home' %}">Buying a house</a>
+                    <a class="dropdown-item" href="{% url 'website:conveyancing-residential-home' %}">Conveyancing (residential)</a>
+                    <a class="dropdown-item" href="{% url 'website:conveyancing-commercial-home' %}">Commerical Conveyancing</a>
+                    <a class="dropdown-item" href="{% url 'website:employment-home' %}">Employment law</a>
+                  <a class="dropdown-item" href="{% url 'website:conveyancing-residential-home' %}">Selling a house</a>
+                  <a class="dropdown-item" href="{% url 'website:leasehold-what_is_leasehold' %}">Extend my leasehold</a>
+                  <a class="dropdown-item" href="{% url 'website:conveyancing-commercial-home' %}">Commercial law</a>
+                  <a class="dropdown-item" href="{% url 'website:family-home' %}">Family law</a>
+                  <a class="dropdown-item" href="{% url 'website:family-home' %}">Divorce</a>
+                  <a class="dropdown-item" href="{% url 'website:power-attorney-home' %}">Lasting power of attorney</a>
+
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="{% url 'website:litigation-home' %}">Litigation</a>
+                  <a class="dropdown-item" href="{% url 'website:litigation-home' %}">Debt recovery</a>
+                  <a class="dropdown-item" href="{% url 'website:renting-home' %}">Landlord & Tenant Law</a>
+                  <!--<li><a href="#">Immigration</a></li>-->
+                   <div class="dropdown-divider"></div>
+
+                            <a class="dropdown-item" href="/contact">Other</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+
+                    <!--TODO Add search functionality to form-->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
                 </ul>
 
-                   <!--TODO Add search functionality to form-->
-                    <form class="navbar-form navbar-left">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                      </form>
 
 
-                    <ul class="nav navbar-nav navbar-right">
-                         <li><a href="{% url 'view_profile' %}">My Profile</a></li>
-                        <li><a href="{% url 'change_password' %}">Change Password</a></li>
-                        <li class="active"><a href="{% url 'logout' %}">logout <span class="sr-only">(current)</span></a></li>
+                {% if user.is_authenticated %}
+                    <!-- TEST -->
+                    <ul class="navbar-nav navbar-right">
+                         <li class="nav-item"><a class="nav-link" href="{% url 'myaccount:view_profile' %}">My Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'myaccount:change_password' %}">Change Password</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'myaccount:logout' %}">logout <span class="sr-only">(current)</span></a></li>
                     </ul>
 
-                  {% else %}
-                  <ul class="nav navbar-nav">
-                        <li><a href="/">Home</a></li>
-                          <li><a href="/about">About</a></li>
-                          <li><a href="/contact">Contact</a></li>
-                            <li><a href="{% url 'blog:list_of_post' %}">Blog</a></li>
-                  </ul>
-
-                  <!--TODO Add search functionality to form-->
-                      <form class="navbar-form navbar-left">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                            <button type="submit" class="btn btn-default">Submit</button>
-                      </form>
-
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="{% url 'login' %}">login</a></li>
-                            <li><a href="{% url 'reset_password' %}">Reset password</a></li>
-                            <li><a href="{% url 'register' %}">Register</a></li>
+                {% else %}
+                        <ul class="navbar-nav navbar-right">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'myaccount:login' %}">login</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'myaccount:reset_password' %}">Reset password</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{% url 'myaccount:register' %}">Register</a></li>
                         </ul>
                   {% endif %}
 
-            </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
+            </div>
         </nav>
 
 
@@ -132,25 +147,25 @@
             <img src="{% static 'images/represent_logo_sized.jpg' %}" alt="Represent Logo"/>
         </div>
 
-          <p>Represent Group Limited VAT Reg. No.: 231 5270 42 Registered in England and Wales, No. 09853493 <br>
-          Regulated by the Claims Management Regulator in respect of regulated claims management activities. Registration No.: CRM42711
+          <p>Represent Law Limited VAT Reg. No.: 287518265 Registered in England and Wales, No. 10857999 <br>
+          Regulated by the Solicitors Regulation Authority Registration No.SRA 641577
           </p>
-        <p><i class="fa fa-map-pin"></i> Office 104, 275 Deansgate, Manchester, Greater Manchester, M3 4EL</p>
-        <!--<p><i class="fa fa-phone"></i> 020 79930069 </p>-->
-          <p><i class="fa fa-phone"></i> {{ telephone }}</p>
-        <p><i class="fa fa-envelope"></i> E-mail : contact@nralliance.co.uk</p>
+        <p><i class="fa fa-map-pin"></i> 63 Sandbourne Avenue, Wimbledon, London, SW19 3EH</p>
 
+          <p><i class="fa fa-phone"></i> {{ telephone }}</p>
+          <p><i class="fa fa-envelope"></i>
+              <a href="mailto: {{ represent_contact_email }}">{{ represent_contact_email }}</a></p>
       </div>
       <div class="col-md-2 col-sm-6 paddingtop-bottom">
         <h6 class="heading7">GENERAL LINKS</h6>
         <ul class="footer-ul">
           <li><a href="#"> Careers</a></li>
-          <li><a href="{% url 'privacy-policy' %}"> Privacy Policy</a></li>
-          <li><a href="{% url 'terms_and_conditions' %}"> Terms & Conditions</a></li>
-          <li><a href="#"> Client Gateway</a></li>
+          <li><a href="{% url 'website:privacy-policy' %}">Privacy Policy</a></li>
+          <li><a href="{% url 'website:terms_and_conditions' %}">Terms & Conditions</a></li>
+          <!--<li><a href="#"> Client Gateway</a></li>
           <li><a href="#"> Ranking</a></li>
           <li><a href="#"> Case Studies</a></li>
-          <li><a href="#"> FAQs</a></li>
+          <li><a href="#"> FAQs</a></li>-->
         </ul>
       </div>
       <div class="col-md-3 col-sm-6 paddingtop-bottom">
@@ -186,37 +201,20 @@
 
 <div class="copyright">
   <div class="container">
-    <div class="col-md-6">
+    <div class="col-md-6" style="text-align:center">
       <p>Copyright © 2015 -  {% now "Y" %} National Renters Alliance Ltd. All rights
 			reserved. </p>
-    </div>
-    <div class="col-md-6">
-      <ul class="bottom_ul">
-        <li><a href="about-represent">About us</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="contact-represent">Contact us</a></li>
-        <li><a href="#">Site Map</a></li>
-      </ul>
     </div>
   </div>
 </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static 'website/js/ie10-viewport-bug-workaround.js' %}"></script>
-    <script type="text/javascript" src="{% static 'website/js/bootstrap.min.js' %}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <!--TEST-->
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    --><!--TEST-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-                {% block js_files %}
+
+        {% block js_files %}
         {% endblock %}
 
         <script>
@@ -227,7 +225,6 @@
               });
             });
         </script>
-
 
 </body>
 </html>

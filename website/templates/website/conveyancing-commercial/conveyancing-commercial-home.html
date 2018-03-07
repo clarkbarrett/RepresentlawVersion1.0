@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Probates and Estates{% endblock %}
+{% block description %}Represent Law Probate and Estates services{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+             <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent</h1>
+                <h1 align="center"><small style="color:white">Commercial Property</small></h1>
+            </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1 align="center">Commercial roperty</h1>
+        </div>
+
+        <p>We provide an extensive range of commercial services to a variety of businesses. Contact Represent to
+                obtain advice on buying, selling, letting, and re-mortgaging both freehold and leasehold business
+                property, units and outlets.</p>
+
+            <p>We can also help you buy or sell your business.</p>
+
+            <p>Whether you are a professional firm, a pub, local shop keeper or trader, the transaction can be a
+                complicated one. We offer a hands-on practical approach where we can be with you from start to
+                finish.</p>
+
+            <p>Even if you are only thinking of buying or selling your business,
+                <a href="{% url 'website:contact' %}">contact Represent</a> today.</p>
+
+            <p>Initial preparation and advice saves time and money later.</p>
+
+        </div>
+</div>
+
+{% endblock %}
+
+
+

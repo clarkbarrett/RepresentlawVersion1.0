@@ -27,82 +27,67 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-        <div class="col-md-6 col-md-offset-1">
+        <div class="col-md-6 offset-md-2">
 
             <div class="page-header">
-                <h1>Tenancy deposits <br>
-                    <small>Most landlords ask you to pay a tenancy deposit when you sign up to a new tenancy.
+                <h1>Tenancy deposits <br></h1>
+                    <h2><small>Most landlords ask you to pay a tenancy deposit when you sign up to a new tenancy.
                     It's your money. Find out how to check it's protected and how to get it back when you leave.</small>
-                </h1>
+                </h2>
             </div>
-            </div>
-</div>
+            <hr>
 
-<div class="container-fluid">
-        <div class="row">
-                <div class="col-md-4 col-md-offset-1">
 
-                    <a href="{% url 'renters-deposit-check' %}" class="btn btn-primary btn-lg" role="button">Check if your deposit is protected</a>
-                      <br>
-                    <h1>Protecting your tenancy deposit</h1>
-                      <br>
-                    <ul>
-                        <li>
-                            <a href="{% url 'renters-deposit-check' %}">
-                                Check if your tenancy deposit is protected.
-                            </a>
-                        </li>
-                          <br>
-                        <li>
-                            <a href="{% url 'renters-get-deposit-protected' %}">
-                                How to get your tenancy deposit protected
-                            </a>
-                        </li>
-                          <br>
-                        <li>
-                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/tenancy_deposit_protection_rules">
-                            Tenancy deposit protection rules
-                            </a>
-                    </ul>
+            <h2>Protecting your tenancy deposit</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-deposit-check' %}">
+                Check if your tenancy deposit is protected</a></li>
+            <li><a href="{% url 'website:renters-get-deposit-protected' %}">
+                How to get your tenancy deposit protected</a></li>
+            <li><a href="{% url 'website:renters-tenancy_deposit_protection_rules' %}">
+                Tenancy deposit protection rules</a></li>
+        </ul>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
                 </div>
 
-                <div class="col-md-4 col-md-offset-1">
+    <h2>Getting your tenancy deposit back</h2>
+        <ul>
+            <li><a href="{% url 'website:renters-tenancy_deposit_deductions_your_landlord_can_make' %}">
+                Tenancy deposit deductions your landlord can make</a></li>
+            <li><a href="{% url 'website:renters-how-to-get-your-deposit-back' %}'">
+                How to get your tenancy deposit back</a></li>
+            <li><a href="{% url 'website:deposit-protection-claims' %}">
+               Tenancy deposit compensation claims</a></li>
+        </ul>
 
-                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">How to get your tenancy deposit back</a>
+    <h2>Protecting your tenancy deposit</h2>
 
-                      <br>
-                    <h1>Getting your tenancy deposit back</h1>
-                      <br>
+        <ul>
+            <li><a href="{% url 'website:renters-rent_deposit_bond_and_guarantee_schemes.html' %}">
+                Check if your tenancy deposit is protected</a></li>
+            <li><a href="{% url 'website:renters-letting_agent_fees_for_tenants' %}">
+                How to get your tenancy deposit protected</a></li>
+            <li><a href="{% url 'website:renters-rent_in_advance' %}">
+                Tenancy deposit protection rules</a></li>
+        </ul>
 
-                    <ul>
-                        <li>
-                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/tenancy_deposit_deductions_your_landlord_can_make">
-                                Tenancy deposit deductions your landlord can make
-                            </a>
-                        </li>
-                          <br>
-                        <li>
-                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/how_to_get_your_tenancy_deposit_back">
-                            How to get your tenancy deposit back
-                            </a>
-                        </li>
-                          <br>
-                        <li>
-                            <a href="http://england.shelter.org.uk/housing_advice/tenancy_deposits/court_action_for_a_tenancy_deposit_refund">
-                                Court action for a tenancy deposit refund
-                            </a>
-                        </li>
-                          <br>
-                        <li>
-                            <a href="{% url 'deposit-protection-claims' %}">
-                            Tenancy deposit compensation claims</a>
-                        </li>
-                    </ul>
-                </div>
-        </div>
-    <br>
-    <br>
+
+
+
+    </div>
 </div>
+
+</div>
+</div>
+
 
 {% endblock %}
 

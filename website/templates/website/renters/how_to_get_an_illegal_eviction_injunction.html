@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}How to get an illegal eviction injunction{% endblock %}
+{% block description %}An injunction could get you back into your home if you have been illegally evicted.
+You can also take your landlord to court to claim compensation {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How to get an illegal eviction injunction</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>You can ask a court for an injunction, compensation or both if a landlord has illegally evicted you.
+            </h1>
+        </div>
+
+    <h2>How an injunction helps</h2>
+        <p>You can ask the court for an injunction to order your landlord to let you back into your home
+            or to stop harassing you.</p>
+        <p>A court injunction is an order by a judge that tells someone to either do something or stop doing something.
+            Your landlord could be fined or sent to prison for not obeying an injunction.</p>
+        <p>You can't get an injunction to get back into your home if it has already been rented to other tenants.</p>
+
+    <h2>Legal help for an injunction</h2>
+        <p>Legal aid could help if you have been illegally evicted or are facing harassment. You may able to get
+            free or low-cost legal help to take your landlord to court.</p>
+
+        <p class="inline-callout phone">Contact
+            <a title="External link: Gov.uk - Civil Legal Advice contact details"
+               href="{{civil_legal_advice_url}}" target="_blank">Civil Legal Advice</a>
+            on 0345 345 4 345 to see if you qualify for legal aid</p>
+
+    <h3>Help with an injunction if you can't get legal aid</h3>
+        <p>Your local council may be able to help you apply for an injunction.</p>
+        <p>Find out <a title="See also: Illegal eviction: Help from the council"
+                       href="https://england.shelter.org.uk/housing_advice/eviction/help_from_the_council_after_illegal_eviction">
+            how your local council could help</a>.</p>
+
+        <p>You may have to pay for court action yourself if you don't qualify for legal aid. You may be
+            able to get free or low-cost legal help from a solicitor through a conditional fee arrangement.</p>
+
+        {% include "contact-renters.html" %}
+
+        <ul>
+            <li>a workplace scheme or trade union offering legal advice</li>
+            <li>legal insurance&nbsp;&ndash;&nbsp;check if your household contents insurance or other
+                insurance covers legal disputes</li>
+        </ul>
+
+    <h2>Where to apply for an injunction</h2>
+        <p>Use <a title="Link to Court forms: N16A - Application for Injunction"
+                  href="{{ N16A_Injunction_Application_url }}" target="_blank">Form N16A</a> to ask the court&nbsp;
+            to make an injunction against your landlord to let you back into your home or to stop harassing you.</p>
+
+        <p>Apply for an injunction at your local county court.</p>
+        <p class="inline-callout">Find <a title="Link to Gov.uk court finder"
+                                          href="{{court_finder_url}}" target="_blank">
+            your nearest county court using the Gov.uk court finder</a>.</p>
+        <p>You probably have to wait three days or longer before you can attend a court hearing.</p>
+
+    <h2>Emergency applications</h2>
+        <p>You can ask the court to act quickly if you've been illegally evicted and you're homeless or
+            at risk of violence.</p>
+        <p>You can apply to the court for a 'without notice' injunction.</p>
+        <p>The court can make this type of injunction without hearing from your landlord first.
+            It can sometimes do this on the same day you apply.</p>
+        <p class="inline-callout">Use <a title="Link to Court forms: N16A - Application for Injunction"
+                                         href="{{ N16A_Injunction_Application_url }}" target="_blank">Form N16A</a>
+            to make an emergency application for an injunction.</p><p>There will be a further court hearing
+        at a later date for both you and your landlord to attend.</p>
+
+    <h2>Court action for compensation</h2>
+        <p>You can take your landlord to court to claim compensation for illegal eviction or because&nbsp;of
+            <a title="See also: Harassment by a private landlord"
+               href="{% url 'website:renters-harassment_by_a_private_landlord'%}">
+                harassment</a>.&nbsp;&nbsp;A claim for compensation is also called a claim for damages.</p>
+
+        {% include "contact-renters.html" %}
+
+        <p>The amount of&nbsp;compensation the court decides to award you depends on your tenancy
+            type and how your landlord behaved.&nbsp;The court can order your landlord to pay more
+            if&nbsp;your landlord was violent.</p>
+
+
+    <h2>Legal help for a compensation claim</h2>
+        <p>You&nbsp;may get legal aid</a> to take your landlord to court for compensation for illegal eviction if you claim certain
+            benefits or have a low income.</p>
+        <p>A&nbsp;housing solicitor in your local area may be able to help you for free or for a reduced fee.
+            You may be asked to agree to pay the solicitor's fee from any compensation you are awarded.</p>
+        <p>If you agree to use a conditional fee arrangement to take your landlord to court to claim compensation and:</p>
+
+        <ul>
+            <li>you win your case, the costs of hiring the solicitor are paid by your landlord</li>
+            <li>you don't win, any costs will be what you agree with the solicitor at the start</li>
+        </ul>
+
+        {% include "contact-renters.html" %}
+
+    <h2>Court fees</h2>
+        <p>You usually have to pay a fee when you apply to a court for an injunction or compensation.</p>
+        <p>You might not have to pay a fee if you are claim certain benefits or have&nbsp;a low income.</p>
+        <p class="inline-callout">Find out more from&nbsp;
+            <a title="Link to Gov.uk - court and tribunal fees" href="{{court_fees_url}}"
+               target="_blank">Gov.uk about court fees</a>.</p>
+        <p>If the court makes an injunction or awards you compensation,
+        you can ask the court to order&nbsp;your&nbsp;landlord to pay you any money you have spent on court fees.</p>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

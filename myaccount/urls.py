@@ -1,4 +1,4 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
 from . import views
 from django.contrib.auth.views import (
     login,
@@ -8,6 +8,8 @@ from django.contrib.auth.views import (
     password_reset_confirm,
     password_reset_complete
 )
+
+app_name = "myaccount"
 
 urlpatterns = [
     # url(r'^$', views.home),

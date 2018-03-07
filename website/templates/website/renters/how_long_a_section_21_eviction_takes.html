@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}How long a section 21 eviction takes{% endblock %}
+{% block description %}The full section 21 eviction process for a private tenant takes an average of
+7 to 8 months. This covers from when your landlord serves a section 21 notice to when county court
+bailiffs come to evict you.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">How long a section 21 eviction takes</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>The full section 21 eviction process for a private tenant takes an average of 7
+                to 8 months. This covers from when your landlord serves a section 21 notice to
+                when county court bailiffs come to evict you.
+            </h1>
+        </div>
+
+    <h2>Total time to eviction</h2>
+        <p>The full eviction process for a private tenant takes an average of 7 to 8 months.</p>
+        <p>This covers from when your landlord serves a section 21 notice to when county court
+            bailiffs come to evict you.</p>
+        <p style="border: 0px">The process could be faster if:</p>
+        <ul>
+            <li>your landlord wastes no time applying to the court</li>
+            <li>a hearing isn't needed or is listed quickly</li>
+            <li>there's a low waiting time for the bailiffs</li>
+        </ul>
+
+    <h2>Time for each stage</h2>
+        <h3>Notice period</h3>
+        <p style="border: 0px">A&nbsp;
+            <a href="https://england.shelter.org.uk/housing_advice/eviction/how_to_check_section_21_notice_is_valid"
+               title="See also: How to check a section 21 notice is valid">
+                valid section 21 notice</a>
+            must give you at least 2 months<strong>'</strong> notice to leave.</p>
+
+    <h3>Court order</h3>
+        <p>On average, after a landlord applies to the court, it takes about 2 months for
+            a court to make a possession order.</p>
+
+    <h3>Bailiff's eviction</h3>
+        <p>If you don't leave after a possession order, it can take about 2 months
+            for the court to agree the bailiffs can evict you.</p>
+        <p>If your landlord uses county court bailiffs, it then takes an average of
+            2 months for the bailiffs to evict you after the court agrees they can.</p>
+        <p>The time can be quicker if your landlord uses High Court bailiffs, also known
+            as High Court enforcement officers. It could be days rather than weeks.</p>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

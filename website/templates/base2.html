@@ -6,22 +6,40 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="author" content="{% block author %}{% endblock %}">
+    <link href="{% static 'img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
 
+    <!--TITLE-->
+    <title>{% block title %}{% endblock %}</title>
 
     {% block css %}
     {% endblock %}
-    <!--{% block javascript %}
-    {% endblock %}-->
+
+        {% block head %}
+    {% endblock %}
 
     <!--CSS Files -->
-    <!--<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" /> -->
+    <!--<link rel="stylesheet" type="text/css" href="{% static 'website/css/bootstrap.min.css' %}" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="{% static 'website/css/ie10-viewport-bug-workaround.css' %}" />
-    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'website/css/style.css' %}" />-->
+
+    <!--<link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap.min.css' %}" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/ie10-viewport-bug-workaround.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
 
     <!--JS-->
-    <script type="text/javascript" src="{% static 'website/js/ie-emulation-modes-warning.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/ie-emulation-modes-warning.js' %}"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,8 +49,7 @@
     <![endif]-->
 
 
-    {% block head %}
-    {% endblock %}
+
 
 </head>
 
@@ -48,7 +65,7 @@
                   {% if user.is_authenticated %}
                 <ul class="nav navbar-nav">
                     <li><a href="/">Home</a></li>
-                  <li><a href="{% url 'about' %}">About</a></li>
+                  <li><a href="{% url 'website:about' %}">About</a></li>
                   <li><a href="/contact">Contact</a></li>
                   <li class="dropdown">
                         <a href="/blog" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
@@ -76,16 +93,16 @@
 
 
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="{% url 'view_profile' %}">My Profile</a></li>
-                        <li><a href="{% url 'change_password' %}">Change Password</a></li>
-                        <li class="active"><a href="{% url 'logout' %}">logout <span class="sr-only">(current)</span></a></li>
+                         <li><a href="{% url 'myaccount:view_profile' %}">My Profile</a></li>
+                        <li><a href="{% url 'myaccount:change_password' %}">Change Password</a></li>
+                        <li class="active"><a href="{% url 'myaccount:logout' %}">logout <span class="sr-only">(current)</span></a></li>
                     </ul>
 
                   {% else %}
                   <ul class="nav navbar-nav">
                         <li><a href="/">Home</a></li>
                           <li><a href="/about">About</a></li>
-                          <li><a href="/contact">Contact</a></li>
+                          <li><a href="{% url 'website:contact' %}">Contact</a></li>
                             <li><a href="{% url 'blog:list_of_post' %}">Blog</a></li>
                   </ul>
 
@@ -98,9 +115,9 @@
                       </form>
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="{% url 'login' %}">login</a></li>
-                            <li><a href="{% url 'reset_password' %}">Reset password</a></li>
-                            <li><a href="{% url 'register' %}">Register</a></li>
+                            <li><a href="{% url 'myaccount:login' %}">login</a></li>
+                            <li><a href="{% url 'myaccount:reset_password' %}">Reset password</a></li>
+                            <li><a href="{% url 'myaccount:register' %}">Register</a></li>
                         </ul>
                   {% endif %}
 
@@ -115,34 +132,41 @@
     {% block content %}
     {% endblock %}
 
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/ie10-viewport-bug-workaround.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
 
 <footer>
   <div class="container" style="margin-top: 20px">
     <div class="row">
       <div class="col-md-4 col-sm-6 footerleft ">
         <div class="logofooter">
-            <!--<img src="/blog/media/media/represent_logo_sized.jpg" alt="Represent Logo"/>-->
             <img src="{% static 'images/represent_logo_sized.jpg' %}" alt="Represent Logo"/>
         </div>
 
-
-
-
-          <p>Represent Group Limited VAT Reg. No.: 231 5270 42 Registered in England and Wales, No. 09853493 <br>
-          Regulated by the Claims Management Regulator in respect of regulated claims management activities. Registration No.: CRM42711
+          <p>Represent Law Limited VAT Reg. No.: 231 5270 42 Registered in England and Wales, No. 10857999 <br>
+          Regulated by the Solicitors Regulation Authority Registration No.SRA 641577
           </p>
         <p><i class="fa fa-map-pin"></i> Office 104, 275 Deansgate, Manchester, Greater Manchester, M3 4EL</p>
-        <!--<p><i class="fa fa-phone"></i> 020 79930069 </p>-->
-          <p><i class="fa fa-phone"></i> {{ telephone }}</p>
-        <p><i class="fa fa-envelope"></i> E-mail : contact@nralliance.co.uk</p>
 
+          <p><i class="fa fa-phone"></i> {{ telephone }}</p>
+          <p><i class="fa fa-envelope"></i>
+              <a href="mailto: {{ represent_contact_email }}">{{ represent_contact_email }}</a></p>
       </div>
       <div class="col-md-2 col-sm-6 paddingtop-bottom">
         <h6 class="heading7">GENERAL LINKS</h6>
         <ul class="footer-ul">
           <li><a href="#"> Careers</a></li>
-          <li><a href="{% url 'privacy-policy' %}"> Privacy Policy</a></li>
-          <li><a href="{% url 'terms_and_conditions' %}"> Terms & Conditions</a></li>
+          <li><a href="{% url 'website:privacy-policy' %}"> Privacy Policy</a></li>
+          <li><a href="{% url 'website:terms_and_conditions' %}"> Terms & Conditions</a></li>
           <li><a href="#"> Client Gateway</a></li>
           <li><a href="#"> Ranking</a></li>
           <li><a href="#"> Case Studies</a></li>
@@ -199,23 +223,12 @@
 </div>
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static 'website/js/ie10-viewport-bug-workaround.js' %}"></script>
-    <script type="text/javascript" src="{% static 'website/js/bootstrap.min.js' %}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <!--TEST-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <!--TEST-->
-
-                {% block js_files %}
+        {% block js_files %}
         {% endblock %}
 
         <script>

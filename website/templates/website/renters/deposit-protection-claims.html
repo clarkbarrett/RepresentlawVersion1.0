@@ -25,17 +25,18 @@
             </div>
         </div>
 
-<!--FAQs-->
+
 <div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
 
+        <div class="page-header">
+            <h1>Check if your tenancy deposit is protected<br>
+                <small>Did your landlord correctly secure your rental deposit using an official scheme?
+                You could be owed up to 3X your deposit in compensation if this wasn't done correctly</small>
+            </h1>
+        </div>
 
-        <div class="col-md-5 col-md-offset-2">
-            <div class="row">
-                <h1>Check if your tenancy deposit is protected</h1>
-            <p>Did your landlord correctly secure your rental deposit using an official scheme?
-                You could be owed up to 3X your deposit in compensation if this wasn't done correctly</p>
-
-                <p><a href="{% url 'renters-deposit-check' %}" class="btn btn-primary btn-lg" role="button">Check if my deposit was protected</a></p>
+                <p><a href="{% url 'website:renters-deposit-check' %}" class="btn btn-primary btn-lg" role="button">Check if my deposit was protected</a></p>
 
                 <h3>Deposit protection law</h3>
                 <p>All tenants who have paid a deposit to rent flats houses using an assured shorthold tenancy
@@ -50,10 +51,10 @@
                  <p>Tenancy&nbsp;deposits previously held by Capita Tenancy Deposit Service are now protected by&nbsp;mydeposits.</p>
 
                                 <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         See if you can make a deposit protection claim</a></p>
 
                 </div>
@@ -71,7 +72,7 @@
                     <li>give you certain information about the scheme</li>
                 </ul>
                     <p>If they don't, you can
-                        <a href="{% url 'deposit-protection-claims' %}"
+                        <a href="{% url 'website:deposit-protection-claims' %}"
                            title="See also: tenancy deposit compensation claims">
                             take your landlord to court to claim tenancy deposit compensation</a>.
                     </p>
@@ -93,21 +94,16 @@
 
 
                 <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         See if you can make a deposit protection claim</a></p>
 
                 </div>
 
             </div>
         </div>
-</div>
-
-
-
-
 
 {% endblock %}
 

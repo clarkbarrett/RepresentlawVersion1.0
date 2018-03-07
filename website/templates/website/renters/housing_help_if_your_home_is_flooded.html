@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Housing help if your home is flooded{% endblock %}
+{% block description %}
+Housing help if your home is flooded
+
+Find out about rehousing and repair rights if your home floods because of severe storms and heavy rainfall. {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Housing help if your home is flooded</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1> Find out about rehousing and repair rights if your home floods because of severe storms and heavy rainfall.
+            </h1>
+        </div>
+
+
+    <h2>Leaving if your home is flooded</h2>
+        <p>Call the emergency services on 999 if you're trapped by floodwater.</p>
+        <p>Councils usually have arrangements for emergency evacuation and help during a flood.
+            Contact your local council for advice and support.</p>
+        <p class="inline-callout external">
+            <a title="Link to Gov.uk - find your council"
+               href="{{ find_council_url }}"
+               target="_blank">Find details of your local council</a>.</p>
+        <p>You must leave your home if you're told to by the emergency services or the council.</p>
+        <p>You could put yourself and anyone trying to help you at risk if you don't leave. Flooded houses can
+            be dangerous because of sewage, water damaged electrics or damage to the gas supply.</p>
+
+
+    <h2>If you are homeless after a flood</h2>
+        <p>Your council has a duty to provide you with emergency accommodation&nbsp;if
+            you're made homeless by flooding,</p>
+        <p>Anyone made homeless by a flood is automatically treated as being in priority need for homelessness help.</p>
+        <p class="inline-callout internal">Contact your local council as soon as possible to
+            make a homelessness application</a>.</p>
+
+    <h2>Rehousing of tenants</h2>
+        <p>Your private landlord isn't usually responsible for finding you somewhere else to live if you have
+            to move out because your home is flooded.</p>
+        <p>Your landlord may have an insurance policy that pays for alternative accommodation for tenants.
+            Contact your landlord to ask.</p>
+        <p>If you rent your home from the council or a housing association, they should provide temporary
+            accommodation if you have to move out.</p>
+        <p>If you do have to leave your home, get your landlord's agreement in writing:</p>
+
+        <ul>
+            <li>you had to move out due to flooding</li>
+            <li>you'll be able to move back after repairs are finished</li>
+        </ul>
+        <p>You can also ask for an estimate of how long repairs will take.</p>
+
+     <h2>Landlord's repair works</h2>
+        <p>Your landlord's buildings insurance could cover flood damage to your home.</p>
+        <p>Your landlord can repair your home so that it's fit for you to live in again.
+            This could take some time if major works are needed.</p>
+        <p>Find out about
+            <a href="{% url 'website:renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+                health and safety standards for rented homes</a>.</p>
+        <p>In extreme situations, your landlord could decide not to repair a flood damaged home.</p>
+        <p>Get advice if this happens to you.</p>
+
+            {% include 'disrepair-callout.html' %}
+
+    <h2>Responsibility for damaged belongings</h2>
+        <p>Your landlord isn't responsible for replacing or repairing any of your personal belongings
+            that are flood damaged.</p>
+        <p>If you don't have contents insurance to pay for lost or damaged belongings, you might be able to
+            get help from a local assistance fund.</p>
+
+    <h2>Paying rent for a flooded home</h2>
+        <p>Your landlord might expect you to keep paying rent for your flooded home. You must keep paying
+            the rent even if your home is being repaired and you can use only one or two rooms.</p>
+        <p>You can ask your landlord for a rent reduction or refund.</p>
+        <p>If you can't live in your home, you can ask your landlord to suspend rent payments.
+            Your landlord might agree you don't have to pay rent while your home isn't fit for you to live in.</p>
+        <p>Check if
+            <a href="{% url 'website:renters-types-of-renting-agreement' %}"
+               title="see also: types of tenancy agreement">your tenancy agreement</a>
+            says anything about&nbsp;paying rent if your home cannot be lived in for any length of time.</p>
+
+        <p class="advice-highlight tool">
+            Get advice if your landlord won't agree to suspend or reduce your rent payments.</p>
+
+            {% include 'disrepair-callout.html' %}
+
+    <h2>If you have to rent another home</h2>
+        <p>You may have to move out of the house you rent while essential repairs are being done.</p>
+        <p>If you are still paying rent on your home, you could ask your landlord to pay something
+            towards the cost of your temporary accommodation. Your landlord might have insurance that covers this.</p>
+        <p>You may be eligible for housing benefit or housing costs universal credit for your temporary
+            accommodation but you can't usually claim housing benefit for more than one home.</p>
+        <p>You won't need benefits to cover the rent if your insurance company agrees to pay for temporary
+            accommodation for you.</p>
+
+   <h2>Homeowner's insurance help</h2>
+        <p>If you own your home, you are usually responsible for any repairs your home needs due to flood damage.</p>
+        <p>Check if your insurance policies cover you for:</p>
+
+        <ul>
+            <li>buildings insurance that could cover the costs of repairs if your home is flooded</li>
+            <li>contents insurance that could cover the replacement of your belongings</li>
+            <li>alternative accommodation if you can't return to your home because of flooding</li>
+            <li>legal cover and legal advice</li>
+        </ul>
+
+        <p>If you own a leasehold flat or house, check if your freeholder's insurance covers any of the repair costs.
+            Buildings insurance should cover flood risks.</p>
+        <p class="inline-callout internal">Find out more about
+            <a title="see also: leasehold repairs"
+               href="{% url 'website:renters-responsibility_for_repairs_in_leasehold_flats_and_houses' %}">
+                repairs on a leasehold home</a>.</p>
+
+    {% include 'disrepair-callout.html' %}
+</div>
+</div>
+{% endblock %}
+
+
+
+
+

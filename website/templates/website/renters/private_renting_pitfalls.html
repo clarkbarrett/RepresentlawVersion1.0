@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Tenancy deposits{% endblock %}
+{% block description %}Get advice about tenancy deposits including how to check it’s protected, how to get it back and deductions your landlord can make.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>Private renting pitfalls<br>
+                <small>What to watch out for if you are renting from a private landlord.</small>
+            </h1>
+        </div>
+
+        <div class="accordion">
+            <p><strong>What to watch out for if you are renting from a private landlord.</strong></p>
+
+            <h2>If you can't or don't pay the rent</h2>
+            <p>If you get into&nbsp;
+                <a title="See also: How to deal with rent arrears"
+                   href="{% url 'website:renters-how_to_deal_with_rent_arrears' %}">
+                    rent arrears</a>, you could be evicted and lose your tenancy deposit too.</p>
+            <p>Your landlord could get a court order to make you pay. You could also have to pay court costs.</p>
+            <p>Claim housing benefit or
+                <p>Your landlord can apply to the courts to have you evicted if you have rent arrears or have broken the
+                terms of your
+                <a title="See also: types of renting agreements"
+                   href="{% url 'website:renters-types-of-renting-agreement' %}">
+                    tenancy agreement</a>.&nbsp;</p>
+            <p>You may have to pay court costs for this.</p>
+            <p>Most tenants with private landlords have an assured shorthold tenancy.</p>
+            <p>Find out about the
+                <a href="{% url 'website:renters-eviction-of-assured-shorthold-tenants' %}"
+                   title="See also: Eviction of assured shorthold tenants">
+                    eviction of assured shorthold tenants</a>.</p>
+            <h2>If you leave owing your landlord money</h2>
+            <p>If you leave owing your landlord money, they can take legal action against you.</p>
+            <p>Your landlord could apply to the court for a money judgment (known as a county court judgment or CCJ).
+                This sets out how much you owe and how you should pay it back.</p>
+            <p>You have 14 days to respond to the claim. If you lose, you may have to pay court costs.</p>
+            <p>Having a CCJ against you affects your ability to take out loans and get credit.
+                It could also make it difficult for you to rent privately in the future .</p>
+
+            <h2>If you leave a fixed term contract early</h2>
+            <p>A fixed contract means a fixed commitment.
+            You are usually asked to sign a contract that commits you for a minimum of six months or a year.&nbsp;</p>
+            <p>If you leave before the tenancy ends you still have to pay the rent.</p>
+            <p>Some contracts include a 'break clause' which gives you the option of giving notice to leave before
+                the end of the fixed term. If you don't have a break clause, you'll need your landlord's agreement
+                to end the tenancy early.</p>
+            <p>Your landlord can only take court action to evict you within the fixed
+            term if you have broken the terms of the tenancy agreement, for example, by having rent arrears.</p>
+
+            <h2>If your housemate leaves</h2>
+            <p>When you sign a joint tenancy agreement with housemates you're
+            all responsible for paying all of the rent.</p>
+            <p>If one of you can't pay, the rest of you have to find the extra money or risk being evicted.</p>
+            <p class="inline-callout highlight">Find out about&nbsp;
+                <a href="{% url 'website:renters-energy_costs_in_shared_accommodation' %}"
+                   title="See also: Energy costs in shared accommodation ">paying gas and electricity bills</a>
+                if you are living in shared accommodation.</p>
+            <p>If one person leaves a
+            <a title="See also: Tenancy agreements in shared homes"
+               href="{% url 'website:tenancy_agreements_in_shared_homes' %}">
+                joint tenancy</a>
+                early, yours and their responsibilities don't end.
+                The landlord has a legal right to pursue any one or all of the joint tenants for the
+                whole rent payment, including the person who has left. If the rent isn't paid,
+                everyone left in the property could be evicted.</p>
+            <p>It's best to talk about the situation if anyone wants to leave. If some of you don't
+                want to move out, you can try to negotiate a new agreement with the landlord. Or you
+                may be able to find someone to take on the share of the person who wants to leave,
+                although the landlord would have to agree to this.</p>
+            <p>A fixed-term tenancy can only be ended early if all the joint tenants agree. And your
+                landlord must also agree the tenancy can end early (unless there is a 'break'
+                clause in your tenancy agreement that allows it).</p>
+            <p>Find out more about
+            <a href="{% url 'website:renters-joint_tenancies' %}"
+               title="see also: joint tenancies">ending a joint tenancy</a>.</p>
+
+            <h2>If you split up</h2>
+            <p>If you both sign a joint tenancy, you each have the right to live in the home,
+                even if you break up. You can&rsquo;t stop your partner living in the home,
+                unless you get a court order.</p>
+
+            <p>A joint tenancy means you are both responsible for paying the rent. If one of you leaves,
+                the landlord can ask either one or both of you for the money. Whoever is left behind risks
+                being evicted if the rent isn't paid.</p>
+            <p>Find out
+            <a href="{% url 'website:renters-joint_tenancies' %}"> how and when you can end a joint tenancy</a>.</p>
+
+            <h2>When your guarantor must pay&nbsp;</h2>
+            <p>You may need a guarantor if you are a student or young person renting for the first time
+                or you can't prove that you can pay the rent.&nbsp;Your guarantor usually needs to be a
+                UK resident and own a property.</p>
+            <p>Your guarantor has to pay the rent if you don't.&nbsp;&nbsp;The guarantor agreement
+                is legally binding.</p>
+            <p>Your guarantor should check carefully what they are agreeing to cover.
+                In shared houses, the agreement may cover a joint tenants rent arrears as well as your own.</p>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

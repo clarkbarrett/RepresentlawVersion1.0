@@ -1,0 +1,551 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Law{% endblock %}
+{% block description %}Welcome to Represent Law{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <!-- Custom styles for this template -->
+    <!--<link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">-->
+
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron jumbotron-extend">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Welcome to Represent Law </h1>
+                <h1 align="center"><small style="color:white">How can we Represent you?</small></h1>
+            </div>
+
+              <div class="container" align="center">
+
+                <form class="navbar-form">
+                            <div class="form-group">
+                              <input type="text" class="form-control" align="center" placeholder="I need help with">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+              </div>
+
+                <div class="row">
+
+          <div class="col-md-4 col-md-offset-4" >
+            <div class="input-group" align="center">
+              <input type="text" class="form-control" aria-label="...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">I need help with <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="{% url 'website:wills' %}">Will</a></li>
+                  <li><a href="{% url 'website:probate-home' %}">Probate and Estates</a></li>
+                  <li><a href="#">Buying a house</a></li>
+                    <li><a href="#">Conveyancing (residential)</a></li>
+                    <li><a href="#">Commerical Conveyancing</a></li>
+                    <li><a href="#">Employment law</a></li>
+                  <li><a href="#">Selling a house</a></li>
+                  <li><a href="#">Extend my leasehold</a></li>
+                  <li><a href="#">Commercial law</a></li>
+                  <li><a href="#">Family law</a></li>
+                  <li><a href="#">Divorce</a></li>
+                  <li><a href="#">Lasting power of attorney</a></li>
+                  <li><a href="#">Litigation</a></li>
+                  <li><a href="#">Debt recovery</a></li>
+                  <li><a href="#">Landlord & Tenant Law</a></li>
+                  <li><a href="#">Selling a house</a></li>
+                  <li><a href="#">Immigration</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Other</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+              <div class="container" align="center">
+                <p style="color:white">
+                  Or search by area of law
+                </p>
+                  <!-- Split button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-danger">Area of law</button>
+                      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Landlord & Tenant</a></li>
+                        <li><a href="#">Conveyancing</a></li>
+                        <li><a href="{% url 'website:wills' %}">Wills</a></li>
+                        <li><a href="{% url 'website:probate-home' %}">Probate and Estates</a></li>
+                          <li><a href="#">Lasting power of attorney</a></li>
+                          <li><a href="#">Leasehold extension</a></li>
+                          <li><a href="#">Family</a></li>
+                          <li><a href="#">Commercial</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">General</a></li>
+                      </ul>
+
+                    </div>
+              </div>
+
+              <div class="container" align="center">
+                <a class="chevron-bottom" href="#" role="button"> </a>
+              </div>
+
+            </div>
+          </div>
+
+<!--Carousel-->
+<div class="bs-example">
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="Conveyancing" width="600" height="600" >
+                <div class="carousel-caption">
+                  <h3>Conveyancing</h3>
+                  <p><a href="/conveyancing">All your conveyancing needs</a>All your conveyancing needs</p>
+                </div>
+            </div>
+
+
+            <div class="item">
+               <img src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Landlord and tenant law">
+                <div class="carousel-caption">
+                  <h3>Landlord and Tenant Law</h3>
+                  <p><a href="/conveyancing">All your conveyancing needs</a>All your conveyancing needs</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/lease-extension.png' %}" alt="Lease Extension" width="600" height="600" >
+            </div>
+          <div class="item">
+               <img src="{% static 'images/writing-a-will.jpg' %}" alt="Writing a Will" width="600" height="600" >
+              <div class="carousel-caption">
+                  <h3>Writing a will</h3>
+                  <p>Writing a will is one of the most responsible things you can do.
+                      <a href="/wills-and-probate"></a>Let Represent write your will.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </a>
+    </div>
+  </div>
+
+
+
+<!--End Carousel-->
+
+    <div class="container">
+        <div class="page-header" align="center">
+            <h1>Welcome to Represent Law <small><br>Representing you with all of your legal needs</small></h1>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/landlord-and-tenant/">
+                    <img src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Landlord and tenant law">
+                </a>
+              <div class="caption">
+                  <a href="/landlord-and-tenant/"><h3 align="center">Landlord and Tenant</h3>
+                </a>
+                <li>Do you have a problem with your landlord?</li>
+                  <li>Was your deposit not protected?</li>
+                  <li>Is your landlord not doing repairs?</li>
+                    <p>Represent is here to help you with all of your renting problems</p>
+                <p><a href="/landlord-and-tenant" class="btn btn-primary btn-lg" role="button">Get help today</a>
+              </div>
+            </div>
+          </div>
+
+            <!--Lease extension-->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+
+                <a href="/leasehold">
+                    <img src="{% static 'images/lease-extension.png' %}" alt="Lease Extension" width="600" height="600" >
+                </a>
+
+              <div class="caption">
+                  <a href="/leasehold"><h3 align="center">Leasehold Extension</h3>
+                </a>
+                <p>Do you need to extend your leasehold or buy the freehold? Represent has the best leasehold lawyers in the UK.
+                    We are experts at leashold extensions, right to manage and buying the freehold.</p>
+                <p><a href="/leasehold" class="btn btn-primary btn-lg" role="button">Represent Leaseholds</a></p>
+              </div>
+            </div>
+          </div>
+
+<!--Conveyancing-->
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/conveyancing">
+                    <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="Conveyancing">
+                </a>
+                <div class="caption">
+
+
+                    <a href="/conveyancing"><h3 align="center">Conveyancing</h3>
+                </a>
+                <p>Whether you are buying or selling a property, Represent understands that it is one
+                    of the most stressful things you can do. Our expert team is here to help you today.
+                    will guide you through the process quickly and professionally.</p>
+                <p><a href="/conveyancing" class="btn btn-primary btn-lg" role="button">Represent Conveyancing</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--Wills-->
+                <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:wills' %}">
+                    <img src="{% static 'images/writing-a-will.jpg' %}" alt="Wills">
+                </a>
+              <div class="caption">
+                   <a href="{% url 'website:wills' %}"><h3 align="center">Wills</h3>
+
+                </a>
+                    <p>
+                    Your Will is one of the most important documents you'll ever make.
+                        It's the only way of making sure that the people and causes you care about are looked
+                        after when you're gone. Represent is here to help you.
+                    </p>
+                <p><a href="{% url 'website:wills' %}" class="btn btn-primary btn-lg" role="button">Write your will today</a>
+              </div>
+            </div>
+          </div>
+
+                    <!--Probate services-->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:probate-home' %}">
+                    <img src="{% static 'images/probate-services.jpg' %}" alt="Probate Services" width="600" height="600" >
+                </a>
+              <div class="caption">
+
+                  <a href="{% url 'website:probate-home' %}"><h3 align="center">Probate and estate services</h3>
+                </a>
+                <p>
+                When someone close to you passes away,
+                    it can be difficult working out what to do.
+                    Our expert lawyers have have unmatched legal know-how to deal with the estate in the most
+                    tax-efficient way, keeping your costs to a minimum.
+                </p>
+                <p><a href="{% url 'website:probate-home' %}" class="btn btn-primary btn-lg" role="button"> Visit Represent Probate</a></p>
+              </div>
+            </div>
+          </div>
+
+
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'images/represent_conveyancing.jpg' %}" alt="Renters Services">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:renters-home' %}"><h3 align="center">Renters</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:renters-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!--TESTING Austin Ray -->
+
+            <h1 class="section__title">A full range of legal services</h1>
+            <div class="services">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/family-children-partnerships">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/family.png">
+                </i>
+                <span class="services__title">Family, Children and Partnerships</span>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/employment-tribunals">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/employment.png">
+                </i>
+                <span class="services__title">Employment</span>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/wills-trusts">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/wills.png">
+                </i>
+                <span class="services__title">Wills</span>
+            </a>
+        </div>
+        <div class="clearfix visible-sm-block services__gap"></div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/notary-public">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/notary.png">
+                </i>
+                <span class="services__title">Notary Public</span>
+            </a>
+        </div>
+        <div class="clearfix hidden-xs hidden-sm services__gap"></div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/probate-administration-of-estates">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/probates.png">
+                </i>
+                <span class="services__title">Probates and Estates</span>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/landlord-and-tenant-residential">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/to-let.png">
+                </i>
+                <span class="services__title">Landlord and Tenant<br>Residential</span>
+            </a>
+        </div>
+        <div class="clearfix visible-sm-block services__gap"></div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/conveyancing-residential-property">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/commercial2.png">
+                </i>
+                <span class="services__title">Conveyancing Residential Property</span>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/elderly-client-services">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/person.png">
+                </i>
+                <span class="services__title">Elderly Client Services</span>
+            </a>
+        </div>
+        <div class="clearfix hidden-xs hidden-sm services__gap"></div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-sm-offset-0 col-md-offset-3 col-lg-offset-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/powers-of-attorney-court-of-protection">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/scales.png">
+                </i>
+                <span class="services__title">Powers of Attorney</span>
+            </a>
+        </div>
+        <div class="clearfix visible-sm-block services__gap"></div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-sm-offset-4 col-md-offset-0 col-lg-offset-0">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/litigation-disputes">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/gavel.png">
+                </i>
+                <span class="services__title">Litigation and Disputes</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+            <h2 class="section__title">Business Matters</h2>
+            <p class="text-center">
+                Our expert team are well-versed on dealing with a full range of matters regarding commercial businesses
+                and clients. These matters include:
+            </p>
+            <div class="services">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1-5">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/commercial-property">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/commercial2.png">
+                </i>
+                <span class="services__title">Commercial Property</span>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/landlord-and-tenant-business">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/to-let.png">
+                </i>
+                <span class="services__title">Landlord and Tenant<br>Business and Commercial</span>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3">
+            <a class="services__service" href="http://www.austinraylaw.co.uk/services/litigation-disputes">
+                <i class="services__icon">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/gavel.png">
+                </i>
+                <span class="services__title">Litigation and Disputes</span>
+            </a>
+        </div>
+    </div>
+</div>
+    </div>
+
+<!--End Testing Austin Ray -->
+
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>One more for good measure.</h1>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <!--<script src="https://getbootstrap.com/assets/js/vendor/holder.min.js"> </script>-->
+
+
+{% endblock %}
+
+
+

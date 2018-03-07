@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Renters Deposit Protection Check{% endblock %}
+{% block description %}Represent Renters Deposit Protection Check{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Deposit Protection Claims</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+
+
+        <div class="col-md-6 offset-md-2">
+            <div class="row">
+                <h1>Check if your tenancy deposit is protected</h1>
+            <p>Did your landlord correctly secure your rental deposit using an official scheme?
+                You could be owed up to 3X your deposit in compensation if this wasn't done correctly</p>
+
+                <p><a href="{% url 'website:renters-deposit-check' %}" class="btn btn-primary btn-lg" role="button">Check if my deposit was protected</a></p>
+
+                <h3>Deposit protection law</h3>
+                <p>All tenants who have paid a deposit to rent flats houses using an assured shorthold tenancy
+                    are required to have their deposit protected in a Government Tenancy Deposit scheme. </p>
+
+                <p>The 3 tenancy deposit scheme providers your landlord can use.&nbsp;</p>
+                <ul>
+                    <li>MyDeposits</li>
+                    <li>The Dispute Service</li>
+                    <li>The Deposit Protection Service</li>
+                </ul>
+                 <p>Tenancy&nbsp;deposits previously held by Capita Tenancy Deposit Service are now protected by&nbsp;mydeposits.</p>
+
+                                <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+                </div>
+
+                <h2>Deposit protection scheme certificate</h2>
+                <p>Your landlord must also send you a certificate confirming that the deposit was registered correctly.
+                    This certificate also provide important information that explains what can happen with the deposit
+                    and how the deposit protection scheme works.</p>
+
+                 <p>Your landlord usually has 30 days from when you pay your deposit to:&nbsp;</p>
+
+                <ul>
+                    <li>protect your tenancy deposit with a government-backed scheme</li>
+                    <li>tell you which scheme they've used</li>
+                    <li>give you certain information about the scheme</li>
+                </ul>
+                    <p>If they don't, you can
+                        <a href="{% url 'website:deposit-protection-claims' %}"
+                           title="See also: tenancy deposit compensation claims">
+                            take your landlord to court to claim tenancy deposit compensation</a>.
+                    </p>
+                    <p class="inline-highlight">Compensation can be between 1 and&nbsp;3 times
+                        the amount of your deposit.</p>
+
+                <h2>Multiple tenancies</h2>
+
+                <p>
+                    Also if you have more than one tenancy with the same landlord and they have failed to protect
+                    the deposit when a new tenancy started, you may be entitled to multiple compensation claims.</p>
+
+                <p> This can happen if you had a fixed term rental but then stayed beyond the 6 months on a month by
+                    month payment basis. In this circumstance, you could claim up to 6 times the deposit paid</p>
+                <p>You can make a claim for any rental deposit up to 6 years ago as the rule applies to both current
+                    and old tenancies. It also does not matter if you were paid your deposit back. </p>
+
+
+
+
+                <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+                </div>
+
+            </div>
+        </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+

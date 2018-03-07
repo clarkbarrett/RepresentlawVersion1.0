@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
         <div class="page-header">
             <h1>Eviction of assured tenants<br>
                 <small>Most assured tenants can be evicted only in certain circumstances. Find out when landlords have the right to evict assured tenants and the procedures that must be followed.</small>
@@ -50,10 +50,8 @@
     <h2>Notice for assured tenants</h2>
         <p>Your landlord has to give you a written notice.&nbsp;It is often called a section 8 notice.</p>
         <p>The notice must be in a special form.</p>
-        <p>The notice must include the ground on which your landlord is
-            <a title="See also: what is a possession order for eviction"
-               href="{% url 'renters-what_is_a_possession_order_for_eviction' %}">
-                seeking possession</a>. It must also state the earliest date that court action can start.</p>
+        <p>The notice must include the ground on which your landlord is seeking possession.
+            It must also state the earliest date that court action can start.</p>
         <p>The notice has to be for a set length of time. It must let you know that after that time ends your
             landlord can apply to the court for a possession order. The length of time on the notice depends
             on the reason your landlord is evicting you. Usually this is either 14 days or 2 months.</p>
@@ -96,15 +94,13 @@
 
     <h2>Court orders for eviction of assured tenants</h2>
         <p>Once you have been given a correct notice and the notice period has ended, your landlord can
-            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
-               title="See also: what is a possession order for eviction">
-                apply to the county court for a possession order</a>.</p>
+            apply to the county court for a possession order.</p>
         <p>The court sends you
-            <a href="{% url 'renters-eviction_documents_the_court_sends_you' %}"
+            <a href="{% url 'website:renters-eviction_documents_the_court_sends_you' %}"
                title="see also: eviction documents from the court">
                 documents telling you about your landlord's eviction claim</a>.</p>
         <p>You can send back information to help the court decide whether to make a possession order. You can also
-            <a href="{% url 'renters-what_happens_at_an_eviction_possession_hearing' %}"
+            <a href="{% url 'website:renters-what_happens_at_an_eviction_possession_hearing' %}"
                title="see also: what happens at eviction court hearings ">go to the court hearing</a>.</p>
         <p>If your landlord is using a mandatory ground and the court agrees that the ground is proven,
             the court has no choice but to make a possession order. It is possible to delay the possession
@@ -117,7 +113,7 @@
 
    <h2>Illegal eviction of assured tenants</h2>
         <p>Your landlord is breaking the law if they
-            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
                title="see also: what is illegal eviction">try to evict you without getting a court order</a>.
             There might be action you can take to stop your landlord doing this.</p>
         <p>The council might be able to help stop the illegal eviction.</p>
@@ -125,16 +121,16 @@
 
 
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
 
     <h2>Are you an assured tenant?</h2>
         <p>You are probably an
-            <a href="{% url 'renters-assured_tenancies' %}"
+            <a href="{% url 'website:renters-assured_tenancies' %}"
                title="see also: assured tenancies">assured tenant</a> if:</p>
         <ul>
             <li>you moved in before 1997 and did not receive a notice from your landlord saying you
@@ -143,7 +139,7 @@
             <li>you were an assured tenant with the same landlord immediately before your current tenancy started</li>
         </ul>
         <p class="inline-callout">Many private tenants are&nbsp;
-            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+            <a href="{% url 'website:renters-assured-shorthold-tenancies' %}"
                title="see also: assured shorthold tenants">assured shorthold tenants</a>.</p>
 
     </div>

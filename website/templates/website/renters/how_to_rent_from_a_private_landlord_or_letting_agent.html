@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>How to rent from a private landlord or letting agent<br>
@@ -48,7 +48,7 @@
 
     <h2>View the property</h2>
         <p>Make sure that you
-            <a href="{% url 'renters-tips_for_viewing_a_home_to_rent' %}"
+            <a href="{% url 'website:renters-tips_for_viewing_a_home_to_rent' %}"
                title="See also: viewing the property">view the property</a>
             you want to rent before you pay a deposit or rent in advance.</p>
         <p>Watch out for scams where you are asked to pay a deposit on a property that either doesn't exist or has
@@ -59,7 +59,7 @@
 
     <h2>Letting agent fees</h2>
         <p>If you find a home through a letting agent, you will usually have to pay
-            <a href="{% url 'renters-letting_agent_fees_for_tenants' %}"
+            <a href="{% url '{% url 'website:renters-letting_agent_fees_for_tenants' %}' %}"
                title="see also: letting agent fees">letting agency fees</a>.</p>
         <p>The letting agents must clearly set out details of their fees on their websites and in their offices.</p>
         <p>You shouldn't be asked to pay for registering your details or for being given details of the
@@ -77,7 +77,7 @@
         </ul>
         <p>Landlords and letting agents will also ask you to prove you have the right to stay in the UK.
             You'll be asked to provide your passport or other documents as part of&nbsp;
-            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+            <a href="{% url 'website:renters-right_to_rent_immigration_checks' %}"
                title="see also: right to rent immigration checks">right to rent immigration checks</a>.</p>
         <p>Landlords can also ask for references from an employer or previous landlord.</p>
 
@@ -112,18 +112,18 @@
         <p>This means you will normally need to be able to pay at least two month&rsquo;s rent before you move in.</p>
         <p>You may be able to get help paying your deposit through a
             <a title="See also: Rent deposit, bond and guarantee schemes"
-               href="{% url 'renters-rent_deposit_bond_and_guarantee_schemes.html' %}">
+               href="{% url 'website:renters-rent_deposit_bond_and_guarantee_schemes.html' %}">
                 rent deposit or bond scheme</a>.</p>
         <p>Your tenancy deposit must be&nbsp;
-            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+            <a href="{% url 'website:renters-tenancy_deposit_protection_rules' %}"
                title="see also: tenancy deposit protection schemes rules">
                 protected in a government-backed scheme</a> if you are an assured shorthold tenant.&nbsp;</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for unprotected deposit</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         See if you can make a deposit protection claim</a></p>
 
 </div>
@@ -145,19 +145,19 @@
 
     <h2>Check the contract before you sign</h2>
         <p>Most private tenants have an&nbsp;
-            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+            <a href="{% url 'website:renters-assured-shorthold-tenancies' %}"
                title="see also: assured shorthold tenancies">assured shorthold tenancy.</a></p>
         <p>Check the tenancy agreement carefully before you sign it. This sets out the rights and responsibilities
             that you and your landlord have during your tenancy.</p>
         <p>It should tell you what
             <a title="See also: types of renting agreements"
-               href="{% url 'renters-types-of-renting-agreement' %}">
+               href="{% url 'website:renters-types-of-renting-agreement' %}">
                 type of tenancy</a> you have and how to&nbsp;end or renew your tenancy.</p>
 
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Get in touch with Represent to see how we can help</h4></a>
     <p></p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
     </div>

@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Responsibility for repairs in leasehold flats and houses{% endblock %}
+{% block description %}Find out who has to organise repairs and who pays for them when you have a leasehold flat or house.{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Responsibility for repairs in leasehold flats and houses</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>Find out who has to organise repairs and who pays for them when you have a leasehold flat or house.
+            </h1>
+        </div>
+
+        <hr>
+    <h2>Who pays for repairs in a leasehold home?</h2>
+        <p>Leaseholders must pay for repairs that the lease says they are responsible for.&nbsp;
+            This applies even when the freeholder is responsible for getting repairs done.</p>
+        <p>You usually pay for repairs through
+            <a href="{{ leasehold_service_url }}"
+               title="See also: Leasehold service charges explained">
+                service charges</a>.</p>
+
+    <h3>Sinking funds for repairs</h3>
+        <p>Leaseholders may pay into a sinking fund or reserve fund over a number of years. This can be used to
+            pay for major repairs such as replacing a lift or roof.</p>
+        <p class="inline-callout highlight">If you sell your home, you won't get a refund of money you pay
+            into a sinking fund.</p>
+
+    <h3>Buildings insurance</h3>
+        <p>The freeholder's buildings insurance may cover all or part of the cost for example if damage
+            is caused by an accident.</p>
+        <p>Each leaseholder usually has to pay a share of the total cost if anything isn't covered by insurance.</p>
+
+    <h2>Freeholder responsibility for repairs</h2>
+        <p>The freeholder is usually responsible for arranging repairs to:</p>
+
+        <ul>
+            <li>the building's structure, including the roof and guttering</li>
+            <li>shared parts of the building, such as lifts and communal stairways</li>
+        </ul>
+        <p>The freeholder should arrange buildings insurance to protect the entire building from accidents
+            and disasters such as fire or flood.</p>
+
+    <h2>Leaseholder responsibility for repairs</h2>
+        <p>Most leases say that the leaseholder is responsible for looking after the part of the building they lease.</p>
+        <p>This usually includes repairs to:</p>
+
+        <ul>
+            <li>internal plumbing</li>
+            <li>wiring</li>
+            <li>plasterwork and&nbsp;floorboards</li>
+        </ul>
+        <p>Leaseholders are also normally responsible for:</p>
+
+        <ul>
+            <li>the paintwork and decoration of their flat</li>
+            <li>any carpets.</li>
+        </ul>
+        <p>Leaseholders are responsible for the maintenance of their furniture and appliances.</p>
+        <h2>Leaseholder's right to be consulted&nbsp;</h2>
+        <p>The freeholder has to consult leaseholders before carrying out any repairs or building work that
+            will cost more than £250 per flat.</p>
+        <p>You may not have to pay all the costs if the freeholder doesn't consult you properly.</p>
+        <p class="inline-callout external">Contact the
+            <a href="{{ leasehold_service_url }}"
+               title="Link to Leasehold Advisory Service" target="_blank">Leasehold Advisory Service</a>
+            for advice if you think your freeholder has not consulted you properly.</p>
+
+    <h2>How to report repair problems to the freeholder</h2>
+        <p>Write to your freeholder as soon as there are any problems:</p>
+
+        <ul>
+            <li>give details of the repairs needed that they are responsible for</li>
+            <li>give the freeholder a realistic deadline for carrying them out</li>
+            <li>date your letter and keep a copy</li>
+        </ul>
+
+    <h2>If the freeholder refuses to do repairs</h2>
+        <p>Your freeholder is breaking the conditions of your lease if they&nbsp;refuse to carry out repairs
+            they are responsible for.</p>
+        <p>Get advice if you are in this situation. You may be able to take your freeholder to
+            court to force them to do the work. The court may also be able to order them to pay you compensation.</p>
+        <p>Report the problem to&nbsp;&nbsp;the council's environmental health department if disrepair
+            means that your home is dangerous or damaging to your health. The council can order the freeholder
+            to do the work.</p><p class="inline-callout external">
+        <a href="{{ find_council_url }}" title="Link to Gov.uk - find my council" target="_blank">Find details of your local
+            council</a>.</p>
+        <p>If your freeholder still doesn't get the work done, you may be able to carry out the work yourself
+            and claim the money back from the freeholder.</p>
+
+    <h2>If leaseholders refuse to pay for repairs</h2>
+        <p>The freeholder can arrange for repair work to be done even if&nbsp;one or more leaseholders
+            refuse to pay for essential repairs. This usually applies even if a lease says that the
+            freeholder doesn't have to organise the work until the leaseholders have paid for it.&nbsp;&nbsp;</p>
+        <p>The freeholder can include the costs in the service charge as long as they have
+            consulted the leaseholders about the work and the costs are reasonable.</p>
+        <p>If any leaseholder refuses to pay the service charge, the freeholder can take them to court.</p>
+        <p>The freeholder can't ask any leaseholder to pay more than their share.</p>
+        <p class="inline-callout external">Contact the
+            <a href="{{ leasehold_service_url }}" title="Link to Leasehold Advisory Service" target="_blank">
+                Leasehold Advisory Service</a> for advice if you are having disputes about repairs.</p></div>
+            </div>
+
+
+{% endblock %}
+
+
+
+
+

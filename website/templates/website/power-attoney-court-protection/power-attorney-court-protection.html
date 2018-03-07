@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Probates and Estates{% endblock %}
+{% block description %}Represent Law Probate and Estates services{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+             <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent: Elderly Client Services</h1>
+                <h1 align="center"><small style="color:white">Helping you today and tomorrow</small></h1>
+            </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1 align="center">Powers of Attorney and Court of Protection</h1>
+        </div>
+
+             <p>A power of attorney is a document that gives somebody the power to act for you. Some of our clients want
+                a family member to be able to do this, if for example they want help with their affairs or if they lose
+                their capacity to make decisions themselves, either in the short or long term.</p>
+
+            <p>An ordinary power of attorney can only be used while the donor has mental capacity. A Lasting Power of
+                Attorney will continue to be effective beyond that point. By having an effective Lasting Power of
+                Attorney in place, problems may later be avoided if a trusted family member or friend needs to deal with
+                your affairs because you cannot.</p>
+
+            <h1">Lasting Power of Attorney</h1>
+            <p>There are two types of Lasting Power of Attorney. One is for financial and property affairs. The other is
+                for health and personal welfare. Both need to be registered at the Office of the Public Guardian before
+                they can be used.</p>
+            <p>There are strict requirements for the creation and use of Lasting Powers of Attorney. Contact Represent
+                if you are considering putting in place Lasting Power of Attorney or if you need to use one to
+                administer the affairs of someone else who is beginning to have or is worried about capacity issues. We
+                can help you understand the implications of making a Lasting Power, draft it correctly so it works for
+                you and deal with the formalities of registering it.</p>
+
+            <h1>Enduring Powers of Attorney</h1>
+            <p>At Represent we also deal with the registration of Enduring Powers of Attorney that are already in
+                existence.</p>
+
+            <h1>Court of Protection &amp; Deputyships</h1>
+            <p>If someone already has capacity problems, Represent can guide you through the Court of Protection and
+                Deputyship process, enabling a Court-appointed person to manage the affairs of someone who cannot manage
+                their own and does not already have an effective power of attorney in place.</p>
+
+            <p>Whilst assisting in all these areas we put the needs of our clients first and are particularly keen to
+                act in a way to ensure protection of our clients, especially those who may be vulnerable. Please see
+                information on our web site about our <a
+                        href="{% url 'website:elderly-client-home' %}">Elderly Client
+                    Services</a>.</p>
+
+        </div>
+</div>
+
+{% endblock %}
+
+
+

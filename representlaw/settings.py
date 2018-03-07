@@ -30,9 +30,17 @@ ALLOWED_HOSTS = []
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 
+#Test
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'email@example.com'
+HONEYPOT_FIELD_NAME = 'email2'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+
+
 # Site ID
 SITE_ID = 1
-
 
 # Application definition
 
@@ -55,10 +63,14 @@ INSTALLED_APPS = [
     'myaccount',
     'website',
     "blog",
-
+    # "envelope",
+    "sendemail",
+    "honeypot",
+    "xhtml2pdf",
 ]
 
-MIDDLEWARE_CLASSES = [
+# MIDDLEWARE_CLASSES = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -75,7 +87,8 @@ ROOT_URLCONF = 'representlaw.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -91,6 +104,7 @@ TEMPLATES = [
                 'website.context_processors.allergy_uk',
                 'website.context_processors.beekeepers',
                 'website.context_processors.civil_legal_advice_url',
+                'website.context_processors.court_fees_url',
                 'website.context_processors.crisis_url',
                 'website.context_processors.find_council_url',
                 'website.context_processors.gassafe_url',
@@ -99,9 +113,13 @@ TEMPLATES = [
                 'website.context_processors.hmcts_form_n244_url',
                 'website.context_processors.housing_ombudsman',
                 'website.context_processors.hse_gas_tenants_url',
+                'website.context_processors.leasehold_service_url',
                 'website.context_processors.nhs_carbon_monoxide_poisoning_url',
+                'website.context_processors.nhs_damp_url',
+                'website.context_processors.N16A_Injunction_Application_url',
                 'website.context_processors.pest_control_association',
                 'website.context_processors.rentokil_signs_of_rats',
+                'website.context_processors.represent_contact_email',
                 'website.context_processors.rics_url',
                 'website.context_processors.right_to_rent_gov',
                 'website.context_processors.rspca_fleas',
@@ -176,7 +194,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_cdn")
-
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [

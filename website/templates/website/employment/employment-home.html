@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Probates and Estates{% endblock %}
+{% block description %}Represent Law Probate and Estates services{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+             <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent</h1>
+                <h1 align="center"><small style="color:white">Helping you today and tomorrow</small></h1>
+            </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1 align="center">Employment & Tribunals</h1>
+        </div>
+            <p>
+                If you're unsure about your rights and where you stand, Represent can help guide you through the
+                legislation. We will support you and ensure fair play. Don’t get caught out on the strict deadlines and
+                technicalities; we can help.
+            </p>
+
+            <h2 class="section__header2">We can assist with such issues as:</h2>
+
+            <ul class="list">
+                <li class="list__item">Unfair Dismissal</li>
+                <li class="list__item">Wrongful Dismissal</li>
+                <li class="list__item">Employment Tribunal Hearings</li>
+                <li class="list__item">Settlement Agreements</li>
+                <li class="list__item">Disciplinary Issues</li>
+                <li class="list__item">Maternity &amp; Paternity</li>
+                <li class="list__item">Discrimination</li>
+                <li class="list__item">Restrictive Covenants </li>
+                <li class="list__item">Contracts of Employment</li>
+            </ul>
+
+        </div>
+</div>
+
+{% endblock %}
+
+
+

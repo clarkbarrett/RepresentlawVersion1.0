@@ -1,7 +1,8 @@
 from __future__ import unicode_literals
 from django.contrib.auth.models import User
 from django.db import models
-from django.core.urlresolvers import reverse
+# from django.core.urlresolvers import reverse
+from django.urls import reverse
 from django.utils import timezone
 from django.db.models import Q
 
@@ -41,7 +42,7 @@ class Post(models.Model):
         ('draft', 'Draft'),
         ('published', 'Published')
     )
-    category = models.ForeignKey(Category)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique=True)
     image = models.FileField(null=True, blank=True, upload_to='media/')
@@ -56,7 +57,7 @@ class Post(models.Model):
     content = models.TextField()
     seo_title = models.CharField(max_length=250)
     seo_description = models.CharField(max_length=160)
-    author = models.ForeignKey(User, related_name='blog_posts')
+    author = models.ForeignKey(User, related_name='blog_posts', on_delete=models.CASCADE)
     published = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now=True)
     updated = models.DateTimeField(auto_now=True)
@@ -80,7 +81,7 @@ class Comment(models.Model):
         ('pending', 'pending'),
         ('approved', 'Approved')
     )
-    post = models.ForeignKey(Post, related_name='comments')
+    post = models.ForeignKey(Post, related_name='comments', on_delete=models.CASCADE)
     user = models.CharField(max_length=250)
     email = models.EmailField()
     body = models.TextField()

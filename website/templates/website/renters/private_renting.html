@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Renters Deposit Protection Check{% endblock %}
+{% block description %}Represent Renters Deposit Protection Check{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Private Renting Housing Advice</small></h1>
+              </div>
+            </div>
+        </div>
+
+
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+
+    <h2>Costs of renting</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-rent_deposit_bond_and_guarantee_schemes.html' %}">
+                Rent deposit, bond and guarantee schemes</a></li>
+            <li><a href="{% url 'website:renters-letting_agent_fees_for_tenants' %}">
+                Letting agent fees for tenants</a></li>
+            <li><a href="{% url 'website:renters-rent_in_advance' %}">
+                Rent in advance</a></li>
+            <li><a href="{% url 'website:renters-what_is_a_tenancy_deposit' %}">
+                What is a tenancy deposit?</a></li>
+        </ul>
+
+    <h2>Private renting agreements</h2>
+        <ul>
+            <li><a href="{% url 'website:renters-types-of-renting-agreement' %}">
+                Types of renting agreement</a></li>
+            <li><a href="{% url 'website:renters-assured-shorthold-tenancies' %}">
+                Assured shorthold tenancies</a></li>
+            <li><a href="{% url 'website:renters-assured_tenancies' %}">
+                Assured tenancies</a></li>
+            <li><a href="{% url 'website:renters-regulated_tenancies' %}">
+                Regulated tenancies</a></li>
+            <li><a href="{% url 'website:tenancy_agreements_in_shared_homes' %}">
+                Tenancy agreements in shared homes</a></li>
+        </ul>
+
+
+
+
+    <h2>Renewing or ending a tenancy</h2>
+        <ul>
+            <li><a href="{% url 'website:renters-how_tenants_can_end_a_fixed_term_tenancy' %}">
+                How tenants can end a fixed-term tenancy</a></li>
+            <li><a href="{% url 'website:renters-ending_a_periodic_tenancy' %}">
+                How tenants can end a month to month tenancy</a></li>
+            <li><a href="{% url 'website:renters-renewing_your_private_tenancy' %}">Renewing your private tenancy</a></li>
+        </ul>
+
+
+    <h2>Rights and responsibilities</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                Landlord responsibilities</a></li>
+            <li><a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                Tenant responsibilities</a></li>
+            <li><a href="{% url 'website:renters-joint_tenancies' %}">
+                Joint tenancies</a></li>
+        </ul>
+
+
+
+    <h2>How to rent</h2>
+        <ul>
+            <li><a href="{% url 'website:renters-how_to_rent_from_a_private_landlord_or_letting_agent' %}">
+                How to rent from a private landlord or letting agent</a></li>
+            <li><a href="{% url 'website:renters-right_to_rent_immigration_checks' %}">
+                Right to rent immigration checks</a></li>
+            <li><a href="{% url 'website:renters-how_to_check_and_agree_an_inventory' %}">
+                How to check and agree an inventory</a></li>
+        </ul>
+
+    <h2>Problems with renting</h2>
+        <ul>
+            <li><a href="{% url 'website:renters-rent_increases' %}">
+                Rent increases when renting privately</a></li>
+            <li><a href="{% url 'website:renters-private_renting_pitfalls' %}">
+                Private renting pitfalls</a></li>
+
+            <li><a href="{% url 'website:renters-how_to_find_your_landlord' %}">
+                How to find your landlord</a></li>
+            <li><a href="{% url 'website:renters-return_of_a_lodgers_deposit' %}">
+                Return of a lodger's deposit</a></li>
+        </ul>
+
+
+    <h2>Letting agents</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-using_a_letting_agent_to_find_and_rent_a_home' %}">
+                Using a letting agent to find and rent a home</a></li>
+            <li><a href="{% url 'website:renters-letting_agent_redress_schemes' %}">
+                Letting agent redress schemes</a></li>
+        </ul>
+
+
+
+    <h2>Your situation</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-houses_in_multiple_occupation_hmo' %}">
+                Houses in multiple occupation (HMO)</a></li>
+            <li><a href="{% url 'website:renters-lodgers' %}">Lodgers </a></li>
+        </ul>
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+

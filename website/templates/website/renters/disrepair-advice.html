@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Repairs{% endblock %}
+{% block description %}You have the right to live in a decent home. Find out about your and your landlord's repair
+                    responsibilities{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Repairs Advice</small></h1>
+              </div>
+            </div>
+        </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+        <div class="col-md-6 offset-md-2">
+
+            <div class="page-header">
+                <h1>Repairs <br></h1>
+                    <h2><small>You have the right to live in a decent home. Find out about your and your landlord's repair
+                    responsibilities</small>
+                </h2>
+            </div>
+            <hr>
+
+
+            <h2>Complaints and court action</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-complain_about_council_or_housing_association_repairs' %}">
+                Complain about council or housing association repairs</a></li>
+            <li><a href="{% url 'website:renters-housing_disrepair_check_if_you_can_claim_compensation' %}">
+                Housing disrepair: check if you can claim compensation</a></li>
+            <li><a href="{% url 'website:renters-complain_to_environmental_health_about_rented_housing' %}">
+                Complain to environmental health about rented housing</a></li>
+            <li><a href="{% url 'website:renters-legal_action_if_your_landlord_wont_do_repairs' %}">
+                Legal action if your landlord won't do repairs</a></li>
+            <li><a href="{% url 'website:renters-complain_to_the_ombudsman_about_repairs_in_social_housing' %}">
+                Complain to the Ombudsman about repairs in social housing</a></li>
+        </ul>
+
+            <div class="bs-callout bs-callout-primary">
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for not protecting your deposit</h4></a>
+                    <p></p>
+                    <p>Get in touch with Represent to see if you can claim compensation if your landlord hasn't protected your deposit.</p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
+                        See if you can make a deposit protection claim</a></p>
+
+                </div>
+
+    <h2>Repairs in social housing</h2>
+        <ul>
+            <li><a href="{% url 'website:renters-what_counts_as_a_decent_home' %}">
+               What counts as a decent home?</a></li>
+            <li><a href="{% url 'website:renters-repairs_and_maintenance_in_council_and_housing_association_homes' %}">
+                Repairs and maintenance in council and housing association homes</a></li>
+            <li><a href="{% url 'website:renters-poor_conditions_in_council_or_housing_association_homes' %}">
+               Poor conditions in council or housing association homes</a></li>
+            <li><a href="{% url 'website:renters-right_to_repair_for_council_tenants' %}">
+               Right to repair scheme for council tenants</a></li>
+            <li><a href="{% url 'website:renters-how_to_report_repairs_to_a_social_landlord' %}'">
+                How to report repairs to a council or housing association landlord</a></li>
+            <li><a href="{% url 'website:renters-problems_during_council_or_housing_association_repairs' %}">
+               Problems during council or housing association repairs</a></li>
+        </ul>
+
+    <h2>Repairs in private rented homes</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-what_to_do_if_your_landlord_wont_do_repairs' %}">
+                What to do if your landlord won’t do repairs</a></li>
+            <li><a href="{% url 'website:renters-how_to_report_repairs_to_a_private_landlord' %}">
+                How to report repairs to a private landlord</a></li>
+            <li><a href="{% url 'website:renters-revenge_eviction_if_you_ask_for_repairs' %}">
+                Revenge eviction if you ask for repairs</a></li>
+            <li><a href="{% url 'website:renters-rent_reductions_when_repairs_are_a_problem' %}">
+                Rent reductions when repairs are a problem</a></li>
+            <li><a href="{% url 'website:renters-moving_out_during_repairs' %}">
+                Moving out during repairs</a></li>
+            <li><a href="{% url 'website:renters-housing_standards_in_private_rented_homes' %}">
+                Housing standards in private rented homes</a></li>
+        </ul>
+
+            <h2>Common problems</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-overcrowding' %}">
+                Overcrowding</a></li>
+            <li><a href="{% url 'website:renters-damp_and_mould_in_rented_homes' %}">
+                Damp and mould in rented homes</a></li>
+            <li><a href="{% url 'website:renters-housing_help_if_your_home_is_flooded' %}">
+                Housing help if your home is flooded</a></li>
+            <li><a href="{% url 'website:renters-pests_and_vermin_infestations_in_rented_homes' %}">
+                Pests and vermin infestations in rented homes</a></li>
+            <li><a href="{% url 'website:renters-how_to_deal_with_pests_and_vermin_in_your_home' %}">
+                How to deal with pests and vermin in your home</a></li>
+            <li><a href="{% url 'website:renters-damage_or_wear_and_tear' %}">
+                Damage to your rented home</a></li>
+        </ul>
+
+        <h2>Health and safety</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+                Health and safety standards for rented homes (HHSRS)</a></li>
+            <li><a href="{% url 'website:renters-how_to_complain_about_an_unsafe_home' %}">
+                How to complain about an unsafe home</a></li>
+            <li><a href="{% url 'website:renters-gas_safety_in_rented_homes' %}">
+                Gas safety in rented homes</a></li>
+            <li><a href="{% url 'website:renters-electrical_safety_in_rented_homes' %}">
+                Electrical safety in rented homes</a></li>
+            <li><a href="{% url 'website:renters-fire_safety_advice_for_tenants' %}">
+                Fire safety advice for tenants</a></li>
+            <li><a href="{% url 'website:renters-safety_standards_for_furniture_and_appliances' %}">
+                Safety standards for furniture and appliances</a></li>
+        </ul>
+
+        <h2>Responsibility for repairs</h2>
+
+        <ul>
+            <li><a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}">
+                Landlord and tenant responsibilities for repairs</a></li>
+            <li><a href="{% url 'website:renters-responsibility_for_repairs_in_leasehold_flats_and_houses' %}">
+                Responsibility for repairs in leasehold flats and houses</a></li>
+            <li><a href="{% url 'website:renters-tenants_home_improvements' %}">
+                Tenant's home improvements</a></li>
+            <li><a href="{% url 'website:renters-doing_the_repairs_if_your_landlord_wont' %}">
+                Doing the repairs if your landlord won't</a></li>
+        </ul>
+
+            {% include "disrepair-callout.html" %}
+
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,494 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Law{% endblock %}
+{% block description %}Welcome to Represent Law{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <!-- Custom styles for this template -->
+    <!--<link href="https://getbootstrap.com/docs/4.0/examples/carousel/carousel.css" rel="stylesheet">-->
+
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron jumbotron-extend">
+            <div class="container">
+
+              <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Welcome to Represent Law </h1>
+                <h1 align="center"><small style="color:white">How can we Represent you?</small></h1>
+            </div>
+
+              <div class="container" align="center">
+
+                <form class="navbar-form">
+                            <div class="form-group">
+                              <input type="text" class="form-control" align="center" placeholder="I need help with">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+              </div>
+
+                <div class="row">
+
+          <div class="col-md-4 col-md-offset-4" >
+            <div class="input-group" align="center">
+              <input type="text" class="form-control" aria-label="...">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">I need help with <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="{% url 'website:wills' %}">Wills</a></li>
+                  <li><a href="{% url 'website:probate-home' %}">Probate and Estates</a></li>
+                  <li><a href="{% url 'website:conveyancing-residential-home' %}">Buying a house</a></li>
+                    <li><a href="{% url 'website:conveyancing-residential-home' %}">Conveyancing (residential)</a></li>
+                    <li><a href="{% url 'website:conveyancing-commercial-home' %}">Commerical Conveyancing</a></li>
+                    <li><a href="{% url 'website:employment-home' %}">Employment law</a></li>
+                  <li><a href="{% url 'website:conveyancing-residential-home' %}">Selling a house</a></li>
+                  <li><a href="{% url 'website:leasehold-what_is_leasehold' %}">Extend my leasehold</a></li>
+                  <li><a href="{% url 'website:conveyancing-commercial-home' %}">Commercial law</a></li>
+                  <li><a href="{% url 'website:family-home' %}">Family law</a></li>
+                  <li><a href="{% url 'website:family-home' %}">Divorce</a></li>
+                  <li><a href="{% url 'website:power-attorney-home' %}">Lasting power of attorney</a></li>
+                  <li><a href="{% url 'website:litigation-home' %}">Litigation</a></li>
+                  <li><a href="{% url 'website:litigation-home' %}">Debt recovery</a></li>
+                  <li><a href="{% url 'website:renting-home' %}">Landlord & Tenant Law</a></li>
+                  <!--<li><a href="#">Immigration</a></li>-->
+                  <li role="separator" class="divider"></li>
+                  <li><a href="{% url 'website:contact' %}">Other</a></li>
+                </ul>
+              </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
+
+            </div>
+          </div>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-50" src="{% static 'images/represent_conveyancing.jpg' %}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-50" src="{% static 'images/landlord-and-tenant.jpg' %}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-50" src="{% static 'images/writing-a-will.jpg' %}" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+    <div class="container">
+        <div class="page-header" align="center">
+            <h1>Practice Areas</h1>
+        </div>
+
+        <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="{% static 'img/to-let.png' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="{% static 'img/to-let.png' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+
+  </div>
+
+  <div class="card">
+    <img class="card-img-top" src="{% static 'img/to-let.png' %}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="/landlord-and-tenant/">
+                    <img src="{% static 'img/to-let.png' %}" alt="Landlord and tenant law">
+                </a>
+              <div class="caption">
+                  <a href="{% url 'website:renting-home' %}"><h3 align="center">Landlord and Tenant</h3>
+                </a>
+                <li>Do you have a problem with your landlord?</li>
+                  <li>Was your deposit not protected?</li>
+                  <li>Is your landlord not doing repairs?</li>
+                    <p>Represent is here to help you with all of your renting problems</p>
+                <p><a href="{% url 'website:renting-home' %}" class="btn btn-primary btn-lg" role="button">Get help today</a>
+              </div>
+            </div>
+          </div>
+
+            <!--Lease extension-->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+
+                <a href="{% url 'website:leasehold-home' %}">
+                    <img src="http://www.austinraylaw.co.uk/assets/images/icons/employment.png" alt="Lease Extension" >
+                </a>
+
+              <div class="caption">
+                  <a href="{% url 'website:leasehold-home' %}"><h3 align="center">Leasehold Extension</h3>
+                </a>
+                <p>Do you need to extend your leasehold or buy the freehold? Represent has the best leasehold lawyers in the UK.
+                    We are experts at leashold extensions, right to manage and buying the freehold.</p>
+                <p><a href="{% url 'website:leasehold-home' %}" class="btn btn-primary btn-lg" role="button">Represent Leaseholds</a></p>
+              </div>
+            </div>
+          </div>
+
+<!--Conveyancing-->
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:conveyancing-residential-home' %}">
+                    <img src="{% static 'img/commercial.png' %}" alt="Conveyancing">
+                </a>
+                <div class="caption">
+
+
+                    <a href="/conveyancing"><h3 align="center">Conveyancing</h3>
+                </a>
+                <p>Whether you are buying or selling a property, Represent understands that it is one
+                    of the most stressful things you can do. Our expert team is here to help you today.
+                    will guide you through the process quickly and professionally.</p>
+                <p><a href="/conveyancing" class="btn btn-primary btn-lg" role="button">Represent Conveyancing</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!--Wills-->
+                <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:wills' %}">
+                    <img src="{% static 'img/wills.png' %}" alt="Wills">
+                </a>
+              <div class="caption">
+                   <a href="{% url 'website:wills' %}"><h3 align="center">Wills</h3>
+
+                </a>
+                    <p>
+                    Your Will is one of the most important documents you'll ever make.
+                        It's the only way of making sure that the people and causes you care about are looked
+                        after when you're gone. Represent is here to help you.
+                    </p>
+                <p><a href="{% url 'website:wills' %}" class="btn btn-primary btn-lg" role="button">Write your will today</a>
+              </div>
+            </div>
+          </div>
+
+                    <!--Probate services-->
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:probate-home' %}">
+                    <img src="{% static 'img/probate.png' %}" alt="Probate Services" >
+                </a>
+              <div class="caption">
+
+                  <a href="{% url 'website:probate-home' %}"><h3 align="center">Probate and estate services</h3>
+                </a>
+                <p>
+                When someone close to you passes away,
+                    it can be difficult working out what to do.
+                    Our expert lawyers have have unmatched legal know-how to deal with the estate in the most
+                    tax-efficient way, keeping your costs to a minimum.
+                </p>
+                <p><a href="{% url 'website:probate-home' %}" class="btn btn-primary btn-lg" role="button"> Visit Represent Probate</a></p>
+              </div>
+            </div>
+          </div>
+
+
+  <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/to-let.png' %}" alt="Renters Services">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:renters-home' %}"><h3 align="center">Renters</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:renters-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:family-home' %}">
+                    <img src="{% static 'img/family.png' %}" alt="Family and Children Law">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:family-home' %}"><h3 align="center">Family, Children and Partnerships</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:family-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:employment-home' %}">
+                    <img src="{% static 'img/employment.png' %}" alt="Employment Law">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:employment-home' %}">
+                        <h3 align="center">Employment Law</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:employment-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:wills-trusts' %}">
+                    <img src="{% static 'img/wills.png' %}" alt="Wills and Trusts">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:wills-trusts' %}">
+                        <h3 align="center">Wills and Trusts</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:wills-trusts' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/probate.png' %}" alt="Probates and Estates">
+                </a>
+
+                <div class="caption">
+                    <a href="http://www.austinraylaw.co.uk/services/probate-administration-of-estates">
+                        <h3 align="center">Probates and Estates</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="http://www.austinraylaw.co.uk/services/family-children-partnerships" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/to-let.png' %}" alt="Landlord and Tenant">
+                </a>
+
+                <div class="caption">
+                    <a href="http://www.austinraylaw.co.uk/services/landlord-and-tenant-residential">
+                        <h3 align="center">Landlord and Tenant</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="http://www.austinraylaw.co.uk/services/landlord-and-tenant-residential" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+         <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/person.png' %}" alt="Elderly Client Services">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:elderly-client-home' %}">
+                        <h3 align="center">Elderly Client Services</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:elderly-client-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:power-attorney-home' %}">
+                    <img src="{% static 'img/scales.png' %}" alt="Powers of Attorney">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:power-attorney-home' %}">
+                        <h3 align="center">Powers of Attorney</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:power-attorney-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:litigation-home' %}">
+                    <img src="{% static 'img/gavel.png' %}" alt="Litigation and Disputes">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:litigation-home' %}">
+                        <h3 align="center">Litigation and Disputes</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:litigation-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+        <!--<div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/notary.png' %}" alt="Notary Public">
+                </a>
+
+                <div class="caption">
+                    <a href="notary-public">
+                        <h3 align="center">Notary Public</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="notary-public" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>-->
+
+        </div>
+
+        <div class="page-header" align="center">
+            <h1>Business Matters</h1>
+        </div>
+
+            <p class="text-center">
+                Our expert team are well-versed on dealing with a full range of matters regarding commercial businesses
+                and clients. These matters include:
+            </p>
+
+        <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/commercial.png' %}" alt="Commercial Property">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:conveyancing-commercial-home' %}">
+                        <h3 align="center">Commercial Property</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:conveyancing-commercial-home' %}" class="btn btn-primary btn-lg"
+                      role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+         <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:renters-home' %}">
+                    <img src="{% static 'img/to-let.png' %}" alt="Landlord and Tenant Business and Commercial">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:renters-home' %}">
+                        <h3 align="center">Landlord and Tenant<br>Business and Commercial</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:renters-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <a href="{% url 'website:litigation-home' %}">
+                    <img src="{% static 'img/gavel.png' %}" alt="Litigation and Disputes">
+                </a>
+
+                <div class="caption">
+                    <a href="{% url 'website:litigation-home' %}">
+                        <h3 align="center">Litigation and Disputes</h3>
+                </a>
+                <p>Nobody likes having a problem with their landlord or rented property
+                    If you have a problem with your landlord, your deposit has not been returned or
+                    was not protected, get in touch with Represent today to see how we can help.</p>
+                <p><a href="{% url 'website:litigation-home' %}" class="btn btn-primary btn-lg" role="button">Representing Renters</a></p>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
+
+

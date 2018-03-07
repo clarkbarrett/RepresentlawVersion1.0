@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Represent Privacy Policy{% endblock %}
+{% block description %}Represent Privacy Policy{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+        <div class="col-md-6 offset-md-2">
+            <div class="row">
+
+        <div class="page-header" align="center">
+            <h1>Cookies Statement</h1>
+        </div>
+
+     <div class="container-fluid">
+        <div class="col-md-6 col-md-offset-2">
+
+
+        <h2>Introduction</h2>
+
+          <p>Our website uses ‘cookies’, which are small data files that are used as unique identifiers. They are
+          sent from the website’s servers to your computer or mobile phone and stored on your device, and
+          may then be sent back to our website’s servers with updated data as you browse our website.</p>
+
+          <p>Cookies are used to record information about your preferences as you browse our website, which
+          allows us to improve your experience by tailoring the website accordingly. Cookies can also be
+          used to identify you every time you revisit our website.</p>
+
+          <p>A ‘session cookie’ will expire at the end of your browsing session once you close your web
+          browser; ‘persistent cookies’ on the other hand have a set expiry date and will be stored on your
+          computer until either this date is reached, or you delete your cookies using your browser settings.</p>
+
+
+          <h2>Third-Party Cookies</h2>
+
+          <p>Our website uses the following third-party suppliers and partners who may also set cookies on your
+          computer or mobile phone as you browse our website. If you would like to know more about how
+          these third-parties use cookies to collect and store your data please visit
+          <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a>.</p>
+
+          <p>Please note that, where we embed content from third-party sites such as YouTube, you
+          may also have cookies from these third-party websites installed on your device. Represent Law
+          does not control these cookies and you should check the privacy policy of the relevant website for more
+          information.</p>
+
+          <p>Please also note that, if you use one of the ‘sharing tools’ on our website to share content using
+          social networks, these social networks may install a cookie on your device. Represent Law does not control
+          these cookies and you should check the privacy policy of the relevant website for more information.</p>
+
+
+          <h3>Blocking Cookies</h3>
+
+          <p>The majority of web browsers (Firefox, Internet Explorer, Google Chrome, Opera, Safari etc.) will
+          allow you to block cookies from being installed on your device via your browser settings.</p>
+
+          <p>Depending on your browser, further information can be obtained via the following links:</p>
+
+          <p><a href="https://support.mozilla.org/en-US/kb/Cookies">Firefox – https://support.mozilla.org/en-US/kb/Cookies</a></p>
+
+          <p><a href="https://support.microsoft.com/kb/196955">Internet Explorer – https://support.microsoft.com/kb/196955</a></p>
+
+          <p><a href="https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647">Google Chrome - https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647</a></p>
+
+          <p><a href="https://docs.info.apple.com/article.html?path=Safari/3.0/en/9277.html">Safari – https://docs.info.apple.com/article.html?path=Safari/3.0/en/9277.html </a></p>
+
+          <p><a href="https://www.opera.com/browser/tutorials/security/privacy/">Opera - https://www.opera.com/browser/tutorials/security/privacy/</a></p>
+
+          <p>Mobile phone users may have to refer to their handset manual for details on how to block cookies.
+          using their mobile browser.</p>
+
+          <p>Please be aware that restricting the use of cookies may impact on the functionality of our website.</p>
+
+
+          <h2>Deleting Cookies</h2>
+
+          <p>The majority of web browsers (Firefox, Internet Explorer, Google Chrome, Opera, Safari etc.) will
+          allow also allow you to delete selected / all cookies currently installed on your device.</p>
+
+          <p>Depending on your browser, further information can be obtained via the following links:</p>
+
+          <p><a href="https://support.mozilla.org/en-US/kb/Cookies">Firefox – https://support.mozilla.org/en-US/kb/Cookies</a></p>
+
+          <p><a href="https://support.microsoft.com/kb/196955">Internet Explorer – https://support.microsoft.com/kb/196955</a></p>
+
+          <p><a href="https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647">Google Chrome - https://support.google.com/chrome/bin/answer.py?hl=en&amp;answer=95647</a></p>
+
+          <p><a href="https://docs.info.apple.com/article.html?path=Safari/3.0/en/9277.html">Safari – https://docs.info.apple.com/article.html?path=Safari/3.0/en/9277.html</a></p>
+
+          <p><a href="https://www.opera.com/browser/tutorials/security/privacy/">Opera - https://www.opera.com/browser/tutorials/security/privacy/ </a></p>
+
+          <p>Similarly, mobile phone users may have to refer to their handset manual for details on how to delete
+          cookies using their mobile browser.</p>
+
+          <p>Please note that this will usually only remove any cookies currently installed on your device; you
+          must also change your browser settings (above) if you wish to prevent cookies being installed in
+          future. Please be aware that deleting cookies already stored on your device may impact on the
+          usability of our website.</p>
+
+          <h2>Contact Details and Useful Information</h2>
+
+          <p>This website is owned and operated by Represent Law. If you have any questions about our use of
+          cookies and how we collect and store your data, then please contact us by email at
+          <a href="mailto: {{ represent_contact_email}}"> {{ represent_contact_email}}</a>.</p>
+
+          <p>For more information on cookies and how they work, please visit <a href="https://www.allaboutcookies.org">www.allaboutcookies.org</a>.</p>
+
+        </div>
+    </div>
+</div>
+        </div>
+</div>
+
+{% endblock %}
+
+
+

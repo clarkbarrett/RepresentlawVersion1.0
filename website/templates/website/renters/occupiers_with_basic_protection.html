@@ -28,7 +28,7 @@ as your landlord but you don't share living accommodation with them.{% endblock 
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Occupiers with basic protection<br>
@@ -48,7 +48,7 @@ as your landlord but you don't share living accommodation with them.{% endblock 
         <p>You might also be an occupier with basic protection if you were a secure council tenant, assured tenant
             or assured shorthold tenant but that's not your main home any more.</p>
         <p>Use
-            <a href="{% url 'renters-tenancy_checker' %}"
+            <a href="{% url 'website:renters-tenancy_checker' %}"
                title="see also:Tenancy rights checker">Represent's tenancy checker</a>
             if you are not sure what type of tenancy you have.</p>
 
@@ -58,7 +58,7 @@ as your landlord but you don't share living accommodation with them.{% endblock 
         <p>Your landlord can be fined if they don't do these right to rent checks.</p>
         <p>The checks don't have to be carried out if your tenancy started before 1st February 2016.</p>
         <p>
-            <a href="{% url 'renters-right_to_rent_immigration_checks' %}"
+            <a href="{% url 'website:renters-right_to_rent_immigration_checks' %}"
                title="see also: right to rent immigration checks">
                 Find out more about right to rent immigration checks</a></p>
 
@@ -76,22 +76,22 @@ as your landlord but you don't share living accommodation with them.{% endblock 
         <p>If you paid a tenancy deposit, it should be returned to you when you move out.</p>
         <p>Your landlord can make reasonable deductions from your deposit if you owe rent or cause any damage.</p>
         <p>Find out
-            <a href="{% url 'renters-how-to-get-your-deposit-back' %}"
+            <a href="{% url 'website:renters-how-to-get-your-deposit-back' %}"
                title="see also: getting back your deposit at the end of your tenancy">
                 more about getting back your deposit at the end of your tenancy</a>.</p>
         <p>If you pay a deposit, it doesn't have to be protected in a government-backed tenancy deposit protection scheme.</p>
         <p>Rules for
-            <a href="{% url 'renters-tenancy_deposit_protection_rules' %}"
+            <a href="{% url 'website:renters-tenancy_deposit_protection_rules' %}"
                title="see also: tenancy deposit protection schemes rules">tenancy deposit protection</a> only cover
-            <a href="{% url 'renters-assured-shorthold-tenancies' %}"
+            <a href="{% url 'website:renters-assured-shorthold-tenancies' %}"
                title="see also: assured shorthold tenancies">assured shorthold tenancies</a>.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Is your landlord not returning your deposit?</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if we can help you get your deposit back
                     if your landlord is keeping it unfairly.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         Help me get my deposit back</a></p>
 
     </div>
@@ -106,24 +106,24 @@ as your landlord but you don't share living accommodation with them.{% endblock 
         <p>The law says your landlord must keep your home's structure, exterior, plumbing and electrics in good repair.</p>
         <p>Your landlord must give you a copy of a current gas safety certificate if there are any gas appliances in the property.
             They must arrange for an
-            <a href="{% url 'renters-gas_safety_in_rented_homes' %}"
+            <a href="{% url 'website:renters-gas_safety_in_rented_homes' %}"
                title="See also: Gas safety checks">annual gas safety check</a>. Any furniture provided should be
-            <a href="{% url 'renters-fire_safety_advice_for_tenants' %}"
+            <a href="{% url 'website:renters-fire_safety_advice_for_tenants' %}"
                title="see also: safety standards">fire resistant</a>.</p>
         <p>You are responsible for carrying out minor maintenance to the property. This might include things like changing
             a fuse or replacing a light bulb.</p>
         <p>You could also have other responsibilities depending on what your tenancy agreement says.</p>
         <p>You are not responsible for&nbsp;&nbsp;
-            <a href="{% url 'renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+            <a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}"
                title="see also: landlord and tenant responsibility for repairs">
                 repairs that the law says are your landlord's responsibility</a>.</p>
         <p>Tell your landlord if your accommodation needs repairs. Get advice if your landlord doesn't do repairs they're responsible for.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see how we can help</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
         </div>
 
@@ -142,7 +142,7 @@ as your landlord but you don't share living accommodation with them.{% endblock 
         <p>When the notice period ends, your tenancy ends. You no longer have any right to live in the property.
             If you stay, the landlord must get a court order to evict you.</p>
         <p class="inline-callout">
-            <a href="{% url 'renters-ending_a_periodic_tenancy' %}"
+            <a href="{% url 'website:renters-ending_a_periodic_tenancy' %}"
                title="see also:  ending a periodic tenancy">Find out more about ending a periodic tenancy</a></p>
 
     <h2>How to end your fixed-term tenancy</h2>
@@ -154,7 +154,7 @@ as your landlord but you don't share living accommodation with them.{% endblock 
             If you stay, the landlord must get a court order to evict you..</p>
 
         <p class="inline-callout">
-            <a href="{% url 'renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
+            <a href="{% url 'website:renters-how_tenants_can_end_a_fixed_term_tenancy' %}"
                title="see also: end a fixed-term tenancy">
                 Find out more about ending a fixed-term tenancy</a></p>
      <h2>Periodic agreements: how your landlord can evict you</h2>
@@ -177,16 +177,16 @@ as your landlord but you don't share living accommodation with them.{% endblock 
     <h2>Illegal eviction</h2>
         <p>It may be a criminal offence if your landlord tries to evict you without getting a court order.</p>
         <p>Your local council should help if you have been
-            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
                title="see also: What is illegal eviction?">
                 illegally evicted or harassed</a> by your landlord.</p>
         <p>Get help if this is happening to you.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Claim compensation for illegal eviction</h4></a>
                     <p></p>
                     <p>It may be possible to claim compensation if you have been evicted illegally</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">
                         Contact Represent to claim compensation for illegal eviction</a></p>
 
 </div>
@@ -197,10 +197,10 @@ as your landlord but you don't share living accommodation with them.{% endblock 
             your landlord can evict you and the person you attempt to pass it to.</p>
 
                 <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Do you have a renting problem?</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
 

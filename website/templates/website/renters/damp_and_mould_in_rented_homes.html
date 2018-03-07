@@ -26,14 +26,19 @@
         </div>
 
 <!--FAQs-->
+
+
+
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
+
         <div class="page-header">
-            <h1>Damp and mould in rented homes<br>
+                      <h1>Damp and mould in rented homes<br>
                 <small>Find out which types of damp and mould problems are your landlord's responsibility,
                         what they should do to resolve them and what you can do if they won't.</small>
             </h1>
         </div>
+
 
     <h2>Types of damp problem</h2>
         <p>Your home could be affected by:</p>
@@ -46,10 +51,10 @@
         <p>Your landlord might need the help of a damp expert to work out the cause of damp.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -74,10 +79,10 @@
             coming back, your landlord may have to install a damp proof course.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -87,7 +92,7 @@
             such as a window or a cold wall. Mould can grow on walls and window frames.</p>
         <p>Severe mould growth can be a health problem for people with asthma and other chest problems.</p>
         <p class="inline-callout external">More from&nbsp;
-            <a href="./?a=1078452"
+            <a href="{{ nhs_damp_url }}"
                title="Link to NHS Choices - how damp and mould can affect health." target="_blank">
                 NHS Choices about how damp and mould can affect health</a>.</p>
         <p>Some problems that cause condensation are your landlord's responsibility to fix.</p>
@@ -95,10 +100,10 @@
             There may be things you can do to help.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -153,10 +158,10 @@
             they know about them.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -166,7 +171,7 @@
         <p>They'll use the Housing Health and Safety Rating System (HHSRS) to assess how much risk there is
             to your health and safety.</p>
         <p class="inline-callout internal">Find out more about the&nbsp;
-            <a href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+            <a href="{% url 'website:renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
                title="see also: health and safety standards in rented homes">Housing Health and Safety Rating System (HHSRS)</a>.</p>
         <p>Environmental health can take action against a landlord if they decide the problems are a health and safety hazard.</p>
         <p>If you are a private or housing association tenant, the council's environmental health team could order
@@ -175,7 +180,7 @@
         <p>Environmental health help for council tenants is more restricted, but it can still be useful to contact them.</p>
 
         <p class="inline-callout internal">Find out
-            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+            <a href="{% url 'website:renters-complain_to_environmental_health_about_rented_housing' %}"
                title="see also: Complain to environmental health about rented housing">
                 how to complain to environmental health about repairs and poor conditions</a>.</p>
 
@@ -184,14 +189,14 @@
         <p>In some cases a court could order your landlord to do repairs or improvement work.</p>
         <p>A court can also order your landlord to pay you compensation for inconvenience and any damage to your property or health.</p>
         <p class="inline-callout internal">Find out about
-            <a href="{% url 'renters-legal_action_if_your_landlord_wont_do_repairs' %}"
+            <a href="{% url 'website:renters-legal_action_if_your_landlord_wont_do_repairs' %}"
                title="See also: legal action for disrepair">legal action to deal with repairs problems</a>.</p>
 
        <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
@@ -199,22 +204,23 @@
         <p>Some private landlords may take steps to evict you if you complain about the condition of
             your home to them or the council. The law gives protection to some tenants.</p>
         <p class="inline-callout internal">Find out more about&nbsp;
-            <a href="{% url 'renters-revenge_eviction_if_you_ask_for_repairs' %}"
+            <a href="{% url 'website:renters-revenge_eviction_if_you_ask_for_repairs' %}"
                title="see also: eviction if you ask for repairs">revenge eviction</a>.</p>
 
     <h2>Get advice from Represent</h2>
         <p>Get advice if your home is in a bad condition and you are not sure what to do.</p>
 
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see if you can claim compensation for disrepair.</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 
                 </div>
 
     </div>
 </div>
+
 
 
 

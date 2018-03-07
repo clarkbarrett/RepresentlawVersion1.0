@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Eviction after a section 8 notice{% endblock %}
+{% block description %}{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Check if your deposit was protected</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>How to get your tenancy deposit protected<br>
+                <small>Rent deposit money paid to a landlord to cover unpaid rent or damage should be
+                        protected by a tenancy deposit scheme.</small>
+            </h1>
+        </div>
+
+    <h2>What is a section 8 eviction notice?</h2>
+        <p>Your landlord can give you a section 8 notice when they want to end your assured
+            shorthold tenancy. They can do this&nbsp;at any time during your tenancy,
+            including during a fixed term.</p>
+        <p>Landlords can give you a section 8 notice if you:</p>
+
+        <ul>
+            <li>have rent arrears</li>
+            <li>are involved in criminal or antisocial behaviour</li>
+            <li>break other terms of your tenancy agreement like damaging the property</li>
+        </ul>
+        <p>Your landlord may prefer to use the simpler
+            <a href="{% url 'website:renters-section_21_eviction_process' %}"
+               title="See also: Section 21 eviction process">section 21 eviction procedure</a> if they can.
+            They could give you a section 8 notice and a section 21 notice at the same time.</p>
+
+        <h2 style="width: 728.438px;border: none">Section 8 eviction process</h2>
+    <h3>1. Notice</h3>
+        <p>Your landlord must send you a notice of seeking possession using Form 3 or a letter with the same
+            information. It must include the reasons for eviction.</p>
+        <p>Depending on the reason your landlord wants to evict you, the notice period will be either 14 days,
+            4 weeks or 2 months.</p>
+        <p>The notice is valid for 1 year after the date it was served.</p>
+
+    <h3>2. Applying to court</h3>
+        <p>Your landlord can&nbsp;
+                apply to court for a possession order after the notice period ends.</p>
+        <p>The court will send you papers which include:</p>
+
+    <ul>
+        <li>a defence form</li>
+        <li>details of the court hearing date</li>
+        <li>any evidence your landlord has submitted</li>
+    </ul>
+        <p>You must complete and return the defence form within 14 days.&nbsp;
+            You can use it to explain your situation. You can also provide your own evidence.</p>
+
+    <h3>3. Court hearing</h3>
+        <p>A judge will hear the case at a court hearing.</p>
+        <p>The hearing is your opportunity to explain your situation and present your evidence.&nbsp;
+            You can attend the hearing even if you don't submit a defence form.</p>
+        <p>It helps the court if you attend the hearing and provide information in advance if possible.</p>
+
+    <h3>4. Court decision</h3>
+        <p>The court can decide to:</p>
+        <ul>
+            <li>dismiss the case (this means you can stay)</li>
+            <li>order you to leave (usually in 14 days, but you can ask for longer)</li>
+            <li>postpone or suspend a possession order</li>
+        </ul>
+        <p>A suspended or postponed possession order allows you to stay in your home provided you follow certain terms.
+            For example, that you follow a repayment plan for rent arrears.</p>
+        <p>If you break the terms of this agreement, your landlord can bring the case back to court.</p>
+        <p>You are usually told the decision on the day. If you don't attend the hearing, the
+            court sends you a letter with their decision.</p>
+
+    <h3>5. Bailiffs</h3>
+        <p>Your landlord can ask the court for an eviction warrant
+        if you don't leave by the date set out in the possession order.</p>
+        <p style="border: 0px">You get notice of the time and date of the eviction on a court document
+            called Form N54.</p>
+        <p style="border: 0px">The bailiffs (sometimes called enforcement officers) post or deliver
+            the form by hand.</p>
+        <div id="content_container_1471965">
+        <p style="border: 0px">It helps to be prepared, packed and ready to hand back your keys&nbsp;
+            <a href="{% url 'website:renters-what_happens_when_bailiffs_evict_tenants' %}">
+                when the court bailiffs come to evict you</a>.</p></div>
+
+    <h2>How to defend a section 8 eviction</h2>
+        <h3>Decide if you have a case</h3>
+        <p>You may be able to successfully challenge a section 8 eviction, for example if:</p>
+        <ul>
+            <li>the notice isn't valid</li>
+            <li>your landlord can't prove you owe rent arrears</li>
+            <li>you have evidence that disproves your landlord's case</li>
+        </ul>
+
+    <h3>Get legal advice</h3>
+        <p>It's important to talk to a legal adviser if you want to defend a section 8 notice.</p>
+        <p>An adviser can:</p>
+        <ul>
+            <li>tell you if you have a case</li>
+            <li>make you aware of any risks or costs involved</li>
+            <li>help you fill in a defence form</li>
+        </ul>
+        <p>If you claim benefits or have a low income, you may qualify for legal aid to help pay
+            for legal advice or representation.</p>
+
+    <h3>Complete and return the defence form</h3>
+        <p>You must complete and return the defence form within 14 days. You can use it to explain
+            your situation and why you shouldn't be evicted.</p>
+        <p>Include any evidence that could help the court make a decision, for example:</p>
+        <ul>
+            <li>bank statements to show when you paid your rent</li>
+            <li>a job offer letter that shows you can now afford to pay arrears</li>
+        </ul>
+    <h3>Attend the court hearing</h3>
+        <p>The court hearing is your chance to explain your situation to the court.</p>
+        <p>You can bring a solicitor or legal representative with you. Most courts have a
+            legal adviser on duty for tenants who don&rsquo;t have a representative.&nbsp;
+            Contact the court in advance to ask about this.</p>
+        <p>If you need more time, you can explain to the court why leaving in
+            14 days would cause you problems.</p>
+        <p>The court will make its decision based on the evidence submitted by your
+            landlord if you haven't submitted a defence form and don't attend the hearing,</p>
+
+    <h3>Court costs</h3>
+        <p>If you win your case, the court usually doesn't order you to pay court costs.</p>
+        <p>You will usually have to pay court costs if you lose your case.</p>
+
+    <h2>Reasons for eviction</h2>
+        <p>Your landlord must prove to the court that they have 'grounds for possession'.
+            These are&nbsp;legal reasons to evict you.</p>
+
+    <h3>Rent arrears</h3>
+        <p>Rent arrears is the most common reason for landlords serving a section 8 notice.</p>
+        <p>It's used if you have rent arrears of at least 2 months (if you pay rent monthly) or 8
+            weeks (if you pay rent weekly).</p>
+        <p>You must have rent arrears on both the following dates:</p>
+
+    <ul>
+        <li>when your landlord gives you notice</li>
+        <li>when the case is heard in court</li>
+    </ul>
+        <p>Rent arrears count as a 'mandatory ground' for possession. This means if your landlord
+            can prove you are in arrears, the court must order you to leave, usually in 14 days.</p>
+
+    <h3>Discretionary grounds</h3>
+        <p>Some common reasons landlords give when using a section 8 count as discretionary
+            grounds.</p>
+        <p>Common discretionary grounds include if you:</p>
+
+        <ul>
+            <li>regularly pay rent late</li>
+            <li>breach your tenancy agreement</li>
+            <li>damage your landlord's property</li>
+            <li>are involved in antisocial behaviour</li>
+        </ul>
+        <p>Your landlord has to prove the grounds and the court also decides if it's reasonable to evict you.</p>
+    <p></p>
+
+</div>
+</div>
+
+{% endblock %}
+
+
+
+
+

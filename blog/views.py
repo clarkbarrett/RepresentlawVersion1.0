@@ -4,7 +4,6 @@ from blog.forms import CommentForm
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
-from haystack.query import SearchQuerySet
 
 
 def list_of_post_by_category(request, category_slug):

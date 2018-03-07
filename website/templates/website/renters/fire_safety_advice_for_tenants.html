@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Fire safety advice for tenants<br>
@@ -66,7 +66,7 @@
         <p>The council can issue a notice telling your landlord to fit and test the alarms within 28 days.</p>
         <p>If the landlord doesn't do this, the council can fine the landlord up to £5000 and arrange to fit the alarms itself.</p>
         <p class="inline-callout internal">Find out
-            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+            <a href="{% url 'website:renters-complain_to_environmental_health_about_rented_housing' %}"
                title="see also: Complain to environmental health about rented housing">
                 more about complaining to&nbsp;your council's environmental health department</a>.</p>
 
@@ -80,7 +80,7 @@
         </ul>
         <p class="inline-callout internal">Find out more about
             <a title="see also: electrical safety in rented homes"
-               href="{% url 'renters-electrical_safety_in_rented_homes' %}">
+               href="{% url 'website:renters-electrical_safety_in_rented_homes' %}">
                 electrical safety in the home</a>.</p>
 
     <h2>Gas safety</h2>
@@ -88,7 +88,7 @@
         <p>Contact your landlord if you're worried about gas cookers or fires, gas leaks or carbon monoxide poisoning.</p>
         <p class="inline-callout internal">Find out more about
             <a title="see also: gas safety"
-               href="{% url 'renters-gas_safety_in_rented_homes' %}">gas safety in the home</a>.</p>
+               href="{% url 'website:renters-gas_safety_in_rented_homes' %}">gas safety in the home</a>.</p>
 
     <h2>Furniture fire safety</h2>
         <p>When you rent a furnished property, any upholstered furniture such as sofas, cushions and mattresses
@@ -96,7 +96,7 @@
         <p class="inline-callout internal">
             Find out more about
             <a title="see also: safety standards for furniture"
-               href="{% url 'renters-safety_standards_for_furniture_and_appliances' %}">
+               href="{% url 'website:renters-safety_standards_for_furniture_and_appliances' %}">
                 safety standards for furniture</a>.</p>
 
     <h2>Complain to the council about fire safety</h2>
@@ -106,16 +106,16 @@
             fire risk, the council can take action against your landlord.</p>
         <p>The council uses the&nbsp;
             <a title="see also; health and safety standards for rented homes"
-               href="{% url 'renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
+               href="{% url 'website:renters-health_and_safety_standards_for_rented_homes_hhsrs' %}">
                 Housing Health and Safety Rating System</a> to assess if your home is unsafe.</p>
         <p class="inline-callout internal">Find out&nbsp;
-            <a href="{% url 'renters-complain_to_environmental_health_about_rented_housing' %}"
+            <a href="{% url 'website:renters-complain_to_environmental_health_about_rented_housing' %}"
                title="See also: Complain to environmental health about rented housing">how to complain to environmental health</a>.</p>
 
     <h3>Fire safety in shared homes</h3>
         <p>Shared houses that are licensed by the council as
             <a title="see also: HMOs"
-               href="{% url 'renters-houses_in_multiple_occupation_hmo' %}">
+               href="{% url 'website:renters-houses_in_multiple_occupation_hmo' %}">
                 houses in multiple occupancy (HMOs)</a> must have extra fire precaution equipment and facilities.</p>
         <p>As a condition of their licence, landlords of HMOs can be required to have fire doors, protected escape routes,
             fire extinguishers or blankets.</p>
@@ -134,10 +134,10 @@
             paying rent.</p>
 
                 <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Do you have a renting problem?</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Do you have a renting problem?</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
     </div>

@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Repairs and maintenance in council and housing association homes{% endblock %}
+{% block description %}A council or housing association landlord is usually responsible
+                    for renting you a home that's in a decent condition and for doing repairs to your home. {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Repairs and maintenance in council and housing association homes</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+                <h1><small>A council or housing association landlord is usually responsible
+                    for renting you a home that's in a decent condition and for doing repairs to your home. </small></h1>
+
+        </div>
+        <hr>
+
+        <h2>Conditions when you move in</h2>
+        <p>When you move into a council or housing association home:</p>
+        <ul>
+            <li>it should be clean and fit to live in</li>
+            <li>any necessary repairs should be completed</li>
+            <li>gas and electrical supplies and all plumbing should be safe and working</li>
+            <li>windows and doors should be secure and work properly</li>
+            <li>the garden should be free from rubbish</li>
+        </ul>
+        <p class="inline-callout highlight">
+            If there are no working smoke alarms in your new home, ask your landlord if they can supply and fit them.</p>
+        <h3>Domestic appliances, furniture and carpets</h3>
+        <p>Most council or housing association homes are unfurnished. You are usually expected to provide your own
+            appliances, furniture, carpets and other floor coverings.</p>
+        <p>You are responsible for repairing and replacing these.</p>
+        <p>There are usually connections for a washing machine, fridge and cooker.</p>
+
+          {% include 'disrepair-callout.html' %}
+
+
+    <h2>Repairs your landlord is responsible for</h2>
+        <p>Your landlord is responsible for repairs to:</p>
+        <ul><li>the structure and exterior of the building &ndash; including the roof, walls,
+            windows and external doors</li>
+            <li>central heating, gas fires, fireplaces, flues, ventilation and chimneys</li>
+            <li>water, pipes, basins, sinks, toilets and baths</li>
+            <li>drains and guttering</li>
+            <li>gas pipes, electrical wiring and any appliances provided</li>
+            <li>common parts such as lifts and communal entrances</li>
+        </ul>
+        <p>Your tenancy agreement might set out any other responsibilities the council or housing
+            association has.</p>
+        <p class="inline-callout highlight">Find out more about
+            <a href="{% url 'website:renters-landlord_and_tenant_responsibilities_for_repairs' %}"
+               title="see also: your landlord's responsibilities for repairs">
+                landlords' responsibilities for repairs</a>.</p>
+
+    <h3>How to report repair problems</h3>
+        <p>Councils and housing associations should have a system for reporting and dealing with repairs.
+            They should give you information about this at the start of your tenancy.</p>
+        <p class="inline-callout highlight">Find out
+            <a href="{% url 'website:renters-how_to_report_repairs_to_a_social_landlord' %}"
+               title="see also: Reporting repairs and allowing access">more about how to report repairs</a>.</p>
+
+          {% include 'disrepair-callout.html' %}
+
+    <h3>How long repairs should take</h3>
+        <p>After you report a repair problem, your landlord should tell you how they are
+            going to deal with it and how long it is likely to take.</p>
+        <p>Your tenants' handbook or tenancy agreement may tell you how long a particular type of repair
+            should take to be fixed.</p>
+        <p>For council tenants, some small repairs may be covered by the
+            <a title="See also: Right to repair for council tenants"
+               href="{% url 'website:renters-right_to_repair_for_council_tenants' %}">
+                right to repair scheme</a>.</p>
+
+        <p>Contact your landlord again if they take too long to start repairs or don't keep to their own
+            agreements for what should be repaired.</p>
+        <p>For example, if your landlord says that you have to pay to redecorate your home after damage
+            caused by disrepair, but this is one of their repair responsibilities.</p>
+        <p>Find out more about
+            <a href="{% url 'website:renters-complain_about_council_or_housing_association_repairs' %}"
+               title="see also: Complain about council or housing association repairs">
+                what to do if your landlord won't do repairs</a>.</p>
+    <h2>Accidental or deliberate damage</h2>
+        <p>Landlords are not required to fix any damage caused by tenants or their guests or visitors.</p>
+        <p class="inline-callout highlight">If your landlord does fix damage you're responsible for,
+            they will usually charge you for this.</p>
+
+    <h2>Problems during repairs by your landlord</h2>
+        <p>If your home is damaged by repair or maintenance work organised by your landlord, they should fix it.</p>
+        <p>This includes redecorating if disrepair or repair work caused damage.</p>
+        <p>You can ask for a rent reduction if you can't use all or part of your home because of repair work.</p>
+        <p>If your landlord refuses to reduce the rent, you could
+            <a href="{% url 'website:renters-housing_disrepair_check_if_you_can_claim_compensation' %}"
+               title="see also: Housing disrepair: check if you can claim compensation">
+                take them to court to claim compensation</a>.</p>
+
+         {% include 'disrepair-callout.html' %}
+
+        <p class="inline-callout highlight">Find out about
+            <a href="{% url 'website:renters-problems_during_council_or_housing_association_repairs' %}"
+               title="see also: problems during repairs in social housing">what to do about problems during repairs</a>.</p>
+
+
+
+    <h2>If your landlord doesn't do repairs</h2>
+        <p>Contact your landlord again if they take too long to start repairs or don't keep to their
+            own agreements for what should be repaired.</p>
+        <p>Find out more about action to take if your landlord takes too long to do repairs or
+            <a href="{% url 'website:renters-complain_about_council_or_housing_association_repairs' %}"
+               title="see also: Complain about council or housing association repairs">
+                refuses to repair your home</a>.</p>
+
+    <h2>Health and safety standards</h2>
+        <p class="inline-callout highlight">
+            Your home must be safe and fit to live in when your tenancy starts and throughout your tenancy.</p>
+        <p>Your landlord is responsible for:</p>
+
+        <ul>
+            <li>
+                <a title="See also: Gas safety"
+                   href="{% url 'website:renters-gas_safety_in_rented_homes' %}">
+                    the safety of the gas supply and gas appliances they provide</a></li>
+
+            <li><a href="{% url 'website:renters-electrical_safety_in_rented_homes' %}"
+                   title="see also: electrical safety in the home">
+                electrical wiring and any electrical appliances they provide</a></li>
+        </ul>
+        <p class="inline-callout internal">Find out more about
+            <a href="{% url 'website:renters-health_and_safety_standards_for_rented_homes_hhsrs' %}"
+               title="see also: health and safety standards in your home">
+                health and safety standards</a> that apply to rented homes.</p>
+
+    <h3>Condensation, damp and mould</h3>
+        <p>These are common problems in rented homes.</p>
+        <p class="inline-callout highlight">Find out what you can do if your home is affected by
+            <a href="{% url 'website:renters-damp_and_mould_in_rented_homes' %}"
+               title="See also: damp and mould in rented homes">damp and mould</a>.</p>
+
+          {% include 'disrepair-callout.html' %}
+
+    <h2>Common areas</h2>
+        <p>Common areas are those shared with other people, such as hallways, stairs or lifts in the building.</p>
+        <p>Your landlord is responsible for the repair and decoration of these areas. This applies
+            even if your tenancy agreement says you have to help keep common areas clean and tidy.</p>
+
+    <h2>Gardens and outside spaces</h2>
+        <p>It's usually a tenant's responsibility to take care of their garden. This means you should keep
+            it reasonably tidy. It doesn't mean that you have to improve the garden.</p>
+        <p>Ask your landlord for permission if you want to make any changes to your garden, such as building
+            a shed or laying a patio.</p>
+        <p>If your tenancy agreement doesn't say anything about the garden, then you are expected to
+            at least keep it in the condition it was in when you moved in.</p>
+        <p>Where the garden is shared with other tenants, either your landlord may be responsible for
+            maintaining it or you'll share responsibility with the other tenants.</p>
+
+    <h2>Decorating and home improvements</h2>
+        <p>You usually need your landlord's permission to make your own improvements to a council
+            or housing association home.</p>
+        <p>Home improvements could include:</p>
+
+        <ul>
+            <li>a shower if your home doesn't have one</li>
+            <li>new kitchen units</li>
+            <li>a gas fire</li>
+        </ul>
+        <p>Improvements could also include decorating the outside of the house, putting up a greenhouse
+            or shed or building an extension.</p>
+        <p>Council tenants may be able to apply for compensation for certain improvements at the end of their tenancy.
+            Contact your council's housing department for more information.</p>
+        <p>Find out more about
+            <a href="{% url 'website:renters-tenants_home_improvements' %}">
+                a tenant's right to improve a council or housing association home</a>.</p>
+
+    <h3>Decorating your home</h3>
+        <p>Tenants are usually responsible for decorating a council or housing association home.</p>
+        <p>Your landlord could be responsible for redecoration:</p>
+
+        <ul>
+            <li>if damp or disrepair damaged your home</li>
+            <li>following
+                <a href="{% url 'website:renters-problems_during_council_or_housing_association_repairs' %}"
+                   title="see also: Problems during council or housing association repairs">
+                    damage caused by repair work</a></li>
+        </ul>
+        <p>Ask your landlord to pay something towards redecoration costs if the property is in a poor state of
+            decoration when you start your tenancy.</p>
+        <p>Some councils and housing associations provide decoration vouchers which can be used to buy
+            decorating materials in local DIY stores.</p>
+
+    {% include 'disrepair-callout.html' %}
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

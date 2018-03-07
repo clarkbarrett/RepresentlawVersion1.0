@@ -27,7 +27,7 @@
 
 <!--FAQs-->
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
         <div class="page-header">
             <h1>Eviction of lodgers<br>
@@ -37,10 +37,10 @@
 
     <h2>Lodgers and other excluded occupiers</h2>
         <p>Lodgers have the legal status of an
-            <a href="{% url 'renters-excluded_occupiers' %}"
+            <a href="{% url 'website:renters-excluded_occupiers' %}"
                title="See also: Excluded occupiers">excluded occupier
             </a>. You are a
-            <a href="{% url 'renters-lodgers' %}"
+            <a href="{% url 'website:renters-lodgers' %}"
                title="see also: lodgers">lodger
             </a> if you share the kitchen, bathroom or other living accommodation with your landlord.</p>
         <p>You will also be classed as an excluded occupier if you live:</p>
@@ -61,7 +61,7 @@
         <p>Your landlord should give you reasonable notice to leave.&nbsp;Notice can be given verbally.&nbsp;
             You must leave when the notice period ends.</p>
         <p>If you have a
-        <a href="{% url 'renters-types-of-renting-agreement' %}"
+        <a href="{% url 'website:renters-types-of-renting-agreement' %}"
            title="See also: Types of renting agreement">written agreement
         </a> (such as a licence agreement) it should say how much notice you should be given. Your landlord
             doesn't have to give you notice in writing unless your agreement says they should.</p>
@@ -75,14 +75,12 @@
         <p>Your landlord can sell or dispose of your belongings if you don't collect them within a reasonable
             time or if they can't make contact with you.</p>
         <p>It is a criminal offence for a landlord to
-            <a href="{% url 'renters-what_is_illegal_eviction' %}"
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
                title="see also: what is illegal eviction">use or threaten violence while evicting you</a>.</p>
 
     <h2>Court action</h2>
         <p>Your landlord does not need to go to court to evict you.&nbsp;</p>
-        <p>Your landlord could choose to&nbsp;
-            <a href="{% url 'renters-what_is_a_possession_order_for_eviction' %}"
-               title="see also: eviction court orders">
+        <p>Your landlord could choose to
                 apply to the court to ask for a possession order
             </a>. As long as you were given reasonable notice,&nbsp;the court must make an order to evict you.</p>
 

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Help from the council after illegal eviction{% endblock %}
+{% block description %}A tenancy relations officer at the council can help you get your home back after
+illegal eviction and even prosecute your landlord
+{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Help from the council after illegal eviction</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h2>If you've been illegally evicted, your local council may be able to help you get back into your home,
+                prosecute your landlord or find you emergency accommodation.
+            </h2>
+            <hr>
+        </div>
+
+    <h2>Help from the council</h2>
+        <p>Contact your local council&nbsp;immediately if you've been illegally evicted.</p>
+        <p>The council could:</p>
+
+        <ul>
+            <li>help you get back into your home</li>
+            <li>find you somewhere else to live</li>
+            <li>prosecute your landlord</li>
+        </ul>
+        <p>Your&nbsp;council&nbsp;should have a team or person, such as a tenancy relations officer,
+            who is responsible for helping tenants who have been harassed or illegally evicted.
+            The council will also have another team responsible for helping people who are homeless.</p>
+        <p class="inline-callout">
+            <a title="Link to Gov.uk - find your local council" href="{{find_council_url}}"
+               target="_blank">Find your council's telephone number</a>.</p>
+
+    <h2>Help to get back into your home</h2>
+
+        <p>The council should check your legal rights to stay in your home. It can then contact your landlord
+            to&nbsp;negotiate for you to return.</p>
+        <p>The council's tenancy relations officer&nbsp;may be able to go with you to help you
+            re-enter your home.</p>
+        <p>The council can also give you legal advice. It can advise you about getting a solicitor and
+            about going to court to
+            <a title="See also: Illegal eviction: Applying to a court for an injunction"
+               href="{% url 'website:renters-how_to_get_an_illegal_eviction_injunction' %}">
+                get an injunction</a> against your landlord.</p>
+        <p>The council doesn't charge for help and advice.</p>
+
+    <h2>Emergency accommodation</h2>
+        <p>If the illegal eviction has made you homeless, the council may
+            help you with emergency accommodation while it looks into your situation.
+            The council does not have to find accommodation for all homeless people.</p>
+        <p>If you're illegally evicted at night or at the weekend, call your council's&nbsp;emergency out-of-hours number.</p>
+        <p>To find the number you can:</p>
+
+        <ul>
+            <li>search Gov.uk for
+                <a title="Link to Gov.uk - find your local council"
+                   href="{{find_council_url}}" target="_blank">
+                your council's contact details</a>.&nbsp;Call the out-of-hours number or the council's
+                switchboard and check if this is given in an answerphone message</li>
+            <li>call 101 to be connected to your local police, who should also have details of
+                the council's emergency number</li>
+        </ul>
+
+    <h2>Legal action against your landlord</h2>
+
+        <p>The council&nbsp;can prosecute your landlord for illegal eviction or harassment.</p>
+        <p>It doesn't cost you anything if&nbsp;the council decides to take your landlord to court.
+            You'll probably have to go to the court hearing.</p>
+        <p>If they are found guilty, your landlord has to pay a fine or could be sent to prison.</p>
+        <p>The threat of prosecution can sometimes be enough to persuade your landlord to let you back into your home.</p>
+        <p>The council can also ask the court to award you compensation.&nbsp;Compensation covers any costs
+            you had to pay, such as rent for emergency accommodation, the cost of replacing your belongings
+            and compensation for any personal injury you have suffered.</p>
+        <p class="inline-callout">
+            <a href="{% url 'website:renters-what_is_illegal_eviction' %}"
+               title="see also: what is illegal eviction">Find out more about illegal eviction</a>.</p>
+
+        {% include 'contact-renters.html' %}
+
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+

@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Overcrowding{% endblock %}
+{% block description %}Find out what you can do if you are living in overcrowded conditions and who qualifies
+as legally overcrowded. {% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron" style="background-color:black">
+        <div class="container">
+            <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent Renters</h1>
+                <h1 align="center"><small style="color:white">Overcrowding</small></h1>
+              </div>
+        </div>
+    </div>
+
+<!--FAQs-->
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1>Find out what you can do if you are living in overcrowded conditions and who qualifies as legally overcrowded.
+            </h1>
+            <hr>
+        </div>
+
+    <h2>Get help and advice about overcrowding</h2>
+        <p>Get advice about overcrowding from your council's housing options service.</p>
+        <p>Use the <a title="Link to Gov.uk - find your council" href="{{ find_council_url }}"
+                      target="_blank">Gov.uk search to find your local council</a>.</p>
+        <p>Get advice from Represent about overcrowding problems.</p>
+
+        {% include 'contact-hmo.html' %}
+
+    <h2>Apply as homeless due to overcrowding</h2>
+        <p>You can apply to the council as homeless</a> if your home is legally overcrowded or so overcrowded that it's not reasonable
+            for you to continue living there.</p>
+        <p>The council looks at your situation. But even if you are legally overcrowded, you might not be entitled to help.</p>
+        <p class="inline-callout internal">Find out more about
+
+        <p>Do not leave an overcrowded home before the council makes a decision on your homeless application.
+            You may be refused help if the council decides you are intentionally homeless.</p>
+    <h2>Move to a larger private rented home</h2>
+        <p>You may be able to find a private rented home large enough for your family.</p>
+        <p>Private tenants can claim housing benefit to help pay the rent</a>.
+            This is called the local housing allowance.</p>
+        <p>If your rent is more than the housing benefit you receive, you have to pay any rent shortfall</a>.</p>
+        <p>Rules limit the number of bedrooms that the local housing allowance can cover to a maximum of 4.</p>
+
+        <p>It is sometimes possible to if your family is too big to live in one home.</p>
+        <p class="advice-highlight normal-advice">You must get advice before giving up an overcrowded council
+            or housing association home. You may not be able to get another council or housing association home.</p>
+
+    <h2>Apply for council housing</h2>
+        <p>You can apply to your local council for housing if you are overcrowded.</p>
+        <p>Your priority for council housing depends on what your council's policy says. You are likely to be given some priority if you are
+            considered legally overcrowded.</p>
+        <p>All councils have their own rules to decide how overcrowded you are.
+            Ask your local council about its policy.</p>
+        <p><a href="{{ find_council_url }}" title="Link to Gov.uk - find your council"
+              target="_blank">Find your local council</a>.</p>
+
+        <p>A shortage of larger properties in your area may mean it's difficult for your council to find you a home.</p>
+
+        {% include 'contact-hmo.html' %}
+
+        <h2>Transfer to a larger council or housing&nbsp;association home</h2>
+
+        <p>You can&nbsp; apply for a transfer if you are a council or housing association tenant.</p>
+        <p>There is usually a waiting list for transfers but you should get some priority if your home is overcrowded.</p>
+        <p>You can also use mutual exchange
+            to swap homes with another council or housing association tenant anywhere in the UK.</p>
+        <p>You can't swap homes if the property you want to move to is too big or too small for your needs.</p>
+
+    <h2>How to calculate statutory overcrowding</h2>
+        <p>Under housing law, there are two ways to calculate if your home is overcrowded.</p>
+        <p>One way is by the number of rooms for people to sleep in. This is called the room standard.</p>
+        <p>The other way is by the amount of space in the home and the number of people living in it. This
+            is called the space standard.</p>
+        <p>Statutory overcrowding is when there are too many people
+        living in your home using either of the calculations.</p>
+
+    <h3>1. Calculate the number of rooms</h3>
+        <p>The room standard says your home is legally overcrowded
+        if two people of the opposite sex have to share a room to sleep in. This does not apply when couples
+            share a room.</p>
+        <p class="inline-callout urgent">Children under 10 years old are not counted under the room standard.</p>
+        <p>Your bedrooms and any living rooms are counted as rooms you can sleep in. It doesn't matter which
+            rooms you actually sleep in.</p><p>Under the room standard, a couple with a boy and a girl aged under
+        the age of 10 in a one-bedroom flat with a living room are not overcrowded.</p>
+
+     <h3>2. Calculate the amount of space</h3>
+        <p>Under the space standard, the number of people in your home is compared with both the number of rooms
+            and the floor area.</p>
+        <p>There are two separate calculations for working out if you're overcrowded:</p>
+        <ul>
+            <li>the first looks at the number of rooms you have.</li>
+            <li>the second looks at the floor area in your home.</li>
+        </ul>
+        <p>The answer to each calculation gives the number of rooms that's enough for you and your
+            family.&nbsp;If the numbers are different, the lower number is used. Your home is legally
+            overcrowded if the number of people living there is more than this.</p>
+        <p>To count the number of people:</p>
+        <ul>
+            <li>don't include children under 1 year old</li>
+            <li>children aged 1 to 9 years count as a half</li>
+            <li>anyone aged&nbsp;10 or over counts as one person</li>
+        </ul>
+        <p>To count the number of rooms, include bedrooms and living rooms but don't include&nbsp;any
+            rooms under 50 square feet.</p>
+
+    <h4>Number of rooms</h4>
+        <p>The number of rooms considered enough for your family is:</p>
+        <ul>
+            <li>1 room for 2 people</li>
+            <li>2 rooms for 3 people</li>
+            <li>3 rooms for 5 people</li>
+            <li>4 rooms for 7.5 people</li>
+            <li>5 or more rooms for 2 people per room</li>
+        </ul>
+
+   <h4>Floor area</h4>
+        <p>The minimum floor area considered enough for your family is:</p>
+        <ul>
+            <li>50 - 69 square feet (4.6 - 6.4 square metres) for 0.5 people</li>
+            <li>70 - 89 square feet (6.5 - 8.3 square metres) for 1 person</li>
+            <li>90 - 109 square feet (8.4 -10.1 square metres) for 1.5 people</li>
+            <li>110 square feet (10.2 square metres) for 2 people</li>
+        </ul>
+
+        {% include "contact-hmo.html" %}
+</div>
+</div>
+
+{% endblock %}
+
+
+
+
+

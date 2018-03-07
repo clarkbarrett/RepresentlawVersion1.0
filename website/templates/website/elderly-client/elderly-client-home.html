@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+
+{% block title %}Probates and Estates{% endblock %}
+{% block description %}Represent Law Probate and Estates services{% endblock %}
+{% block author %}Represent{% endblock %}
+
+{% block head %}
+    <link href="{% static 'website/img/favicon.ico' %}" rel="shortcut icon" type="image/x-icon" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="/website/img/represent_icon2.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+{% endblock %}
+
+{% block body %}
+
+<!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron" style="background-color:black">
+            <div class="container">
+
+             <div class="bs-docs-header">
+                <h1 style="color:white" align="center">Represent: Elderly Client Services</h1>
+                <h1 align="center"><small style="color:white">Helping you today and tomorrow</small></h1>
+            </div>
+            </div>
+        </div>
+
+<div class="container-fluid">
+    <div class="col-md-6 offset-md-2">
+
+        <div class="page-header">
+            <h1 align="center">Elderly
+
+            </h1>
+        </div>
+            <p>Our Elderly Client team takes pride in its dedication to providing the highest quality of
+                legal services for older and sometimes more vulnerable members of society and their families. Our
+                sensitive but thorough approach means that we are fully committed to protecting our clients’
+                interests.</p>
+
+            <h2>Our Elderly Client Services cover such matters as:</h2>
+
+            <ul class="list">
+                <li class="list__item">
+                    <a href="{% url 'website:power-attorney-home' %}">
+                        Dealing with all aspects of Lasting Powers of Attorneys
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="{% url 'website:power-attorney-home' %}">
+                        Court of Protection work and Deputyships
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="{% url 'website:power-attorney-home' %}">
+                        Living wills & advance decisions
+                    </a>
+                </li>
+                <li class="list__item">
+                    Estate planning
+                </li>
+                <li class="list__item">
+                    <a href="{% url 'website:wills-trusts' %}">Wills</a>
+                </li>
+                <li class="list__item">
+                    Dealing with trust’s administration
+                </li>
+                <li class="list__item">
+                    <a href="{% url 'website:probate-home' %}">
+                        Obtaining Grants of Probate
+                    </a>
+                </li>
+                <li class="list__item">
+                    <a href="{% url 'website:probate-home' %}">
+                        Assisting or acting in the administration of estates
+                    </a>
+                </li>
+                <li class="list__item">
+                    Providing information on care and the effect on assets in the event of long term
+                    residential or nursing care
+                </li>
+            </ul>
+
+                    <p>You may also be interested in our services for <a
+                                href="{% url 'website:wills-trusts' %}">Wills</a>, <a
+                                href="{% url 'website:power-attorney-home' %}">Powers of Attorney
+                            & Court of Protection</a> and <a
+                                href="{% url 'website:probate-home' %}">Administration of
+                            Estates/Probate</a>.
+                    </p>
+        </div>
+</div>
+
+{% endblock %}
+
+
+

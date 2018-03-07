@@ -33,7 +33,7 @@ when your agreement started and whether your landlord lives in the same building
         </div>
 
 <div class="container-fluid">
-    <div class="col-md-6 col-md-offset-1">
+    <div class="col-md-6 offset-md-2">
 
       <div id="container">
 
@@ -184,14 +184,14 @@ when your agreement started and whether your landlord lives in the same building
         <h4>Result: You live in a shared ownership property</h4>
         <p>If you bought a share in your home through Homebuy or another shared ownership scheme, your rights will be set out in the agreement you have
           with the housing association that owns the remaining share. You probably have rights and responsibilities as both an
-          <a target="_blank" href="{% url 'renters-assured_tenancies' %}">
-            assured tenant</a> and as a <a target="_blank" href="{% url 'leasehold-what_is_leasehold' %}">
+          <a target="_blank" href="{% url 'website:renters-assured_tenancies' %}">
+            assured tenant</a> and as a <a target="_blank" href="{% url 'website:leasehold-what_is_leasehold' %}">
             leaseholder</a>.</p>
         <div class="bs-callout bs-callout-primary">
-                    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+                    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
                     <p></p>
                     <p>Get in touch with Represent to see how we can help</p>
-                    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" style="color: white" role="button">Contact Represent</a></p>
+                    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" style="color: white" role="button">Contact Represent</a></p>
 
                 </div>
       </div>
@@ -200,29 +200,29 @@ when your agreement started and whether your landlord lives in the same building
         <h4>Result: You are a service occupier or a service tenant</h4>
         <p>If your home is provided as part of your job, your rights depend on the agreement you have with your landlord/employer.
           You may have the same rights as either an occupier with basic protection or an excluded occupier. </p>
-        <p>You are likely to be an <a target="_blank" href="{% url 'renters-excluded_occupiers' %}">excluded occupier</a> if:</p>
+        <p>You are likely to be an <a target="_blank" href="{% url 'website:renters-excluded_occupiers' %}">excluded occupier</a> if:</p>
         <ul>
           <li>you share accommodation with your landlord/employer, or</li>
           <li>your landlord/employer lives in the same building as you and you share accommodation with a member of your landlord/employer's family, or</li>
           <li>you do not pay rent and your wages are not reduced on account of accommodation being provided.</li>
         </ul>
         <p>If none of the above applies, then you are likely to be an
-          <a target="_blank" href="{% url 'renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>.</p>
+          <a target="_blank" href="{% url 'website:renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>.</p>
         <p>Regardless of which legal status you have, you will probably have very few rights if you are asked to leave.
           This may make it difficult for you to enforce any other tenancy rights, such as getting repairs done.
           Contact Represent if you are having problems.</p>
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
 
       </div>
 
       <div id="a3" class="hidden2 result">
         <h4>Result: You are an excluded occupier</h4>
-        <p>You don't have many rights as an <a target="_blank" href="{% url 'renters-excluded_occupiers' %}">
+        <p>You don't have many rights as an <a target="_blank" href="{% url 'website:renters-excluded_occupiers' %}">
           excluded occupier</a>, which may make it difficult for you to enforce any other tenancy rights, such as getting repairs done. </p>
         <ul>
           <li>Your landlord does not need to prove a legal reason or get a court order in order to evict you. </li>
@@ -233,10 +233,10 @@ when your agreement started and whether your landlord lives in the same building
           finding somewhere else to live.</p>
 
         <div class="bs-callout bs-callout-primary">
-    <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+    <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
     <p></p>
     <p>Get in touch with Represent to see how we can help</p>
-    <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+    <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
 </div>
       </div>
 
@@ -257,10 +257,10 @@ when your agreement started and whether your landlord lives in the same building
         <p>The type of tenancy agreement you have with the housing association will affect many of your rights. Housing associations provide:</p>
         <ul>
           <li>starter tenancies (most housing associations use these trial tenancies for the first 12-months of your tenancy)</li>
-          <li><a target="_blank" href="{% url 'renters-assured_tenancies' %}">assured tenancies</a> (most housing association tenants have assured tenancies, but you should check your status if you are uncertain)</li>
+          <li><a target="_blank" href="{% url 'website:renters-assured_tenancies' %}">assured tenancies</a> (most housing association tenants have assured tenancies, but you should check your status if you are uncertain)</li>
           <li>secure tenancies (If your home is self-contained and your tenancy started before 15 January 1989, you may have a secure tenancy)</li>
           <li>demoted tenancies (housing associations can apply for a court order to 'demote' your tenancy for a one-year probationary period if you have behaved antisocially)</li>
-          <li><a target="_blank" href="{% url 'renters-assured-shorthold-tenancies' %}">assured shorthold tenancies</a> (these are often used in circumstances that do not fit into one of the above categories).</li>
+          <li><a target="_blank" href="{% url 'website:renters-assured-shorthold-tenancies' %}">assured shorthold tenancies</a> (these are often used in circumstances that do not fit into one of the above categories).</li>
         </ul>
       </div>
 
@@ -269,7 +269,7 @@ when your agreement started and whether your landlord lives in the same building
         <p>In most cases, if the council has not yet made a decision on your homelessness application, you will be an excluded occupier. This means that the council is not required to give you written notice or get a court order before they can evict you. However, they should give you a reasonable amount of notice, to allow you to make alternative accommodation arrangements.</p>
         <p>If the council has already made a decision on your homelessness application and has decided that it has an ongoing duty to house you, you may have more rights. The type of tenancy you have will usually depend on who owns the accommodation you have been housed in:</p>
         <ul>
-          <li>If it is owned by a private landlord, you will probably have an <a target="_blank" href="{% url 'renters-assured-shorthold-tenancies' %}">assured shorthold tenancy</a>.</li>
+          <li>If it is owned by a private landlord, you will probably have an <a target="_blank" href="{% url 'website:renters-assured-shorthold-tenancies' %}">assured shorthold tenancy</a>.</li>
           <li>If it is a housing association property, you will probably have an assured shorthold tenancy, unless you have been specifically told that you have an assured tenancy.</li>
           <li>If it is owned by the council, you will not have a regular council tenancy unless you have been allocated the property on a permanent basis through the waiting list. In most cases you will be an occupier with basic protection. This means that you are entitled to written notice and a court order. The court will automatically make an order to evict you if the correct legal procedure has been followed.</li>
         </ul>
@@ -277,10 +277,10 @@ when your agreement started and whether your landlord lives in the same building
 
       <div id="a7" class="hidden2 result">
         <h4>Result: You are probably an excluded occupier</h4>
-        <p>You are likely to be an <a target="_blank" href="{% url 'renters-excluded_occupiers' %}">excluded occupier</a> if you live in a hotel, bed and breakfast or hostel. This means that you have very limited rights. Your landlord only has to give you "reasonable notice" if they want to evict you, which could be verbal. This will make it difficult to enforce any other rights.</p>
+        <p>You are likely to be an <a target="_blank" href="{% url 'website:renters-excluded_occupiers' %}">excluded occupier</a> if you live in a hotel, bed and breakfast or hostel. This means that you have very limited rights. Your landlord only has to give you "reasonable notice" if they want to evict you, which could be verbal. This will make it difficult to enforce any other rights.</p>
         <p>However, you should check your status with an adviser. You may be an
           <a target="_blank"
-             href="{% url 'renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>
+             href="{% url 'website:renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>
           (which would give you a bit more protection from eviction as you'd be entitled to a court order) if:</p>
         <ul>
           <li>you have your own room, and</li>
@@ -317,24 +317,24 @@ when your agreement started and whether your landlord lives in the same building
         <h4>Result: You are probably an occupier with basic protection</h4>
         <p>In most cases, if you are renting student accommodation that is owned by the college or university, you will be an
           <a target="_blank"
-             href="{% url 'renters-occupiers_with_basic_protection' %}">
+             href="{% url 'website:renters-occupiers_with_basic_protection' %}">
             occupier with basic protection</a>.</p>
         <p>However, there are different types of student accommodation available, which may give you different tenancy rights.
-          See our page on <a target="_blank" href="{% url 'renters-university_accommodation_halls_of_residence' %}">
+          See our page on <a target="_blank" href="{% url 'website:renters-university_accommodation_halls_of_residence' %}">
             student housing</a> for more information.</p>
       </div>
 
       <div id="a11" class="hidden2 result">
         <h4>Result: You are probably an occupier with basic protection</h4>
         <p>In most cases, if you live in supported housing you will be an
-          <a target="_blank" href="{% url 'renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>.
+          <a target="_blank" href="{% url 'website:renters-occupiers_with_basic_protection' %}">occupier with basic protection</a>.
           This means that you have few rights, but your landlord has to follow the correct procedure if they want to evict you.</p>
         <p>Your rights may vary depending on the nature of your accommodation and the level of support provided.
           <div class="bs-callout bs-callout-primary">
-            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
             <p></p>
             <p>Get in touch with Represent to see how we can help</p>
-            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+            <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
           </div>
       </div>
 
@@ -343,35 +343,35 @@ when your agreement started and whether your landlord lives in the same building
         <p>If you rent your house or part of a house from someone who in turn rents the property from a different landlord,
           then you are a
           <a target="_blank"
-             href="{% url 'renters-subtenants' %}">subtenant</a>.</p>
+             href="{% url 'website:renters-subtenants' %}">subtenant</a>.</p>
         <p>It is possible for subtenants to have any type of private tenancy if the right conditions are met. You
           should always check your status with an adviser, especially if you have been living in your home for a long time.
           There are exceptions but as a guide:</p>
         <ul>
           <li>If you share any living space with your landlord you are likely to be an
             <a target="_blank"
-               href="{% url 'renters-excluded_occupiers' %}">excluded occupier</a>, which gives you almost no protection
+               href="{% url 'website:renters-excluded_occupiers' %}">excluded occupier</a>, which gives you almost no protection
             from eviction so it will be very difficult to enforce any other rights.</li>
           <li>If you don't share living space with your landlord but s/he lives in the same building, you are likely to be an
             <a target="_blank"
-               href="{% url 'renters-occupiers_with_basic_protection' %}">
+               href="{% url 'website:renters-occupiers_with_basic_protection' %}">
               occupier with basic protection</a>.</li>
           <li>If your tenancy started after 27 February 1997, you are likely to have an
             <a target="_blank"
-               href="{% url 'renters-assured-shorthold-tenancies' %}">assured shorthold tenancy</a>,
+               href="{% url 'website:renters-assured-shorthold-tenancies' %}">assured shorthold tenancy</a>,
             which gives limited protection from eviction.</li>
           <li>If your tenancy started before 27 February 1997, you may have either an assured tenancy, or a
-            <a target="_blank" href="{% url 'renters-regulated_tenancies' %}">
+            <a target="_blank" href="{% url 'website:renters-regulated_tenancies' %}">
               regulated tenancy</a>. These tenancies give significant protection from eviction. Get advice immediately
             so that you don't put important rights at risk. </li>
         </ul>
         <p>The law is complicated and protecting your rights may be difficult.
 
           <div class="bs-callout bs-callout-primary">
-            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
             <p></p>
             <p>Get in touch with Represent to see how we can help</p>
-            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+            <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
           </div>
 
         <ul>
@@ -385,7 +385,7 @@ when your agreement started and whether your landlord lives in the same building
         <p>You are likely to be an occupier with basic protection. This means that you have few rights, which may make it difficult for you to enforce any other tenancy rights, such as getting repairs done. However, your landlord has to follow the correct procedure if they want to evict you. </p>
         <p>See the page on
           <a target="_blank"
-             href="{% url 'renters-occupiers_with_basic_protection' %}">occupiers with basic protection</a>
+             href="{% url 'website:renters-occupiers_with_basic_protection' %}">occupiers with basic protection</a>
         </p>
       </div>
 
@@ -394,7 +394,7 @@ when your agreement started and whether your landlord lives in the same building
         <p>No new regulated tenancies have been created since 15 January 1989. Regulated tenancies give you very strong tenancy rights,
           including strict rules on how and by how much your rent can be increased. You also have far more protection from
           eviction than most other private tenants.</p>
-        <p>See the page on <a target="_blank" href="{% url 'renters-regulated_tenancies' %}">
+        <p>See the page on <a target="_blank" href="{% url 'website:renters-regulated_tenancies' %}">
           regulated tenancies</a> for more information about your rights and contact a local advice centre if you have any problems. </p>
         <p><strong>Don't give up your home or agree to any changes to your tenancy agreement</strong> without getting advice first.
           If you do so, you may be signing away important rights that you will not get back.</p>
@@ -407,16 +407,16 @@ when your agreement started and whether your landlord lives in the same building
           you to enforce any other tenancy rights (such as getting repairs done) as your landlord cannot simply choose
           to evict you rather than doing the work that's needed.</p>
         <p>See the section on
-          <a target="_blank" href="{% url 'renters-assured_tenancies' %}">
+          <a target="_blank" href="{% url 'website:renters-assured_tenancies' %}">
             assured tenants</a> for more information about your rights.</p>
         <p><strong>Do not give up your home or agree to any changes to your tenancy</strong>
           without speaking to a specialist housing adviser first. If you do, you may be giving up important rights
           that you will not get back if you move elsewhere.</p>
           <div class="bs-callout bs-callout-primary">
-            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
             <p></p>
             <p>Get in touch with Represent to see how we can help</p>
-            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+            <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
           </div>
       </div>
 
@@ -429,7 +429,7 @@ when your agreement started and whether your landlord lives in the same building
             This is sometimes called the 'shorthold ground'. </li>
         </ul>
         <p>See the section on
-          <a target="_blank" href="{% url 'renters-assured-shorthold-tenancies' %}">
+          <a target="_blank" href="{% url 'website:renters-assured-shorthold-tenancies' %}">
             assured shorthold tenancies</a>
           for more information about your rights.</p>
       </div>
@@ -440,16 +440,16 @@ when your agreement started and whether your landlord lives in the same building
           fixed term ends, you will become a periodic assured shorthold tenant, unless your tenancy is renewed for
           another fixed term. See the section on
           <a target="_blank"
-             href="{% url 'renters-assured-shorthold-tenancies' %}">
+             href="{% url 'website:renters-assured-shorthold-tenancies' %}">
             assured shorthold tenancies</a> for more information about your rights.</p>
         <p>Your landlord can only evict you during the fixed term if you break a term of the tenancy agreement - eg if
           you do not pay the rent or cause nuisance to neighbours. </p>
 
         <div class="bs-callout bs-callout-primary">
-          <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+          <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
           <p></p>
           <p>Get in touch with Represent to see how we can help</p>
-          <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+          <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
         </div>
       </div>
 
@@ -462,7 +462,7 @@ when your agreement started and whether your landlord lives in the same building
           <li>You are entitled to 'reasonable notice' but this doesn't have to be in writing. </li>
           <li>Read our page on
             <a target="_blank"
-               href="{% url 'renters-excluded_occupiers' %}">
+               href="{% url 'website:renters-excluded_occupiers' %}">
               excluded occupiers</a> for more information about your rights.</li>
         </ul>
         <p>If you cannot negotiate with your landlord, you may have to consider putting up with things as they are or
@@ -473,7 +473,7 @@ when your agreement started and whether your landlord lives in the same building
         <h4>Result: Your rights depend on whose name is on the tenancy agreement</h4>
         <p>If you live with family or friends but pay rent to a landlord or letting agency, your rights will depend
           on <a target="_blank"
-                href="{% url 'renters-types-of-renting-agreement' %}">
+                href="{% url 'website:renters-types-of-renting-agreement' %}">
             whose name the agreement is in</a>.
           If your name is not on the tenancy agreement, you will probably
           be an excluded occupier. This means that you have very little protection from eviction, which will make
@@ -482,10 +482,10 @@ when your agreement started and whether your landlord lives in the same building
           are or finding somewhere else to live. Contact Represent if you are having serious problems with your landlord.</p>
 
           <div class="bs-callout bs-callout-primary">
-            <a href="{% url 'contact' %}"><h4>Contact Represent</h4></a>
+            <a href="{% url 'website:contact' %}"><h4>Contact Represent</h4></a>
             <p></p>
             <p>Get in touch with Represent to see how we can help</p>
-            <p><a href="{% url 'contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
+            <p><a href="{% url 'website:contact' %}" class="btn btn-primary btn-lg" role="button">Contact Represent</a></p>
           </div>
       </div>
     </div>
